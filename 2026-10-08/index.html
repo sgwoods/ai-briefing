@@ -1,0 +1,63 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Briefing · Thursday, October 8, 2026</title><link rel="stylesheet" href="../style.css"><meta name="description" content="A daily briefing on AI for early-stage investors: what happened, what holds up, and what it means."><meta property="og:title" content="AI Briefing · Thursday, October 8, 2026"><meta property="og:description" content="A daily briefing on AI for early-stage investors: what happened, what holds up, and what it means."><meta property="og:image" content="https://sgwoods.github.io/public/assets/steven-woods-current.png"><link rel="alternate" type="application/rss+xml" title="AI Briefing" href="../feed.xml"></head><body><header class="site"><a href="../index.html">AI Briefing</a><a class="home" href="https://sgwoods.github.io/public/index.html">Steven Woods · public projects ↗</a></header><main><div class="bar"><button id="read" class="on" type="button">Read</button><button id="listen" type="button">Listen</button><span id="ctl" hidden><button id="play" type="button">▶ Play</button> <button id="stop" type="button">■ Stop</button> <select id="rate"><option>0.9</option><option selected>1</option><option>1.15</option><option>1.3</option></select></span></div><audio id="mp3" controls preload="none" src="../audio/2026-10-08.mp3" hidden></audio><div id="brief"><section><h1>AI Briefing · Thursday, October 8, 2026</h1>
+<p><strong>The day in brief.</strong> Three threads today. First, small-model prices keep falling. Haiku 5.5 matches GPT-6 Luna at $0.10/$0.50 below 100k tokens but costs more above that, so the shape of a customer's workload now decides gross margin. Second, two board-seat companies shipped: Spellbook made its autonomous contract management generally available, and Cohere released open weights for a 3.35B multilingual reasoner. Read both with that bias in mind. Third, AI-math claims are running ahead of the evidence: Marcus says OpenAI's proof report omits its method. Diligence ask this week: gross margin per task at current prices, and at half.</p>
+</section><section><h2>Top of mind</h2>
+<ul>
+<li><strong>Small-model prices converge.</strong> Haiku 5.5 matches GPT-6 Luna at $0.10/$0.50 under 100k tokens; above that, Haiku charges $0.50/$2.50 against Luna's $0.20/$0.75 at 272k. <a rel="noopener" target="_blank" href="https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/">3</a></li>
+<li><strong>Spellbook goes autonomous (board seat).</strong> Its contract management tool is now generally available. No customer, pricing or accuracy data and no critical pass, so treat it as a launch, not traction. <a rel="noopener" target="_blank" href="https://spellbook.com/blog/autonomous-contract-management-is-generally-available">2</a></li>
+<li><strong>Cohere's small multilingual reasoner (board seat).</strong> Cohere reports reasoning in the prompt's language over 93% of the time across 60 languages at 3.35B, with open weights. Self-reported; the accuracy cost is not quantified. <a rel="noopener" target="_blank" href="https://cohere.com/blog/building-multilingual-bridges">4</a></li>
+<li><strong>AI math claims lack method.</strong> OpenAI released hundreds of proofs, but Marcus and Tao say the report lacks method detail. Mollick's 'superhuman' and Navier-Stokes claims are unverified. <a rel="noopener" target="_blank" href="https://garymarcus.substack.com/p/complementary-remarks-from-gary-marcus">1</a></li>
+</ul>
+</section><section><h2>Must read</h2>
+</section><section><h3>1. OpenAI releases hundreds of AI math proofs; Marcus calls report too vague</h3>
+<p><strong>Gary Marcus · Ethan Mollick (One Useful Thing)</strong> · 3 sources · <a rel="noopener" target="_blank" href="https://garymarcus.substack.com/p/complementary-remarks-from-gary-marcus">source</a></p>
+<ul>
+<li><strong>What happened:</strong> Gary Marcus and Terence Tao critique OpenAI's math benchmark claims (Gary Marcus), noting missing method details in their report. Ethan Mollick cites Scott Aaronson's blog post describing AI-generated math proofs as 'superhuman' (Ethan Mollick, One Useful Thing) but provides no verification; he also claims AI produced novel Navier-Stokes proofs without evidence (Ethan Mollick).</li>
+<li><strong>Critical pass:</strong> OpenAI's report lacks method details per Marcus. Mollick's claims of superhuman proofs and novel math results lack verification or named systems.</li>
+<li><strong>Editor's view:</strong> Don't accept founders citing these proofs as evidence of reasoning gains until OpenAI discloses method, compute and human assistance. Ask Nithum Thain how DeepMind would audit such a claim.</li>
+<li><strong>Sources:</strong> <a rel="noopener" target="_blank" href="https://garymarcus.substack.com/p/complementary-remarks-from-gary-marcus">Gary Marcus: Gary Marcus and Terence Tao critique OpenAI's math…</a> · <a rel="noopener" target="_blank" href="https://bsky.app/profile/emollick.bsky.social/post/3mxczf26uy22h">Ethan Mollick (One Useful Thing): Ethan Mollick shares early accounts of narrow superhuman…</a> · <a rel="noopener" target="_blank" href="https://bsky.app/profile/emollick.bsky.social/post/3mxd2yu3fnc2h">Ethan Mollick (One Useful Thing): Ethan Mollick claims AI can produce novel mathematical…</a></li>
+</ul>
+</section><section><h3>2. Spellbook launches autonomous contract management tool</h3>
+<p><strong>Scott Stevenson</strong> · <a rel="noopener" target="_blank" href="https://spellbook.com/blog/autonomous-contract-management-is-generally-available">source</a> · 2026-10-07</p>
+<ul>
+<li><strong>What happened:</strong> Spellbook has launched its autonomous contract management tool, now generally available to customers.</li>
+<li><strong>Editor's view:</strong> Board seat, so not a neutral read. Ask Spellbook for usage since general availability, error rates on autonomous actions, and whether autonomy changes pricing from per-seat to per-contract.</li>
+</ul>
+</section><section><h3>3. Claude Haiku 5.5 matches GPT-6 Luna pricing</h3>
+<p><strong>Simon Willison</strong> · <a rel="noopener" target="_blank" href="https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/">source</a> · 2026-10-07</p>
+<ul>
+<li><strong>What happened:</strong> Anthropic launched Claude Haiku 5.5 with $0.10/$0.50 input/output pricing up to 100k tokens, matching OpenAI's GPT-6 Luna price; beyond 100k tokens, Haiku costs $0.50/$2.50 vs Luna's $0.20/$0.75 at 272k tokens.</li>
+<li><strong>Agenda:</strong> Anthropic's product announcement - self-promotional with pricing details</li>
+<li><strong>Editor's view:</strong> Price parity turns model choice into a routing decision. Long-context portfolio workloads should benchmark Luna, and a startup whose only edge is per-token price has no moat.</li>
+</ul>
+</section><section><h3>4. Cohere Releases Tiny Aya L2-Thinker Model for Multilingual Reasoning</h3>
+<p><strong>Cohere / Cohere Labs</strong> · <a rel="noopener" target="_blank" href="https://cohere.com/blog/building-multilingual-bridges">source</a> · 2026-10-06</p>
+<ul>
+<li><strong>What happened:</strong> Cohere says Tiny Aya L2-Thinker (3.35B) reasons in the prompt language over 93% of the time across 60 languages (45 seen in reasoning training), with minimal accuracy loss except on competition-level math; weights and data released.</li>
+<li><strong>Critical pass:</strong> Overstated. 93% in-language rate is plausible but self-reported; 'minimal accuracy loss' unquantified here, competition math excepted. Board seat.</li>
+<li><strong>Editor's view:</strong> Board seat. Open weights mean the 93% figure can be checked independently; get per-language accuracy deltas before treating this as a sovereign-AI proof point.</li>
+</ul>
+</section><section><h3>5. Ethan Mollick predicts two AI-driven scientific revolutions</h3>
+<p><strong>Ethan Mollick (One Useful Thing)</strong> · <a rel="noopener" target="_blank" href="https://bsky.app/profile/emollick.bsky.social/post/3mxasq2guls2c">source</a> · 2026-10-07</p>
+<ul>
+<li><strong>What happened:</strong> Ethan Mollick (One Useful Thing) states that AI will cause two scientific revolutions: 1) re-evaluation of all published research through unanticipated methods, and 2) faster discovery rates than human absorption can keep up with.</li>
+<li><strong>Agenda:</strong> Ethan Mollick is a researcher and educator who writes about AI's impact on work, not a lab staff or company spokesperson.</li>
+<li><strong>Editor's view:</strong> Opinion with no evidence or timeline. Use it as a thesis frame for research-tooling startups, not as a basis for underwriting.</li>
+</ul>
+</section><section><h3>6. Copier Repair Tech Ethnography Highlights AI Work Replacement Complexity</h3>
+<p><strong>Ethan Mollick (One Useful Thing)</strong> · <a rel="noopener" target="_blank" href="https://bsky.app/profile/emollick.bsky.social/post/3mxbcxh52gs2c">source</a> · 2026-10-07</p>
+<ul>
+<li><strong>What happened:</strong> Ethan Mollick references a 1990s ethnography of copier repair technicians showing work complexity and improvisation, noting eventual tech-driven elimination.</li>
+<li><strong>Editor's view:</strong> A useful counterweight to replacement pitches: ask agent startups what undocumented improvisation their customers' workers do, and how the product handles it.</li>
+</ul>
+</section><section><h2>In brief</h2>
+<ul>
+<li>Ben Affleck discusses ML in film workflows (<a rel="noopener" target="_blank" href="https://simonwillison.net/2026/Oct/7/ben-affleck/">Simon Willison</a>)</li>
+</ul>
+</section><section><h2>Open questions</h2>
+<ul>
+<li><strong>Will OpenAI publish method, compute and human involvement for its released math proofs?</strong> Shows whether the proofs reflect model capability or curated, assisted output. <em>Settled by: A methods appendix, or independent verification by Tao or other mathematicians.</em> <a rel="noopener" target="_blank" href="https://garymarcus.substack.com/p/complementary-remarks-from-gary-marcus">1</a></li>
+<li><strong>Will Haiku 5.5's higher price above 100k tokens push long-context volume to GPT-6 Luna, or force an Anthropic price cut?</strong> Sets inference margins for portfolio apps handling long documents, including legal tools. <em>Settled by: An Anthropic price change, or model usage-share data from routing providers.</em> <a rel="noopener" target="_blank" href="https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/">3</a></li>
+<li><strong>Do Spellbook's autonomous contract features drive paid expansion, or stay a demo feature?</strong> Board seat; tests whether legal AI moats go beyond orchestration on frontier models. <em>Settled by: Attach rates, net revenue retention and autonomous-action error rates reported by Spellbook.</em> <a rel="noopener" target="_blank" href="https://spellbook.com/blog/autonomous-contract-management-is-generally-available">2</a></li>
+</ul>
+<hr />
+<p><em>9 items analyzed from 5 sources · 3 filtered as off-topic · 0 more stories in the dashboard. Analysis: claude_code:default, local:qwen3:30b. Editor's view and day-in-brief are machine-written. Generated 2026-10-09 09:25 EDT.</em></p></section></div><script src="../listen.js"></script></main><footer>Daily AI briefing for early-stage investors, curated by Steven Woods. Analysis is machine-generated from public sources (every claim links to its source); "Steven's take" is personal opinion. <a href="../feed.xml">RSS</a> · <a href="../podcast.xml">Podcast feed</a></footer></body></html>
