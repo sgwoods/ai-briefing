@@ -1,0 +1,165 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Briefing · Fact checking</title><link rel="stylesheet" href="../style.css"><meta name="description" content="A daily briefing on AI for early-stage investors: what happened, what holds up, and what it means."><meta property="og:title" content="AI Briefing · Fact checking"><meta property="og:description" content="A daily briefing on AI for early-stage investors: what happened, what holds up, and what it means."><meta property="og:image" content="https://sgwoods.github.io/public/assets/steven-woods-current.png"><link rel="alternate" type="application/rss+xml" title="AI Briefing" href="../feed.xml"></head><body><header class="site"><a href="../index.html">AI Briefing</a><a class="home" href="https://sgwoods.github.io/public/index.html">Steven Woods · public projects ↗</a></header><main><p class="small muted">Running v0.1.14-beta · this page last changed 2026-10-23 · <a href="index.html">All docs</a></p><div class="doc"><h1>Grounding and fact checking</h1>
+<p>Steven's rule (2026-10-18): <strong>cut unverifiable sentences and send; block only on privacy or a contradicted Must read.</strong></p>
+<p>Two ideas run through everything below:</p>
+<ul>
+<li><strong>Grounding.</strong> Every claim a reader sees must trace back to text the pipeline actually holds: the archived item,
+  the article the reader fetched, or a page found by search. A model's own knowledge doesn't count as a source.</li>
+<li><strong>Fetched text is data.</strong> No step calls a model with fetched text as instructions. Pages, posts, newsletters and
+  replies are material to assess, never commands.</li>
+</ul>
+<p><img alt="Grounding and fact checking" src="img/fact-checking.svg" /></p>
+<p>Every step runs in the morning run, before the email and the audio.</p>
+<h2>1. Ground: what the edition may draw on</h2>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Where</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Archive</td>
+<td><code>pipeline/archive.py</code></td>
+<td>Every fetched item is stored append-only with its text, so later checks search what the source actually said.</td>
+</tr>
+<tr>
+<td>Reader</td>
+<td><code>pipeline/reader.py</code>, stage <code>verify</code></td>
+<td>An item under 600 characters (headline, teaser, social post with a link) gets its linked article fetched through the network guard. If it's unreadable, the verdict is "Unverified". A post with no link is judged as a post.</td>
+</tr>
+<tr>
+<td>Source weighting</td>
+<td><code>pipeline/profiles.py</code>, <code>source_profiles.yaml</code>, docs/SOURCE-PROFILES.md</td>
+<td>Sources are weighed by how they know things. A Must read needs a primary source, a report or a first-hand test. Company posts count as self-reported.</td>
+</tr>
+<tr>
+<td>Citations</td>
+<td><code>pipeline/links.py</code></td>
+<td>Links point at the real article, not an aggregator or tracker.</td>
+</tr>
+</tbody>
+</table>
+<h2>2. Judge: how strong is each claim</h2>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Where</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Critique</td>
+<td><code>pipeline/stages.py</code>, stage <code>critique</code></td>
+<td>Each claim gets a verdict: holds, mixed, overstated, unsupported or unverified.</td>
+</tr>
+<tr>
+<td>Evidence check</td>
+<td><code>run.py</code>, stage <code>verify</code></td>
+<td>Every Must read without a verdict gets one, using the article text from the reader.</td>
+</tr>
+</tbody>
+</table>
+<h2>3. Check the text: every figure and quote</h2>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Where</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Figure trace</td>
+<td><code>pipeline/factcheck.py</code>, write stage</td>
+<td>Every figure in the edition is looked up in the text of its sources (raw items, plus articles the reader read). Dates, years and chapter numbers are ignored. Differences and ratios of source figures count as traced.</td>
+</tr>
+<tr>
+<td>Search before cut</td>
+<td><code>pipeline/factsearch.py</code></td>
+<td>An untraced figure is looked for in the story's own linked articles, then on the web (Bing's public RSS search: free, no account, top 3 results). A page counts only if the figure sits within ~600 characters of the name nearest to it in the sentence. If it's found on the web, the sentence stays, with a link to the outlet. At most 8 figures per edition. Requests are logged to <code>logs/news-search.jsonl</code>. Switch it off with <code>factcheck.search: false</code>.</td>
+</tr>
+<tr>
+<td>Cut or flag</td>
+<td><code>factcheck.check</code></td>
+<td>If a figure is still untraced, the sentence is cut in factual sections (day in brief, Top of mind, What happened, Worth knowing, In brief, Recommended reading). In headlines and analysis (Evidence check, Our read, views, Open questions) it's flagged in the run log only.</td>
+</tr>
+<tr>
+<td>Number check</td>
+<td><code>pipeline/numbers.py</code></td>
+<td>A stated difference that doesn't add up is corrected. Changes and near-twin figures are flagged.</td>
+</tr>
+<tr>
+<td>Quotes</td>
+<td><code>stages.verify_quotes</code></td>
+<td>Words in quotation marks must appear word for word in the source material. If they don't, the quotation marks come off and the words stay as a paraphrase.</td>
+</tr>
+<tr>
+<td>Speech</td>
+<td><code>pipeline/speech.py</code></td>
+<td>Prices, rates, ranges and model sizes are spoken correctly ("two dollars for input and ten for output").</td>
+</tr>
+</tbody>
+</table>
+<h2>4. The lines readers see first (deep dives since v0.1.9, the daily briefing since v0.1.14)</h2>
+<p>Summaries and "Why today" lines, and the daily briefing's day in brief and Top of mind, appear in the email, on the
+site and in the podcast notes before anyone reads the body. So they get their own check (<code>pipeline/consistency.py</code>),
+which runs against the already-checked body. A figure belongs to its whole story there, so a line can name the
+company in its lead and give the figure in the next sentence. A sentence is dropped if:</p>
+<ul>
+<li>a figure in it isn't in the body;</li>
+<li>it names none of the companies or people the body ties that figure to;</li>
+<li>it says something was "not disclosed" when the body or a source gives it for the same company (a question
+  asking for the figure, or a sentence saying it's lacking, doesn't count).</li>
+</ul>
+<p>A figure the body doesn't carry can still stand if a source sentence ties it to the same names. A Top of mind
+bullet whose lead fails, or whose every other sentence fails, is dropped whole.</p>
+<p><strong>Across days (flag, not cut).</strong> A "not disclosed" claim is also compared with the previous 14 editions. If an
+earlier day gave that figure for the same company, the run log flags it for review. A day can be right about its
+own sources and still contradict the record, so this one is for a person to judge.</p>
+<p><code>./np consistency [DAY|all]</code> runs all of this over published editions as a dry run. On 2026-10-23 it ran over all
+18 editions and 8 deep dives and found one misattributed figure (fixed by a correction) and two cross-day flags.</p>
+<p>The "Why today" line is written from the checked body, never copied from the previous day's topic suggestion.
+Agenda lines can claim a role ("founder", "CEO", "investor in") only when the item's own source says so.
+Otherwise they read: "The author's role and any stake aren't stated in the source."</p>
+<p>Why this layer exists: on 2026-10-23 a deep dive's body was right, but its summary attached a figure to the wrong
+company and said a disclosed number wasn't disclosed. The day before, an unsourced Agenda line had given an
+investor the wrong role. Each fact was in the sources. The mistake was in short lines that were written
+separately and never checked against the body.</p>
+<h2>5. Privacy gate: the one check that blocks</h2>
+<p><code>links.py</code>, <code>mailer.privacy_gate</code>, <code>publish.scan_site</code>, <code>stages.scrub_private</code>: private names, the owner's
+addresses, board-seat notes and tracker links never leave. A hit removes the text. If anything is still left at
+the gate, the send is blocked.</p>
+<h2>6. After shipping</h2>
+<ul>
+<li><strong>Shipped text is fixed</strong> (<code>pipeline/shipped.py</code>). Once a day's email has gone out, its page, deep dive and audio
+  can change only through a visible correction: after a hand edit, run <code>./np correct DAY "what changed"</code>. The note
+  shows on the day page and the deep-dive page. A publish that would change a shipped edition without a
+  correction is refused.</li>
+<li><strong>Live check.</strong> After each publish, the newest pages, both feeds and the latest MP3 must answer. If they don't,
+  the previous site is restored and the email waits.</li>
+<li><strong>Measuring.</strong> The scorecard (<code>./np quality</code>) reports "Figures in no source" (target 0). The weekly review
+  (<code>pipeline/review.py</code>) reads a week of editions side by side and catches what a single day can't, such as two
+  days disagreeing about the same fact.</li>
+</ul>
+<h2>Commands</h2>
+<pre><code>./np factcheck              dry run on the latest edition: FOUND / CUT / FLAG, nothing edited
+./np factcheck 2026-10-13   same for a day
+./np factcheck probe &quot;Harvey raised $300M at a $5B valuation.&quot; '$5B'    one live search
+./np consistency all        first lines vs the body, Agenda roles, cross-day flags over published editions (dry run)
+./np correct DAY &quot;note&quot;     record a hand edit to a shipped edition (shown on its pages)
+./np review weekly          the weekly quality review
+</code></pre>
+<p>Deep dives have their own checks (docs/DEEP-DIVES.md): links opened, quotes verified, unsourced $ and % sentences
+cut, and the summary and "Why today" lines checked as in section 4.</p>
+<h2>Known gaps (next)</h2>
+<ul>
+<li>Only "not disclosed" claims are compared across days. Other contradictions between days (different figures for
+  the same thing) are left to the weekly review.</li>
+<li>The check matches names, not meaning: a sentence that names the right company but gets its role in the story
+  wrong can still pass.</li>
+</ul></div></main><script src="../share.js"></script><footer>Daily AI briefing for early-stage investors, curated by Steven Woods. Analysis is machine-generated from public sources (every claim links to its source); "Steven's take" is personal opinion. <a href="../index.html#email">Subscribe by email</a> · <a href="../index.html#listen">Add the podcast</a> · <a href="../feed.xml">RSS</a> · <a href="../podcast.xml">Podcast feed</a><br><span class="small"><a href="../releases/index.html">v0.1 beta</a> · <a href="../docs/index.html">Docs</a> · <a href="https://github.com/sgwoods/news-pipeline">Code</a> · <a href="https://sgwoods.github.io/public/index.html">Steven Woods · public projects</a></span></footer></body></html>
