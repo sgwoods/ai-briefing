@@ -1,0 +1,171 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Briefing · Release notes</title><link rel="stylesheet" href="../style.css"><meta name="description" content="A daily briefing on AI for early-stage investors: what happened, what holds up, and what it means."><meta property="og:title" content="AI Briefing · Release notes"><meta property="og:description" content="A daily briefing on AI for early-stage investors: what happened, what holds up, and what it means."><meta property="og:image" content="https://sgwoods.github.io/public/assets/steven-woods-current.png"><link rel="alternate" type="application/rss+xml" title="AI Briefing" href="../feed.xml"></head><body><header class="site"><a href="../index.html">AI Briefing</a><a class="home" href="https://sgwoods.github.io/public/index.html">Steven Woods · public projects ↗</a></header><main><h1>Release notes</h1><p class="muted">Running <b>v0.2.0-beta</b>. Changes are built and tested on a development branch and reach production together as a release.</p><section class="panel"><h2>v0.2.0-beta · 2026-10-23</h2><ul>
+<li><strong>Steven's takes (My takes, phase 1):</strong> the owner's own view in the edition, verbatim, labelled "Steven's take".</li>
+<li>Once the edition is written, a private "AI Briefing · Your takes" email lists slots: 0 (the day), T (Top of
+    mind), and 1 to N (each Must-read story). Reply "1: ..." from a phone; "done" sends early, "skip" means none.</li>
+<li>Your own words on a link you post in the team Slack channel count as your take on that story.</li>
+<li>The edition waits until <strong>09:15</strong> or "done" (<code>./np takes done</code>, or <code>takes-done</code> in the run queue).</li>
+<li>Each take is checked for private names, owner addresses, personal links, disclosure phrases and the
+    confidential marker. One that fails is held back and listed to you, never published.</li>
+<li>Takes appear on the site and in the email, and the host reads each one after its story in the podcast. Only
+    the briefing audio is re-rendered.</li>
+<li>Retries leave a waiting run alone; a failure ships the edition without takes.</li>
+<li><code>./np takes status | email | preview | done</code>.</li>
+<li>Fix: the Slack reader closed or leaked its HTTP client when it found your own LinkedIn posts.</li>
+</ul></section><section class="panel"><h2>v0.1.14-beta · 2026-10-23</h2><ul>
+<li><strong>First-lines check for the daily briefing:</strong> the day in brief and Top of mind are now checked against the
+  edition's own body, as deep-dive summaries have been since v0.1.9 (<code>consistency.check_briefing</code>). A figure
+  belongs to its whole story, so a line can name the company in its lead. A sentence that ties a figure to the
+  wrong company, or says something wasn't disclosed when the body gives it, is dropped.</li>
+<li><strong>Across days (flag):</strong> a "not disclosed" claim is compared with the previous 14 editions and flagged for review
+  if an earlier day gave the figure for the same company.</li>
+<li>The "not disclosed" test is stricter everywhere: a question asking for a figure, or a sentence saying it's
+  lacking, no longer counts as giving it, and it must be about the same company.</li>
+<li><code>./np consistency [DAY|all]</code> (also a run-queue recipe) runs the checks over published editions as a dry run.
+  Over all 18 editions and 8 deep dives it found one misattributed figure (10-22's day in brief) and two
+  cross-day flags (10-23).</li>
+</ul></section><section class="panel"><h2>v0.1.13-beta · 2026-10-23</h2><ul>
+<li>Fix: the run queue's launchd tick never started a job. Its quick idle check listed both queue folders with <code>ls</code>,
+  which fails whenever one of them is empty. It now checks each file, and a test runs the real <code>./np runner tick</code>.</li>
+</ul></section><section class="panel"><h2>v0.1.12-beta · 2026-10-23</h2><ul>
+<li><strong>Run queue:</strong> releases, corrections and checks can be started from the Claude chat instead of pasted into a
+  shell (<code>pipeline/runner.py</code>, <code>./np runner</code>, docs/plans/run-queue.md). Claude queues a named recipe and the Mac
+  runs it. There are three tiers: tests, staging and verify run at once; corrections and publish need Steven's
+  yes in the chat; releases, rollbacks, approvals and the public code push need Approve in a dialog on the Mac.
+  The click grants presence for that job only (<code>pipeline/presence.py</code>), and no file can stand in for it. Release
+  invariant 10 guards the runner. One-time setup: <code>./np runner install</code>.</li>
+<li><strong>Docs stay current:</strong> release-gate tests now require every public module to be described in a hand-written doc
+  and every diagram to be used. Each release lists the modules that changed while their docs didn't ("docs to
+  review"), in the approval dialog and in <code>data/state/docs-impact.json</code>, for a weekly docs refresh.</li>
+<li><strong>Docs:</strong> Fact checking is rewritten as "Grounding and fact checking": six layers, a new diagram, why the
+  first-lines check exists, corrections and known gaps. Architecture gains sections on grounding, the run queue
+  (with a diagram) and keeping docs current, plus every smaller module.</li>
+</ul></section><section class="panel"><h2>v0.1.11-beta · 2026-10-23</h2><ul>
+<li>Fix: v0.1.10's public code push was refused again, correctly: a code comment and the changelog named a
+  portfolio company. Both are reworded, and the dev test now builds the whole public export and fails on any
+  private term, not only in test files.</li>
+</ul></section><section class="panel"><h2>v0.1.10-beta · 2026-10-23</h2><ul>
+<li>Fix: v0.1.9's public code push was refused, correctly, because a new test used real portfolio names. The test
+  now uses made-up names, and a test fails in dev whenever any test file names a private term, so the release
+  can't be the first place it's caught.</li>
+</ul></section><section class="panel"><h2>v0.1.9-beta · 2026-10-23</h2><p>Fix: on 2026-10-23 the deep dive's body was correct, but its summary and "Why today" lines, which readers see first
+in the email, on the site and in the podcast notes, said a legal-AI company disclosed no ARR and that "a vendor"
+claimed a $21M saving. In fact the company disclosed ARR, and the $21M was an investor's post about a different
+company. The day before, an unsourced Agenda line had called that investor the other company's "founder".
+- <strong>The why-today line comes from the checked body:</strong> it's written from the deep dive's checked "why today"
+  section, no longer copied from the previous day's topic suggestion.
+- <strong>A header check (<code>pipeline/consistency.py</code>) for the summary and why-today lines:</strong> a sentence is dropped if a
+  figure isn't in the checked body, if it names none of the companies or people the body ties that figure to, or if
+  it says something wasn't disclosed when the body or a source gives it. Spelled-out figures in scripts count. If
+  nothing in the summary survives, the checked opening is used.
+- <strong>Agenda lines can't assert unsourced roles:</strong> "founder", "CEO", "investor in" and similar must appear in the
+  item's own source text; otherwise the line becomes neutral.
+- <strong>Deep-dive text is guarded like the briefing:</strong> a shipped deep dive changes only through a correction, and its
+  page shows the correction note.
+- <strong><code>./np correct DAY "what changed"</code>:</strong> records a hand edit to a shipped edition as a correction, shown on the day
+  page and the deep-dive page.</p></section><section class="panel"><h2>v0.1.8-beta · 2026-10-23</h2><p>Fix: the 2026-10-23 edition was held at 05:26 and again at 06:30. The release gate re-ran the whole test suite
+during the morning run, and one release test that checks for a running daily run saw the real one and failed.
+The same check blocked the backup's git push.
+- <strong>Released code isn't re-tested in the morning:</strong> once a code and settings fingerprint has passed the full gate
+  (tests included) and is approved, later checks accept it without re-running the tests
+  (<code>data/state/release-passed.jsonl</code>). Changed code is still fully checked.
+- <strong>Tests never read the live machine:</strong> test runs set <code>NP_TESTING=1</code>, <code>run_in_progress</code> doesn't look at real
+  processes under it, and the release tests mock it too.
+- <strong>The evening preflight tests tonight what runs tomorrow:</strong> if the code hasn't passed the full gate yet, the
+  preflight runs it at 20:30 and emails the owner if it fails, instead of finding out at 05:00.
+- <strong>The pre-push hook uses the same fast check</strong> (<code>--release-check require</code>), and <code>./np release</code> reinstalls the
+  hooks.</p></section><section class="panel"><h2>v0.1.7-beta · 2026-10-22</h2><p>Shipped editions don't break. Once a day's email has gone out, that day is shipped (<code>pipeline/shipped.py</code>), and:
+- <strong>Publish guard:</strong> before every production publish, the new site is checked against what readers already have.
+  It refuses (the live site is untouched and the owner is emailed) if any of these hold:
+  - a shipped day page or deep dive is missing;
+  - a shipped edition's text changed without a correction;
+  - a shipped MP3 inside the retention window is missing;
+  - the home page or a feed is missing, or the podcast feed would shrink.
+- <strong>Corrections are explicit:</strong> rebuilding a shipped day (<code>rebrief</code>, <code>reprocess</code>, <code>remaster</code>) needs
+  <code>--correct "what changed"</code>, and the page shows "Corrected &lt;date&gt;: …".
+- <strong>Remasters keep the old audio:</strong> the earlier MP3 is carried over from the live site, so no audio URL breaks.
+- <strong>After-publish check:</strong> once the site is live, the newest shipped pages, both feeds and the latest MP3 must
+  answer. If not, the previous site is put back automatically, the email is held, and the owner is emailed.
+  <code>./np publish restore</code> does the same by hand.
+- <strong>The email waits for a good publish:</strong> if the publish fails or the after-publish check fails, no subscriber
+  email goes out. Before, it went anyway.
+- <strong>Audio retention:</strong> 30 days on the site and in the podcast feed, up from 14. 60 days would be about 1 GB, the
+  GitHub Pages limit.
+- <strong>Slack:</strong> links any member posts in the team channel now count, links only. Who posted is never stored, and
+  their text is never used.
+- <strong>Staging preview:</strong> carries only the newest day's audio. The first full preview push timed out.
+- <strong>Site pushes are sturdier:</strong> a push that stalls (under 1 KB/s for 60 s) fails and is retried once over
+  HTTP/1.1, instead of hanging the morning run. Pushes no longer use one huge buffered upload, which is what
+  GitHub was timing out with HTTP 408.</p></section><section class="panel"><h2>v0.1.6-beta · 2026-10-22</h2><ul>
+<li>Development preview: <code>./np staging publish [setup]</code> publishes the dev checkout's site to its own Pages repo
+  (sgwoods/ai-briefing-staging). The preview has a banner on every page linking back to the published site, is
+  kept out of search engines (noindex, robots.txt), and has no subscribe form and no podcast feed. Staging can
+  publish only there, and production never publishes there.</li>
+<li><code>./np staging compare [DAY]</code>: staging against production for the same day: sections, counts, words, source
+  links, the evidence mix, fact-check counts and audio length, plus the privacy scan of the preview and a diff of
+  the edition. Writes <code>logs/compare-DAY.md</code> and flags what needs review.</li>
+<li>Fix: a staging run no longer copies its MP3 into the owner's iCloud folder. The first staging run had
+  overwritten that day's copy. It no longer deletes iCloud files either.</li>
+<li>Tests always run as production (<code>NP_ENV=production</code>), in either checkout.</li>
+</ul></section><section class="panel"><h2>v0.1.5-beta · 2026-10-22</h2><ul>
+<li>Fix: the scheduled jobs had been firing exactly one hour early every day (the 05:00 run started at 04:00, the
+  20:30 preflight at 19:30). launchd now only ticks every half hour, and the Mac's own local clock decides when a
+  scheduled time has come (<code>pipeline/schedule.py</code>, <code>./np scheduled</code>). Times must be on :00 or :30.</li>
+<li>Releases refuse checkout-local files (<code>.venv</code>, <code>.env</code>, <code>.staging</code>) committed on dev; <code>.venv</code> is ignored as a
+  link too.</li>
+<li>Fix: rebuilding an edition (<code>./np rebrief</code>, <code>./np staging run</code>) failed with KeyError 'critique', because the
+  evidence check on Must reads needs the critique model, and a rebuild had stopped loading it. Found by the
+  first staging run.</li>
+<li>Git safety: every git call in the export, hub, dev and release code ignores GIT_DIR / GIT_WORK_TREE from the
+  environment, and the tests that build throwaway repositories clear them. A leaked GIT_DIR once pointed a test's
+  <code>git init</code> at the production repository and wrote a wrong <code>core.worktree</code> into its config. Caught and fixed
+  before any run used it.</li>
+<li>The first release built on dev and promoted with <code>./np release</code>.</li>
+</ul></section><section class="panel"><h2>v0.1.4-beta · 2026-10-22</h2><ul>
+<li>Development checkout: <code>./np dev setup</code> creates a second working copy of the repository on branch <code>dev</code>, in
+  staging mode. Inside it:</li>
+<li><code>./np staging sync</code> brings in production's latest data and fixes;</li>
+<li><code>./np staging run [DAY]</code> rebuilds an edition with the development code while outbound stays off, and
+    <code>--email</code> sends the review copy to the owner only;</li>
+<li><code>./np staging reset</code> throws away what staging wrote.</li>
+<li>Staging outputs can't be committed: the pre-commit hook refuses data paths in a staging checkout, archive
+  commits are skipped there, alerts aren't sent, and services can't be installed. Staging runs keep out of the
+  03:30–08:30 production window.</li>
+<li>Releases and rollback:</li>
+<li><code>./np release VERSION "reviewed: ..."</code> merges dev into production between 08:30 and 20:00, needs one
+    approval, then tags the release and pushes the public code, the backup and the hub status. It refuses if
+    production has stray code changes, a run is in progress, dev's version or changelog don't match, or the
+    staging marker was committed.</li>
+<li><code>./np rollback "reviewed: ..."</code> returns the code to the previous release.</li>
+</ul></section><section class="panel"><h2>v0.1.3-beta · 2026-10-22</h2><ul>
+<li>Documentation on the site at <code>/docs/</code>, rebuilt at every publish from the same markdown as the public code, with
+  the diagrams embedded. Each page shows the running version and when it last changed. Linked from the footer and
+  the hub page.</li>
+<li>Generated sections in the architecture document: current facts and a component table built from each module's
+  own description. Drift tests fail a release if the document names a module that no longer exists, or doesn't
+  name the current version.</li>
+<li>Release check: the tests line shows unittest's own summary.</li>
+</ul></section><section class="panel"><h2>v0.1.2-beta · 2026-10-22</h2><ul>
+<li>Staging mode: a development checkout (marked by an untracked <code>.staging</code> file) can build everything but can't
+  reach readers. The release gate refuses every outbound action there. The mailer allows only reads and review
+  copies to the owner, marked [STAGING]. A new release-gate invariant keeps every outbound function behind the gate.</li>
+<li>The hub project page shows the latest release notes and links to the architecture document.</li>
+<li>Architecture document with four diagrams: system overview, the daily run, repositories and privacy boundaries,
+  and the release flow (<code>docs/ARCHITECTURE.md</code>).</li>
+</ul></section><section class="panel"><h2>v0.1.1-beta · 2026-10-22</h2><ul>
+<li>AI Briefing on the public project hub (sgwoods.github.io/public) as an exporting project: after each publish,
+  <code>./np hub push</code> writes its status (19 fields, naming this released public commit) and its project page with the
+  hub's freshness panel, and pushes only those two files. It refuses when the running code isn't the release.</li>
+<li>The site's old <code>/hub/</code> copy of the status files is retired.</li>
+<li><code>./np log &amp;lt;command&gt;</code> saves any command's output under <code>logs/</code>.</li>
+</ul></section><section class="panel"><h2>v0.1.0-beta · 2026-10-22</h2><p>The system as it runs today, labelled the first beta: a small number of outside readers.</p>
+<ul>
+<li>Daily edition: fetch from feeds, sitemaps, Bluesky lists, newsletters and Slack links; filter, summarize, rank,
+  cluster into stories, critique, verify and fact-check; Top of mind, Must read, Worth knowing, Open questions.</li>
+<li>Evidence-weighted sources: every source has a profile, and a Must read needs primary or reporting evidence.</li>
+<li>Podcast: a ~10-minute episode read by the host, followed in the same episode by the day's deep dive.</li>
+<li>Public site, podcast feed and RSS on GitHub Pages; a subscriber email sent after the site is live.</li>
+<li>Release gate on every outbound step: tests, secret scan, privacy invariants and Steven's approval of
+  security-sensitive changes; owner alerts when action is needed; a cloud watchdog for missing editions.</li>
+<li>Reader feedback collected from email replies and triaged daily.</li>
+<li>Public code repository: an allowlisted, scrubbed export (<code>./np push-code</code>), MIT licence.</li>
+</ul></section></main><script src="../share.js"></script><footer>Daily AI briefing for early-stage investors, curated by Steven Woods. Analysis is machine-generated from public sources (every claim links to its source); "Steven's take" is personal opinion. <a href="../index.html#email">Subscribe by email</a> · <a href="../index.html#listen">Add the podcast</a> · <a href="../feed.xml">RSS</a> · <a href="../podcast.xml">Podcast feed</a><br><span class="small"><a href="../releases/index.html">v0.2 beta</a> · <a href="../docs/index.html">Docs</a> · <a href="https://github.com/sgwoods/news-pipeline">Code</a> · <a href="https://sgwoods.github.io/public/index.html">Steven Woods · public projects</a></span></footer></body></html>

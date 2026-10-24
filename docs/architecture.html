@@ -1,0 +1,677 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Briefing · Architecture</title><link rel="stylesheet" href="../style.css"><meta name="description" content="A daily briefing on AI for early-stage investors: what happened, what holds up, and what it means."><meta property="og:title" content="AI Briefing · Architecture"><meta property="og:description" content="A daily briefing on AI for early-stage investors: what happened, what holds up, and what it means."><meta property="og:image" content="https://sgwoods.github.io/public/assets/steven-woods-current.png"><link rel="alternate" type="application/rss+xml" title="AI Briefing" href="../feed.xml"></head><body><header class="site"><a href="../index.html">AI Briefing</a><a class="home" href="https://sgwoods.github.io/public/index.html">Steven Woods · public projects ↗</a></header><main><p class="small muted">Running v0.2.0-beta · this page last changed 2026-10-23 · <a href="index.html">All docs</a></p><div class="doc"><h1>Architecture</h1>
+<p>AI Briefing is a daily AI briefing for early-stage investors: a written edition, a ~10-minute podcast episode with
+the day's deep dive, a static site and podcast feed, and a subscriber email. One machine runs the whole pipeline
+each morning, mostly with local models. Nothing reaches readers until a release gate has passed.</p>
+<p>This page describes the design as of <strong>v0.2 beta</strong>. Release notes: <code>CHANGELOG.md</code> and the site's
+<a href="https://sgwoods.github.io/ai-briefing/releases/index.html" rel="noopener" target="_blank">release notes</a>. Project page:
+<a href="https://sgwoods.github.io/public/ai-briefing.html" rel="noopener" target="_blank">sgwoods.github.io/public/ai-briefing.html</a>.</p>
+<p><img alt="System overview" src="img/system-overview.svg" /></p>
+<h2>Current facts</h2>
+<p><em>Generated at build time.</em></p>
+<ul>
+<li><strong>Release:</strong> v0.2.0-beta (2026-10-23)</li>
+<li><strong>Schedule:</strong> daily at 05:00, 06:30, 07:30 (local time; later times are retries)</li>
+<li><strong>Local model:</strong> qwen3:30b</li>
+<li><strong>Modules:</strong> 63 in <code>pipeline/</code></li>
+</ul>
+<h2>Contents</h2>
+<ul>
+<li>Design principles</li>
+<li>The daily run</li>
+<li>Components</li>
+<li>Grounding and fact checking</li>
+<li>Steven's takes</li>
+<li>Data and storage</li>
+<li>Privacy and security</li>
+<li>Repositories and public surfaces</li>
+<li>Releases</li>
+<li>Run queue</li>
+<li>Keeping these docs current</li>
+<li>Operations</li>
+<li>Component reference</li>
+<li>Running your own instance</li>
+</ul>
+<h2>Design principles</h2>
+<ul>
+<li><strong>Evidence over volume.</strong> Sources are weighed by how they know things (primary, reporting, analysis, opinion,
+  aggregator, social), not by how many repeat a claim. A Must read needs primary or reporting evidence.</li>
+<li><strong>Check before sending.</strong> Figures are traced to their sources and searched for before they are cut. Big claims get
+  a critical read. Thin items have their article read.</li>
+<li><strong>Local first.</strong> A local model (Ollama or LM Studio) handles most stages, Claude the critical pass and editing.
+  Audio is local Kokoro TTS. Free and local tools come before paid services.</li>
+<li><strong>Fail safe, not silent.</strong> An outbound step that can't pass the gate holds the work and tells the owner what to
+  do. It never sends half-checked output.</li>
+<li><strong>Private by construction.</strong> Personal values live in one private file, not in code. Public outputs are scanned
+  for private terms before they leave.</li>
+<li><strong>Data, never instructions.</strong> Everything fetched (posts, newsletters, replies, pages) is treated as content to
+  assess, never as commands.</li>
+</ul>
+<h2>The daily run</h2>
+<p><img alt="The daily run" src="img/daily-run.svg" /></p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>What happens</th>
+<th>Module</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fetch</td>
+<td>New items from every verified source: RSS and sitemaps, Bluesky lists, a newsletter label (read-only IMAP), shared Slack links, watchlist news search. Archived append-only.</td>
+<td><code>fetch.py</code>, <code>pages.py</code>, <code>bluesky.py</code>, <code>mailsource.py</code>, <code>slacksource.py</code>, <code>watchlist.py</code>, <code>archive.py</code></td>
+</tr>
+<tr>
+<td>filter</td>
+<td>Rules drop known noise, then a model keeps what matters to the audience.</td>
+<td><code>stages.py</code></td>
+</tr>
+<tr>
+<td>summarize / rank</td>
+<td>A summary, tags and a relevance score per item; the best are read in full.</td>
+<td><code>stages.py</code>, <code>reader.py</code></td>
+</tr>
+<tr>
+<td>cluster</td>
+<td>Items about the same thing become one story, with an evidence mix.</td>
+<td><code>editorial.py</code>, <code>profiles.py</code></td>
+</tr>
+<tr>
+<td>critique / verify</td>
+<td>Each claim gets a verdict: holds, mixed, overstated, unsupported, unverified. Every Must read gets an evidence check.</td>
+<td><code>stages.py</code>, <code>dive.py</code></td>
+</tr>
+<tr>
+<td>editorial / write</td>
+<td>Day in brief, Top of mind, Must read, Worth knowing, Open questions; citations point at the real article.</td>
+<td><code>editorial.py</code>, <code>links.py</code>, <code>questions.py</code></td>
+</tr>
+<tr>
+<td>fact check</td>
+<td>Figures traced to their source, searched before they are cut, flagged when unconfirmed; numbers cross-checked; quotes kept only if word for word.</td>
+<td><code>factcheck.py</code>, <code>factsearch.py</code>, <code>numbers.py</code></td>
+</tr>
+<tr>
+<td>first lines</td>
+<td>The day in brief, Top of mind, deep-dive summaries, "Why today" and Agenda lines checked against the checked body and the item's own source; "not disclosed" claims compared with the last 14 editions.</td>
+<td><code>consistency.py</code></td>
+</tr>
+<tr>
+<td>deep dive</td>
+<td>A second segment on the day's focal topic, from a queue the owner curates.</td>
+<td><code>deepdive.py</code></td>
+</tr>
+<tr>
+<td>takes</td>
+<td>A private email asks the owner for takes; the edition waits until the cutoff (09:15) or "done"; clean takes go into the site, email and audio.</td>
+<td><code>takes.py</code></td>
+</tr>
+<tr>
+<td>audio</td>
+<td>The script becomes speech (pronunciations, pacing), the briefing and the deep dive joined into one episode.</td>
+<td><code>audio.py</code>, <code>speech.py</code></td>
+</tr>
+<tr>
+<td>release gate</td>
+<td>Tests, a secret scan, privacy invariants, approval of security-sensitive changes.</td>
+<td><code>release.py</code></td>
+</tr>
+<tr>
+<td>publish</td>
+<td>The static site, RSS and the podcast feed, after a privacy scan; then a wait until the pages answer.</td>
+<td><code>site.py</code>, <code>publish.py</code>, <code>episodes.py</code></td>
+</tr>
+<tr>
+<td>email</td>
+<td>The edition to subscribers through an Apps Script mailer, only once the site is live.</td>
+<td><code>mailer.py</code></td>
+</tr>
+<tr>
+<td>hub status</td>
+<td>The project's status file and page on the public project hub.</td>
+<td><code>hub.py</code></td>
+</tr>
+<tr>
+<td>afterwards</td>
+<td>Source labels in the mailbox, reader feedback collected and triaged, a quality scorecard, a private backup.</td>
+<td><code>mailsource.py</code>, <code>feedback.py</code>, <code>quality.py</code>, <code>publish.py</code></td>
+</tr>
+</tbody>
+</table>
+<p>A run records every stage's status, counts and timings (<code>runlog.py</code>). A short report goes in <code>logs/last-report.md</code>.</p>
+<h2>Components</h2>
+<ul>
+<li><strong>Models</strong> (<code>llm.py</code>): one small interface over a local OpenAI-compatible server, Claude via the CLI, or Claude
+  via the API. Each stage picks its backend in config.</li>
+<li><strong>Editorial lens</strong> (<code>perspective.py</code>): a hand-written perspective file (people, topics, scepticism) steers
+  filtering and the editor's view. Code reads it and never rewrites it.</li>
+<li><strong>Tuning</strong> (<code>tuning.py</code>, <code>profiles/</code>): named presets for lengths, sections and tone, edited from the dashboard.</li>
+<li><strong>Dashboard</strong> (<code>dashboard/</code>): a local Flask app on 127.0.0.1 for sources, watchlist, tuning, takes, feedback,
+  runs, quality and control. It's never exposed to the internet.</li>
+<li><strong>Services</strong> (<code>service.py</code>): launchd agents for the daily run, the evening preflight and the dashboard.</li>
+<li><strong>Secrets</strong> (<code>vault.py</code>): macOS Keychain first, then <code>.env</code> (gitignored, mode 600).</li>
+</ul>
+<p>Smaller pieces:</p>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Modules</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sources</td>
+<td><code>sources.py</code> (resolve and verify feeds for tracked people), <code>suggest.py</code> (source suggestions), <code>xsource.py</code> (X accounts through public RSS mirrors, never the paid API), <code>xdigest.py</code> (a weekly X digest by web search for accounts no mirror reaches), <code>linkedin.py</code> (the owner's own posts from LinkedIn's export), <code>record.py</code> (the owner's public record)</td>
+</tr>
+<tr>
+<td>Owner touchpoints</td>
+<td><code>editor_note.py</code> (the owner's private evening note), <code>alerts.py</code> (an action-needed email when an edition can't go out), <code>todos.py</code> (the shared to-do list), <code>report.py</code> (the short status report in <code>logs/last-report.md</code>)</td>
+</tr>
+<tr>
+<td>Quality</td>
+<td><code>review.py</code> (the weekly review, from local files only)</td>
+</tr>
+<tr>
+<td>Settings and time</td>
+<td><code>owner.py</code> (who runs this instance), <code>settings.py</code> (edit single config values without disturbing comments), <code>schedule.py</code> (when scheduled jobs actually run, by the local clock)</td>
+</tr>
+<tr>
+<td>Public surfaces</td>
+<td><code>version.py</code> (the running version), <code>docs.py</code> (these pages on the site), <code>scrub.py</code> (scrubbing shared by the public code export and the docs)</td>
+</tr>
+<tr>
+<td>Run queue</td>
+<td><code>runner.py</code> (jobs from the chat, run on the Mac), <code>presence.py</code> (is a person here to approve)</td>
+</tr>
+<tr>
+<td>Owner's voice</td>
+<td><code>takes.py</code> (the owner's takes: private email, Slack words, privacy hold, wait, audio)</td>
+</tr>
+<tr>
+<td>Helpers</td>
+<td><code>textutil.py</code> (HTML to text, page metadata, URL ids, dates)</td>
+</tr>
+</tbody>
+</table>
+<h2>Grounding and fact checking</h2>
+<p>Every claim a reader sees must trace back to text the pipeline holds: the archived item, the article the reader
+fetched, or a page found by search. The checks run in layers: ground, judge, check every figure and quote, check
+the first lines against the body, then the privacy gate. After shipping, editions change only through visible
+corrections. Unverifiable sentences are cut and the edition still goes. Only privacy blocks. The full list, with
+the reasons behind each layer, is in <a href="fact-checking.html">Fact checking</a>.</p>
+<h2>Steven's takes</h2>
+<p>From v0.2 the owner can add his own view to the day's edition, verbatim and labelled "Steven's take"
+(<code>takes.py</code>, docs/plans/my-takes.md). Once the edition is written, a private email lists numbered slots: 0 for the
+day overall, T for Top of mind, and 1 to N for each Must-read story. He replies from his phone ("1: ..."), or
+posts in his team's Slack channel with the story's link (his own words only; nobody else's text is ever kept).
+The edition waits until the cutoff (09:15) or a "done" reply, then:</p>
+<ul>
+<li>each take is checked for private names, the owner's addresses, personal links, disclosure phrases and the
+  confidential marker; one that fails is held back and listed to him, never published;</li>
+<li>the clean takes go into one store (<code>data/commentary/&amp;lt;day&gt;.json</code>, the same store the dashboard writes), which
+  the site, the email and the mail-out read;</li>
+<li>the host reads each take verbatim after its story ("Here's Steven's take"), and only the briefing audio is
+  re-rendered; the briefing text and its fact checks don't change;</li>
+<li>raw replies, held takes and what was published are kept in the private archive.</li>
+</ul>
+<p>Takes are opinion: they sit outside the sourced claims and the fact check, and no model rewrites them. A crash or
+mailbox failure never blocks the edition; it ships without takes. Later retries see a run that is still waiting
+and leave it alone.</p>
+<h2>Data and storage</h2>
+<ul>
+<li><strong>Archive:</strong> append-only files under <code>data/</code> (items, analyses, stories, runs). Nothing deletes or rewrites history.</li>
+<li><strong>Editions:</strong> <code>briefings/&amp;lt;day&gt;.md</code>, the audio and the deep dives. The site is rebuilt from these each publish.</li>
+<li><strong>Editorial inputs:</strong> the perspective, source lists, newsletter rules, watchlist, source profiles and
+  pronunciations. They're hand-edited or edited from the dashboard.</li>
+<li><strong>People:</strong> subscribers live in a Google Sheet behind the mailer. Feedback is stored with a hashed sender id and a
+  first name only.</li>
+<li><strong>State:</strong> seen-message lists, release approvals, alerts. Everything private is committed to a private repository
+  and backed up after each run.</li>
+</ul>
+<h2>Privacy and security</h2>
+<ul>
+<li><strong>Release gate</strong> (<code>release.py</code>): every outbound action (site, email, Gmail label writes, backups, hub, public code)
+  calls <code>require()</code>. It re-runs the tests, the secret scan and the invariants when code changes, and needs the
+  owner's approval of security-sensitive files. Invariants include:</li>
+<li>mailbox access only through a least-privilege guard;</li>
+<li>no private author notes in any prompt;</li>
+<li>outbound URLs from content checked against an allowlist (<code>netguard.py</code>);</li>
+<li>every outbound function behind the gate.</li>
+<li><strong>Mailbox</strong> (<code>mailguard.py</code>): one IMAP wrapper. Each purpose may open only its own labels, read-only except for
+  adding labels.</li>
+<li><strong>Scans:</strong> the site, every email and every public export are scanned for private names, the owner's addresses,
+  private links and trackers before they leave.</li>
+<li><strong>Owner details:</strong> names, addresses, organization and bio live in <code>owner.yaml</code>, which is never public. Code
+  defaults are neutral placeholders.</li>
+<li><strong>Staging</strong> (<code>env.py</code>): a development checkout can't reach readers. The gate refuses every outbound action there,
+  and the mailer only sends review copies to the owner, marked [STAGING].</li>
+</ul>
+<h2>Repositories and public surfaces</h2>
+<p><img alt="Repositories and privacy boundaries" src="img/repos-and-boundaries.svg" /></p>
+<table>
+<thead>
+<tr>
+<th>Repository</th>
+<th>Contents</th>
+<th>Written by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>private working repo</td>
+<td>code, archive, state, editorial inputs</td>
+<td>the daily run and the owner; backed up after each run</td>
+</tr>
+<tr>
+<td><a href="https://github.com/sgwoods/news-pipeline" rel="noopener" target="_blank">sgwoods/news-pipeline</a></td>
+<td>this code, tagged releases, example configs</td>
+<td><code>./np push-code</code>: allowlisted export, PRIVATE blocks removed, placeholders, scan, tests, owner's approval</td>
+</tr>
+<tr>
+<td>sgwoods/ai-briefing</td>
+<td>the public site, RSS and podcast feed, release notes</td>
+<td><code>publish</code>, after the gate and the site scan</td>
+</tr>
+<tr>
+<td><a href="https://github.com/sgwoods/public" rel="noopener" target="_blank">sgwoods/public</a></td>
+<td>the project hub's status file and page for AI Briefing</td>
+<td><code>./np hub push</code>: two files only, and only for the released public code</td>
+</tr>
+</tbody>
+</table>
+<h2>Shipped editions don't break</h2>
+<p>Once a day's email has gone out, that day is shipped (<code>shipped.py</code>). Every production publish is checked against
+what readers already have. Shipped pages and deep dives must still be there, a shipped edition's text changes
+only through a visible correction, shipped audio inside the retention window keeps its URL (a remaster adds a
+file and keeps the old one), and the feeds can't shrink. After the push, the newest shipped pages, both feeds and
+the latest MP3 must answer, or the previous site is put back and the email waits. A failed publish never sends
+the email.</p>
+<h2>Releases</h2>
+<p><img alt="Release flow" src="img/release-flow.svg" /></p>
+<p>Production runs a tagged release (<code>VERSION</code>, <code>CHANGELOG.md</code>). Changes are built on a development branch whose
+checkout is in staging mode. They're verified with a full staging run compared against production, tagged as a
+release candidate, reviewed, and promoted in a safe window with a single approval. The next morning's run is the
+canary, and a rollback returns to the previous, already-approved release. Editorial content (sources, watchlist,
+perspective, takes) isn't code and is edited in production at any time.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Where</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>./np dev setup</code></td>
+<td>production</td>
+<td>creates the development checkout (branch <code>dev</code>, staging)</td>
+</tr>
+<tr>
+<td><code>./np staging sync</code></td>
+<td>dev</td>
+<td>brings in production's latest data and fixes</td>
+</tr>
+<tr>
+<td><code>./np staging run [DAY]</code></td>
+<td>dev</td>
+<td>rebuilds an edition with the dev code; outbound off, review email to the owner only</td>
+</tr>
+<tr>
+<td><code>./np staging compare [DAY]</code></td>
+<td>dev</td>
+<td>staging vs production for the same day; flags what needs review</td>
+</tr>
+<tr>
+<td><code>./np staging publish</code></td>
+<td>dev</td>
+<td>the development preview at sgwoods.github.io/ai-briefing-staging/ (banner, noindex)</td>
+</tr>
+<tr>
+<td><code>./np release VERSION "reviewed: ..."</code></td>
+<td>production</td>
+<td>merges dev with one approval, then tags it and updates the public code, backup and hub</td>
+</tr>
+<tr>
+<td><code>./np rollback "reviewed: ..."</code></td>
+<td>production</td>
+<td>returns the code to the previous release</td>
+</tr>
+<tr>
+<td><code>./np runner status</code></td>
+<td>production</td>
+<td>the run queue: what's queued, waiting for Approve, and done</td>
+</tr>
+</tbody>
+</table>
+<p>Modules: <code>env.py</code> (production or staging), <code>devenv.py</code> (the development checkout), <code>compare.py</code> (staging vs production), <code>releaser.py</code> (release and
+rollback), <code>release.py</code> (the gate).</p>
+<h2>Run queue</h2>
+<p><img alt="Run queue" src="img/run-queue.svg" /></p>
+<p>From v0.1.12 the owner can run releases and fixes from the Claude chat instead of a terminal (<code>runner.py</code>,
+docs/plans/run-queue.md). Claude writes a job file naming a recipe and its arguments. A launchd agent on the Mac
+runs only allowlisted recipes, with validated arguments, as argument lists rather than shell text. There are
+three tiers:</p>
+<table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Recipes</th>
+<th>Runs when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>auto</td>
+<td><code>tests</code>, <code>sync</code>, <code>preview</code>, <code>compare</code>, <code>doctor</code>, <code>gate</code>, <code>verify</code></td>
+<td>at once</td>
+</tr>
+<tr>
+<td>chat</td>
+<td><code>correct</code>, <code>publish</code>, <code>restore</code>, <code>takes-done</code></td>
+<td>the job quotes the owner's yes from the chat</td>
+</tr>
+<tr>
+<td>mac</td>
+<td><code>ship</code>, <code>release</code>, <code>rollback</code>, <code>approve</code>, <code>install-hooks</code>, the public code push</td>
+<td>the owner clicks Approve in a dialog on the Mac, or runs <code>./np runner approve ID</code> in Terminal</td>
+</tr>
+</tbody>
+</table>
+<p>The click grants presence in memory for that job's approved steps only (<code>presence.py</code>). No file or setting can
+stand in for it. Jobs that change production wait out the morning run. Unanswered approvals lapse at 20:00. The
+runner refuses to work if production code differs from the release. Release invariant 10 checks the recipes and
+the runner's code. Results go to <code>data/queue/done/</code> and <code>logs/runner-&amp;lt;id&gt;.txt</code>. <code>./np runner status</code> lists the
+queue.</p>
+<h2>Keeping these docs current</h2>
+<ul>
+<li><strong>On every release (it blocks):</strong> the drift tests in the release gate check that this page names the running
+  version, that every module it names exists, that every public module is described in a hand-written doc, and
+  that every diagram is used. Generated sections (current facts, component reference) are rebuilt at each
+  publish, and the site's docs are rebuilt with them.</li>
+<li><strong>At the decision:</strong> the release approval dialog and the release output list the modules that changed while no
+  doc describing them did ("docs to review"). The list is saved to <code>data/state/docs-impact.json</code>.</li>
+<li><strong>Afterwards (automatic):</strong> a weekly docs refresh reads that list and the week's changes, updates the docs and
+  diagrams on the development branch, and leaves them for the next release. Docs changes ship through releases
+  like code.</li>
+</ul>
+<h2>Operations</h2>
+<ul>
+<li><strong>Schedule:</strong> early morning with two retries. A retry skips work already done. When takes are on, the
+  edition is built early and held until the cutoff (09:15) or the owner's "done". An evening preflight checks
+  that tomorrow's release is approved.</li>
+<li><strong>When something needs the owner:</strong> an action-needed email states the issue and the fix. Approving re-sends
+  what was held back.</li>
+<li><strong>Outside view:</strong> a cloud watchdog checks the public site after the send window, and the project hub compares
+  the exported release with the public code.</li>
+<li><strong>Commands:</strong> <code>./np help</code>. Every command saves its full output under <code>logs/</code>.</li>
+</ul>
+<h2>Component reference</h2>
+<p><em>Generated from each module's own description at build time.</em></p>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>alerts.py</code></td>
+<td>Action-needed email to Steven when the daily edition can't go out (Steven, 2026-10-19</td>
+</tr>
+<tr>
+<td><code>archive.py</code></td>
+<td>Append-only archive on plain files.</td>
+</tr>
+<tr>
+<td><code>audio.py</code></td>
+<td>Phase 2</td>
+</tr>
+<tr>
+<td><code>bluesky.py</code></td>
+<td>Bluesky lists and Steven's own posts as sources, via the public AT Protocol API (no key, no login).</td>
+</tr>
+<tr>
+<td><code>compare.py</code></td>
+<td>Staging against production for the same day</td>
+</tr>
+<tr>
+<td><code>consistency.py</code></td>
+<td>Short texts readers see first must agree with the checked text and the sources (2026-10-23).</td>
+</tr>
+<tr>
+<td><code>deepdive.py</code></td>
+<td>Topical deep dive</td>
+</tr>
+<tr>
+<td><code>devenv.py</code></td>
+<td>The development checkout</td>
+</tr>
+<tr>
+<td><code>dive.py</code></td>
+<td>Deep dive on one story</td>
+</tr>
+<tr>
+<td><code>docs.py</code></td>
+<td>Public documentation on the site</td>
+</tr>
+<tr>
+<td><code>editor_note.py</code></td>
+<td>Steven's private evening note</td>
+</tr>
+<tr>
+<td><code>editorial.py</code></td>
+<td>Briefing v2</td>
+</tr>
+<tr>
+<td><code>env.py</code></td>
+<td>Production or staging.</td>
+</tr>
+<tr>
+<td><code>episodes.py</code></td>
+<td>Which days are published</td>
+</tr>
+<tr>
+<td><code>factcheck.py</code></td>
+<td>Claim-to-source trace for the written edition (fact review 2026-10-18, P1-1).</td>
+</tr>
+<tr>
+<td><code>factsearch.py</code></td>
+<td>Look for a figure before the fact check cuts it (Steven, 2026-10-18</td>
+</tr>
+<tr>
+<td><code>feedback.py</code></td>
+<td>Reader feedback</td>
+</tr>
+<tr>
+<td><code>fetch.py</code></td>
+<td>Fetch new items from every verified source.</td>
+</tr>
+<tr>
+<td><code>hub.py</code></td>
+<td>AI Briefing on Steven's public project hub (sgwoods.github.io/public)</td>
+</tr>
+<tr>
+<td><code>linkedin.py</code></td>
+<td>Steven's own LinkedIn posts, from LinkedIn's data export (and from Slack, when he shares one there).</td>
+</tr>
+<tr>
+<td><code>links.py</code></td>
+<td>Make every citation point at the real article (runs in the write stage; never fails the briefing).</td>
+</tr>
+<tr>
+<td><code>llm.py</code></td>
+<td>LLM backends behind one tiny interface</td>
+</tr>
+<tr>
+<td><code>mailer.py</code></td>
+<td>Daily email to subscribers, sent through Steven's Google Apps Script (scripts/apps-script/Code.gs).</td>
+</tr>
+<tr>
+<td><code>mailguard.py</code></td>
+<td>The only way the pipeline talks to Gmail</td>
+</tr>
+<tr>
+<td><code>mailsource.py</code></td>
+<td>Newsletters as a source</td>
+</tr>
+<tr>
+<td><code>netguard.py</code></td>
+<td>Requests to URLs that came from content (links in posts, newsletters, model output) may only reach the public internet</td>
+</tr>
+<tr>
+<td><code>numbers.py</code></td>
+<td>Number check for one edition</td>
+</tr>
+<tr>
+<td><code>owner.py</code></td>
+<td>Who runs this instance</td>
+</tr>
+<tr>
+<td><code>pages.py</code></td>
+<td>Sources without RSS</td>
+</tr>
+<tr>
+<td><code>perspective.py</code></td>
+<td>Read-only parser for perspective.md.</td>
+</tr>
+<tr>
+<td><code>presence.py</code></td>
+<td>Is a person here to approve? A terminal, or the run queue's approval dialog clicked on this Mac.</td>
+</tr>
+<tr>
+<td><code>profiles.py</code></td>
+<td>Source profiles (source_profiles.yaml)</td>
+</tr>
+<tr>
+<td><code>publish.py</code></td>
+<td>Push the static site (site/) to a separate public GitHub repo served by GitHub Pages.</td>
+</tr>
+<tr>
+<td><code>quality.py</code></td>
+<td>Daily quality scorecard</td>
+</tr>
+<tr>
+<td><code>questions.py</code></td>
+<td>Open questions from the briefings (editorial.open_questions), with a status you keep on the Questions page.</td>
+</tr>
+<tr>
+<td><code>reader.py</code></td>
+<td>Read the article behind a thin item before its evidence check.</td>
+</tr>
+<tr>
+<td><code>record.py</code></td>
+<td>Public record</td>
+</tr>
+<tr>
+<td><code>release.py</code></td>
+<td>Release gate</td>
+</tr>
+<tr>
+<td><code>releaser.py</code></td>
+<td>Promote a release from dev to production, or roll production back (docs/plans/release-process.md).</td>
+</tr>
+<tr>
+<td><code>report.py</code></td>
+<td>Compact, paste-friendly status report → logs/last-report.md.</td>
+</tr>
+<tr>
+<td><code>review.py</code></td>
+<td>Weekly quality review, run on the Mac from local files only (no web, no tools, no mailbox).</td>
+</tr>
+<tr>
+<td><code>runlog.py</code></td>
+<td>Records every run</td>
+</tr>
+<tr>
+<td><code>runner.py</code></td>
+<td>Run queue</td>
+</tr>
+<tr>
+<td><code>schedule.py</code></td>
+<td>When the scheduled jobs actually run</td>
+</tr>
+<tr>
+<td><code>scrub.py</code></td>
+<td>Scrubbing shared by the public code export and the public docs</td>
+</tr>
+<tr>
+<td><code>service.py</code></td>
+<td>Background services on macOS (launchd user agents) + health of what the pipeline depends on.</td>
+</tr>
+<tr>
+<td><code>settings.py</code></td>
+<td>Change single values in config.yaml without disturbing comments or layout.</td>
+</tr>
+<tr>
+<td><code>shipped.py</code></td>
+<td>Shipped editions don't break (v0.1.7).</td>
+</tr>
+<tr>
+<td><code>site.py</code></td>
+<td>Static, phone-friendly public site</td>
+</tr>
+<tr>
+<td><code>slacksource.py</code></td>
+<td>Links Steven shares in an internal Slack channel, as a source (read-only, Slack Web API, free).</td>
+</tr>
+<tr>
+<td><code>sources.py</code></td>
+<td>Resolve and verify RSS/Atom feeds for every tracked person.</td>
+</tr>
+<tr>
+<td><code>speech.py</code></td>
+<td>The speech layer</td>
+</tr>
+<tr>
+<td><code>stages.py</code></td>
+<td>LLM stages</td>
+</tr>
+<tr>
+<td><code>suggest.py</code></td>
+<td>Source suggestions</td>
+</tr>
+<tr>
+<td><code>takes.py</code></td>
+<td>Steven's takes</td>
+</tr>
+<tr>
+<td><code>textutil.py</code></td>
+<td>HTML → text, page metadata, URL ids, and date parsing.</td>
+</tr>
+<tr>
+<td><code>todos.py</code></td>
+<td>A shared to-do list for Steven and Claude</td>
+</tr>
+<tr>
+<td><code>tuning.py</code></td>
+<td>Tuning profiles</td>
+</tr>
+<tr>
+<td><code>vault.py</code></td>
+<td>Secrets</td>
+</tr>
+<tr>
+<td><code>version.py</code></td>
+<td>The running version</td>
+</tr>
+<tr>
+<td><code>watchlist.py</code></td>
+<td>Company watchlist</td>
+</tr>
+<tr>
+<td><code>xdigest.py</code></td>
+<td>Weekly X digest by Claude web search, for the accounts in x.yaml no mirror can reach.</td>
+</tr>
+<tr>
+<td><code>xsource.py</code></td>
+<td>X / Twitter accounts via Nitter-style mirrors (public RSS), never via X's paid API.</td>
+</tr>
+</tbody>
+</table>
+<h2>Running your own instance</h2>
+<p>See the README: copy <code>owner.example.yaml</code> and <code>source_profiles.example.yaml</code>, write your own <code>config.yaml</code>,
+<code>sources.yaml</code> and <code>perspective.md</code>, then run <code>./np tests</code> and <code>./np run</code>.</p></div></main><script src="../share.js"></script><footer>Daily AI briefing for early-stage investors, curated by Steven Woods. Analysis is machine-generated from public sources (every claim links to its source); "Steven's take" is personal opinion. <a href="../index.html#email">Subscribe by email</a> · <a href="../index.html#listen">Add the podcast</a> · <a href="../feed.xml">RSS</a> · <a href="../podcast.xml">Podcast feed</a><br><span class="small"><a href="../releases/index.html">v0.2 beta</a> · <a href="../docs/index.html">Docs</a> · <a href="https://github.com/sgwoods/news-pipeline">Code</a> · <a href="https://sgwoods.github.io/public/index.html">Steven Woods · public projects</a></span></footer></body></html>
