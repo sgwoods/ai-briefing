@@ -1,0 +1,266 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Briefing · The critic</title><link rel="stylesheet" href="../style.css"><meta name="description" content="Slowly, then fast. Every morning. A daily briefing on AI for early-stage investors: what happened, what holds up, and what it means."><meta property="og:title" content="AI Briefing · The critic"><meta property="og:description" content="Slowly, then fast. Every morning. A daily briefing on AI for early-stage investors: what happened, what holds up, and what it means."><meta property="og:image" content="https://sgwoods.github.io/public/assets/steven-woods-current.png"><link rel="alternate" type="application/rss+xml" title="AI Briefing" href="../feed.xml"></head><body><header class="site"><a href="../index.html">AI Briefing</a><a class="home" href="https://sgwoods.github.io/public/index.html">Steven Woods · public projects ↗</a></header><main><p class="small muted">Running v0.2.42-beta · this page last changed 2026-10-25 · <a href="index.html">All docs</a></p><div class="doc"><h1>The critic: how the briefing is rated, every week</h1>
+<p>Every Saturday morning the briefing is scored against the latest episode or issue of ten of the most popular tech
+and AI shows, with one fixed rubric. The aim is practical: find the few changes that would most improve the
+briefing for its readers and listeners, decide each week which to make, and see whether they worked.</p>
+<h2>The rubric</h2>
+<p>Ten characteristics, each scored 1-10 (1-3 poor, 4-6 adequate, 7-8 strong, 9-10 best in class). The overall score
+is the weighted sum divided by 10, out of 100. The weights are for a <strong>daily AI briefing for investors</strong>, set from
+what audiences consistently praise and criticise in reviews, rankings and press coverage of these shows:
+signal-to-noise first, then accuracy and depth; brevity and a fixed structure for a daily; conviction that is fair
+to the other side; voice as the moat; polish counts but comes second.</p>
+<table>
+<thead>
+<tr>
+<th>Characteristic</th>
+<th>Weight</th>
+<th>What is measured</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content selection</td>
+<td>18</td>
+<td>Signal-to-noise: the right stories, no filler</td>
+</tr>
+<tr>
+<td>Accuracy &amp; sourcing</td>
+<td>15</td>
+<td>Traceable claims, links to primary sources, no contradictions within an edition</td>
+</tr>
+<tr>
+<td>Depth &amp; insight</td>
+<td>14</td>
+<td>The "so what" for capital and markets</td>
+</tr>
+<tr>
+<td>Timeliness &amp; cadence</td>
+<td>10</td>
+<td>Fresh and dependable enough to become a habit</td>
+</tr>
+<tr>
+<td>Structure &amp; pacing</td>
+<td>10</td>
+<td>A predictable order, and a length that fits the format</td>
+</tr>
+<tr>
+<td>Opinion / point of view</td>
+<td>9</td>
+<td>Conviction that is fair to the other side</td>
+</tr>
+<tr>
+<td>Distinctiveness &amp; fit</td>
+<td>7</td>
+<td>Hard to get elsewhere; built for this audience</td>
+</tr>
+<tr>
+<td>Writing / script</td>
+<td>6</td>
+<td>Clarity; written for the ear in the podcast</td>
+</tr>
+<tr>
+<td>Tone &amp; voice</td>
+<td>5</td>
+<td>Personality, chemistry, register</td>
+</tr>
+<tr>
+<td>Production</td>
+<td>6</td>
+<td>Audio fidelity, music, cold open, interludes, transitions, editing; design for a newsletter</td>
+</tr>
+</tbody>
+</table>
+<p>Production problems a listener notices cap the score, whatever the other characteristics.</p>
+<h2>The benchmark shows</h2>
+<p>Chosen in October 2026 for popularity (chart positions, subscriber and audience figures, rankings) and for
+relevance to a daily AI briefing for investors: Dwarkesh Podcast, Stratechery, The AI Daily Brief, Machine Gods
+(NPR), Latent Space, The Neuron, Acquired, All-In, TLDR AI and the Lex Fridman Podcast. Two changes from the first
+list: Machine Gods replaced Hard Fork when its hosts moved there, and TLDR AI (about 1.15M subscribers) replaced
+The Batch, which publishes no audience figures; The Batch was kept as a bonus benchmark in the first run.</p>
+<p>Long interview and history shows (Acquired, Lex Fridman, All-In) score low on fit and length for an investor
+daily. That reflects the use case, not their quality.</p>
+<h2>How a weekly run works</h2>
+<ol>
+<li><strong>The ten shows.</strong> Each show's latest episode or issue is scored. Nobody listens to the audio: scores come from
+   transcripts, show notes, chapter lists, reviews, press coverage and production credits, and each score carries
+   a confidence note. Newsletters are scored on the issue itself.</li>
+<li><strong>The briefing.</strong> An independent critic reviews the past seven editions: the written edition, the podcast
+   script, the deep dive, the run statistics, takes and corrections. The written edition and the podcast are
+   scored separately where they differ (structure, writing, tone, production), then combined. Measurements are
+   included: word counts, durations, sections and their order, how often a story repeats across days.</li>
+<li><strong>The feedback.</strong> Five strengths to keep, and ten suggestions ranked by expected effect on the score. Each
+   suggestion carries evidence (a quote or a measurement) and two to five concrete options, with one recommended,
+   plus a first batch with the most impact for the effort. Free, local fixes come first.</li>
+<li><strong>The decision.</strong> The owner receives a private email (below) and chooses what to build that week. Changes go
+   through the normal release process, and the next week's run checks whether they moved the scores.</li>
+</ol>
+<h2>Outputs</h2>
+<ul>
+<li><strong>The weekly email</strong> (owner only, <code>pipeline/critic.py</code>): our score and rank; the top five suggestions with the
+  recommended option; a bar chart of our score against the field average and the best show for each
+  characteristic, marking where we are below the field; the overall ranking; our trend week by week; what shipped
+  that week; strengths to keep. The charts are plain HTML, so they render in any mail client.</li>
+<li><strong>The record:</strong> <code>data/critic/&amp;lt;date&gt;.json</code> (scores, suggestions, options) and <code>data/critic/&amp;lt;date&gt;.md</code> (the full
+  narrative report), kept in the private archive. The trend is read from these files.</li>
+<li><strong>Commands:</strong> <code>./np critic preview | email | list</code>, and the run-queue job <code>critic-email</code>.</li>
+</ul>
+<h2>Limits</h2>
+<ul>
+<li>Scores are informed judgements by a model, not measurements. Different reviewers score different shows, so
+  differences of about 3 points are noise; the trend over several weeks matters more than one week.</li>
+<li>Audio can't be heard, so production scores rest on documented evidence and carry lower confidence.</li>
+<li>Only the latest episode or issue of each show is scored, so an unusual week moves its score.</li>
+<li>The rubric is weighted for this briefing's use. It is not a general ranking of the shows.</li>
+</ul>
+<h2>Latest results</h2>
+<p><em>Generated at build time from the critic run of 2026-10-24.</em></p>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Show</th>
+<th>Score</th>
+<th>Rated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Dwarkesh Podcast</td>
+<td>81.4</td>
+<td>What will computer chips look like in 2045? (2026-10-22)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Stratechery</td>
+<td>76.0</td>
+<td>Do You Trust Apple? (2026-10-19)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>The AI Daily Brief</td>
+<td>74.8</td>
+<td>The Most Concerning AI Bubble Signals (2026-10-23)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Machine Gods (NPR)</td>
+<td>72.3</td>
+<td>Fired OpenAI Safety Researchers Speak Out + We Look Inside P (2026-10-23)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Latent Space</td>
+<td>71.2</td>
+<td>Why AI Compute Comes in Rectangles (Modal) (2026-10-22)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>The Neuron</td>
+<td>66.6</td>
+<td>Microsoft AI scored 83% where doctors got 36% (2026-10-23)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Acquired</td>
+<td>64.9</td>
+<td>Seinfeld (2026-10-18)</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>AI Briefing (us)</strong></td>
+<td><strong>62.2</strong></td>
+<td>the week's editions (2026-10-24)</td>
+</tr>
+<tr>
+<td>9</td>
+<td>All-In</td>
+<td>61.6</td>
+<td>AI Cyber Panic, Ken Griffin's Bubble Warning, The Fall of Fr (2026-10-23)</td>
+</tr>
+<tr>
+<td>10</td>
+<td>TLDR AI</td>
+<td>61.5</td>
+<td>TLDR AI 2026-10-23 (2026-10-23)</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Lex Fridman Podcast</td>
+<td>41.1</td>
+<td>#502 Andrew Scull: Psychiatry, Insane Asylums... (2026-09-17)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Characteristic (weight)</th>
+<th>Us</th>
+<th>Field average</th>
+<th>Best</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content selection (18)</td>
+<td>6</td>
+<td>6.4</td>
+<td>8 (Latent Space)</td>
+</tr>
+<tr>
+<td>Accuracy &amp; sourcing (15)</td>
+<td>6</td>
+<td>7.1</td>
+<td>9 (Dwarkesh Podcast)</td>
+</tr>
+<tr>
+<td>Depth &amp; insight (14)</td>
+<td>7</td>
+<td>6.6</td>
+<td>9 (The AI Daily Brief)</td>
+</tr>
+<tr>
+<td>Timeliness &amp; cadence (10)</td>
+<td>7</td>
+<td>6.4</td>
+<td>9 (TLDR AI)</td>
+</tr>
+<tr>
+<td>Structure &amp; pacing (10)</td>
+<td>6</td>
+<td>6.2</td>
+<td>9 (TLDR AI)</td>
+</tr>
+<tr>
+<td>Opinion / point of view (9)</td>
+<td>6</td>
+<td>6.5</td>
+<td>10 (Stratechery)</td>
+</tr>
+<tr>
+<td>Distinctiveness &amp; fit (7)</td>
+<td>7</td>
+<td>6.9</td>
+<td>9 (Stratechery)</td>
+</tr>
+<tr>
+<td>Writing / script (6)</td>
+<td>6</td>
+<td>7.4</td>
+<td>9 (Dwarkesh Podcast)</td>
+</tr>
+<tr>
+<td>Tone &amp; voice (5)</td>
+<td>6</td>
+<td>7.5</td>
+<td>9 (Stratechery)</td>
+</tr>
+<tr>
+<td>Production (6)</td>
+<td>4.5</td>
+<td>7.1</td>
+<td>9 (Dwarkesh Podcast)</td>
+</tr>
+</tbody>
+</table>
+<p>Our trend starts with the second weekly run.</p></div></main><script src="../share.js"></script><footer>Daily AI briefing for early-stage investors, curated by Steven Woods. Analysis is machine-generated from public sources (every claim links to its source); "Steven's take" is personal opinion. <a href="../index.html#email">Subscribe by email</a> · <a href="../index.html#listen">Add the podcast</a> · <a href="../feed.xml">RSS</a> · <a href="../podcast.xml">Podcast feed</a> · <a href="../deepdive.xml">Deep-dive feed</a><br><span class="small"><a href="../releases/index.html">v0.2 beta</a> · <a href="../docs/index.html">Docs</a> · <a href="../calls/index.html">Calls we made</a> · <a href="../accuracy/index.html">Accuracy</a> · <a href="https://github.com/sgwoods/news-pipeline">Code</a> · <a href="https://sgwoods.github.io/public/index.html">Steven Woods · public projects</a></span></footer></body></html>
