@@ -1,0 +1,57 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Briefing · Source profiles</title><link rel="stylesheet" href="../style.css"><meta name="description" content="Slowly, then fast. Every morning. A daily briefing on AI for early-stage investors: what happened, what holds up, and what it means."><meta property="og:title" content="AI Briefing · Source profiles"><meta property="og:description" content="Slowly, then fast. Every morning. A daily briefing on AI for early-stage investors: what happened, what holds up, and what it means."><meta property="og:image" content="https://sgwoods.github.io/public/assets/steven-woods-current.png"><link rel="alternate" type="application/rss+xml" title="AI Briefing" href="../feed.xml"></head><body><header class="site"><a href="../index.html">AI Briefing</a><a class="home" href="https://sgwoods.github.io/public/index.html">Steven Woods · public projects ↗</a></header><main><p class="small muted">Running v0.2.42-beta · this page last changed 2026-10-15 · <a href="index.html">All docs</a></p><div class="doc"><h1>Source profiles: weighing evidence, not headcount</h1>
+<p><code>source_profiles.yaml</code> says what kind of evidence each source is. Claude drafted it; you correct it. Code
+reads it and never rewrites it. <code>./np profiles</code> lists sites and sources seen recently that have no profile.</p>
+<table>
+<thead>
+<tr>
+<th>kind</th>
+<th>what it is</th>
+<th>can it establish a fact?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>primary</td>
+<td>the company, lab, paper, filing, court or government itself</td>
+<td>yes, but self-reported when it is about itself</td>
+</tr>
+<tr>
+<td>reporting</td>
+<td>a newsroom with editors and corrections</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>analysis</td>
+<td>an expert showing evidence (tests, data, documents)</td>
+<td>it can test a claim</td>
+</tr>
+<tr>
+<td>opinion</td>
+<td>argument or advocacy</td>
+<td>no</td>
+</tr>
+<tr>
+<td>aggregator</td>
+<td>newsletters and link sites summarising others</td>
+<td>no</td>
+</tr>
+<tr>
+<td>social</td>
+<td>an individual's post</td>
+<td>no (the article it links is judged on its own)</td>
+</tr>
+</tbody>
+</table>
+<p>Also per source: standards (cites-and-corrects, cites, mixed, none), stance (neutral, AGI-forward,
+AI-realist, market, policy, safety) and interests (investor in, employer, sponsor).</p>
+<p>What changes:
+- Byline: "primary source + 1 report + 3 commentaries" instead of "5 sources". Copies of one report count once.
+- Must read needs a primary source, a report or a hands-on test (a source that ran it first-hand: tests: true). A story carried only by commentary goes to Worth knowing.
+  (Stories whose sources have no profile at all are not blocked; add profiles with ./np profiles.)
+- Every analysis and critique prompt sees each item's evidence type; the critique holds AGI-forward and
+  AI-realist claims to the same standard and says when a primary source is self-reported.
+- The editorial prompt weighs by evidence: a lopsided story is called as such (no "both sides" for its own
+  sake), other views appear only where the facts allow more than one reading, and an advocate's interest is
+  named ("a16z, which invests in this market, argues…").
+- The run report shows the balance of each edition: Must reads grounded, primary/report/commentary counts and
+  the stance mix. The point is to spot an echo chamber, not to force a 50/50 split.</p></div></main><script src="../share.js"></script><footer>Daily AI briefing for early-stage investors, curated by Steven Woods. Analysis is machine-generated from public sources (every claim links to its source); "Steven's take" is personal opinion. <a href="../index.html#email">Subscribe by email</a> · <a href="../index.html#listen">Add the podcast</a> · <a href="../feed.xml">RSS</a> · <a href="../podcast.xml">Podcast feed</a> · <a href="../deepdive.xml">Deep-dive feed</a><br><span class="small"><a href="../releases/index.html">v0.2 beta</a> · <a href="../docs/index.html">Docs</a> · <a href="../calls/index.html">Calls we made</a> · <a href="../accuracy/index.html">Accuracy</a> · <a href="https://github.com/sgwoods/news-pipeline">Code</a> · <a href="https://sgwoods.github.io/public/index.html">Steven Woods · public projects</a></span></footer></body></html>

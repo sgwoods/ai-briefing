@@ -1,0 +1,72 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Briefing · Deep dives</title><link rel="stylesheet" href="../style.css"><meta name="description" content="Slowly, then fast. Every morning. A daily briefing on AI for early-stage investors: what happened, what holds up, and what it means."><meta property="og:title" content="AI Briefing · Deep dives"><meta property="og:description" content="Slowly, then fast. Every morning. A daily briefing on AI for early-stage investors: what happened, what holds up, and what it means."><meta property="og:image" content="https://sgwoods.github.io/public/assets/steven-woods-current.png"><link rel="alternate" type="application/rss+xml" title="AI Briefing" href="../feed.xml"></head><body><header class="site"><a href="../index.html">AI Briefing</a><a class="home" href="https://sgwoods.github.io/public/index.html">Steven Woods · public projects ↗</a></header><main><p class="small muted">Running v0.2.42-beta · this page last changed 2026-10-31 · <a href="index.html">All docs</a></p><div class="doc"><h1>Topical deep dives</h1>
+<p>A separate episode of about ten minutes (<code>deepdive.minutes</code> 10, up to <code>max_minutes</code> 13 when an important story needs
+the context), also published as a readable article on its own page (site: <code>&amp;lt;day&gt;/deep-dive/</code>, and the front page's
+Deep dives section), after the daily briefing, on the day's focal point: a
+breakthrough and its controversy, a concept suddenly everywhere (the "third scaling law": scaling compute
+at inference time), a change in the trajectory of the field, or a story that has matured over several days.</p>
+<ul>
+<li><strong>Who decides:</strong> Claude picks the topic from today's briefing, the past week and recent deep dives, and may
+  say there is none today. One a day (<code>deepdive.max_per_week</code> 7, since 2026-10-19), no repeat within 21 days unless something
+  material is new. <code>./np deepdive --topic "..."</code> sets the topic yourself.</li>
+<li><strong>How it is written:</strong> an explainer for the ear, in six parts: why today → the idea plainly → what is
+  established vs claimed → how the AGI-forward / AI-realist / market / policy readings differ (only where the
+  facts allow) → our read and one diligence question → what would settle it. Claude may search the web for
+  the paper, the lab's post and the strongest critique.</li>
+<li><strong>Checks before it airs:</strong> every source link is opened (dead ones dropped; fewer than 2 live → no episode);
+  quotation marks survive only around words found in the archived or fetched text; sentences with a $ or %
+  figure found in no source are cut; private names are removed; markup or banned words fail the episode.
+  The summary and "Why today" lines are then checked against the finished body (<code>pipeline/consistency.py</code>, since
+  v0.1.9): a sentence whose figure, company or "not disclosed" claim the body doesn't support is dropped. Since
+  v0.2.33 the script's factual sentences are also checked against the dive's sources, turn by turn, before it is
+  recorded, and rewritten or left for Steven in the draft Doc (<code>./np audit deepdive DAY</code> is a dry run). See
+  docs/FACT-CHECKING.md (4e).</li>
+<li><strong>No story twice (v0.2.5):</strong> when the deep dive covers one of the day's Must reads, the briefing keeps that story
+  to a sentence and a pointer to the deep dive, in the written edition, the email and the podcast.</li>
+<li><strong>In the podcast (2026-10-19):</strong> the deep dive follows the briefing in the same episode. The briefing host
+  ("I'm Michael" in the first line) closes by promoting today's deep dive and where to find it (the web page, with
+  the written edition and every past episode), hands off to Bella, and the deep dive's sign-off closes the episode.
+  The feed carries one file per day (<code>briefings/&amp;lt;day&gt;.podcast.mp3</code>, "… · with deep dive: &lt;title&gt;"); the web page
+  keeps separate players for the briefing and the deep dive. If the briefing audio was made without the hand-off
+  (a deep dive made later by hand), the deep dive stays a separate bonus episode.</li>
+<li><strong>Where it goes:</strong> briefings/deepdives/&lt;day&gt;.md (show notes + sources), .script.md, .mp3. The podcast feed
+  lists it as a bonus episode "Deep dive: &lt;title&gt;" right after that day's briefing; the day's page links to it.</li>
+<li><strong>The weekly flagship (v0.2.18):</strong> Saturday's deep dive is a two-voice episode of about 22 minutes on the
+  week's topic most worth understanding (the first topic in Up next, drawing on the whole week's Must reads). Bella
+  hosts; Michael is the sceptic, whose job is to push back on the evidence. Same evidence rules and checks as the
+  daily deep dive; the article reads as a conversation under the usual headings. The evening note on Friday says
+  so. <code>deepdive.flagship</code> in config.yaml (weekday, minutes, names, the sceptic's voice) or <code>enabled: false</code>.
+  We review it after four weeks with the weekly critic.</li>
+<li><strong>Its own podcast (v0.2.17):</strong> the deep dives also have a feed of their own, <code>deepdive.xml</code> ("AI Briefing: Deep
+  Dive", with its own cover). The daily show keeps the deep dive after the briefing, through the host's hand-off.
+  The site's Deep dives section, each deep-dive page and the email link to the deep-dive feed.</li>
+<li><strong>When:</strong> planned during the morning run before the briefing audio (so the briefing hands off to it), written and voiced right after, then published and mentioned in the email.</li>
+<li><strong>Picking from the evening note:</strong> your private note (sent by the daily run after the subscriber email) gives every
+  topic its own buttons: tomorrow's (Add your take, Move down, Dismiss), the rest of Up next (Make next, ↑, ↓, Add your
+  take, Dismiss), each new suggestion (Make next, Add to Up next, Add your take, Dismiss), and "Suggest as a deep dive"
+  on today's deep dive and each watchlist mention. Each button opens the private queue page with that one change ready
+  to confirm (an email link never changes anything by itself); the page has the same buttons and a take box on every
+  topic (signed owner links, 8-day expiry).</li>
+<li><strong>Your take on a deep dive (v0.2.11):</strong> type it on the queue page or on the dashboard's Deep dives page, any time
+  before the run that writes it. It is read verbatim as "Steven's take" at the end of the deep dive (its own section
+  on the site and in the podcast), after the same privacy check as morning takes; a take that fails it is held back
+  and stays private. Takes are opinion: never rewritten by a model, outside the fact check.</li>
+<li><strong>Queue:</strong> dashboard /deep-dives: Claude adds up to 4 suggestions each morning; queue, reorder, dismiss or add your own. Up next goes first; otherwise the day's best (strength 4+). One a day; Up next is never left empty (the best suggestion is moved up if you queued nothing).</li>
+<li><strong>Voices:</strong> briefing am_michael ("Michael", ~131 words a minute), deep dive af_bella ("Bella", ~157), changeable on
+  the Tuning page. Script length is set from each voice's measured speed (<code>audio.voice_wpm</code>).</li>
+</ul>
+<h2>Since v0.2.29: drafts, takes, suggestions and the thread (2026-10-28 to 10-30)</h2>
+<ul>
+<li><strong>The advance draft</strong> (v0.2.31): at 15:30 tomorrow's deep dive is written and checked, and saved to Drive as
+  "&lt;day&gt; · Deep dive · &lt;title&gt; (draft)" with a nudge and an email. Two boxes at the end: <strong>Steven's take</strong> (read
+  verbatim after the episode) and <strong>Notes for the editor</strong> (what to change). At 05:00 the take goes in and notes make
+  the writer revise the draft, which is checked again; then it is voiced and shipped. Only the two boxes are read.</li>
+<li><strong>Takes edited in the Doc</strong> (v0.2.25): after publication, a changed take in the deep-dive Doc re-records the deep
+  dive and re-publishes its episode within 20 minutes; no email is re-sent.</li>
+<li><strong>Readers suggest topics</strong> (v0.2.29): a link in the email and on every deep-dive page; suggestions enter the queue
+  as "suggested by &lt;name&gt;" (or "a reader") and the episode credits them when it runs.</li>
+<li><strong>In Slack</strong> (v0.2.28): the deep dive is a reply, with its own card, in the thread of the morning post.</li>
+<li><strong>Rebuilding a shipped dive</strong> (v0.2.36–v0.2.38): the <code>deepdive-rebuild</code> queue job (auto tier from v0.2.37) runs
+  <code>./np deepdive DAY --topic "..." --force</code> on the same topic, keeps the take Steven already gave, records a
+  correction and publishes. A topic already in the queue is reused, and <code>--topic</code> exits 1 when no dive was written,
+  so a failed rebuild records no correction.</li>
+</ul></div></main><script src="../share.js"></script><footer>Daily AI briefing for early-stage investors, curated by Steven Woods. Analysis is machine-generated from public sources (every claim links to its source); "Steven's take" is personal opinion. <a href="../index.html#email">Subscribe by email</a> · <a href="../index.html#listen">Add the podcast</a> · <a href="../feed.xml">RSS</a> · <a href="../podcast.xml">Podcast feed</a> · <a href="../deepdive.xml">Deep-dive feed</a><br><span class="small"><a href="../releases/index.html">v0.2 beta</a> · <a href="../docs/index.html">Docs</a> · <a href="../calls/index.html">Calls we made</a> · <a href="../accuracy/index.html">Accuracy</a> · <a href="https://github.com/sgwoods/news-pipeline">Code</a> · <a href="https://sgwoods.github.io/public/index.html">Steven Woods · public projects</a></span></footer></body></html>

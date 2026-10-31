@@ -1,0 +1,516 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Briefing · Release notes</title><link rel="stylesheet" href="../style.css"><meta name="description" content="Slowly, then fast. Every morning. A daily briefing on AI for early-stage investors: what happened, what holds up, and what it means."><meta property="og:title" content="AI Briefing · Release notes"><meta property="og:description" content="Slowly, then fast. Every morning. A daily briefing on AI for early-stage investors: what happened, what holds up, and what it means."><meta property="og:image" content="https://sgwoods.github.io/public/assets/steven-woods-current.png"><link rel="alternate" type="application/rss+xml" title="AI Briefing" href="../feed.xml"></head><body><header class="site"><a href="../index.html">AI Briefing</a><a class="home" href="https://sgwoods.github.io/public/index.html">Steven Woods · public projects ↗</a></header><main><h1>Release notes</h1><p class="muted">Running <b>v0.2.42-beta</b>. Changes are built and tested on a development branch and reach production together as a release.</p><section class="panel"><h2>v0.2.42-beta · 2026-10-31</h2><ul>
+<li>Monthly promo (Steven, 2026-10-31, option A): on the first Monday of each month, once the edition is out, one short
+  post in #cto-musings pointing to #cto-ai-newsletter (a channel link: one click opens it with Join), the website
+  and email sign-up, with the channel banner. <code>./np slack-post promo [--preview|--now]</code>, queue recipe <code>slack-promo</code>.</li>
+<li><code>brand/</code>: the author image master (<code>author-master.png</code>, the glasses photo cut from the podcast cover) and the
+  Slack channel banner (<code>slack-channel-banner.png</code>), the first files of the brand template (see the brand plan).</li>
+</ul></section><section class="panel"><h2>v0.2.41-beta · 2026-10-31</h2><ul>
+<li>Fix: the bot couldn't find #cto-ai-newsletter by name (public, bot invited); <code>slack.post.channel_id</code> is now used
+  directly when set (C0CDBLD1JT1), so the morning post and Earlier editions don't depend on the lookup.</li>
+</ul></section><section class="panel"><h2>v0.2.40-beta · 2026-10-31</h2><ul>
+<li><code>./np slack-post archive FROM TO [--preview]</code> (queue recipe <code>slack-archive</code>, chat): one "Earlier editions" message
+  in the post channel, a line per day with its first lead and briefing and deep-dive links, posted once. For the days
+  posted to #cto-musings before the move; Steven deletes the old bot posts there himself.</li>
+</ul></section><section class="panel"><h2>v0.2.39-beta · 2026-10-31 (weekend exception, Steven&#x27;s yes in chat)</h2><ul>
+<li>The morning Slack post (card + deep-dive thread) goes to #cto-ai-newsletter instead of #cto-musings (Steven,
+  2026-10-31). Links are still read from #cto-musings.</li>
+<li>Fix: a page found by the fact check's search joins the Sources (or is linked) only when it carries words of the
+  fixed sentence itself (a 5-word run or its quotation); on 10-31 an unrelated TechCrunch story was added to the
+  rebuilt deep dive's Sources because the fix was supported by the dive's own sources (removed by hand).</li>
+<li>Docs: ARCHITECTURE, FACT-CHECKING and DEEP-DIVES brought up to v0.2.38 (pre-send and deep-dive fact checks,
+  v0.2.34 search and second-judge rules, release lanes and soak, chat approval for ship/release, auto-tier
+  remaster and deepdive-rebuild, X via list members and a local RSS generator); run-queue, release-flow and
+  fact-checking diagrams updated.</li>
+</ul></section><section class="panel"><h2>v0.2.38-beta · 2026-10-31 (fix lane)</h2><ul>
+<li>Fix: <code>deepdive --topic</code> on a topic already in the queue (the dive being rebuilt) found no item and wrote nothing,
+  and the rebuild recipe then recorded a correction anyway. The queued item is reused, and <code>deepdive --topic</code> exits 1
+  when no dive was written, so a rebuild stops before recording a correction.</li>
+<li>Fix: the subcommand-argument tests read config.yaml, which the public export doesn't have (public tests failed).</li>
+</ul></section><section class="panel"><h2>v0.2.37-beta · 2026-10-31 (fix lane)</h2><ul>
+<li>Fix: <code>./np deepdive DAY --topic "..." --force</code> stopped at the argument parser (--topic unknown, --force taken as
+  the top-level flag), so the deepdive-rebuild recipe failed; <code>./np staging run --force</code> lost its --force the same
+  way, so the ship's soak refused before 08:30. Everything after a subcommand that takes arguments now goes to it.</li>
+<li>Approvals up front (Steven, 2026-10-31): a <code>ship</code>/<code>release</code> carrying Steven's quoted yes from chat runs on its own
+  after tests and the soak pass, with no phone prompt; rollback, code push and secrets keep the tap. <code>remaster</code> and
+  <code>deepdive-rebuild</code> no longer need a chat quote (auto tier). See docs/security/RELEASE.md.</li>
+</ul></section><section class="panel"><h2>v0.2.36-beta · 2026-10-31 (fix lane)</h2><ul>
+<li>Fix: the deep-dive fact check (v0.2.33) keyed a two-voice script by section, and a flagship repeats section ids on
+  every turn, so every turn of a section came back as that section's last turn. The 10-31 flagship repeated whole
+  paragraphs. The check now works turn by turn; a test covers a two-voice script.</li>
+<li><code>deepdive-rebuild</code> queue recipe (chat): rewrite a shipped day's deep dive on its topic, record the correction and
+  publish. A rebuild keeps the take Steven already gave the dive.</li>
+<li>Fix: the ship's soak (<code>staging run</code>) refused before 08:30 even after the edition was out; it now passes --force,
+  since a ship only runs once the edition is out and no run is busy.</li>
+</ul></section><section class="panel"><h2>v0.2.35-beta · 2026-10-30 (Steven asked to bring X forward for the weekend runs, an exception to the slot rule)</h2><ul>
+<li><code>./np x probe [N]</code> (queue recipe <code>x-probe</code>, auto): the first N accounts through the configured X instances, with
+  post counts; nothing is archived.</li>
+<li>X through the local xsukax-X-RSS-Generator on Steven's Mac (Steven, 2026-10-30; his test returned 5 posts): an
+  x.yaml instance may be a template with <code>{handle}</code> (<code>http://127.0.0.1:8787/?x={handle}&amp;amp;l=20</code>); <code>lists:</code> adds the
+  members of the named X lists (data/state/x-lists.json) as tier "list" accounts, after his own; <code>delay_seconds</code>
+  spaces the requests; <code>max_accounts</code> caps a run (120). Nitter mirrors stay as fallbacks.</li>
+<li>Fix: a remaster recorded as a correction published before the correction note existed, so the page lacked it
+  until the next publish; it now publishes again after recording the note.</li>
+</ul></section><section class="panel"><h2>v0.2.34-beta · 2026-10-30 (fix lane)</h2><ul>
+<li>Fact-check fixes from the first dry run on the 10-30 deep dive: a search result that is a homepage or section
+  front (anthropic.com, claude.com) is never a found source, and a found page must also carry a second name or a
+  figure from the claim; the second judge checks one claim per call (the local model answered a batch with only its
+  first verdict) and falls back to the first model; a rewrite is kept only when the second check confirms it,
+  otherwise it is undone and goes to Steven ("rewrite not confirmed"); rewrites narrow the original claim, never
+  swap in a different one, and may return nothing (then Steven decides).</li>
+</ul></section><section class="panel"><h2>v0.2.33-beta · 2026-10-30</h2><ul>
+<li>The fact check runs <strong>before</strong> the edition is sent (Steven, 2026-10-30, after "CDIC" was corrected the same
+  morning): every factual sentence of the top section, What happened and Worth knowing checked against its sources;
+  partly-right or contradicted lines rewritten (links kept) and re-checked; anything unsettled listed in the takes
+  email. Acronyms no source contains are checked first. The day page ends with a Notes footnote: the fact check's
+  time and every correction with date and time (ET). New queue recipe <code>remaster</code> (chat): re-record a day's podcast
+  from its corrected text, recorded as a correction.</li>
+<li>Fact-check gaps closed (Steven, 2026-10-30): ranked excerpts with twice the room and a 12,000-character second
+  look before "not found"; a search for a live page (government and regulators first) when the cited sources lack
+  a fact, which the rewrite may cite with one new link that also joins the Sources line; a second, different model
+  (<code>llm.stages.judge2</code>, local by default) re-checks rewrites and runs the after-send audit.</li>
+<li>The deep dive gets the same sentence check before it is recorded (factual sections only; spoken-sentence
+  rewrites; a found page joins its Sources; second-model re-check). Open items go to the draft Doc ("Fact check:
+  please look") and the takes email; the deep-dive page has the Notes footnote.</li>
+<li><code>./np audit deepdive DAY</code> (queue recipe <code>audit-deepdive</code>, auto): the deep-dive check on a recorded dive as a dry
+  run; proposed fixes go in only as corrections.</li>
+<li>Release rules for day-to-day stability (Steven, 2026-10-30): <code>ship</code> has lanes. The default slot lane releases once
+  per weekday from 13:00 (<code>release.slot</code> in config.yaml), after the edition and before the 15:30 draft; <code>lane: fix</code>
+  is for broken things, any time in the release window; no slot releases at weekends. Every ship soaks first:
+  <code>staging run</code> rebuilds today's edition with the dev code and <code>staging compare</code> checks it against production; a
+  compare that needs review stops the ship before Approve unless <code>accept</code> quotes Steven's OK. The Approve shows the
+  lane and the soak verdict. Schedule tab gains the release-slot row.</li>
+<li>Docs brought up to date with v0.2.10–v0.2.32: README (Steven's day, the run, new commands), OPERATIONS (the advance,
+  runner, ntfy, Slack and Jev services), RELEASE (the three approval paths), DEEP-DIVES (drafts, takes, suggestions,
+  Slack). Fix: <code>./np schedule</code> printed the service status (an old alias); it now shows the timetable (<code>show</code>), and
+  <code>./np timetable</code> is the same.</li>
+</ul></section><section class="panel"><h2>v0.2.32-beta · 2026-10-30</h2><ul>
+<li><strong>Jev shadow filter</strong> (Steven, 10-29/30): TypeSafe's Jev (a structured-decision model, sub-second, ~$0.04 per
+  million input tokens) is asked keep/drop for every item the local filter judged; both answers are logged, the
+  morning report shows the agreement, and nothing changes in the edition. Daily token budget (400k, about two
+  cents). Public fetched items only; never in staging. One-time: the <code>jev-setup</code> job (a Mac dialog stores the key
+  in the Keychain and makes one test call). <code>./np jev report [DAYS]</code>; run-queue job <code>jev-report</code>.</li>
+</ul></section><section class="panel"><h2>v0.2.31-beta · 2026-10-29</h2><ul>
+<li><strong>The advance deep dive</strong> (Steven, 10-29): at 15:30 (schedule.advance) tomorrow's deep dive is written and
+  checked and saved to Drive as "&lt;day&gt; · Deep dive · &lt;title&gt; (draft)", with a nudge and an email. The Doc ends with
+  two sections: "Steven's take" (read verbatim after the episode) and "Notes for the editor" (what to change). The
+  05:00 run reads them back: the take goes in; notes make the writer revise the draft, which is checked again;
+  then it is voiced and shipped. Install the agent once with the <code>service-install</code> job (kind: advance).
+  <code>./np advance</code> drafts now; run-queue job <code>advance</code>. The Schedule page has the row.</li>
+</ul></section><section class="panel"><h2>v0.2.30-beta · 2026-10-29</h2><ul>
+<li><strong>Schedule page</strong> (Steven, 10-29): the dashboard's new Schedule tab (and <code>./np schedule</code>) lists what is produced
+  through the day, when, where it goes, and the window for feedback on each piece and how it is picked up.</li>
+<li><strong>The review page keeps your takes</strong> (Steven, 10-29: a page of typed takes was lost by tapping a source link).
+  Every link on the page opens in a new tab; each box is kept in the browser as you type and sent to the mail
+  script a few seconds after you stop (a later save for the same box replaces the earlier one); leaving the page
+  with unsent text asks first. Submit and Done work as before.</li>
+<li><strong>Pronunciations</strong> (Steven, 10-29): the table gains outlets and acronyms said by name (NYT is "New York Times",
+  WSJ, FT, GAAP as "gap", METR as "meter", S-1 as "S one", PBC and LTBT spelled out) and more people and
+  companies (Qwen is now "Kwen", Nvidia, Pichai, Nadella, Dwarkesh, Azeem Azhar, Stratechery, Zhipu, Mistral).
+  Uncertain ones carry a comment. <code>./np pronounce lint [DAYS]</code> lists what the voice may have garbled lately, for
+  the next additions (docs/OPERATIONS.md).</li>
+<li>Fix: takes edited in the Drive Doc before the edition ships were not read, because the Doc is still the draft
+  then ("held for your takes"); the draft is read when the published one isn't there yet.</li>
+</ul></section><section class="panel"><h2>v0.2.29-beta · 2026-10-28</h2><ul>
+<li><strong>Readers suggest deep dives</strong> (Steven, 10-28): a "Suggest a deep dive" link in the email's deep-dive section (with
+  the reader's own token) and on every deep-dive page on the site. The page asks for a topic, why now, and an
+  optional name. Suggestions land in the queue as "suggested by &lt;name&gt;" (else "a reader") and show that way in
+  the evening note, on the queue page and in the dashboard; when one runs, the deep dive's notes say who suggested
+  it. Addresses stay in the private queue file. Capped per reader and per day. Needs the mail-script deploy (the
+  ship does it).</li>
+</ul></section><section class="panel"><h2>v0.2.28-beta · 2026-10-28</h2><ul>
+<li><strong>The deep dive in the thread</strong> (Steven, 10-28): right after the morning post, a reply in its thread with the deep
+  dive: title, summary, Steven's take on it and the links, with its own card in the deep-dive cover's colours.
+  <code>./np slack-post deepdive DAY</code>; run-queue job <code>slack-deepdive</code> (chat). Card text now ends at a full sentence or
+  an ellipsis, never mid-sentence.</li>
+</ul></section><section class="panel"><h2>v0.2.27-beta · 2026-10-28</h2><ul>
+<li><strong>The morning Slack post</strong> (Steven, 10-28): when the email goes out, one post in cto-musings from the bot user
+  "AI Briefing": the day's three leads, one of Steven's published takes (his words, the one with the most bite that
+  fits), the deep dive and the links, with the day's card attached: a 1600×900 image in the newsletter's teal with
+  the masthead, photo, leads, the take and the deep-dive band (<code>pipeline/card.py</code>, Pillow + Inter, new in
+  requirements). Set up once with the <code>slack-setup</code> job (a Mac dialog takes the bot token; scopes chat:write,
+  files:write, channels:read; invite the bot to the channel). <code>./np slack-post preview DAY</code> shows the text and
+  renders the card; run-queue jobs <code>slack-card</code> (auto) and <code>slack-post</code> (chat). Security: a new outbound step,
+  gated like the others; never in staging; bot posts are ignored by the Slack reader.</li>
+<li>Fix: the Drive check re-queued a takes-sync every 20 minutes after a plain re-publish (the Docs weren't rewritten,
+  so nothing recorded our own last write). A take the commentary already has is never an edit, and takes-sync now
+  rewrites the Docs.</li>
+<li><strong>Podcast artwork refresh</strong>: podcast apps cache artwork by URL and never refetch it (Apple still showed the old
+  cover a day after the new one went up), so the feeds now name a copy whose filename carries the image's hash.
+  Apple Podcasts picks up the new covers at its next feed check.</li>
+</ul></section><section class="panel"><h2>v0.2.26-beta · 2026-10-28</h2><ul>
+<li>Fix: the runner's minute tick exited before the Drive check when the queue was empty, so edited takes were never
+  noticed on their own. It now runs the check every 20 minutes regardless.</li>
+</ul></section><section class="panel"><h2>v0.2.25-beta · 2026-10-28</h2><ul>
+<li><strong>Takes edited in the Docs count</strong> (Steven, 10-28: a take written in the morning boxes, then augmented in the car
+  with Claude editing the shared Doc). The pipeline reads the published edition's "Steven's takes" and the deep
+  dive's "Steven's take" back from Drive; lines that changed after its own last write are new takes, checked like
+  any other. The runner looks every 20 minutes once the edition is out and queues a <code>takes-sync</code> job (auto tier)
+  that applies them and re-publishes the site and email boxes; an edited deep-dive take re-records the deep dive
+  and re-publishes its episode. No email is re-sent. <code>./np takes apply DAY</code> does the same by hand.</li>
+</ul></section><section class="panel"><h2>v0.2.24-beta · 2026-10-28</h2><ul>
+<li><strong>Phone notifications and one-tap approvals</strong> (Steven, 10-28: "more control from my iPhone"): through the free,
+  open-source ntfy app. Approvals arrive as a notification with Approve and Reject buttons; one tap, no passphrase,
+  no browser. The tap sends a one-time token the Mac checks, over private topics only the Mac's Keychain and the
+  phone know. Nudges: the takes page is ready (tap opens it), the evening deep-dive note is out (tap opens the
+  queue page), a run needs attention, a run-queue job finished. Turn on with the <code>ntfy-setup</code> job (a Mac Approve;
+  the topic lands on the clipboard for the phone), then "ntfy test". The passphrase path stays as a fallback.
+  Security-sensitive: a third approval path.</li>
+</ul></section><section class="panel"><h2>v0.2.23-beta · 2026-10-28</h2><ul>
+<li>Phone approvals: the job file now says why a phone answer wasn't accepted (no answer yet, the check failed, or the
+  passphrase didn't match), and a passphrase that doesn't match gets one Mac notification, as promised.</li>
+</ul></section><section class="panel"><h2>v0.2.22-beta · 2026-10-28</h2><ul>
+<li><strong>Calls we made</strong> (site page): every house-view call with what would change our mind and its check date. On
+  Sundays the run scores the calls that are due against what we've reported since (right, wrong, mixed; too early
+  gets 90 more days). <code>./np positions [list|score]</code>; run-queue job <code>positions-score</code>.</li>
+<li><strong>Accuracy audit</strong>: after the email, about five of the day's claims are re-checked against their own sources
+  (supported, partly, not found, contradicted), and the consistency flags are counted. Partly right or contradicted
+  claims send one alert email; the site's Accuracy page shows the daily counts and every correction. <code>./np audit
+  [DAY]</code>; run-queue job <code>audit</code>. Dashboard switch: Briefing structure → "Accuracy audit after the email" (on).</li>
+<li><strong>Phone approvals</strong> (Steven, 10-27): mac-tier jobs (ship, release, approve...) can be approved from the phone.
+  The runner emails a one-time link; on the page you type your approval passphrase and tap Approve or Reject. The
+  passphrase never leaves the phone (the page sends a proof the Mac checks against its Keychain), so a link or a
+  record alone can't approve. Turn it on once with the <code>phone-setup</code> job (a Mac dialog asks for the passphrase).
+  Security-sensitive: a second approval path. Needs the mail-script deploy (the ship does it).</li>
+<li><strong>Merged top, on</strong> (Steven, 10-27): Briefing structure → "Top of the edition" = merged gives one 5-bullet "Today in 30
+  seconds" with the diligence question under it, instead of the day in brief plus Top of mind (critic #7A). Audio,
+  email, takes, Drive and the checks read both shapes.</li>
+</ul></section><section class="panel"><h2>v0.2.21-beta · 2026-10-27</h2><ul>
+<li><strong>House views.</strong> Our read takes a position under one of the views in <code>house_views.md</code> (1–10 plus Steven's
+  theses 11–17) and names it ("House view: …"). The lead story adds the case for, the case against, the deciding
+  question and our lean, in place of its other view. Each position is logged in <code>data/positions/ledger.jsonl</code> with
+  what would change our mind and a check date (a thesis's own, else 90 days). Dashboard switch: Editorial lens →
+  "Take positions under the house views". Security: <code>house_views.md</code> steers the models, so it joins the files
+  whose changes need release approval.</li>
+</ul></section><section class="panel"><h2>v0.2.20-beta · 2026-10-27</h2><ul>
+<li><strong>Pending sign-ups</strong> (Steven, 10-27): one reminder email to people who signed up but never confirmed ("One click to
+  start receiving it"), at most once a week each; 14 days after the reminder a still-pending sign-up is marked
+  expired by the morning run (they can sign up again, and an old confirm link still works). Run-queue jobs
+  <code>email-remind</code> and <code>email-remove</code> (chat tier). <code>./np email list</code> counts readers without the owner's test copy.
+  Needs a mail-script deploy (the ship does it).</li>
+</ul></section><section class="panel"><h2>v0.2.19-beta · 2026-10-27</h2><ul>
+<li><strong>New taglines</strong> (Steven, 10-27): the AI Briefing is "Slowly, then fast. Every morning." and the deep dive is
+  "One story, slowly. Down to the details." On the email masthead and deep-dive section, both podcast covers, both
+  feed descriptions and the site.</li>
+<li>Speech: a name glued to its version number is split before the pronunciation table ("Qwen3.8" was heard as
+  "QN3, 8"; now "Chwen three point eight").</li>
+</ul></section><section class="panel"><h2>v0.2.18-beta · 2026-10-27</h2><ul>
+<li><strong>The weekly flagship deep dive</strong> (Steven, 10-27: "lets do this as outlined"): on Saturdays the deep dive is a
+  two-voice episode of about 22 minutes on the week's topic, with Bella as host and Michael as the sceptic who
+  pushes back on the evidence. Same checks as the daily deep dive. Shown as "Weekly deep dive" in the feeds and
+  "This week's deep dive · two voices" in the email; Friday's evening note says so.</li>
+<li>Fix: the new audio check is <code>./np audio-check</code> (and run-queue <code>audio-check</code>); <code>./np listen</code> already played the
+  day's MP3 on the Mac.</li>
+</ul></section><section class="panel"><h2>v0.2.17-beta · 2026-10-27</h2><ul>
+<li><strong>Hear what was published</strong> (Steven, 10-27): after the email, the day's episode is downloaded from the public feed,
+  transcribed locally (Whisper, free) and compared with its script. A missing or garbled section (like 10-27's
+  intro) sends one action-needed email. The as-published transcript is published with the next publish (WebVTT,
+  <code>podcast:transcript</code> in the feed, a link on the day's page). <code>./np audio-check [DAY]</code>; run queue <code>audio-check</code>; <code>setup</code>
+  (chat tier) installs the new requirement (mlx-whisper, Apple silicon).</li>
+<li><strong>The deep dives as their own podcast:</strong> <code>deepdive.xml</code>, "AI Briefing: Deep Dive", with its own cover. The daily
+  show still flows from the briefing into the deep dive. The deep-dive feed is promoted on the site (Deep dives
+  section, each deep-dive page, the footer) and in the email ("▶ Listen to the deep dive", "subscribe to the deep
+  dives").</li>
+</ul></section><section class="panel"><h2>v0.2.16-beta · 2026-10-27</h2><ul>
+<li><strong>Podcast brand matches the newsletter</strong> (Steven, 10-27): new 3000×3000 cover in the teal of his photo, with his
+  photo, "AI Briefing", the tagline and "Curated by Steven Woods". Podcast apps pick up new artwork on their own
+  schedule (Apple can take a few days).</li>
+<li><strong>The show is named in the first seconds</strong> (Steven, 10-27: "the audio today has no introduction"): the cold open
+  now starts "On today's AI Briefing." Each recording also gets a <code>.sections.json</code> with every section's length, so
+  a section that comes out silent or clipped is visible.</li>
+</ul></section><section class="panel"><h2>v0.2.15-beta · 2026-10-27</h2><ul>
+<li>Fix (mail script): rewriting a Drive doc that ends with a list (Steven's takes) failed in clear(); an empty
+  paragraph is added first (10-27). Needs a mail-script deploy (the next ship does it).</li>
+</ul></section><section class="panel"><h2>v0.2.14-beta · 2026-10-27</h2><ul>
+<li>Fix: the public export's tests failed because the photo isn't exported (the public code push stopped).</li>
+<li>Fix: <code>./np release … --force</code> never reached the release (the command line took <code>--force</code> for another command).</li>
+<li>Fix: the release itself still waited for 08:30 when the run queue let it go early; it now follows the same rule
+  (once today's edition is out).</li>
+<li>Shares: a link shared in Slack is labelled "Shared internally today" (it said "Shared in Steven's team channel");
+  Steven's own Bluesky posts say "Posted by Steven on Bluesky" (Steven, 10-27).</li>
+</ul></section><section class="panel"><h2>v0.2.13-beta · 2026-10-27</h2><ul>
+<li>Fix (mail script): rewriting an existing Drive doc (the draft becoming the published edition) failed with "Can't
+  remove the last paragraph in a document section" (10-27). The tidy-up step is now optional. Needs a mail-script deploy.</li>
+<li>Voice: <code>scripts/voice/transcribe.py</code> transcribes Steven's recorded talks locally (Whisper), from the public record manifest.</li>
+<li><strong>Approvals keep moving in the morning</strong> (Steven, 10-27: "get everything moving as soon as I am done"):</li>
+<li>Approve early: a release queued before the morning is done asks right away, and runs as soon as the edition
+    is out. The click is kept as a signature made with a key in the Mac's Keychain, which a file alone can't fake;
+    it's used once and only that day.</li>
+<li>The morning window ends when today's edition has gone out and no run is busy, not at a fixed 08:30.</li>
+<li>One Approve covers the release's follow-through: the public code export, and a mail-script deploy when the
+    live script differs from the release.</li>
+<li>The approval dialog stays up 19 minutes and comes back right away, with a sound, until it's answered.</li>
+</ul></section><section class="panel"><h2>v0.2.12-beta · 2026-10-26</h2><ul>
+<li><strong>Email masthead</strong> (Steven, 10-26): his photo and colour (the teal of the photo), "AI Briefing", the tagline
+  "What happened, what holds up, what it means." (<code>email.tagline</code> overrides) and "Curated by Steven Woods · for
+  early-stage investors". The photo is served from the site (<code>assets/steven-woods.jpg</code>). Visual only.</li>
+<li>Drive docs: the deep dive no longer repeats "Why today", and flag emoji (garbled in Docs) are left out.</li>
+<li>Fix: the run queue's <code>approve</code> job stopped at its own gate check when only the approval was missing (10-26).</li>
+</ul></section><section class="panel"><h2>v0.2.11-beta · 2026-10-26</h2><ul>
+<li><strong>Your take on a deep dive</strong> (Steven, 10-26): a box on every topic on the queue page (from the evening email) and on
+  the dashboard's Deep dives page. The take is read verbatim as "Steven's take" at the end of that deep dive, on the
+  site and in the podcast, after the same privacy check as morning takes.</li>
+<li><strong>Every topic in the evening email has its own buttons:</strong> Make next, ↑ / ↓, Add to Up next, Add your take, Dismiss,
+  and "Suggest as a deep dive" on today's deep dive and watchlist mentions. Each opens the queue page with that change
+  ready to confirm. The queue page can now also add a suggestion to the end of Up next. Needs a mail-script deploy.</li>
+<li><strong>The edition and deep dive in Drive</strong> (Steven, 10-26): Google Docs in the shared <code>Briefings</code> folder, named by date.
+  With the pre-release takes email: "&lt;day&gt; · AI Briefing (draft, held for your takes) · &lt;lead&gt;" and "&lt;day&gt; · Deep
+  dive · &lt;title&gt;" (the takes email links to the draft). Once published, the draft becomes "&lt;day&gt; · AI Briefing ·
+  &lt;lead&gt;" with Steven's takes, and the deep dive doc is rewritten. <code>./np drive save [DAY]</code> / run-queue <code>drive-save</code>.
+  After the mail-script deploy, run <code>authorizeDrive</code> once in the Apps Script editor to grant Drive and Docs access.</li>
+</ul></section><section class="panel"><h2>v0.2.10-beta · 2026-10-26</h2><ul>
+<li><strong>Fix: the takes email linked to a page that doesn't exist yet</strong> (Steven, 10-26). The day's site page is only
+  published after the cutoff, so the link now opens a private review page served by the mail script: the held
+  edition with a box after each section and one Submit ("Done: send the edition now" ticks it out early). The
+  pipeline uploads the page just before the takes email (<code>setreview</code>, key only); the script shows it only with
+  Steven's signed takes token. If the upload fails, the email goes without the link (the reply buttons still work).</li>
+<li>The text version of the takes email numbers each story by its headline again.</li>
+<li>Email takes: a section name as a header ("Worth knowing:", "Top of mind:", "Must read 2:") now counts like
+  "W:", and a signature (a bare link or "-- " line) ends a take (10-26: a Worth-knowing take was missed).</li>
+<li>Includes the v0.2.9 mail-script fix below (that release was not shipped on its own). Needs a mail-script deploy:
+  <code>deploy-mailer</code>, Approve on the Mac.</li>
+</ul></section><section class="panel"><h2>v0.2.9-beta · 2026-10-25 (folded into v0.2.10)</h2><ul>
+<li>Fix (mail script): site takes were saved, but Sheets turned the day ("2026-10-25") into a date cell and the
+  pipeline's read-back compared it as text, so it found none. Takes are now written as text, and the read-back
+  compares raw cells, so the 10-25 test takes are found too. Needs a mail-script deploy (the first via clasp).</li>
+</ul></section><section class="panel"><h2>v0.2.8-beta · 2026-10-25</h2><ul>
+<li><strong>Takes on the site, fixed for an open page:</strong> the takes email's site link adds <code>?v=&amp;lt;day&gt;</code> so the browser loads
+  the page fresh, and the boxes also appear when only the <code>#takes=</code> part changes (on 10-25 a cached page showed none).</li>
+<li><strong>Run-queue jobs for takes:</strong> <code>takes-test DAY</code> (the takes email marked [TEST], to the owner), <code>takes-check DAY</code>
+  (what would publish now: email, site, Slack, with the privacy check; saves nothing), <code>takes-apply DAY</code> (chat
+  tier: save the day's takes and publish; for a shipped day only the written takes change).</li>
+<li><strong>The mail script via clasp</strong> (<code>pipeline/clasp.py</code>, <code>./np mailer status | setup | deploy</code>): <code>mailer-status</code>
+  checks the live script against the repo, <code>deploy-mailer</code> (Approve on the Mac) pushes Code.gs and updates the same
+  deployment, so mail-script changes stop needing copy and paste. One-time setup by Steven: docs/EMAIL-SETUP.md.</li>
+<li>The site script is a raw string (Python's escape warning is gone).</li>
+</ul></section><section class="panel"><h2>v0.2.7-beta · 2026-10-25</h2><ul>
+<li><strong>Takes on the website:</strong> the private takes email has a "Read and comment on the site" link to the day's page.
+  With Steven's signed token (after the <code>#</code>, valid two days) the page shows a box after the day in brief, Top of
+  mind, each Must-read story and Worth knowing, and one Submit (with "Done: send the edition now"). Visitors without
+  the token see nothing different. The mail script checks the token and stores the takes; the pipeline reads them
+  during the hold together with email replies and Slack, and the same privacy hold applies.</li>
+<li><strong>Needs a redeploy of the mail script</strong> (<code>scripts/apps-script/Code.gs</code>: new <code>takes</code> / <code>takes_pull</code> actions, owner
+  token scope <code>t</code>, a <code>{{OWNERT}}</code> placeholder for owner sends). Until then the site link shows no boxes and
+  everything else works as before.</li>
+</ul></section><section class="panel"><h2>v0.2.6-beta · 2026-10-25</h2><ul>
+<li>Takes email: bold lead phrases were pale blue on white (the subscriber email's dark-mode colour) and now read
+  dark; links are blue. A "W" slot covers Worth knowing (button in the takes email, a take box under Worth knowing
+  in the subscriber email and on the site, and read after the quick hits in the podcast).</li>
+</ul></section><section class="panel"><h2>v0.2.5-beta · 2026-10-25</h2><p>The critic's first batch (review of 2026-10-24), plus an easier way to add takes.
+- <strong>No story twice:</strong> after the deep dive is written, a Must read it covers shrinks to one sentence and a pointer,
+  in the written edition, the email and the podcast. On 10-24 this would have cut the PHP story that took about 11
+  of 19 minutes.
+- <strong>The briefing agrees with its deep dive:</strong> "not disclosed" lines the deep dive answers are dropped from the day
+  in brief and Top of mind; "unverified" lines about the deep dive's story are flagged for review.
+- <strong>Verdict labels match their evidence:</strong> "Holds" is no longer used on an evidence check that says the claim is
+  self-reported or unverified; it reads "Unverified".
+- <strong>Source gate:</strong> a homepage link, or a sponsored or webinar page, can't be a Must read.
+- <strong>"For early-stage":</strong> a new line on each Must read on what the story means at seed and Series A (written
+  edition, email, podcast).
+- <strong>Audio:</strong> a cold open with the lead story's sharpest line; loudness normalised to −16 LUFS at 96 kbps; "K3.1"
+  is said "K three point one", not "Kthree"; a lint logs words the voice may garble; developing stories get a
+  short "what's new" segment.
+- <strong>Takes email:</strong> it now carries the whole edition, with an "Add your take" button after each section that opens
+  a reply with the section's number filled in, and a link to the page on the site.
+- Not in this batch: merging the day in brief and Top of mind (critic item 7), which changes the email, site,
+  takes slots and audio together; it needs a preview first.</p></section><section class="panel"><h2>v0.2.4-beta · 2026-10-25</h2><ul>
+<li>Fix: v0.2.3's public code push was refused because the new critic page (docs/CRITIC.md) wasn't in the public
+  export, so the exported tests couldn't find it. It's added, and a test now checks that every page on the site's
+  docs is in the export.</li>
+<li><code>./np sources add</code> says "already a source" (and closes the queue entry) when the feed is already wired in,
+  instead of "no feed answered".</li>
+</ul></section><section class="panel"><h2>v0.2.3-beta · 2026-10-25</h2><ul>
+<li>Fix: on Sun 10-25 the Mac went offline during the takes hold, so the publish at the 09:15 cutoff failed and the
+  email was held. The only retries were at 06:30 and 07:30, before the cutoff, so nothing sent it later. With takes
+  on, the schedule now also retries at 09:30, 10:30 and 12:00 (<code>schedule.after_takes</code>).</li>
+<li>Fix: v0.2.2's release was approved at 20:02, after the release window, and failed. The run queue no longer shows
+  a release dialog that would be answered after 20:00, and an approval that lands outside the window now expires
+  cleanly instead of failing.</li>
+<li>The run-queue job <code>send-held</code> (chat tier) runs <code>./np daily</code> to publish and email a held edition.</li>
+<li>Includes v0.2.2 (the weekly critic email, <code>./np sources add</code>), which wasn't released on 10-24.</li>
+<li><strong>Docs:</strong> a new page, "The critic" (<code>docs/CRITIC.md</code>, also on the site): the rubric and its weights, the benchmark
+  shows and why they were chosen, how a weekly run works, the email and the record, the limits, and the latest
+  results (generated from <code>data/critic/</code> at every publish: ranking, us against the field by characteristic, our
+  trend). The architecture page gains a section on the weekly critic.</li>
+</ul></section><section class="panel"><h2>v0.2.2-beta · 2026-10-24</h2><ul>
+<li><strong>The weekly critic:</strong> every Saturday the briefing is scored against the latest episode or issue of ten benchmark
+  shows, with a 10-part rubric weighted for an investor daily. A private email to the owner gives our score and
+  rank, bar charts by characteristic against the field, our trend week by week, what shipped, and the top
+  suggestions with recommended options (<code>pipeline/critic.py</code>, <code>./np critic preview | email | list</code>, the run-queue
+  job <code>critic-email</code>). Results are kept in <code>data/critic/&amp;lt;date&gt;.json</code>; the first is 2026-10-24.</li>
+<li><code>./np sources add "Name" URL [URL] [note]</code> and the run-queue job <code>source-add</code>: verify a feed live on the Mac,
+  then wire it in. Used to add the ten benchmark shows as sources.</li>
+</ul></section><section class="panel"><h2>v0.2.1-beta · 2026-10-24</h2><ul>
+<li>Fix: the first takes morning (10-24) never sent the takes email. The takes step called the mailer with
+  positional arguments it doesn't take, so it failed straight away and the edition shipped on time without takes,
+  as designed. Fixed, with a test that checks each call against the mailer's real signature.</li>
+</ul></section><section class="panel"><h2>v0.2.0-beta · 2026-10-23</h2><ul>
+<li><strong>Steven's takes (My takes, phase 1):</strong> the owner's own view in the edition, verbatim, labelled "Steven's take".</li>
+<li>Once the edition is written, a private "AI Briefing · Your takes" email lists slots: 0 (the day), T (Top of
+    mind), and 1 to N (each Must-read story). Reply "1: ..." from a phone; "done" sends early, "skip" means none.</li>
+<li>Your own words on a link you post in the team Slack channel count as your take on that story.</li>
+<li>The edition waits until <strong>09:15</strong> or "done" (<code>./np takes done</code>, or <code>takes-done</code> in the run queue).</li>
+<li>Each take is checked for private names, owner addresses, personal links, disclosure phrases and the
+    confidential marker. One that fails is held back and listed to you, never published.</li>
+<li>Takes appear on the site and in the email, and the host reads each one after its story in the podcast. Only
+    the briefing audio is re-rendered.</li>
+<li>Retries leave a waiting run alone; a failure ships the edition without takes.</li>
+<li><code>./np takes status | email | preview | done</code>.</li>
+<li>Fix: the Slack reader closed or leaked its HTTP client when it found your own LinkedIn posts.</li>
+</ul></section><section class="panel"><h2>v0.1.14-beta · 2026-10-23</h2><ul>
+<li><strong>First-lines check for the daily briefing:</strong> the day in brief and Top of mind are now checked against the
+  edition's own body, as deep-dive summaries have been since v0.1.9 (<code>consistency.check_briefing</code>). A figure
+  belongs to its whole story, so a line can name the company in its lead. A sentence that ties a figure to the
+  wrong company, or says something wasn't disclosed when the body gives it, is dropped.</li>
+<li><strong>Across days (flag):</strong> a "not disclosed" claim is compared with the previous 14 editions and flagged for review
+  if an earlier day gave the figure for the same company.</li>
+<li>The "not disclosed" test is stricter everywhere: a question asking for a figure, or a sentence saying it's
+  lacking, no longer counts as giving it, and it must be about the same company.</li>
+<li><code>./np consistency [DAY|all]</code> (also a run-queue recipe) runs the checks over published editions as a dry run.
+  Over all 18 editions and 8 deep dives it found one misattributed figure (10-22's day in brief) and two
+  cross-day flags (10-23).</li>
+</ul></section><section class="panel"><h2>v0.1.13-beta · 2026-10-23</h2><ul>
+<li>Fix: the run queue's launchd tick never started a job. Its quick idle check listed both queue folders with <code>ls</code>,
+  which fails whenever one of them is empty. It now checks each file, and a test runs the real <code>./np runner tick</code>.</li>
+</ul></section><section class="panel"><h2>v0.1.12-beta · 2026-10-23</h2><ul>
+<li><strong>Run queue:</strong> releases, corrections and checks can be started from the Claude chat instead of pasted into a
+  shell (<code>pipeline/runner.py</code>, <code>./np runner</code>, docs/plans/run-queue.md). Claude queues a named recipe and the Mac
+  runs it. There are three tiers: tests, staging and verify run at once; corrections and publish need Steven's
+  yes in the chat; releases, rollbacks, approvals and the public code push need Approve in a dialog on the Mac.
+  The click grants presence for that job only (<code>pipeline/presence.py</code>), and no file can stand in for it. Release
+  invariant 10 guards the runner. One-time setup: <code>./np runner install</code>.</li>
+<li><strong>Docs stay current:</strong> release-gate tests now require every public module to be described in a hand-written doc
+  and every diagram to be used. Each release lists the modules that changed while their docs didn't ("docs to
+  review"), in the approval dialog and in <code>data/state/docs-impact.json</code>, for a weekly docs refresh.</li>
+<li><strong>Docs:</strong> Fact checking is rewritten as "Grounding and fact checking": six layers, a new diagram, why the
+  first-lines check exists, corrections and known gaps. Architecture gains sections on grounding, the run queue
+  (with a diagram) and keeping docs current, plus every smaller module.</li>
+</ul></section><section class="panel"><h2>v0.1.11-beta · 2026-10-23</h2><ul>
+<li>Fix: v0.1.10's public code push was refused again, correctly: a code comment and the changelog named a
+  portfolio company. Both are reworded, and the dev test now builds the whole public export and fails on any
+  private term, not only in test files.</li>
+</ul></section><section class="panel"><h2>v0.1.10-beta · 2026-10-23</h2><ul>
+<li>Fix: v0.1.9's public code push was refused, correctly, because a new test used real portfolio names. The test
+  now uses made-up names, and a test fails in dev whenever any test file names a private term, so the release
+  can't be the first place it's caught.</li>
+</ul></section><section class="panel"><h2>v0.1.9-beta · 2026-10-23</h2><p>Fix: on 2026-10-23 the deep dive's body was correct, but its summary and "Why today" lines, which readers see first
+in the email, on the site and in the podcast notes, said a legal-AI company disclosed no ARR and that "a vendor"
+claimed a $21M saving. In fact the company disclosed ARR, and the $21M was an investor's post about a different
+company. The day before, an unsourced Agenda line had called that investor the other company's "founder".
+- <strong>The why-today line comes from the checked body:</strong> it's written from the deep dive's checked "why today"
+  section, no longer copied from the previous day's topic suggestion.
+- <strong>A header check (<code>pipeline/consistency.py</code>) for the summary and why-today lines:</strong> a sentence is dropped if a
+  figure isn't in the checked body, if it names none of the companies or people the body ties that figure to, or if
+  it says something wasn't disclosed when the body or a source gives it. Spelled-out figures in scripts count. If
+  nothing in the summary survives, the checked opening is used.
+- <strong>Agenda lines can't assert unsourced roles:</strong> "founder", "CEO", "investor in" and similar must appear in the
+  item's own source text; otherwise the line becomes neutral.
+- <strong>Deep-dive text is guarded like the briefing:</strong> a shipped deep dive changes only through a correction, and its
+  page shows the correction note.
+- <strong><code>./np correct DAY "what changed"</code>:</strong> records a hand edit to a shipped edition as a correction, shown on the day
+  page and the deep-dive page.</p></section><section class="panel"><h2>v0.1.8-beta · 2026-10-23</h2><p>Fix: the 2026-10-23 edition was held at 05:26 and again at 06:30. The release gate re-ran the whole test suite
+during the morning run, and one release test that checks for a running daily run saw the real one and failed.
+The same check blocked the backup's git push.
+- <strong>Released code isn't re-tested in the morning:</strong> once a code and settings fingerprint has passed the full gate
+  (tests included) and is approved, later checks accept it without re-running the tests
+  (<code>data/state/release-passed.jsonl</code>). Changed code is still fully checked.
+- <strong>Tests never read the live machine:</strong> test runs set <code>NP_TESTING=1</code>, <code>run_in_progress</code> doesn't look at real
+  processes under it, and the release tests mock it too.
+- <strong>The evening preflight tests tonight what runs tomorrow:</strong> if the code hasn't passed the full gate yet, the
+  preflight runs it at 20:30 and emails the owner if it fails, instead of finding out at 05:00.
+- <strong>The pre-push hook uses the same fast check</strong> (<code>--release-check require</code>), and <code>./np release</code> reinstalls the
+  hooks.</p></section><section class="panel"><h2>v0.1.7-beta · 2026-10-22</h2><p>Shipped editions don't break. Once a day's email has gone out, that day is shipped (<code>pipeline/shipped.py</code>), and:
+- <strong>Publish guard:</strong> before every production publish, the new site is checked against what readers already have.
+  It refuses (the live site is untouched and the owner is emailed) if any of these hold:
+  - a shipped day page or deep dive is missing;
+  - a shipped edition's text changed without a correction;
+  - a shipped MP3 inside the retention window is missing;
+  - the home page or a feed is missing, or the podcast feed would shrink.
+- <strong>Corrections are explicit:</strong> rebuilding a shipped day (<code>rebrief</code>, <code>reprocess</code>, <code>remaster</code>) needs
+  <code>--correct "what changed"</code>, and the page shows "Corrected &lt;date&gt;: …".
+- <strong>Remasters keep the old audio:</strong> the earlier MP3 is carried over from the live site, so no audio URL breaks.
+- <strong>After-publish check:</strong> once the site is live, the newest shipped pages, both feeds and the latest MP3 must
+  answer. If not, the previous site is put back automatically, the email is held, and the owner is emailed.
+  <code>./np publish restore</code> does the same by hand.
+- <strong>The email waits for a good publish:</strong> if the publish fails or the after-publish check fails, no subscriber
+  email goes out. Before, it went anyway.
+- <strong>Audio retention:</strong> 30 days on the site and in the podcast feed, up from 14. 60 days would be about 1 GB, the
+  GitHub Pages limit.
+- <strong>Slack:</strong> links any member posts in the team channel now count, links only. Who posted is never stored, and
+  their text is never used.
+- <strong>Staging preview:</strong> carries only the newest day's audio. The first full preview push timed out.
+- <strong>Site pushes are sturdier:</strong> a push that stalls (under 1 KB/s for 60 s) fails and is retried once over
+  HTTP/1.1, instead of hanging the morning run. Pushes no longer use one huge buffered upload, which is what
+  GitHub was timing out with HTTP 408.</p></section><section class="panel"><h2>v0.1.6-beta · 2026-10-22</h2><ul>
+<li>Development preview: <code>./np staging publish [setup]</code> publishes the dev checkout's site to its own Pages repo
+  (sgwoods/ai-briefing-staging). The preview has a banner on every page linking back to the published site, is
+  kept out of search engines (noindex, robots.txt), and has no subscribe form and no podcast feed. Staging can
+  publish only there, and production never publishes there.</li>
+<li><code>./np staging compare [DAY]</code>: staging against production for the same day: sections, counts, words, source
+  links, the evidence mix, fact-check counts and audio length, plus the privacy scan of the preview and a diff of
+  the edition. Writes <code>logs/compare-DAY.md</code> and flags what needs review.</li>
+<li>Fix: a staging run no longer copies its MP3 into the owner's iCloud folder. The first staging run had
+  overwritten that day's copy. It no longer deletes iCloud files either.</li>
+<li>Tests always run as production (<code>NP_ENV=production</code>), in either checkout.</li>
+</ul></section><section class="panel"><h2>v0.1.5-beta · 2026-10-22</h2><ul>
+<li>Fix: the scheduled jobs had been firing exactly one hour early every day (the 05:00 run started at 04:00, the
+  20:30 preflight at 19:30). launchd now only ticks every half hour, and the Mac's own local clock decides when a
+  scheduled time has come (<code>pipeline/schedule.py</code>, <code>./np scheduled</code>). Times must be on :00 or :30.</li>
+<li>Releases refuse checkout-local files (<code>.venv</code>, <code>.env</code>, <code>.staging</code>) committed on dev; <code>.venv</code> is ignored as a
+  link too.</li>
+<li>Fix: rebuilding an edition (<code>./np rebrief</code>, <code>./np staging run</code>) failed with KeyError 'critique', because the
+  evidence check on Must reads needs the critique model, and a rebuild had stopped loading it. Found by the
+  first staging run.</li>
+<li>Git safety: every git call in the export, hub, dev and release code ignores GIT_DIR / GIT_WORK_TREE from the
+  environment, and the tests that build throwaway repositories clear them. A leaked GIT_DIR once pointed a test's
+  <code>git init</code> at the production repository and wrote a wrong <code>core.worktree</code> into its config. Caught and fixed
+  before any run used it.</li>
+<li>The first release built on dev and promoted with <code>./np release</code>.</li>
+</ul></section><section class="panel"><h2>v0.1.4-beta · 2026-10-22</h2><ul>
+<li>Development checkout: <code>./np dev setup</code> creates a second working copy of the repository on branch <code>dev</code>, in
+  staging mode. Inside it:</li>
+<li><code>./np staging sync</code> brings in production's latest data and fixes;</li>
+<li><code>./np staging run [DAY]</code> rebuilds an edition with the development code while outbound stays off, and
+    <code>--email</code> sends the review copy to the owner only;</li>
+<li><code>./np staging reset</code> throws away what staging wrote.</li>
+<li>Staging outputs can't be committed: the pre-commit hook refuses data paths in a staging checkout, archive
+  commits are skipped there, alerts aren't sent, and services can't be installed. Staging runs keep out of the
+  03:30–08:30 production window.</li>
+<li>Releases and rollback:</li>
+<li><code>./np release VERSION "reviewed: ..."</code> merges dev into production between 08:30 and 20:00, needs one
+    approval, then tags the release and pushes the public code, the backup and the hub status. It refuses if
+    production has stray code changes, a run is in progress, dev's version or changelog don't match, or the
+    staging marker was committed.</li>
+<li><code>./np rollback "reviewed: ..."</code> returns the code to the previous release.</li>
+</ul></section><section class="panel"><h2>v0.1.3-beta · 2026-10-22</h2><ul>
+<li>Documentation on the site at <code>/docs/</code>, rebuilt at every publish from the same markdown as the public code, with
+  the diagrams embedded. Each page shows the running version and when it last changed. Linked from the footer and
+  the hub page.</li>
+<li>Generated sections in the architecture document: current facts and a component table built from each module's
+  own description. Drift tests fail a release if the document names a module that no longer exists, or doesn't
+  name the current version.</li>
+<li>Release check: the tests line shows unittest's own summary.</li>
+</ul></section><section class="panel"><h2>v0.1.2-beta · 2026-10-22</h2><ul>
+<li>Staging mode: a development checkout (marked by an untracked <code>.staging</code> file) can build everything but can't
+  reach readers. The release gate refuses every outbound action there. The mailer allows only reads and review
+  copies to the owner, marked [STAGING]. A new release-gate invariant keeps every outbound function behind the gate.</li>
+<li>The hub project page shows the latest release notes and links to the architecture document.</li>
+<li>Architecture document with four diagrams: system overview, the daily run, repositories and privacy boundaries,
+  and the release flow (<code>docs/ARCHITECTURE.md</code>).</li>
+</ul></section><section class="panel"><h2>v0.1.1-beta · 2026-10-22</h2><ul>
+<li>AI Briefing on the public project hub (sgwoods.github.io/public) as an exporting project: after each publish,
+  <code>./np hub push</code> writes its status (19 fields, naming this released public commit) and its project page with the
+  hub's freshness panel, and pushes only those two files. It refuses when the running code isn't the release.</li>
+<li>The site's old <code>/hub/</code> copy of the status files is retired.</li>
+<li><code>./np log &amp;lt;command&gt;</code> saves any command's output under <code>logs/</code>.</li>
+</ul></section><section class="panel"><h2>v0.1.0-beta · 2026-10-22</h2><p>The system as it runs today, labelled the first beta: a small number of outside readers.</p>
+<ul>
+<li>Daily edition: fetch from feeds, sitemaps, Bluesky lists, newsletters and Slack links; filter, summarize, rank,
+  cluster into stories, critique, verify and fact-check; Top of mind, Must read, Worth knowing, Open questions.</li>
+<li>Evidence-weighted sources: every source has a profile, and a Must read needs primary or reporting evidence.</li>
+<li>Podcast: a ~10-minute episode read by the host, followed in the same episode by the day's deep dive.</li>
+<li>Public site, podcast feed and RSS on GitHub Pages; a subscriber email sent after the site is live.</li>
+<li>Release gate on every outbound step: tests, secret scan, privacy invariants and Steven's approval of
+  security-sensitive changes; owner alerts when action is needed; a cloud watchdog for missing editions.</li>
+<li>Reader feedback collected from email replies and triaged daily.</li>
+<li>Public code repository: an allowlisted, scrubbed export (<code>./np push-code</code>), MIT licence.</li>
+</ul></section></main><script src="../share.js"></script><footer>Daily AI briefing for early-stage investors, curated by Steven Woods. Analysis is machine-generated from public sources (every claim links to its source); "Steven's take" is personal opinion. <a href="../index.html#email">Subscribe by email</a> · <a href="../index.html#listen">Add the podcast</a> · <a href="../feed.xml">RSS</a> · <a href="../podcast.xml">Podcast feed</a> · <a href="../deepdive.xml">Deep-dive feed</a><br><span class="small"><a href="../releases/index.html">v0.2 beta</a> · <a href="../docs/index.html">Docs</a> · <a href="../calls/index.html">Calls we made</a> · <a href="../accuracy/index.html">Accuracy</a> · <a href="https://github.com/sgwoods/news-pipeline">Code</a> · <a href="https://sgwoods.github.io/public/index.html">Steven Woods · public projects</a></span></footer></body></html>
