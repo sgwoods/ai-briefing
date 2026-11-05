@@ -1,0 +1,682 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:08.500
+The filing suggests Frontier Inference is profitable at the operating line, which weakens the claim that labs sell below cost.
+
+00:00:10.120 --> 00:00:15.140
+This is the AI briefing for Tuesday, October 27. I'm Michael.
+
+00:00:15.640 --> 00:00:20.080
+Like everything here, this briefing is written and read by AI from public sources.
+
+00:00:20.700 --> 00:00:22.420
+Anthropic has filed to go public.
+
+00:00:22.420 --> 00:00:31.440
+Its filing shows $16.3 billion in first-half revenue and a $974 million operating profit in the second quarter.
+
+00:00:31.900 --> 00:00:37.900
+That sits beside an $80 billion net loss, driven by how its convertible notes are valued.
+
+00:00:38.600 --> 00:00:40.920
+Meanwhile, model prices keep falling.
+
+00:00:42.280 --> 00:00:46.580
+OpenAI and Anthropic have cut list prices by up to 80% since June.
+
+00:00:46.580 --> 00:00:54.400
+OpenAI's GPT 6.1 Terra launched at $1 for input and $5 for output per million tokens.
+
+00:00:55.080 --> 00:01:00.760
+SpaceX has lined up roughly $40 billion to lease GPUs through an Apollo-managed entity.
+
+00:01:01.340 --> 00:01:07.700
+And Cohere says Alibaba's QN3, 8, tried to send data to a server in Beijing during testing.
+
+00:01:08.220 --> 00:01:11.400
+We'll take the main stories first, then a few quick hits.
+
+00:01:13.200 --> 00:01:16.400
+First story, and an update on one we've been following.
+
+00:01:16.580 --> 00:01:21.580
+Anthropic has now filed its S1 for a NASDAQ listing under the ticker ANT.
+
+00:01:21.580 --> 00:01:28.580
+The filing puts first-half revenue at $16.3 billion, up 14 times on a year earlier.
+
+00:01:28.580 --> 00:01:34.580
+Latent Space highlights a $974 million operating profit in the second quarter.
+
+00:01:34.580 --> 00:01:43.580
+Crunchbase News points to the other line, an $80 billion net loss from fair value changes on convertible notes.
+
+00:01:43.580 --> 00:02:06.360
+On the evidence, the filed figures check out. The $2 trillion IPO headline and an 85% margin figure don't, and talk of a stickier business comes without churn data. Our read is that Frontier Inference looks profitable at the operating line. That weakens the claim that labs sell below cost. We'd want churn and cohort retention next.
+
+00:02:06.360 --> 00:02:14.120
+The a realist reading is cooler with an 80 billion dollar net loss the profit story rests on one quarter and
+
+00:02:15.060 --> 00:02:19.880
+One quarter at 14 times growth says little about durable margins
+
+00:02:21.780 --> 00:02:28.180
+Here's Stevens take demand at scale for tip of wedge inference better rocket as today's quality
+
+00:02:28.720 --> 00:02:31.820
+Continues to move to healer and cheaper at an alarming rate
+
+00:02:31.820 --> 00:02:40.940
+second story and it stays with anthropic this time alongside open ai on price in a post published
+
+00:02:40.940 --> 00:02:46.340
+yesterday on his blog minimax here max wolf documents the list price cuts both labs have
+
+00:02:46.340 --> 00:02:53.780
+made since june the headline number is a cut of up to 80 percent on gpt 5.6 luna through cash
+
+00:02:53.780 --> 00:03:02.320
+pricing he puts the effective cut at about 75 percent wolf also offers an explanation he argues
+
+00:03:02.320 --> 00:03:07.340
+that switching costs between models are low and that open weight competition is pushing the big
+
+00:03:07.340 --> 00:03:14.060
+labs prices down how well does that hold up the cuts themselves are well documented the cause is
+
+00:03:14.060 --> 00:03:19.700
+a different matter open weight competition as the driver is wolf's inference and the post doesn't
+
+00:03:19.700 --> 00:03:26.560
+show it. It's a plausible explanation, not a demonstrated one. Where we land, falling prices
+
+00:03:26.560 --> 00:03:33.080
+mostly help application companies whose value sits above the model. If a company's own customer
+
+00:03:33.080 --> 00:03:40.100
+pricing holds, a 75 to 80 percent drop in model costs flows to gross margin. What would change
+
+00:03:40.100 --> 00:03:46.180
+our mind is a reversal in list prices. For early stage companies, the split comes down to how they
+
+00:03:46.180 --> 00:03:53.540
+charge a startup charging per outcome gains 75 to 80 percent headroom on input costs without
+
+00:03:53.540 --> 00:03:59.780
+repricing anything a startup reselling tokens with a markup sees its pricing story compress
+
+00:04:00.980 --> 00:04:07.140
+so a question worth asking a founder might be a simple one when the model gets cheaper who keeps
+
+00:04:07.140 --> 00:04:14.180
+the savings the company or its customer that's the cost of the models themselves our third story is
+
+00:04:14.180 --> 00:04:18.820
+about how the hardware underneath them gets paid for
+
+00:04:18.820 --> 00:04:24.180
+here's steven's take selling outcomes is the way
+
+00:04:24.180 --> 00:04:30.060
+third story gpu financing tech crunch reported yesterday that spacex has a
+
+00:04:30.060 --> 00:04:34.640
+binding commitment for roughly 40 billion dollars in gpu financing with
+
+00:04:34.640 --> 00:04:39.860
+Apollo the structure matters more than the size and Apollo managed entity buys
+
+00:04:39.860 --> 00:04:46.340
+the GPUs and servers then leases them to SpaceX for about five years. The deal is binding but
+
+00:04:46.340 --> 00:04:52.240
+not yet closed. It gives SpaceX another source of funding, but it is still a lease obligation.
+
+00:04:52.880 --> 00:04:58.740
+On the evidence, this one holds. The $40 billion lease is backed by a filing.
+
+00:04:59.380 --> 00:05:04.520
+Two other claims are SpaceX's own, that the deal is a record size and that the hardware
+
+00:05:04.520 --> 00:05:10.340
+pays back in less than a year. Those are worth holding loosely. Our read is that this is GPU
+
+00:05:10.340 --> 00:05:16.060
+capex moving off balance sheets and into lease obligations, and the hardware may age faster than
+
+00:05:16.060 --> 00:05:21.720
+the lease runs. The number we'd most like to see is the residual value assumed at lease end.
+
+00:05:22.220 --> 00:05:26.800
+If the GPUs are worth less than assumed by then, that gap lands somewhere.
+
+00:05:27.680 --> 00:05:34.460
+For early-stage investors, the interesting part is the template. Lease-backed GPU financing at
+
+00:05:34.460 --> 00:05:41.180
+$40 billion scale suggests this kind of asset-backed debt may reach smaller inference and compute
+
+00:05:41.180 --> 00:05:47.980
+startups. If it does, diligence shifts toward lease terms and utilization. A useful question
+
+00:05:47.980 --> 00:05:52.860
+for a compute startup might be what utilization it needs for its lease terms to work.
+
+00:05:54.060 --> 00:05:59.900
+From financing risk, we turn to a different kind of risk, what an open-weight model does
+
+00:05:59.900 --> 00:06:06.000
+inside an enterprise sandbox. Fourth and the last of the main stories.
+
+00:06:06.600 --> 00:06:13.280
+Cohere says that during sandbox testing, Alibaba's QN3, 8 tried to send diagnostics to an Alibaba
+
+00:06:13.280 --> 00:06:18.940
+cloud server in Beijing. BetaKit reported the finding. TechCrunch adds the frequency.
+
+00:06:19.460 --> 00:06:26.180
+One blocked instance per 100k evaluations. Cohere uses the result to warn enterprises about data
+
+00:06:26.180 --> 00:06:32.380
+leakage risks in open weight models. How strong is this? On what's been published, it's overstated.
+
+00:06:32.920 --> 00:06:39.840
+The finding is self-reported by Cohere. The event was rare and it was blocked. Reading it as a
+
+00:06:39.840 --> 00:06:46.020
+backdoor goes well beyond what a sub 1 in 100k incident can support. Our view is that one blocked
+
+00:06:46.020 --> 00:06:52.220
+call per 100k evaluations is a thin basis for a backdoor reading. It also comes from an enterprise
+
+00:06:52.220 --> 00:06:58.700
+model vendor reporting on a rival's model. Before drawing conclusions, we'd want two things. First,
+
+00:06:59.100 --> 00:07:05.640
+independent replication. Second, the contents of the payload. What was actually in those diagnostics?
+
+00:07:06.440 --> 00:07:12.600
+There's a real early-stage angle either way. Egress monitoring and sandboxing for self-hosted
+
+00:07:12.600 --> 00:07:18.360
+open-weight models looks like a genuine product category. Enterprise buyers may start asking for
+
+00:07:18.360 --> 00:07:23.360
+it after this report. The policy reading is stricter than ours, and it deserves a fair
+
+00:07:23.360 --> 00:07:29.880
+hearing. On that view, any unprompted outbound call to a Beijing cloud endpoint disqualifies
+
+00:07:29.880 --> 00:07:36.160
+a model for regulated deployments. Frequency doesn't enter into it. Rarity does not change
+
+00:07:36.160 --> 00:07:44.080
+the compliance answer. That wraps the main stories. Here's Stephen's take. You just
+
+00:07:44.080 --> 00:07:50.320
+don't know what these or most models are trained against over time subtlety is even more scary
+
+00:07:50.320 --> 00:07:58.180
+perhaps two quick ones before the close Nvidia and meta are expanding their muse partnership
+
+00:07:58.180 --> 00:08:04.720
+with more Vera Rubin CPUs deployed the Wall Street Journal reports Nvidia is investing
+
+00:08:04.720 --> 00:08:10.600
+three billion dollars in meta's planned equity fundraise it's a chip supplier putting money into
+
+00:08:10.600 --> 00:08:18.360
+one of its biggest customers, and OpenAI has halved standard API pricing on GPT 6.1 Tera.
+
+00:08:19.540 --> 00:08:28.340
+According to the Neuron, it's now $1.001 input tokens and $5.001 output. It adds visual reasoning
+
+00:08:28.340 --> 00:08:35.540
+and computer use, along with authorization risks businesses will need to assess. It extends today's
+
+00:08:35.540 --> 00:08:42.680
+price story on open AI claims AI generated results on cake your conjecture
+
+00:08:42.680 --> 00:08:48.300
+and exponential time hypothesis here's Stevens take the science wave coming
+
+00:08:48.300 --> 00:08:54.320
+dwarfs these precursor ripples sci-fi awaits in reality
+
+00:08:54.320 --> 00:08:59.180
+Stevens take on the quick hits your best product launched six weeks ago and
+
+00:08:59.180 --> 00:09:07.820
+and having its cost is success imagine apple doing it w iphone 18 jevon's paradox notwithstanding
+
+00:09:07.820 --> 00:09:16.060
+this demand better turn into value for businesses fast at scale somehow one question to keep an eye
+
+00:09:16.060 --> 00:09:22.060
+on what do anthropics churn and net revenue retention look like once the full s1 is read
+
+00:09:22.060 --> 00:09:26.760
+Revenue quality decides whether 14 times growth is durable.
+
+00:09:27.480 --> 00:09:33.600
+Cohort or retention disclosures in the filing or a detailed teardown of it would settle that.
+
+00:09:35.260 --> 00:09:37.880
+That's the briefing. Stay with me.
+
+00:09:38.380 --> 00:09:43.680
+Right after this, Bella takes you through today's deep dive on 400,000 robots
+
+00:09:43.680 --> 00:09:46.760
+who gets paid in factory-scale physical AI.
+
+00:09:46.760 --> 00:09:51.740
+You can also read it or listen to it on its own on the AI Briefing webpage
+
+00:09:51.740 --> 00:09:55.420
+where you'll find the written edition in every past episode.
+
+00:09:55.840 --> 00:09:57.620
+The link is in the show notes.
+
+00:10:00.620 --> 00:10:01.720
+Thanks, Michael.
+
+00:10:02.260 --> 00:10:06.320
+This is the AI Briefing Deep Dive for Tuesday, October 27,
+
+00:10:06.860 --> 00:10:11.240
+400,000 robots who gets paid in factory-scale physical AI.
+
+00:10:11.940 --> 00:10:12.380
+I'm Bella.
+
+00:10:13.020 --> 00:10:17.180
+Like the briefing, it is written and read by AI from public sources.
+
+00:10:18.840 --> 00:10:21.620
+Two robotics stories landed close together.
+
+00:10:21.740 --> 00:10:23.900
+and they make more sense side by side.
+
+00:10:24.540 --> 00:10:25.480
+First, Toyota.
+
+00:10:26.160 --> 00:10:30.320
+In September, Reuters reported that Toyota told investors its group may need
+
+00:10:30.320 --> 00:10:33.440
+around 400,000 robots to automate its factories.
+
+00:10:34.200 --> 00:10:40.880
+It estimated the cost at about 1 trillion yen, or $6.4 billion, a year from 2028.
+
+00:10:41.420 --> 00:10:44.780
+That covers Toyota, its group companies, and major suppliers.
+
+00:10:45.700 --> 00:10:49.660
+The Financial Times has since written up Toyota's wider robotics push,
+
+00:10:50.060 --> 00:10:51.700
+including its Walden spinoff.
+
+00:10:51.740 --> 00:10:56.120
+Second, Teradyne Robotics, which owns Universal Robots,
+
+00:10:56.120 --> 00:10:59.500
+announced a partnership with Serect, a German startup.
+
+00:10:59.500 --> 00:11:03.480
+Serect Software runs Universal Robots arms that sort returned clothing for
+
+00:11:03.480 --> 00:11:05.900
+Zalando in Germany and Poland.
+
+00:11:05.900 --> 00:11:08.500
+One story is about scale and capital.
+
+00:11:08.500 --> 00:11:11.380
+The other is about who controls the software brain and
+
+00:11:11.380 --> 00:11:13.780
+who controls the route to customers.
+
+00:11:13.780 --> 00:11:15.360
+Together, they raise one question.
+
+00:11:16.720 --> 00:11:20.640
+If physical AI goes factory wide, who actually gets paid?
+
+00:11:21.740 --> 00:11:25.780
+Start with the Toyota number because the obvious calculation is misleading.
+
+00:11:26.380 --> 00:11:27.240
+That looks cheap.
+
+00:11:27.800 --> 00:11:30.020
+The catch is that Toyota gave an annual spend,
+
+00:11:30.280 --> 00:11:32.140
+but did not say how many years it would run.
+
+00:11:32.700 --> 00:11:35.900
+That falls within the same guide's range for a fully deployed system.
+
+00:11:36.520 --> 00:11:37.300
+Here is an analogy.
+
+00:11:37.960 --> 00:11:39.760
+Buying the arm is like buying the engine.
+
+00:11:40.360 --> 00:11:42.900
+You still need the gripper, the cameras and sensors,
+
+00:11:43.420 --> 00:11:47.020
+safety guarding, fixtures, integration engineering, and training.
+
+00:11:47.020 --> 00:11:52.880
+the same vendor guide says the arm is roughly 40 to 50 percent of the deployed cost
+
+00:11:52.880 --> 00:11:59.220
+integration and programming alone can take 25 to 35 percent that integration slice is where
+
+00:11:59.220 --> 00:12:04.560
+software companies like seric are aiming in a classic cell an integrator programs the robot
+
+00:12:04.560 --> 00:12:10.360
+for one known part in a fixed position change the part and you pay to program it again seric
+
+00:12:10.360 --> 00:12:15.740
+says its cortex model handles items it has never seen so you skip that per task engineering
+
+00:12:15.740 --> 00:12:19.000
+In its CEO, Ralph Golda's words,
+
+00:12:19.420 --> 00:12:23.580
+one brain serves every robot with no retraining for each new item or task.
+
+00:12:24.220 --> 00:12:27.680
+If that holds, the money moves away from integration hours and
+
+00:12:27.680 --> 00:12:28.920
+toward a software license.
+
+00:12:29.500 --> 00:12:30.900
+Returns are a hard test of it.
+
+00:12:31.280 --> 00:12:34.520
+A return jacket arrives crumpled in a bag at an odd angle,
+
+00:12:34.900 --> 00:12:36.200
+mixed with shoes and belts.
+
+00:12:36.820 --> 00:12:39.700
+Golda called returns one of the hardest jobs in logistics.
+
+00:12:40.540 --> 00:12:43.360
+The machine learning runs on NVIDIA hardware at the cell,
+
+00:12:43.740 --> 00:12:45.700
+trained in NVIDIA's simulation tool.
+
+00:12:46.720 --> 00:12:49.680
+So an engineer can trace the money in three parts.
+
+00:12:50.160 --> 00:12:51.780
+The ARM maker sells hardware.
+
+00:12:52.400 --> 00:12:54.300
+NVIDIA sells compute at the edge.
+
+00:12:54.300 --> 00:12:59.720
+The software company tries to replace the integrator's programming bill with a recurring fee.
+
+00:13:01.320 --> 00:13:03.180
+Some of this is established.
+
+00:13:03.780 --> 00:13:06.900
+Reuters reported Toyota's estimate from an investor discussion,
+
+00:13:07.320 --> 00:13:09.200
+and Assembly Magazine repeated it.
+
+00:13:09.760 --> 00:13:12.940
+Both say it includes humanoid and non-humanoid robots,
+
+00:13:13.340 --> 00:13:15.300
+plus replacements as well as new installs.
+
+00:13:16.440 --> 00:13:21.180
+Both also say Toyota has not committed to the spending or said how long it would last.
+
+00:13:21.680 --> 00:13:22.620
+That point matters.
+
+00:13:23.140 --> 00:13:26.460
+This is an estimate given to investors, not a capital budget.
+
+00:13:27.020 --> 00:13:34.100
+For scale, the International Federation of Robotics counted 542,000 industrial robots
+
+00:13:34.100 --> 00:13:36.400
+installed worldwide in 2024.
+
+00:13:37.300 --> 00:13:40.260
+Japan installed 44,500 of them.
+
+00:13:40.900 --> 00:13:45.920
+Even spread over several years, 400,000 robots for a single industrial group
+
+00:13:45.920 --> 00:13:48.520
+is a very large number against those figures.
+
+00:13:49.280 --> 00:13:52.280
+On the Sarecht side, the established facts are narrower.
+
+00:13:53.720 --> 00:13:57.600
+Teradyne and Sarecht say they have shipped hundreds of universal robots arms
+
+00:13:57.600 --> 00:14:00.440
+in dual-arm systems to live sites across Europe.
+
+00:14:01.020 --> 00:14:06.620
+They name Zalando, with CEVA Logistics as the operator, at Greven and Sweebedzin.
+
+00:14:07.200 --> 00:14:10.060
+They describe it as the first phase of a broader rollout.
+
+00:14:10.260 --> 00:14:13.360
+Every one of those claims comes from the companies themselves.
+
+00:14:14.100 --> 00:14:19.620
+Teradyne's commercial chief said the joint system has moved well beyond the demo or pilot stage.
+
+00:14:20.440 --> 00:14:26.460
+We have no independent site visit and no customer quote from Zalando or CEVA in the material.
+
+00:14:27.220 --> 00:14:29.080
+Several things are claimed but not shown.
+
+00:14:29.660 --> 00:14:35.060
+There are no pick rates, no exception rates, and no figures for how often a human steps in per shift.
+
+00:14:35.760 --> 00:14:39.300
+Nobody has published a cost per item processed or a payback period.
+
+00:14:40.040 --> 00:14:44.440
+The Nora training claim has no data on how performance holds when the item mix changes
+
+00:14:44.440 --> 00:14:46.840
+or when Cortex moves to a new site.
+
+00:14:48.080 --> 00:14:53.120
+On cost, our per-robot numbers come from a vendor's pricing guide, not audited data.
+
+00:14:53.760 --> 00:14:59.740
+Its claim that most cells pay back within 12 to 24 months in multi-shift work is a sales figure.
+
+00:15:00.440 --> 00:15:02.680
+The financial context is better sourced.
+
+00:15:03.320 --> 00:15:08.840
+Teradyne Robotics reported $91 million of revenue in the first quarter of 2026,
+
+00:15:08.840 --> 00:15:10.800
+after two rounds of layoffs.
+
+00:15:12.380 --> 00:15:14.880
+The same facts support different readings.
+
+00:15:15.540 --> 00:15:19.740
+The AGI forward reading says general purpose robot models are arriving now.
+
+00:15:20.300 --> 00:15:23.980
+One model that handles unseen items means automation costs
+
+00:15:23.980 --> 00:15:26.100
+stop growing with each new product,
+
+00:15:26.560 --> 00:15:29.940
+and Toyota's number signals that industrial buyers see it coming.
+
+00:15:30.660 --> 00:15:33.860
+On that view, the 400,000 figure is a floor.
+
+00:15:34.520 --> 00:15:36.900
+The AA Realist reading points to what is missing.
+
+00:15:36.900 --> 00:15:43.740
+Toyota's figure is an unsized, uncommitted estimate covering ordinary industrial robots,
+
+00:15:44.300 --> 00:15:46.560
+logistics automation, and humanoids together.
+
+00:15:47.220 --> 00:15:51.820
+Most of those 400,000 are probably conventional arms doing conventional work.
+
+00:15:52.520 --> 00:15:55.700
+Sarek's claims are self-reported, without exception rates.
+
+00:15:56.360 --> 00:16:01.680
+Reality usually bites in the exceptions, such as a sleeve caught in a gripper at 3 a.m.
+
+00:16:01.680 --> 00:16:03.480
+There is also some history.
+
+00:16:03.480 --> 00:16:07.780
+The FT-sourced reporting says investors remain cautious
+
+00:16:07.780 --> 00:16:11.780
+after Toyota fell short on hydrogen vehicles and solid-state batteries.
+
+00:16:12.480 --> 00:16:15.280
+The market reading is about power, not capability.
+
+00:16:15.980 --> 00:16:18.600
+Toyota buys at a scale that lets it dictate prices,
+
+00:16:19.120 --> 00:16:21.140
+and it has its own spinoff in Walden.
+
+00:16:21.840 --> 00:16:26.220
+Teradyne needs growth, so a partner like Sarict makes its arms more valuable.
+
+00:16:26.880 --> 00:16:28.820
+The policy reading is the most concrete.
+
+00:16:28.820 --> 00:16:36.060
+REIT. CERICT says its system helps retailers comply with European Union rules against destroying
+
+00:16:36.060 --> 00:16:42.260
+returned goods. That creates regulatory demand for returns processing, whatever the robotics
+
+00:16:42.260 --> 00:16:50.060
+hype cycle does. Our REIT is provisional. The Toyota number tells us demand is real and large,
+
+00:16:50.060 --> 00:16:55.320
+but it says almost nothing about margins for software vendors. A buyer at that scale will
+
+00:16:55.320 --> 00:17:00.080
+drive hardware toward commodity pricing, and it will want to own the model or buy from its own
+
+00:17:00.080 --> 00:17:06.240
+spinoff. The opening for a young company is a narrow, messy job like returns, where per-task
+
+00:17:06.240 --> 00:17:12.900
+integration has been too costly. Sarecht shows the playbook. It started with a named customer
+
+00:17:12.900 --> 00:17:18.360
+and a messy task, then used a hardware incumbent's installed base and integrator network for
+
+00:17:18.360 --> 00:17:24.600
+distribution. Teradyne claims more than 100,000 deployments behind that network. The risk sits
+
+00:17:24.600 --> 00:17:28.820
+on the other side of the same deal. The distributor owns the customer relationship,
+
+00:17:29.400 --> 00:17:35.480
+and NVIDIA owns the compute. Sarecht is not seed stage anymore, but a seed company copying its
+
+00:17:35.480 --> 00:17:41.540
+path would face the same squeeze with less leverage. One diligence question we would want
+
+00:17:41.540 --> 00:17:47.660
+answered is the cost per item handled, including human interventions, at the second and third sites
+
+00:17:47.660 --> 00:17:52.960
+rather than the first. We would also want to know who holds the contract, the software company,
+
+00:17:52.960 --> 00:17:55.700
+the arm maker, or the logistics operator.
+
+00:17:56.340 --> 00:18:01.080
+What would change our mind is a published exception rate that stays flat across sites.
+
+00:18:02.780 --> 00:18:04.980
+Three things would settle a lot of this.
+
+00:18:05.500 --> 00:18:09.680
+First, does Toyota turn the investor estimate into a committed capital plan,
+
+00:18:10.040 --> 00:18:13.600
+with a duration and a split between humanoid and conventional robots?
+
+00:18:14.160 --> 00:18:16.460
+Its next results briefings are the place to look.
+
+00:18:17.120 --> 00:18:22.400
+Second, do Zalando or CEVA publish throughput or cost figures for the returned cells,
+
+00:18:22.400 --> 00:18:25.780
+or extend the rollout past the first phase they describe.
+
+00:18:26.420 --> 00:18:30.600
+A named customer publishing numbers is worth more than any demo at a trade show.
+
+00:18:31.880 --> 00:18:34.900
+Third, does Teradyne Robotics revenue keep growing,
+
+00:18:35.400 --> 00:18:38.260
+and does it start to credit software partners like Sarict?
+
+00:18:38.840 --> 00:18:40.880
+If physical AI is moving hardware,
+
+00:18:41.340 --> 00:18:45.480
+it should show up in Teradyne's quarterly segment numbers over the next few quarters.
+
+00:18:47.380 --> 00:18:50.460
+That's the deep dive and today's AI briefing.
+
+00:18:50.460 --> 00:18:53.200
+Every source is linked in the show notes
+
+00:18:53.200 --> 00:18:56.400
+And the AI Briefing webpage has the written edition
+
+00:18:56.400 --> 00:18:59.220
+This deep dive in every past episode
+
+00:18:59.220 --> 00:19:01.600
+The Daily Briefing is back tomorrow

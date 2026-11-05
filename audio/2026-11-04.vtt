@@ -1,0 +1,850 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:09.200
+On today's AI briefing, we think October's headline reflects one deal, not a broad market.
+
+00:00:09.720 --> 00:00:14.120
+Without DeepSeek, the 45% jump is about 6%.
+
+00:00:14.120 --> 00:00:20.360
+This is the AI briefing for Wednesday, November 4. I'm Michael.
+
+00:00:20.360 --> 00:00:25.640
+Like everything here, this briefing is written and read by AI from public sources.
+
+00:00:25.640 --> 00:00:32.200
+China's DeepSeq has raised $15.9 billion at a $90 billion valuation.
+
+00:00:32.200 --> 00:00:39.240
+It is the largest venture deal for a Chinese company, and one deal big enough to reshape October's funding picture.
+
+00:00:40.000 --> 00:00:45.500
+Anthropic is spending a bigger share of its revenue on compute just when that share should be falling.
+
+00:00:46.780 --> 00:00:49.980
+That matters to startups counting on cheaper model prices.
+
+00:00:50.760 --> 00:00:56.040
+Canada's finance minister held up Cohere as the model for state-backed AI champions,
+
+00:00:56.440 --> 00:01:02.580
+and FAL doubled its valuation to $16 billion in a $1.3 billion round.
+
+00:01:03.160 --> 00:01:06.140
+The main stories first, then a few quick hits.
+
+00:01:07.940 --> 00:01:10.040
+First, Stephen's take on the day.
+
+00:01:10.040 --> 00:01:16.980
+I think our companies look pretty efficient on being able to leverage declining cost equivalent capability model trends.
+
+00:01:17.660 --> 00:01:20.080
+Similarly, it feels pretty good on solid-like.
+
+00:01:20.680 --> 00:01:23.440
+With the Iplina Icode Buildship Systems Versus,
+
+00:01:23.880 --> 00:01:29.060
+a Iplina Icode Buildship, a inference-bound strategy which I strongly believe in,
+
+00:01:29.700 --> 00:01:33.100
+companies that think they can continue to ship inference as a solution
+
+00:01:33.100 --> 00:01:37.640
+are at risk long-term if they are relying on third-party clouds.
+
+00:01:38.540 --> 00:01:41.920
+That said, if you can transition to on-prem GPS,
+
+00:01:42.560 --> 00:01:45.660
+which are actually available if you can deploy them yourselves,
+
+00:01:45.660 --> 00:01:49.260
+The most can get away with this, and TBH.
+
+00:01:49.820 --> 00:01:56.920
+It may be the case that very large cloud models trend to only planning, and what not very bad for Anthropic end.
+
+00:01:59.020 --> 00:02:01.080
+And Stevens take on the top of the day.
+
+00:02:01.820 --> 00:02:05.640
+Anthropic has done an amazing job at model building efficiently,
+
+00:02:06.120 --> 00:02:14.300
+but I believe that edge is in decline as Google moves to launching a major model with characteristics that are better every six weeks,
+
+00:02:14.300 --> 00:02:18.180
+and has lots of places to deploy them, including consumer.
+
+00:02:19.620 --> 00:02:22.980
+Anthropic has to get revenue growing faster and faster,
+
+00:02:23.560 --> 00:02:27.980
+and OpenAI has to try harder to unseat Google in the consumer world
+
+00:02:27.980 --> 00:02:32.660
+or somehow find a way to outpace Google and Anthropic in enterprise.
+
+00:02:33.440 --> 00:02:35.060
+Neither appear likely to me.
+
+00:02:37.880 --> 00:02:40.740
+First story, an update on DeepSeek.
+
+00:02:40.740 --> 00:02:48.460
+According to Crunchbase News, the Chinese company raised $15.9 billion at a $90 billion valuation,
+
+00:02:48.880 --> 00:02:51.360
+the largest venture deal for a Chinese company.
+
+00:02:51.980 --> 00:02:53.480
+The round type is not stated.
+
+00:02:54.140 --> 00:02:58.340
+Billion-dollar rounds took just over 40% of October's $59 billion.
+
+00:02:59.300 --> 00:03:01.340
+Two Series A rounds stood out,
+
+00:03:01.860 --> 00:03:07.600
+flapping airplanes at $1 billion and type-safe AI at $870 million.
+
+00:03:07.600 --> 00:03:14.400
+dollars. On a closer look, the numbers hold. The crunch-based data checks out, but take out
+
+00:03:14.400 --> 00:03:21.360
+DeepSeq's single deal and October's 45% jump shrinks to roughly 6%. So we read this as
+
+00:03:21.360 --> 00:03:27.840
+concentration, not recovery. For seed funds, what matters is the funding outside the billion-dollar
+
+00:03:27.840 --> 00:03:34.260
+rounds. Stage benchmarks look distorted with the mega rounds left in. The question worth watching
+
+00:03:34.260 --> 00:03:38.040
+is whether funding outside those rounds grows over the next few months.
+
+00:03:39.960 --> 00:03:41.280
+Here's Stephen's take.
+
+00:03:41.620 --> 00:03:43.220
+There are things to learn in this data,
+
+00:03:43.420 --> 00:03:46.540
+especially with flapping airplanes and type safe JEV.
+
+00:03:46.980 --> 00:03:47.920
+Stay tuned.
+
+00:03:50.800 --> 00:03:53.020
+From where the money goes to what it buys.
+
+00:03:53.520 --> 00:03:55.880
+The second story is an update on Anthropic.
+
+00:03:56.520 --> 00:03:59.340
+TechCrunch reports that Anthropic's compute margins
+
+00:03:59.340 --> 00:04:01.760
+are getting worse at a time when they should be improving.
+
+00:04:01.760 --> 00:04:08.240
+This one is backed by filings and the arithmetic holds. Compute share of revenue rose to 58%,
+
+00:04:08.760 --> 00:04:14.480
+up from 48%. The author calls it a blip, but that framing is the author's own.
+
+00:04:15.060 --> 00:04:18.280
+Our view is that scale is not yet buying cheaper serving.
+
+00:04:19.600 --> 00:04:25.540
+Calling it a blip needs a quarter of evidence behind it. Startups reselling Frontier AP is
+
+00:04:25.540 --> 00:04:32.020
+inherit this cost line and steep price cuts look less likely. The AGI forward reading differs.
+
+00:04:32.660 --> 00:04:38.800
+A rising compute share can be the cost of staying at the frontier. If capability keeps compounding,
+
+00:04:39.220 --> 00:04:42.880
+today's thinner margin buys pricing power on the next models.
+
+00:04:45.640 --> 00:04:51.220
+The third story is an update from Canada about state money rather than venture money.
+
+00:04:51.220 --> 00:04:57.340
+Betakit reports that Finance Minister Champagne was asked about more government equity stakes.
+
+00:04:57.340 --> 00:05:04.300
+He pointed to Cohere after the $1.6 billion federal investment, calling it a poster child
+
+00:05:04.300 --> 00:05:10.060
+of what you want to do. He signaled Canada is open to repeating the approach, but named no
+
+00:05:10.060 --> 00:05:17.620
+further deals. The report is accurate. Still, it records a minister's policy stance, not evidence
+
+00:05:17.620 --> 00:05:22.480
+that the model works. We think this opens a state equity channel that could help Canadian
+
+00:05:22.480 --> 00:05:29.340
+AI companies. So far, though, it rests on one deal and a minister's praise. The real test is
+
+00:05:29.340 --> 00:05:35.980
+published terms and milestones for the $1.6 billion. Until then, it's an option for founders,
+
+00:05:36.380 --> 00:05:43.240
+not a financing plan. The policy reading goes further. Sovereign capability is a strategic
+
+00:05:43.240 --> 00:05:50.420
+good that markets under price, and a state stake buys capability and control, a return on capital
+
+00:05:50.420 --> 00:05:58.700
+test misses. Here's Stephen's take. Cohere needs to execute like crazy on its go-to-market now in
+
+00:05:58.700 --> 00:06:03.940
+Canada and Europe, and establish a leadership position and overall brand positioning that
+
+00:06:03.940 --> 00:06:09.800
+differentiates to me straw and rather quickly, I would think. They need to execute like Helsing
+
+00:06:09.800 --> 00:06:15.680
+has in Europe in defense, but in adjacent and complementary areas, maybe they are the future
+
+00:06:15.680 --> 00:06:19.940
+of only government and regulated industries, but that is a lot.
+
+00:06:23.040 --> 00:06:28.140
+Fourth and the last of the main stories is a valuation that brings us back to the cost of
+
+00:06:28.140 --> 00:06:34.800
+serving models. Yesterday, TechCrunch reported that FAO raised $1.3 billion in a round led by
+
+00:06:34.800 --> 00:06:42.780
+Bessemer. The valuation is $16 billion, double the $8 billion it reached in April. It is a Series F,
+
+00:06:43.140 --> 00:06:50.480
+not a Series C NVIDIA took part. And Bluemurg reports FAL has over $800 million in annualized
+
+00:06:50.480 --> 00:06:56.700
+revenue. So how well does it hold up? The round figures come from Bluemurg and they stand.
+
+00:06:56.700 --> 00:07:03.500
+The open question is margins. At those numbers, FAL is priced at about 20 times annualized revenue.
+
+00:07:04.080 --> 00:07:05.060
+Here's how we read it.
+
+00:07:05.660 --> 00:07:09.900
+FAL shows that a serving layer can win on distribution and developer pull,
+
+00:07:10.300 --> 00:07:12.380
+even as the models themselves converge.
+
+00:07:13.160 --> 00:07:16.620
+That is a real result, and the revenue says developers are paying.
+
+00:07:17.180 --> 00:07:19.720
+But at about 20 times annualized revenue,
+
+00:07:19.720 --> 00:07:23.240
+the price assumes gross margins that have not been published.
+
+00:07:24.120 --> 00:07:27.060
+That is the same question we raised with Anthropic.
+
+00:07:27.460 --> 00:07:30.420
+What does serving actually cost, and who absorbs it?
+
+00:07:30.420 --> 00:07:34.340
+For early-stage investors, FAL now sets a high comparable.
+
+00:07:35.080 --> 00:07:39.660
+Seed companies in inference and media generation infrastructure will be measured against it.
+
+00:07:40.160 --> 00:07:44.180
+The point we'd want to understand is gross margin after GPU costs.
+
+00:07:44.660 --> 00:07:48.340
+A question worth asking a seed company that cites FAL might be,
+
+00:07:48.880 --> 00:07:53.820
+what is your margin once the GPU bill is paid, and how does it move as you grow?
+
+00:07:53.820 --> 00:08:02.160
+Until FAO or its peers publish that number, the valuation is a bet on margins nobody outside can check.
+
+00:08:03.820 --> 00:08:05.400
+Here's Stephen's take.
+
+00:08:06.000 --> 00:08:16.020
+FAO, a high-speed infrastructure and cloud platform for generative media, image, video, audio, and 3D generation and ideogram hosting partner,
+
+00:08:16.440 --> 00:08:20.740
+is a great example of underlying infrastructure emerging that might be sticky.
+
+00:08:21.520 --> 00:08:22.240
+TBD.
+
+00:08:23.820 --> 00:08:27.300
+Two quick ones before we close.
+
+00:08:27.900 --> 00:08:31.320
+Oracle has scrapped a lease with Tencent worth about $7 billion.
+
+00:08:32.220 --> 00:08:36.920
+It would have supplied about 100,000 advanced AI chips over five years
+
+00:08:36.920 --> 00:08:39.780
+and ended under pressure from the Trump administration.
+
+00:08:40.580 --> 00:08:44.600
+It matters because politics can unwind compute deals after they're signed.
+
+00:08:45.140 --> 00:08:49.240
+And Ed Zitron reads OpenAI's latest round as the bubble drying up.
+
+00:08:49.240 --> 00:08:55.320
+Open AI raised $11 billion at a $1.25 trillion valuation.
+
+00:08:56.740 --> 00:09:00.500
+Earlier targets were $1.4 to $1.5 trillion.
+
+00:09:01.360 --> 00:09:05.760
+It matters because the round landed below the price that had been sought.
+
+00:09:08.000 --> 00:09:11.840
+Oncohere adds open models to model vault with regional serving.
+
+00:09:12.220 --> 00:09:13.320
+Here's Stevens' take.
+
+00:09:13.940 --> 00:09:16.320
+Necessary, welcome, and not sufficient.
+
+00:09:16.320 --> 00:09:23.820
+Stephen's take on the quick hits. Ed can be divisive and opinionated, but he is right to
+
+00:09:23.820 --> 00:09:29.380
+question things without answers like breathless claims about a GI and subsequent transition of
+
+00:09:29.380 --> 00:09:35.160
+the entire world of compute to endless inference, which is a long shot to say the least in a pipe
+
+00:09:35.160 --> 00:09:41.360
+dream, an ill-advised one as well. Stay tuned as the worlds of fantasy and science compete for
+
+00:09:41.360 --> 00:09:48.960
+money. I have a bet for who wins in the end. Do you? A question worth asking in diligence.
+
+00:09:49.640 --> 00:09:55.120
+What does your gross margin look like if model of PI prices stay flat for two years? And one to
+
+00:09:55.120 --> 00:10:01.120
+watch. Is Anthropics compute rise driven by training or by inference serving? Inference
+
+00:10:01.120 --> 00:10:07.600
+pressure hits a PI pricing. Training pressure may reverse. A cost breakdown in the next S1
+
+00:10:07.600 --> 00:10:12.480
+amendment or quarterly filing would settle it.
+
+00:10:12.480 --> 00:10:13.960
+That's the briefing.
+
+00:10:13.960 --> 00:10:14.960
+Stay with me.
+
+00:10:14.960 --> 00:10:20.740
+Right after this, Bella takes you through today's deep dive on robot foundation models.
+
+00:10:20.740 --> 00:10:22.800
+Does scale work for atoms?
+
+00:10:22.800 --> 00:10:27.840
+You can also read it or listen to it on its own on the AI Briefing webpage, where you'll
+
+00:10:27.840 --> 00:10:31.200
+find the written edition in every past episode.
+
+00:10:31.200 --> 00:10:35.760
+The link is in the show notes.
+
+00:10:37.600 --> 00:10:41.220
+Thanks, Michael.
+
+00:10:41.740 --> 00:10:45.420
+This is the AI briefing deep dive for Wednesday, November 4,
+
+00:10:45.840 --> 00:10:47.300
+Robot Foundation Models.
+
+00:10:47.720 --> 00:10:49.060
+Does scale work for atoms?
+
+00:10:49.560 --> 00:10:50.000
+I'm Bella.
+
+00:10:50.540 --> 00:10:54.640
+Like the briefing, it is written and read by AI from public sources.
+
+00:10:58.160 --> 00:11:02.620
+Ecorobotics, a Cambridge, Massachusetts startup founded in 2024,
+
+00:11:02.620 --> 00:11:09.020
+has raised a $150 million Series A at a $1.45 billion post-money valuation.
+
+00:11:09.900 --> 00:11:12.260
+Andresen Horowitz and F-Prime led the round.
+
+00:11:13.040 --> 00:11:17.200
+ECA is led by MIT, Professor Polkett Agraw and Chuomas Harnoja,
+
+00:11:17.620 --> 00:11:19.320
+who used to be at Google DeepMind.
+
+00:11:19.940 --> 00:11:24.260
+Its product is a set of robotic systems driven by what it calls a vision force
+
+00:11:24.260 --> 00:11:25.000
+action model.
+
+00:11:26.380 --> 00:11:29.140
+ECA says it does about 1,500 pics per hour.
+
+00:11:29.700 --> 00:11:31.680
+It puts a human worker at around 600.
+
+00:11:31.680 --> 00:11:36.100
+No customer has been named, and no production deployment has been described.
+
+00:11:36.860 --> 00:11:40.760
+So a Series A is being priced on numbers the company reports about itself.
+
+00:11:41.480 --> 00:11:42.500
+Eka is not alone.
+
+00:11:43.220 --> 00:11:46.420
+Physical intelligence is reportedly valued at $11 billion,
+
+00:11:47.140 --> 00:11:51.420
+and generalist at roughly twice Eka's $1.45 billion.
+
+00:11:52.700 --> 00:11:56.940
+The story is that the recipe that worked for text will work for robots.
+
+00:11:57.540 --> 00:12:00.560
+More data, bigger models, predictable gains.
+
+00:12:01.140 --> 00:12:03.380
+That recipe deserves a hard look now,
+
+00:12:03.640 --> 00:12:06.080
+before more capital is committed on the strength of it.
+
+00:12:07.860 --> 00:12:09.920
+Start with why scale worked for text.
+
+00:12:10.460 --> 00:12:13.160
+Language models learned from a library people had already written.
+
+00:12:13.740 --> 00:12:16.440
+Trillions of words were sitting on the internet, free to collect.
+
+00:12:17.000 --> 00:12:19.040
+Make the model bigger, feed it more text,
+
+00:12:19.140 --> 00:12:21.800
+and its errors fell along a smooth, predictable curve.
+
+00:12:22.400 --> 00:12:24.140
+Investors could plan around that curve.
+
+00:12:24.680 --> 00:12:26.260
+Robots don't have that library.
+
+00:12:26.820 --> 00:12:29.500
+Each useful example is a record of a physical action.
+
+00:12:30.000 --> 00:12:34.180
+What the camera saw, what the arm did, what the fingers felt, and whether it worked.
+
+00:12:35.180 --> 00:12:37.320
+Someone has to produce every one of those records.
+
+00:12:37.840 --> 00:12:39.200
+There are three ways to do it.
+
+00:12:39.580 --> 00:12:44.720
+The first is teleoperation, where a person remote controls a robot and every movement is logged.
+
+00:12:45.300 --> 00:12:48.900
+That gives high-quality data, but it is slow and you pay for every hour.
+
+00:12:49.520 --> 00:12:53.840
+The second is simulation, where a physics engine runs millions of virtual attempts.
+
+00:12:54.020 --> 00:12:58.160
+That is cheap and fast, but the virtual world is never quite the real one.
+
+00:12:58.820 --> 00:13:02.360
+Friction, soft materials, and glare all come out slightly wrong.
+
+00:13:03.640 --> 00:13:06.780
+The third is human video, which exists in huge amounts,
+
+00:13:07.000 --> 00:13:09.000
+but shows only what happened, not how it felt.
+
+00:13:09.580 --> 00:13:11.200
+Here's the analogy to keep in mind.
+
+00:13:11.780 --> 00:13:15.020
+Picture a teenager who has watched 10,000 hours of driving videos.
+
+00:13:15.560 --> 00:13:17.440
+They know what parallel parking looks like.
+
+00:13:17.840 --> 00:13:20.020
+Put them in a real car, and they still clip the curb,
+
+00:13:20.020 --> 00:13:23.020
+because the feel of the pedal and the wheel was never in the footage.
+
+00:13:23.680 --> 00:13:25.920
+Robot manipulation is mostly that feel.
+
+00:13:25.920 --> 00:13:30.300
+It is how hard to squeeze when something slips when a screw has caught its thread.
+
+00:13:31.200 --> 00:13:34.100
+That is why Eka puts force at the center of its pitch.
+
+00:13:34.620 --> 00:13:39.180
+It says it builds what it calls an intuition of physics through reinforcement learning at scale.
+
+00:13:39.780 --> 00:13:44.080
+In plain words, the robot practices by trial and error in simulation,
+
+00:13:44.680 --> 00:13:47.260
+gets rewarded when it succeeds, and adjusts.
+
+00:13:47.740 --> 00:13:52.140
+In Eka's words, robots should master physics, not mimic human data.
+
+00:13:52.140 --> 00:13:56.980
+The open question is whether that practice carries over to a real factory floor.
+
+00:13:58.640 --> 00:14:00.700
+Some of this is genuinely established.
+
+00:14:01.440 --> 00:14:06.260
+In March, a team published MalmoBot, a model trained only on simulated data.
+
+00:14:06.860 --> 00:14:11.600
+They released MalmoBot data, a data set of 1.8 million expert trajectories
+
+00:14:11.600 --> 00:14:14.860
+for articulated object manipulation and pick-and-place tasks.
+
+00:14:15.420 --> 00:14:17.120
+With no real-world training at all,
+
+00:14:17.120 --> 00:14:22.480
+it reached 79.2% success in real tabletop tests across four settings.
+
+00:14:23.120 --> 00:14:26.760
+The comparison model they tested scored 39.2%.
+
+00:14:26.760 --> 00:14:31.220
+That is a real result in a paper against a named baseline.
+
+00:14:31.880 --> 00:14:37.800
+A second paper, Deximtoreal, reports a 78.2% average real-world success
+
+00:14:37.800 --> 00:14:40.460
+rate across six challenging manipulation tasks.
+
+00:14:41.080 --> 00:14:42.480
+Its testing was blinded.
+
+00:14:42.480 --> 00:14:45.360
+So simulation can now take a robot from nothing
+
+00:14:45.360 --> 00:14:47.780
+to working most of the time on bounded tasks.
+
+00:14:48.380 --> 00:14:50.220
+Notice what most of the time means, though.
+
+00:14:50.740 --> 00:14:52.840
+On scaling, the evidence is thinner.
+
+00:14:54.160 --> 00:14:57.360
+A 2024 paper by Sebastian Sartor and Neil Thompson
+
+00:14:57.360 --> 00:14:59.960
+titled Neural Scaling Laws in Robotics
+
+00:14:59.960 --> 00:15:02.660
+examined how scaling laws apply to robotics.
+
+00:15:03.400 --> 00:15:05.700
+It found robot performance improving with data,
+
+00:15:05.980 --> 00:15:08.680
+model size, and compute along power law curves.
+
+00:15:09.200 --> 00:15:10.200
+That is suggestive.
+
+00:15:10.640 --> 00:15:12.680
+But a meta-analysis across different labs,
+
+00:15:12.680 --> 00:15:17.040
+robots and tasks is a weaker kind of evidence than one controlled experiment.
+
+00:15:17.740 --> 00:15:22.660
+The strongest scaling claim comes from Generalist about its own model, Gen Zero.
+
+00:15:23.600 --> 00:15:28.320
+It says it trained on over 270,000 hours of real manipulation data,
+
+00:15:28.760 --> 00:15:30.640
+growing by 10,000 hours a week.
+
+00:15:31.180 --> 00:15:34.040
+It reports a power law link between how much it portrays
+
+00:15:34.040 --> 00:15:35.880
+and how well the model does afterwards.
+
+00:15:36.660 --> 00:15:40.960
+It says models below about 7 billion parameters struggle to absorb the data.
+
+00:15:41.600 --> 00:15:43.020
+Those are interesting findings.
+
+00:15:43.680 --> 00:15:47.340
+They are also self-reported, measured mostly as prediction error,
+
+00:15:47.660 --> 00:15:49.220
+and not independently replicated.
+
+00:15:49.900 --> 00:15:50.800
+Then there is ECA.
+
+00:15:51.660 --> 00:15:55.640
+The 1,500 pics per hour figure comes from the company.
+
+00:15:56.260 --> 00:16:00.960
+We found no published method, no description of the objects or the test conditions,
+
+00:16:01.460 --> 00:16:02.760
+and no outside audit.
+
+00:16:03.440 --> 00:16:06.700
+One analysis of the round put the next proof point plainly.
+
+00:16:07.220 --> 00:16:10.920
+It is a named customer running the robots on a production line for months,
+
+00:16:10.960 --> 00:16:18.680
+not minutes. Facts allow more than one honest reading. The AGI forward reading goes like this.
+
+00:16:19.180 --> 00:16:24.240
+Text models also looked brittle before scale. Now there are smooth curves from generalist and in
+
+00:16:24.240 --> 00:16:29.620
+the meta-analysis. Simulation results jumped within a year, and data collection is speeding up.
+
+00:16:30.200 --> 00:16:35.700
+Andresen Horowitz, which led Eka's round, is plainly in this camp. It's Raghu Ragyuram called
+
+00:16:35.700 --> 00:16:40.720
+Eka's model the first approach he had seen that truly solves manipulation with the generality and
+
+00:16:40.720 --> 00:16:46.340
+throughput deployments need. The AA Realist reading starts from the same facts and lands
+
+00:16:46.340 --> 00:16:52.000
+somewhere else. Rodney Brooks, who co-founded iRobot, is particularly skeptical of companies
+
+00:16:52.000 --> 00:16:57.300
+like Tesla and Figure trying to teach robots dexterity by showing them videos of humans doing
+
+00:16:57.300 --> 00:17:03.640
+tasks. In his words, we don't have such a tradition for touch data. Speech and vision had decades of
+
+00:17:03.640 --> 00:17:09.500
+collected data behind them. Touch has very little. A Realist also notes that falling prediction error
+
+00:17:09.500 --> 00:17:11.560
+is not the same as fewer dropped parts.
+
+00:17:12.760 --> 00:17:14.540
+And the last few percent of reliability
+
+00:17:14.540 --> 00:17:17.200
+is usually where robotics projects die.
+
+00:17:17.780 --> 00:17:19.200
+The market reading is narrower.
+
+00:17:19.940 --> 00:17:21.600
+Buyers don't pay for generality.
+
+00:17:22.200 --> 00:17:24.400
+They pay for uptime on a specific line,
+
+00:17:24.840 --> 00:17:26.380
+where the readings agree is simple.
+
+00:17:27.080 --> 00:17:28.960
+Nobody has yet shown, in public,
+
+00:17:29.320 --> 00:17:30.960
+a general manipulation model
+
+00:17:30.960 --> 00:17:33.300
+holding up over months in a customer's plant.
+
+00:17:35.060 --> 00:17:37.520
+Our read is that simulation-trained manipulation
+
+00:17:37.520 --> 00:17:39.480
+is real and improving fast.
+
+00:17:39.500 --> 00:17:42.700
+But the scaling story for robots is still a hypothesis,
+
+00:17:43.300 --> 00:17:45.580
+backed mostly by companies measuring themselves.
+
+00:17:46.240 --> 00:17:47.900
+That changes what can be built now.
+
+00:17:48.520 --> 00:17:52.880
+Bounded jobs look within reach, picking, kitting, simple assembly,
+
+00:17:53.220 --> 00:17:55.480
+with fixed objects and forgiving tolerances.
+
+00:17:56.220 --> 00:17:59.140
+Open-ended dexterity in messy settings does not yet.
+
+00:17:59.740 --> 00:18:01.600
+Serving costs are different from software.
+
+00:18:02.760 --> 00:18:05.940
+Each deployment brings hardware, integration work,
+
+00:18:06.360 --> 00:18:07.440
+sensors that wear out,
+
+00:18:07.440 --> 00:18:09.880
+and someone to step in when the robot fails.
+
+00:18:10.700 --> 00:18:14.680
+Margins depend on how often that person is needed, not only on the model.
+
+00:18:15.320 --> 00:18:19.680
+For a seed or Series A company, the edge may not be owning the biggest model.
+
+00:18:20.260 --> 00:18:24.360
+It may be owning a workflow, the data that comes back from real deployments,
+
+00:18:24.620 --> 00:18:26.000
+and the customer relationship.
+
+00:18:27.020 --> 00:18:29.160
+The exposure is the reverse case,
+
+00:18:29.640 --> 00:18:32.880
+a thin application layer built on someone else's robot model,
+
+00:18:32.880 --> 00:18:34.540
+with no data of its own.
+
+00:18:35.180 --> 00:18:38.820
+One question worth exploring in diligence might be the intervention rate.
+
+00:18:39.440 --> 00:18:43.620
+How many times per hour or per shift does a person have to step in
+
+00:18:43.620 --> 00:18:46.700
+on a real customer line measured over weeks?
+
+00:18:47.260 --> 00:18:50.780
+We'd also want the success rate on objects the system has never seen
+
+00:18:50.780 --> 00:18:53.660
+and the method behind any picks per hour figure.
+
+00:18:55.460 --> 00:18:57.640
+Three things would settle a lot of this.
+
+00:18:58.180 --> 00:19:01.920
+First, a named customer publishing uptime and intervention data
+
+00:19:01.920 --> 00:19:05.080
+after months of production from ECA or any of its peers.
+
+00:19:05.780 --> 00:19:08.320
+Its own analysts say that is the next proof point,
+
+00:19:08.620 --> 00:19:09.840
+so it could come within a year.
+
+00:19:10.560 --> 00:19:14.080
+Second, independent replication of a robot scaling curve.
+
+00:19:14.640 --> 00:19:17.160
+That would mean a lab with no commercial stake showing
+
+00:19:17.160 --> 00:19:21.200
+that more data improves real task success, not just prediction error.
+
+00:19:22.500 --> 00:19:25.400
+Third, shared benchmarks for dexterity and force
+
+00:19:25.400 --> 00:19:29.600
+run under blinded conditions, the way Deximtoreal was tested.
+
+00:19:30.280 --> 00:19:34.960
+If those arrive and the curves hold, the AGI forward reading gains ground.
+
+00:19:35.660 --> 00:19:40.460
+If deployments stall at the last few percent of reliability, the realists were right.
+
+00:19:42.260 --> 00:19:43.720
+Here's Stephen's take.
+
+00:19:44.340 --> 00:19:49.800
+Determining what information is explicitly embedded in models as part of the data ingestion process
+
+00:19:49.800 --> 00:19:53.020
+and what is implicitly embedded is extremely challenging.
+
+00:19:53.660 --> 00:19:57.140
+And in most real-world atom-moving solutions, the gap is critical,
+
+00:19:57.140 --> 00:20:02.660
+and thus we need to have a very real show me mentality for what is a fantastic demo
+
+00:20:02.660 --> 00:20:07.500
+and what is a realistic in production approach and this is very problem specific
+
+00:20:07.500 --> 00:20:15.240
+that's the deep dive and today's ai briefing every source is linked in the show notes
+
+00:20:15.240 --> 00:20:18.420
+and the ai briefing webpage has the written edition
+
+00:20:18.420 --> 00:20:23.720
+this deep dive and every past episode the daily briefing is back tomorrow
+
+00:20:27.140 --> 00:20:57.120
+Thank you.
