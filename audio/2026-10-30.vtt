@@ -1,0 +1,865 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:07.300
+On today's AI briefing, we think the TSMC disclosure is less about anthropic than about the sector.
+
+00:00:07.960 --> 00:00:11.440
+Every frontier lab carries the same Taiwan exposure,
+
+00:00:11.940 --> 00:00:17.460
+which turns compute access into a geopolitical position rather than a procurement line.
+
+00:00:19.060 --> 00:00:23.020
+This is the AI briefing for Friday, October 30.
+
+00:00:23.340 --> 00:00:23.920
+I'm Michael.
+
+00:00:24.400 --> 00:00:28.940
+Like everything here, this briefing is written and read by AI from public sources.
+
+00:00:29.640 --> 00:00:33.860
+Today's stories share a theme, who controls compute and who gets funded.
+
+00:00:34.540 --> 00:00:41.140
+Anthropic has filed to go public, and the filing names a heavy dependence on TSMC chips made in Taiwan.
+
+00:00:41.940 --> 00:00:45.420
+Cohere is raising a series E of up to CAD $7 billion.
+
+00:00:46.920 --> 00:00:53.900
+Ottawa is putting in $1.6 billion, released only as jobs and revenue milestones are met.
+
+00:00:54.620 --> 00:00:58.600
+Mistral has released open weights for a trillion-parameter coding model,
+
+00:00:58.940 --> 00:01:01.540
+which could change what security teams pay for.
+
+00:01:01.980 --> 00:01:08.020
+And new funding counts show only 16% of 2024 seed companies have made it past seed.
+
+00:01:08.640 --> 00:01:11.840
+We'll take the main stories first, then a few quick hits.
+
+00:01:13.860 --> 00:01:15.560
+Stevens' take on the top of the day.
+
+00:01:16.220 --> 00:01:20.520
+Cohere has been an amazing story, a company that just keeps finding a way,
+
+00:01:20.520 --> 00:01:23.940
+a grip on the mountain to cling to, and a wedge to expand.
+
+00:01:23.940 --> 00:01:31.820
+It's easy to be critical of their situation, but I have been a first mover in AI before and rapidly eclipsed by Valley mentality
+
+00:01:31.820 --> 00:01:36.940
+Fundraising as a weapon against faster smarter incumbents and in my case
+
+00:01:36.940 --> 00:01:41.660
+Naivete about how to play the game as our friend AA puts it
+
+00:01:41.660 --> 00:01:44.220
+I like being Canadian
+
+00:01:44.220 --> 00:01:51.120
+Non-aligned with corporate malfeasance and market affecting behaviors and I am proud to see them moving forward
+
+00:01:51.840 --> 00:01:57.520
+Hopefully, this customer strategic investment by countries gets them to break out velocity.
+
+00:01:59.440 --> 00:02:03.780
+First story, and it's an update on one we've been following for several days.
+
+00:02:04.300 --> 00:02:07.700
+Anthropics IPO what's new is that the S-1 is filed.
+
+00:02:08.320 --> 00:02:11.820
+Tis V. Moshowitz noted the filing and don't worry about the vase.
+
+00:02:12.400 --> 00:02:17.240
+TechMeme reports it discloses heavy reliance on TSMC chips made in Taiwan,
+
+00:02:17.740 --> 00:02:20.440
+citing geopolitical risk from tensions with China.
+
+00:02:21.140 --> 00:02:23.520
+Share price and other financials are not stated.
+
+00:02:24.100 --> 00:02:28.120
+The chip claims are unverified and the full filing hasn't been read.
+
+00:02:28.700 --> 00:02:29.660
+Our read holds.
+
+00:02:30.420 --> 00:02:34.020
+We think this says more about the sector than about Anthropic.
+
+00:02:34.700 --> 00:02:41.420
+Every frontier lab carries the same Taiwan exposure, so compute access becomes a geopolitical position.
+
+00:02:42.140 --> 00:02:47.500
+For apps built on one lab, a fair question is how they would fail over to a second provider.
+
+00:02:47.500 --> 00:02:52.500
+The market reading is that a shared risk won't set the IPO apart.
+
+00:02:53.220 --> 00:02:56.380
+Revenue growth and compute commitments will drive the price.
+
+00:02:58.200 --> 00:02:59.720
+Here's Stephen's take.
+
+00:03:00.320 --> 00:03:05.180
+Anthropic might get there and end up driving value like research breakthroughs themselves,
+
+00:03:05.560 --> 00:03:10.680
+but better code and system models are in whole unlikely to get them to the promised land.
+
+00:03:11.160 --> 00:03:14.760
+But better and better models are def getting you closer to big,
+
+00:03:14.760 --> 00:03:21.320
+valuable breakthroughs in alliance with scientists, research labs with testing facilities, and
+
+00:03:21.320 --> 00:03:24.800
+more, maybe they become the world's biggest pharma company.
+
+00:03:26.440 --> 00:03:28.840
+Our second story comes from Canada.
+
+00:03:29.500 --> 00:03:34.380
+Cohere has recently opened a Series E, according to BetaKit and Cohere's own announcement.
+
+00:03:34.380 --> 00:03:41.060
+The company is targeting up to $7 billion CAD at a post-money valuation of roughly $36
+
+00:03:41.060 --> 00:03:41.480
+billion.
+
+00:03:42.400 --> 00:03:44.280
+Schwarz Group is leading the round.
+
+00:03:44.760 --> 00:03:47.960
+Inovia Capital and Canada's CDIC are participating.
+
+00:03:48.620 --> 00:03:53.540
+Alongside that, Canada commits $1.6 billion through CDIC.
+
+00:03:54.140 --> 00:03:57.240
+That money is staged on jobs and revenue milestones.
+
+00:03:58.620 --> 00:04:04.880
+In return, Cohere pledges $1.7 billion in Canadian compute by 2030.
+
+00:04:06.240 --> 00:04:07.540
+How well does it hold up?
+
+00:04:07.540 --> 00:04:09.320
+The core reporting holds.
+
+00:04:09.820 --> 00:04:12.180
+But the $7 billion is a target.
+
+00:04:12.180 --> 00:04:15.180
+The size actually closed has not been disclosed.
+
+00:04:16.340 --> 00:04:19.720
+The government money flows only as milestones are met.
+
+00:04:20.160 --> 00:04:24.600
+And nothing in the reporting supports the claims about Cohere's competitiveness.
+
+00:04:25.380 --> 00:04:29.040
+Our view is that the staging matters more than the headline.
+
+00:04:29.740 --> 00:04:32.480
+Ottawa is buying jobs and domestic compute.
+
+00:04:32.960 --> 00:04:36.180
+It is not underwriting a $36 billion valuation.
+
+00:04:36.180 --> 00:04:42.360
+valuation. What would justify that price is revenue from private enterprises, outside
+
+00:04:42.360 --> 00:04:47.120
+government. That looks like the number worth watching.
+
+00:04:47.120 --> 00:04:53.740
+Read through a policy lens. The same facts look different. Public money staged on jobs,
+
+00:04:53.740 --> 00:05:00.960
+revenue and $1.7 billion of domestic compute is how a country builds sovereign capacity.
+
+00:05:00.960 --> 00:05:07.260
+On that reading, judging the deal on venture returns alone misses its purpose.
+
+00:05:07.260 --> 00:05:11.500
+For early-stage companies, the compute pledge could matter.
+
+00:05:11.500 --> 00:05:16.660
+Canadian startups that need domestic hosting might benefit, but whether outside companies
+
+00:05:16.660 --> 00:05:20.420
+can actually buy that capacity is not stated.
+
+00:05:20.420 --> 00:05:26.560
+That may be a question worth asking before anyone plans around it.
+
+00:05:26.560 --> 00:05:28.380
+Here's Stephen's take.
+
+00:05:28.380 --> 00:05:34.020
+access to sovereign capability is not unreal. If there was an ally that would not be capable of
+
+00:05:34.020 --> 00:05:38.760
+using compute as a weapon, they would have less runway but in reality world affairs,
+
+00:05:39.060 --> 00:05:44.660
+and the third scaling Law Plus access to unique content and experimental capability and
+
+00:05:44.660 --> 00:05:49.400
+multi-billion dollar national contracts could take them where people like Helsing have gone,
+
+00:05:49.400 --> 00:05:53.940
+and others like the entire Silicon Valley emerged in just this way.
+
+00:05:54.760 --> 00:05:56.420
+Read Steve Blank for example.
+
+00:05:58.380 --> 00:06:06.120
+For our third story, Mistral has released open weights for large-for-its-trillion-parameter model, nicknamed LeChonk.
+
+00:06:06.580 --> 00:06:11.220
+The news comes from Mistral's own announcement, with a report from TechCrunch.
+
+00:06:12.500 --> 00:06:15.440
+Mistral claims it is the best open-weight coding model.
+
+00:06:15.440 --> 00:06:23.440
+Its benchmarks show 19.7% on Frontier Code 2.0 and 41% on Terminal Bench 4.0.
+
+00:06:23.440 --> 00:06:32.400
+Mistral also says it ties GLM 5.3 at 48% while using 47% fewer tokens.
+
+00:06:33.120 --> 00:06:39.440
+TechCrunch reports the model is aimed at cybersecurity work, with more control than closed models offer.
+
+00:06:40.660 --> 00:06:44.380
+How well does it hold up? So far, the picture is mixed.
+
+00:06:44.940 --> 00:06:48.460
+Those benchmark leads are self-reported and unverified.
+
+00:06:48.460 --> 00:06:52.480
+The claim of being the best goes further than the evidence shows,
+
+00:06:52.480 --> 00:06:55.820
+and the cybersecurity angle comes with little detail.
+
+00:06:57.220 --> 00:07:00.360
+We read this as a pricing event before a capability one.
+
+00:07:01.000 --> 00:07:04.380
+A one trillion coding model that a company can host itself
+
+00:07:04.380 --> 00:07:08.160
+opens room for security and regulated sector startups
+
+00:07:08.160 --> 00:07:11.180
+that cannot send their code to a closed API.
+
+00:07:12.280 --> 00:07:15.820
+For early stage companies, that cuts two ways.
+
+00:07:16.440 --> 00:07:21.500
+Startups whose edge is wrapping closed coding models for security work could lose ground.
+
+00:07:21.500 --> 00:07:28.500
+Startups with fine-tuning and on-prem deployment skills may gain from a credible open-weight base.
+
+00:07:28.500 --> 00:07:31.500
+A few questions seem worth asking.
+
+00:07:31.500 --> 00:07:36.500
+Do these results hold when someone outside Miestral runs the benchmarks?
+
+00:07:36.500 --> 00:07:40.500
+What does the cybersecurity use case look like in practice?
+
+00:07:40.500 --> 00:07:44.500
+And for a startup building security tools on closed models,
+
+00:07:44.500 --> 00:07:49.500
+how much of its edge survives if a self-hosted open model is good enough?
+
+00:07:51.500 --> 00:07:56.680
+Here's Steven's take. Impressive. I guess we can all distill how they built this.
+
+00:07:58.320 --> 00:08:03.800
+The last of the main stories turns from models to money and to the companies trying to raise it.
+
+00:08:04.320 --> 00:08:09.520
+In a piece published yesterday, Crunchbase News looks at what large Series A rounds are hiding.
+
+00:08:10.180 --> 00:08:16.940
+In the third quarter, U.S. Series A rounds fell about 28% year-over-year to 272.
+
+00:08:17.680 --> 00:08:21.760
+Seed rounds dipped to 984 down from 1,059.
+
+00:08:22.180 --> 00:08:26.360
+The median U.S. seed round in 2025 was about $3 million.
+
+00:08:27.680 --> 00:08:30.260
+The striking figures are on graduation.
+
+00:08:30.960 --> 00:08:37.980
+Only 24% of 2023 companies that raised a seed round of $1 million or more have moved past seed.
+
+00:08:38.460 --> 00:08:40.780
+For 2024, it's 16%.
+
+00:08:40.780 --> 00:08:44.500
+The piece is a guest column by Mark Schroeder of MGV.
+
+00:08:44.960 --> 00:08:46.900
+On the evidence, it's a mixed picture.
+
+00:08:46.940 --> 00:08:50.860
+The crunch-based counts do show a real Series A squeeze.
+
+00:08:51.440 --> 00:08:56.620
+The prescription that founders need to clear a revenue bar is one investor's view.
+
+00:08:57.500 --> 00:09:01.000
+It also doubles as a pitch for MGV's own approach.
+
+00:09:01.440 --> 00:09:05.000
+And a data company has its own reasons to highlight market stress.
+
+00:09:05.460 --> 00:09:06.540
+Here's where we come out.
+
+00:09:06.900 --> 00:09:11.700
+We think the 16% graduation rate for 2024 seeds is the number to carry.
+
+00:09:12.160 --> 00:09:15.820
+The Series A bar now looks like revenue quality, not traction.
+
+00:09:15.820 --> 00:09:22.600
+The data supports that much. The prescription is MGVs from a fund pitching its own method.
+
+00:09:23.200 --> 00:09:25.900
+For seed investors, the implication is practical.
+
+00:09:27.220 --> 00:09:33.860
+With so few companies graduating, seed funds may need larger reserves for extensions and bridge rounds.
+
+00:09:34.540 --> 00:09:40.580
+A fair question for any fund might be how its reserves plan looks against those graduation rates.
+
+00:09:40.580 --> 00:09:55.320
+Here's Stephen's take. I don't know what a Series A is. I just know that this is the gold rush day zero, and people better start laying claims and digging holes fast and supporting those that do fast.
+
+00:09:55.320 --> 00:09:59.960
+Now two quick hits, both about scale.
+
+00:10:00.540 --> 00:10:05.860
+First, NVIDIA is in talks to give N-Scale billions of dollars in credit guarantees.
+
+00:10:06.580 --> 00:10:11.700
+The debt would fund a 460-megawatt data center that Anthropic plans to use.
+
+00:10:12.140 --> 00:10:16.600
+It's another sign that chip makers are backstopping the financing of their own demand.
+
+00:10:16.920 --> 00:10:24.500
+Second, Microsoft will offer a voluntary exit to about 60,000 of its 223,000 staff.
+
+00:10:25.320 --> 00:10:42.260
+Azure argues this reflects productivity gains, with revenue per employee up two-thirds since 2022 to $1.5 million. He calls AI the cause in a not-yet sense. Our evidence check finds that argument overstated.
+
+00:10:43.900 --> 00:10:52.340
+On Simon Willison on Spawn's AI-driven game development, here's Stephen's take. To be honest, this is sort of easy now.
+
+00:10:52.340 --> 00:10:56.880
+Stephen's take on the quick hits.
+
+00:10:56.880 --> 00:11:02.920
+NVIDIA credit guarantees is interesting and important for emerging meta-hyperscalers being
+
+00:11:02.920 --> 00:11:08.980
+held back by access to compute by debt risk and the potential to use this as yet another
+
+00:11:08.980 --> 00:11:12.940
+lever against competition.
+
+00:11:12.940 --> 00:11:18.340
+And Stephen's take on the day, or doubles, and what is your plan to separate yourself
+
+00:11:18.340 --> 00:11:24.420
+from OpenAI disaster, lack of compute as you need it at a predictable price, being able
+
+00:11:24.420 --> 00:11:30.660
+to offload inference to delayed or training to background. Basically, disaster and change
+
+00:11:30.660 --> 00:11:31.140
+planning.
+
+00:11:32.780 --> 00:11:38.260
+To close, a diligence question that might be worth asking this week. What does your gross
+
+00:11:38.260 --> 00:11:43.740
+margin look like if your model providers price or supply changes by half? And one question
+
+00:11:43.740 --> 00:11:50.740
+to watch, how much of Cohere's series E actually closed, and what releases Canada's $1.6 billion.
+
+00:11:51.420 --> 00:11:57.980
+A closing announcement, or published CDIC terms with a milestone schedule, would settle it.
+
+00:11:59.680 --> 00:12:05.860
+That's the briefing. Stay with me. Right after this, Bella takes you through today's deep dive
+
+00:12:05.860 --> 00:12:12.280
+on Anthropics leaked AI bill and the fight over preemption. You can also read it or listen to it
+
+00:12:12.280 --> 00:12:18.300
+on its own on the AI Briefing webpage, where you'll find the written edition and every past episode.
+
+00:12:18.740 --> 00:12:20.480
+The link is in the show notes.
+
+00:12:23.520 --> 00:12:31.060
+Thanks, Michael. This is the AI Briefing Deep Dive for Friday, October 30, Anthropics Leaked AI Bill
+
+00:12:31.060 --> 00:12:38.120
+and the Fight Over Preemption. I'm Bella. Like the briefing, it is written and read by AI from public sources.
+
+00:12:38.120 --> 00:12:45.900
+On October 16, Politico reported that Anthropic had been quietly showing lawmakers on Capitol
+
+00:12:45.900 --> 00:12:51.800
+Hill a draft federal bill to regulate frontier AI. Politico had the confidential draft.
+
+00:12:52.440 --> 00:12:56.440
+Anthropic has not published it. The reaction has kept building since then.
+
+00:12:57.060 --> 00:13:01.640
+This week, Tizvi Moshowitz, who writes the newsletter Don't Worry About the Vase,
+
+00:13:01.640 --> 00:13:04.480
+called the leaked draft unacceptable and troubling.
+
+00:13:04.480 --> 00:13:10.420
+California State Senator Scott Weiner said it falls far short of protecting public health and
+
+00:13:10.420 --> 00:13:16.520
+safety. Anthropic has partly retreated. Its head of federal affairs, Anthony Cimino, said the
+
+00:13:16.520 --> 00:13:21.560
+preemption wording was not precise enough and would be updated. He also said the proposal is
+
+00:13:21.560 --> 00:13:26.600
+meant to be the strongest on the table. So this is the moment to ask a structural question.
+
+00:13:27.220 --> 00:13:32.300
+Suppose a frontier lab helps write the federal rules, and those rules override the states.
+
+00:13:32.300 --> 00:13:35.900
+Who does that lock in and who gets locked out?
+
+00:13:37.580 --> 00:13:41.300
+Here is the draft as Politico and other outlets describe it.
+
+00:13:41.740 --> 00:13:44.700
+The Commerce Department would register independent evaluators.
+
+00:13:45.340 --> 00:13:49.440
+Those evaluators would periodically assess frontier developers and their models.
+
+00:13:50.160 --> 00:13:54.980
+Developers could pay their own evaluators, as long as the payment is not tied to the result.
+
+00:13:55.740 --> 00:14:00.640
+Evaluators would have to tell Commerce within 72 hours if they find an imminent risk.
+
+00:14:01.240 --> 00:14:04.800
+The bill also requires risk reports and whistleblower protections.
+
+00:14:06.320 --> 00:14:08.760
+ZVI calls its security requirements strong.
+
+00:14:09.320 --> 00:14:10.920
+The fight is over two other parts.
+
+00:14:11.400 --> 00:14:13.200
+The first is the bar for stopping a model.
+
+00:14:13.720 --> 00:14:19.640
+The government could step in only when a model poses a foreseeable and imminent risk of more than $1 billion in damage,
+
+00:14:20.060 --> 00:14:23.040
+or of killing or seriously injuring more than 50 people.
+
+00:14:23.700 --> 00:14:26.480
+The risk would also have to come from a narrow set of scenarios.
+
+00:14:27.100 --> 00:14:32.260
+Bioweapons, a massive cyberattack, a model evading its developers' safety controls,
+
+00:14:32.620 --> 00:14:34.500
+or research that speeds those up.
+
+00:14:35.320 --> 00:14:38.540
+Only a federal judge in Washington could order a suspension.
+
+00:14:39.240 --> 00:14:40.540
+The second part is preemption.
+
+00:14:41.080 --> 00:14:43.520
+That means a federal law displacing state law.
+
+00:14:44.020 --> 00:14:49.920
+The draft would override California's SB53 New York's Rays Act and Illinois SB315.
+
+00:14:50.740 --> 00:14:52.560
+One way to picture it is building codes.
+
+00:14:53.140 --> 00:14:57.480
+Today, states write their own fire codes for one specific kind of tall building.
+
+00:14:58.140 --> 00:15:00.960
+Under this draft, Washington writes the only code.
+
+00:15:01.520 --> 00:15:03.060
+Only Congress can change it.
+
+00:15:04.340 --> 00:15:08.280
+Inspectors are hired and paid by the builder, and no one licenses them.
+
+00:15:08.820 --> 00:15:11.280
+A city that sees smoke cannot close the building.
+
+00:15:11.780 --> 00:15:16.140
+It has to ask a federal judge, and the judge must weigh what closing would cost the owner.
+
+00:15:16.800 --> 00:15:19.860
+That picture also shows what the draft does not appear to cover.
+
+00:15:19.860 --> 00:15:22.120
+It is aimed at frontier developers.
+
+00:15:22.760 --> 00:15:25.060
+The reporting does not say who counts as one.
+
+00:15:25.700 --> 00:15:30.080
+A seed stage company building on top of a model is probably not the regulated party.
+
+00:15:31.120 --> 00:15:35.880
+It may still feel the effects, through its suppliers and through the market for audits.
+
+00:15:37.620 --> 00:15:39.260
+Start with what is established.
+
+00:15:39.960 --> 00:15:42.560
+Politico reported the draft from a confidential copy
+
+00:15:42.560 --> 00:15:46.360
+and from three people familiar with Anthropic's legislative work.
+
+00:15:47.000 --> 00:15:48.440
+Anthropic has not denied it.
+
+00:15:49.020 --> 00:15:54.120
+Cimino publicly said the company circulated the ideas to get early feedback from policymakers.
+
+00:15:55.000 --> 00:15:59.400
+On October 18, he posted that Anthropic would update its preemption language
+
+00:15:59.400 --> 00:16:02.000
+to better match its own published framework.
+
+00:16:02.840 --> 00:16:06.500
+He also said the company would address the standard for blocking models,
+
+00:16:06.960 --> 00:16:09.460
+risk thresholds, and requirements for evaluators.
+
+00:16:10.040 --> 00:16:11.180
+So the draft is real.
+
+00:16:11.800 --> 00:16:14.840
+Anthropic stands behind its direction, but not its wording.
+
+00:16:15.660 --> 00:16:18.360
+Several provisions are confirmed by more than one outlet.
+
+00:16:19.000 --> 00:16:22.880
+These include the $1 billion and 50 casualty thresholds,
+
+00:16:23.200 --> 00:16:24.660
+the federal court in Washington,
+
+00:16:25.200 --> 00:16:27.080
+the evaluators paid by labs,
+
+00:16:27.400 --> 00:16:29.360
+and the list of state laws it would preempt.
+
+00:16:30.700 --> 00:16:34.440
+Cimino says the harm thresholds were pulled directly from California law.
+
+00:16:34.960 --> 00:16:37.700
+That holds up, with a catch that Weiner points out.
+
+00:16:38.320 --> 00:16:42.000
+SB 53 uses those thresholds to trigger disclosure and assessment.
+
+00:16:42.240 --> 00:16:45.620
+The draft uses them to decide when a model can be stopped.
+
+00:16:46.280 --> 00:16:47.600
+Next come the legal readings,
+
+00:16:47.600 --> 00:16:49.940
+which are analysis, not fact.
+
+00:16:50.560 --> 00:16:55.160
+Charlie Bullock of the Institute for Law and AI says courts must weigh the harm a blocking
+
+00:16:55.160 --> 00:16:56.520
+order does to the developer.
+
+00:16:57.520 --> 00:17:00.940
+In his reading, they are not told to weigh the harm of not blocking.
+
+00:17:01.680 --> 00:17:05.320
+Writing in Transformer, he warns of a race to the bottom among auditors.
+
+00:17:06.000 --> 00:17:09.480
+In this reading, they would compete to offer the least bothersome audits.
+
+00:17:10.140 --> 00:17:15.060
+Nathan Calvin, as ZVI quotes him, argues that passing the bill would leave us less
+
+00:17:15.060 --> 00:17:16.800
+protected than existing law does.
+
+00:17:17.460 --> 00:17:20.120
+These are serious readings by people who know the field.
+
+00:17:20.620 --> 00:17:22.280
+They are also from safety advocates,
+
+00:17:22.700 --> 00:17:25.700
+and they are interpretations of a text the public cannot read.
+
+00:17:26.640 --> 00:17:28.740
+Then there is what nobody has shown.
+
+00:17:29.240 --> 00:17:30.820
+The full text is not public.
+
+00:17:31.300 --> 00:17:34.500
+Who counts as covered is not stated in any coverage we found.
+
+00:17:35.120 --> 00:17:37.420
+Neither is any compute or revenue cutoff.
+
+00:17:37.420 --> 00:17:41.960
+The revised draft and the promised framework for evaluators have not appeared.
+
+00:17:42.620 --> 00:17:46.780
+Any claim about how this affects small builders is, for now, inference.
+
+00:17:48.480 --> 00:17:50.920
+The same facts support several readings.
+
+00:17:51.560 --> 00:17:55.080
+The safety reading, held by ZVI, Calvin, and Wiener,
+
+00:17:55.500 --> 00:17:58.160
+comes from people who take catastrophic risk seriously.
+
+00:17:58.900 --> 00:18:02.200
+In this view, the draft is weaker than the bipartisan Frontier Act
+
+00:18:02.200 --> 00:18:04.460
+from Representatives Obernault and Trahan.
+
+00:18:05.060 --> 00:18:07.980
+They argue it removes state backstops that work today
+
+00:18:07.980 --> 00:18:11.620
+and freezes weak federal rules that only Congress can tighten.
+
+00:18:11.960 --> 00:18:17.320
+Zevi's sharpest line is that Anthropic seems more afraid that the government
+
+00:18:17.320 --> 00:18:21.220
+might enforce rules against Anthropic than worried about the government's power
+
+00:18:21.220 --> 00:18:22.980
+to enforce rules against everyone.
+
+00:18:23.640 --> 00:18:26.100
+The market reading is the strongest case for the draft.
+
+00:18:26.660 --> 00:18:29.620
+A single federal standard is cheaper to comply with than 50.
+
+00:18:30.340 --> 00:18:34.300
+Clear thresholds and a single court cut legal uncertainty for every developer.
+
+00:18:34.660 --> 00:18:38.580
+One outlet reports that child safety, consumer protection,
+
+00:18:38.780 --> 00:18:41.140
+and civil rights laws are carved out of preemption.
+
+00:18:41.960 --> 00:18:45.260
+If so, states keep their role on everyday harms.
+
+00:18:45.760 --> 00:18:47.400
+The realist reading is more skeptical.
+
+00:18:48.080 --> 00:18:51.920
+The scenarios that would justify a shutdown are narrow, and none has happened yet.
+
+00:18:52.460 --> 00:18:56.860
+On that view, how blocking works matters less than who writes the standards for evaluators
+
+00:18:56.860 --> 00:18:58.000
+and who pays for them.
+
+00:18:58.460 --> 00:19:01.140
+That is where an incumbent's advantage would build up over time.
+
+00:19:01.680 --> 00:19:04.100
+The policy reading points to a shift in roles.
+
+00:19:04.760 --> 00:19:08.900
+Earlier, Anthropic endorsed SB 53 and similar state laws.
+
+00:19:09.340 --> 00:19:11.140
+It is now proposing to replace them.
+
+00:19:11.960 --> 00:19:13.920
+That doesn't prove bad faith.
+
+00:19:14.380 --> 00:19:18.400
+It does mean a lab's policy position is something we should track over time,
+
+00:19:18.700 --> 00:19:19.840
+not take as fixed.
+
+00:19:21.580 --> 00:19:24.100
+Our read is that the label of incumbent capture
+
+00:19:24.100 --> 00:19:27.040
+fits the evaluation market more than it fits the founders.
+
+00:19:27.820 --> 00:19:31.520
+Frontier-level obligations will almost certainly fall on a few large labs.
+
+00:19:32.100 --> 00:19:35.300
+Most seed and series A companies will not be covered directly.
+
+00:19:35.900 --> 00:19:37.740
+The indirect effects are where it gets real.
+
+00:19:38.260 --> 00:19:41.540
+One is evaluators who are paid by labs and not licensed.
+
+00:19:41.960 --> 00:19:47.560
+another is standards that only congress can update a third is state regimes that disappear
+
+00:19:48.760 --> 00:19:53.000
+together they decide what assurance means for every model your product sits on
+
+00:19:53.000 --> 00:19:58.760
+for startups selling evaluation red teaming or ai assurance this is close to an existential
+
+00:19:58.760 --> 00:20:04.360
+question a weak federal floor could create a big market for cheap compliance but not for rigorous
+
+00:20:04.360 --> 00:20:10.760
+testing for application companies the question is quieter their enterprise customers may now point to
+
+00:20:10.760 --> 00:20:16.040
+SB53 disclosures from their model providers. Those could vanish or change shape.
+
+00:20:16.800 --> 00:20:22.420
+We hold all of this loosely because the text is not public and a revision has been promised.
+
+00:20:23.140 --> 00:20:28.260
+One question worth exploring with an assurance startup is this. If the federal standard were
+
+00:20:28.260 --> 00:20:33.780
+the floor in this draft, would the main buyers still pay for your product? Or does your revenue
+
+00:20:33.780 --> 00:20:40.700
+depend on state law that could be preempted? Three things would settle this. First is
+
+00:20:40.700 --> 00:20:42.820
+Anthropic's revised preemption language.
+
+00:20:43.360 --> 00:20:45.640
+Simino promised it, but it has not appeared.
+
+00:20:46.240 --> 00:20:48.020
+When it does, the test is simple.
+
+00:20:48.500 --> 00:20:52.860
+Does it still stop states from blocking a model in an emergency, or only from setting
+
+00:20:52.860 --> 00:20:54.460
+conflicting disclosure rules?
+
+00:20:55.040 --> 00:20:56.920
+Second is the evaluator framework.
+
+00:20:57.540 --> 00:21:02.320
+Licensing, conflict of interest rules, and a say for commerce over standards would answer
+
+00:21:02.320 --> 00:21:04.000
+most of the race-to-the-bottom worry.
+
+00:21:04.980 --> 00:21:10.680
+Third is whether any member of Congress introduces the draft, or folds it into the Frontier Act.
+
+00:21:10.700 --> 00:21:15.540
+A bill text with a sponsor is the moment this becomes law in the making,
+
+00:21:15.940 --> 00:21:17.460
+rather than a lobbying document.
+
+00:21:18.220 --> 00:21:20.100
+None of these has a public date yet.
+
+00:21:21.980 --> 00:21:23.380
+Here's Stephen's take.
+
+00:21:23.980 --> 00:21:27.260
+Companies becoming governments is a big part of sci-fi lore,
+
+00:21:27.600 --> 00:21:29.120
+and here we are living in the future.
+
+00:21:31.040 --> 00:21:34.040
+That's the deep dive and today's AI briefing.
+
+00:21:34.780 --> 00:21:36.780
+Every source is linked in the show notes,
+
+00:21:36.780 --> 00:21:40.000
+and the AI briefing webpage has the written edition,
+
+00:21:40.000 --> 00:21:42.820
+this deep dive and every past episode.
+
+00:21:43.500 --> 00:21:45.200
+The Daily Briefing is back tomorrow.

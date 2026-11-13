@@ -1,0 +1,682 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:12.940
+On today's AI briefing, we think a mandatory limit pushed by the best-funded lab is more likely to raise entry costs than slow the leaders, which helps incumbents with compliance budgets.
+
+00:00:14.640 --> 00:00:23.820
+This is the AI briefing for Monday, November 2. I'm Michael. Like everything here, this briefing is written and read by AI from public sources.
+
+00:00:24.520 --> 00:00:27.660
+Today starts with a lab asking for rules on its own field.
+
+00:00:28.280 --> 00:00:35.400
+OpenAI is reportedly planning a push, after the midterms, for mandatory speed limits on powerful AI systems.
+
+00:00:35.880 --> 00:00:38.680
+It is also weighing a new name for its data centers.
+
+00:00:39.300 --> 00:00:42.480
+The stake is who those rules would end up costing most.
+
+00:00:43.040 --> 00:00:44.360
+Then robotics security.
+
+00:00:45.500 --> 00:00:52.240
+VicOne says AI-assisted research turned up 28 zero-day findings in robotics software in under two days.
+
+00:00:52.240 --> 00:00:57.200
+Some of the projects are developed or maintained by Google, NVIDIA, and Meta.
+
+00:00:57.780 --> 00:01:02.980
+If AI makes bug hunting that fast, the shared code under many robots becomes a target.
+
+00:01:03.640 --> 00:01:06.860
+Those are our two main stories, and then a few quick hits,
+
+00:01:07.320 --> 00:01:13.900
+including a large Canadian bet on Cohere and NVIDIA's role in financing an anthropic data center.
+
+00:01:15.820 --> 00:01:18.380
+First, Stephen's take on the top of the day.
+
+00:01:18.560 --> 00:01:22.040
+Black market is interesting. We should figure this out.
+
+00:01:22.240 --> 00:01:27.920
+First story, OpenAI and the politics of slowing down.
+
+00:01:28.580 --> 00:01:33.000
+Axios reports that OpenAI plans a policy campaign after the midterms,
+
+00:01:33.460 --> 00:01:37.300
+arguing for mandatory speed limits on powerful AI systems.
+
+00:01:38.000 --> 00:01:43.180
+Separately, TechCrunch reports the company is considering a new name for its data centers.
+
+00:01:43.180 --> 00:01:48.880
+The label under discussion in TechCrunch's telling is AI Compute Campuses.
+
+00:01:49.540 --> 00:01:50.920
+What's new is the pairing.
+
+00:01:52.240 --> 00:01:56.200
+The best-funded lab would be asking for binding limits on the field it leads,
+
+00:01:56.580 --> 00:01:59.580
+while softening the language around the buildings that power it.
+
+00:02:00.020 --> 00:02:01.320
+How well does this hold up?
+
+00:02:01.740 --> 00:02:04.120
+It is reporting, not confirmed action.
+
+00:02:04.760 --> 00:02:06.900
+Both pieces describe internal planning,
+
+00:02:07.220 --> 00:02:09.660
+and nothing has been verified outside the company.
+
+00:02:10.280 --> 00:02:12.040
+There is no proposal text yet.
+
+00:02:12.520 --> 00:02:13.940
+Here is where we come down.
+
+00:02:13.940 --> 00:02:17.500
+We think a mandatory limit pushed by the best-funded lab
+
+00:02:17.500 --> 00:02:21.060
+is more likely to raise entry costs than to slow the leaders.
+
+00:02:22.240 --> 00:02:25.580
+That helps incumbents who already have compliance budgets.
+
+00:02:25.580 --> 00:02:30.960
+The campus rename, as we see it, is about the local politics of land and power.
+
+00:02:30.960 --> 00:02:34.280
+The strongest case the other way deserves a fair hearing.
+
+00:02:34.280 --> 00:02:38.840
+A frontier lab backing mandatory limits concedes the risk is real.
+
+00:02:38.840 --> 00:02:43.000
+That could make binding rules politically viable after the midterms.
+
+00:02:43.000 --> 00:02:47.180
+And the campus framing may ease local opposition to new builds.
+
+00:02:47.180 --> 00:02:52.000
+The case against starts with the fact that only internal planning is reported.
+
+00:02:52.000 --> 00:03:01.440
+Limits drafted with the leader's input tend to fit the leader and raise costs for smaller labs, and a rebrand changes the label, not the power draw.
+
+00:03:01.440 --> 00:03:09.260
+One question decides it for us. Would the proposed limits constrain OpenAI's own release schedule as much as smaller rivals?
+
+00:03:09.980 --> 00:03:17.040
+Until the proposal text shows otherwise, we lean toward reading this as moat building by a well-capitalized lab.
+
+00:03:17.540 --> 00:03:20.160
+For early-stage companies, the split matters.
+
+00:03:20.160 --> 00:03:28.100
+If mandatory limits pass, seed stage model builders could face compliance costs sized for OpenAI.
+
+00:03:28.920 --> 00:03:34.180
+Application companies building on Frontier AP is would carry less of that burden.
+
+00:03:34.840 --> 00:03:39.840
+A fair question for a model building founder might be how they would absorb that cost.
+
+00:03:41.640 --> 00:03:43.180
+Here's Stephen's take.
+
+00:03:43.560 --> 00:03:48.620
+You would think no one is dumb enough to think data centers are campuses, but I don't.
+
+00:03:50.160 --> 00:03:55.900
+Our second story, and the last of the main ones, moves from who writes the rules to who finds the holes.
+
+00:03:56.620 --> 00:04:02.520
+Yesterday, the robot report covered a report from VicOne, a company that sells security tooling.
+
+00:04:03.220 --> 00:04:09.480
+VicOne says A-assisted research found 28 zero-day findings in robotics software in under two days.
+
+00:04:09.480 --> 00:04:15.520
+The affected projects include ones developed or maintained by Google, NVIDIA, and Meta.
+
+00:04:16.140 --> 00:04:18.380
+Two caveats come from VicOne itself.
+
+00:04:18.380 --> 00:04:25.200
+The classification is its own initial validation, and the count may change after vendor review.
+
+00:04:25.800 --> 00:04:31.200
+On the evidence, this one is overstated. It is a vendor counting its own unconfirmed findings.
+
+00:04:31.780 --> 00:04:37.220
+There are no CVEs and no project names, and the report is followed by a product pitch.
+
+00:04:37.800 --> 00:04:43.740
+So our view, for now, is that 28 unnamed, unconfirmed findings from a vendor selling
+
+00:04:43.740 --> 00:04:48.660
+the remedy read as a sales number. The underlying trend still matters, though.
+
+00:04:49.940 --> 00:04:55.380
+Cheap AI bug hunting does make upstream patch cadence a diligence line for robotics companies
+
+00:04:55.380 --> 00:05:01.580
+built on Google, NVIDIA, or Metacode. We would want to know how quickly a startup picks up fixes
+
+00:05:01.580 --> 00:05:07.860
+from the projects it depends on. For early-stage investors, there is a second angle. Robotics
+
+00:05:07.860 --> 00:05:14.120
+startups built on that software inherit those projects bugs. That may open a wedge for robotics
+
+00:05:14.120 --> 00:05:20.660
+specific security tooling, a market where VicOne already sells. There is a more forward-leaning
+
+00:05:20.660 --> 00:05:27.520
+way to read the same facts. On the AGI forward reading, finding 28 candidate zero days in under
+
+00:05:27.520 --> 00:05:34.000
+two days shows AI offense scaling now. Even if many fall away under vendor review, that argument
+
+00:05:34.000 --> 00:05:40.540
+goes, the cost of discovering bugs has collapsed. The confirmed count, once vendors finish their
+
+00:05:40.540 --> 00:05:48.680
+review, is what would test it. Here's Stephen's take, I for 1 AM keeping an eye on my Erebot.
+
+00:05:50.340 --> 00:05:57.840
+Now three quick hits all about money. First, Ottawa has committed $1.6 billion CAD in equity
+
+00:05:57.840 --> 00:06:02.680
+to Cohere. It is likely the government's largest ever single private tech stake,
+
+00:06:02.680 --> 00:06:05.500
+roughly triple the Canadian Tech Growth Fund.
+
+00:06:06.100 --> 00:06:09.960
+It sits inside a larger Series E that is planned, not closed,
+
+00:06:10.140 --> 00:06:11.920
+so the close is what to watch.
+
+00:06:12.600 --> 00:06:15.780
+Second, a story we first covered last Friday.
+
+00:06:17.160 --> 00:06:21.080
+NVIDIA is in talks to provide billions of dollars in credit guarantees
+
+00:06:21.080 --> 00:06:25.760
+for Nscale's $45 billion Anthropic Data Center project,
+
+00:06:25.760 --> 00:06:28.400
+a 460-megawatt facility.
+
+00:06:29.100 --> 00:06:32.400
+It matters because a chip vendor would be backing its customers' debt.
+
+00:06:32.680 --> 00:06:37.960
+Third, DeepSeq doubled its latest fundraising target to nearly $16 billion.
+
+00:06:38.980 --> 00:06:44.520
+Backers include Tencent, CATL, and Chinese state-owned institutions.
+
+00:06:45.440 --> 00:06:50.520
+That comes as black market prices for NVIDIA's advanced AI chips surged,
+
+00:06:50.820 --> 00:06:55.240
+so capital is still reaching a Chinese lab even as chips get dearer.
+
+00:06:57.080 --> 00:06:58.840
+Stevens take on the quick hits.
+
+00:06:59.280 --> 00:07:01.200
+They ain't the sharpest knives in the drawer.
+
+00:07:02.680 --> 00:07:26.760
+One question worth asking in diligence this week. If a provider's financing rests on a vendor guarantee, what are the second provider and fallback model? And one to watch. Does NVIDIA formally guarantee credit for that N-Scale project and on what terms? A signed guarantee disclosed by NVIDIA or N-Scale or an Anthropic filing update would settle it.
+
+00:07:26.760 --> 00:07:49.060
+That's the briefing. Stay with me. Right after this, Bella takes you through today's deep dive on world models, simulators that learned by watching. You can also read it or listen to it on its own on the AI Briefing webpage, where you'll find the written edition in every past episode. The link is in the show notes.
+
+00:07:49.060 --> 00:07:59.640
+thanks michael this is the ai briefing deep dive for monday november 2 world models simulators that
+
+00:07:59.640 --> 00:08:06.200
+learned by watching i'm bella like the briefing it is written and read by ai from public sources
+
+00:08:06.200 --> 00:08:14.720
+in the last two weeks two launches use the same phrase on october 17 odyssey posted a video of a
+
+00:08:14.720 --> 00:08:18.980
+simulated fruit fly brain flying through a world its model generated on the fly.
+
+00:08:19.600 --> 00:08:25.020
+Two days later, Skyfall AI released Sky One, which it calls an engineering world model for
+
+00:08:25.020 --> 00:08:30.020
+computer-aided design and building plans. Behind Waymo's new driving simulator sits
+
+00:08:30.020 --> 00:08:34.920
+Google DeepMind's Ginny 3. Waymo has built its driving simulator on top of it.
+
+00:08:35.340 --> 00:08:40.880
+The money is serious too. In June, Odyssey raised a $310 million
+
+00:08:40.880 --> 00:08:48.560
+Series B at a $1.45 billion valuation. Still, ask 10 investors what a world model is,
+
+00:08:48.820 --> 00:08:53.720
+and you will hear 10 answers. Part of the reason is that the term now covers at least three
+
+00:08:53.720 --> 00:08:59.600
+different things. So today we take the idea apart. What does a world model learn? How is it different
+
+00:08:59.600 --> 00:09:03.360
+from a language model? And which of the claims around it have actually been shown?
+
+00:09:05.320 --> 00:09:10.660
+Start with the difference. A language model predicts the next word. A world model predicts
+
+00:09:10.660 --> 00:09:15.100
+the next moment, given an action. You tell it you turn left, and it shows what you would see
+
+00:09:15.100 --> 00:09:20.580
+after turning left. Then it does that again, many times a second. Here is the analogy worth keeping.
+
+00:09:21.140 --> 00:09:26.660
+Pilots train in flight simulators because crashing one costs nothing. A traditional simulator is
+
+00:09:26.660 --> 00:09:31.740
+hand-built. Engineers write the physics, model the runway, and code every gust of wind.
+
+00:09:32.660 --> 00:09:36.200
+A world model is a simulator that taught itself by watching.
+
+00:09:36.880 --> 00:09:39.480
+Odyssey says its model was trained on internet video,
+
+00:09:40.000 --> 00:09:42.240
+gameplay recordings, and simulated physics.
+
+00:09:42.880 --> 00:09:45.600
+Nobody wrote down that cup's fall or that door's swing.
+
+00:09:46.100 --> 00:09:48.180
+The model picked up those patterns from footage,
+
+00:09:48.560 --> 00:09:51.580
+the way a toddler learns gravity long before reading Newton.
+
+00:09:52.260 --> 00:09:54.900
+The catch is that this simulator works like a dream.
+
+00:09:55.500 --> 00:09:58.080
+Each moment looks believable next to the one before,
+
+00:09:58.500 --> 00:10:00.480
+but nothing guarantees the rules hold.
+
+00:10:01.460 --> 00:10:04.200
+Turn around and the street behind you may have changed.
+
+00:10:04.740 --> 00:10:07.600
+Leave the room and come back, and the furniture may have moved.
+
+00:10:08.140 --> 00:10:09.920
+Under one label sit three families.
+
+00:10:10.540 --> 00:10:11.780
+The first draws pixels.
+
+00:10:12.520 --> 00:10:17.160
+Genie 3 generates each new frame in real time, at 24 frames per second,
+
+00:10:17.440 --> 00:10:22.060
+so a person or an agent like DeepMind Syma can navigate inside the world it creates.
+
+00:10:22.700 --> 00:10:25.320
+The second predicts in shorthand rather than pictures.
+
+00:10:26.080 --> 00:10:28.580
+Meta's vGPA2 does not draw the future.
+
+00:10:29.500 --> 00:10:32.120
+It predicts a compressed summary of what comes next,
+
+00:10:32.120 --> 00:10:34.720
+and that summary is enough for a robot to plan.
+
+00:10:35.300 --> 00:10:38.460
+Jan Lakun at Meta has long argued that this is the root that matters.
+
+00:10:39.080 --> 00:10:40.900
+The third family stretches the word.
+
+00:10:41.500 --> 00:10:43.240
+Sky One does not render a world at all.
+
+00:10:43.740 --> 00:10:45.680
+Its world is the state of a design file,
+
+00:10:46.000 --> 00:10:50.100
+and it plans the sequence of modeling steps needed to build a part or a floor plan.
+
+00:10:50.740 --> 00:10:54.920
+All three share one idea, learn how a state changes when you act on it.
+
+00:10:55.280 --> 00:10:57.180
+That is what lets you rehearse before you commit.
+
+00:10:58.060 --> 00:11:01.820
+A robot can try a grasp a thousand times in imagination.
+
+00:11:02.120 --> 00:11:04.880
+and a car can meet a flood it has never seen.
+
+00:11:05.500 --> 00:11:09.140
+With that map in hand, let's look at what has actually been shown.
+
+00:11:10.960 --> 00:11:12.480
+Start with what is solid.
+
+00:11:13.220 --> 00:11:19.720
+DeepMind says Genie 3 produces interactive worlds at 720p and 24 frames per second.
+
+00:11:20.300 --> 00:11:23.420
+It says they stay largely consistent for several minutes,
+
+00:11:23.420 --> 00:11:26.040
+with visual memory going back about a minute.
+
+00:11:26.680 --> 00:11:29.120
+That is DeepMind describing its own work.
+
+00:11:29.120 --> 00:11:38.360
+But since January, paying subscribers on Google's $249 per month AI Ultra plan have been able to try it through Project Genie
+
+00:11:38.360 --> 00:11:41.240
+So outsiders can now test the basic behavior
+
+00:11:41.240 --> 00:11:44.140
+DeepMind also lists the limits itself
+
+00:11:44.140 --> 00:11:50.000
+In its words, the model supports a few minutes of interaction rather than extended hours
+
+00:11:50.000 --> 00:11:55.680
+An analysis on tech talks adds physics errors, such as people appearing to walk backward
+
+00:11:55.680 --> 00:12:00.060
+When DeepMind put its game-playing agent inside Genie 3,
+
+00:12:00.240 --> 00:12:01.660
+the agent could only move around.
+
+00:12:02.260 --> 00:12:03.440
+It did not pick things up.
+
+00:12:03.960 --> 00:12:08.680
+Meta reports that VGPA 2 needed only 62 hours of robot video to learn to plan.
+
+00:12:09.280 --> 00:12:14.280
+It says zero-shot pick-and-play success in new settings ran from 65% to 80%.
+
+00:12:14.280 --> 00:12:17.620
+That is self-reported on Meta's own lab tasks.
+
+00:12:18.340 --> 00:12:22.160
+Waymo says its Genie-based model produces both camera and LiDAR data
+
+00:12:22.160 --> 00:12:25.760
+and can stage tornadoes, floods, and even elephants.
+
+00:12:26.640 --> 00:12:31.920
+As the decoder noted, Waymo shared no benchmark results or independent evaluations.
+
+00:12:32.740 --> 00:12:34.640
+Now the claims that go beyond the evidence.
+
+00:12:35.200 --> 00:12:37.740
+The fly demo is a video on X, there is no paper.
+
+00:12:38.380 --> 00:12:41.200
+Odyssey has not said which fly brain map it used.
+
+00:12:41.780 --> 00:12:48.780
+A public map called Flywire has 139,255 neurons and roughly 50 million connections.
+
+00:12:49.540 --> 00:12:53.360
+We don't know how the generated frames are turned into signals for the fly's eyes.
+
+00:12:54.240 --> 00:12:58.060
+We also don't know whether the virtual fly behaves anything like a real one.
+
+00:12:58.540 --> 00:13:02.860
+For now, it is a striking demo from a company that has just raised a large round.
+
+00:13:03.620 --> 00:13:06.240
+SkyOne has a benchmark, but Skyfall built it.
+
+00:13:06.720 --> 00:13:11.760
+Every figure is self-reported, with no weights, no API, and no outside replication.
+
+00:13:12.480 --> 00:13:13.240
+That is a tie.
+
+00:13:13.900 --> 00:13:18.120
+One independent write-up reads the preview as producing sketches and visual states,
+
+00:13:18.120 --> 00:13:21.200
+with editable design histories still future work.
+
+00:13:22.760 --> 00:13:25.480
+The same facts support quite different readings.
+
+00:13:26.120 --> 00:13:28.220
+The AGI forward reading goes like this.
+
+00:13:28.740 --> 00:13:33.080
+Robotics is short of data, and every real world trial is slow and costly.
+
+00:13:33.820 --> 00:13:36.040
+A model that has absorbed physics from video
+
+00:13:36.040 --> 00:13:39.480
+can generate endless practice worlds for agents and robots.
+
+00:13:40.220 --> 00:13:42.300
+On this view, Genie 3's memory,
+
+00:13:42.780 --> 00:13:45.420
+which DeepMind says it did not program explicitly,
+
+00:13:46.000 --> 00:13:48.220
+hints at understanding emerging from scale.
+
+00:13:49.600 --> 00:13:52.080
+Waymo, which runs a commercial robotaxi fleet,
+
+00:13:52.500 --> 00:13:55.280
+putting this into its pipeline counts as a serious vote.
+
+00:13:55.900 --> 00:13:58.380
+The AA realist reading starts from the dream problem.
+
+00:13:58.960 --> 00:14:01.420
+A few minutes of consistency is fine for a demo.
+
+00:14:01.980 --> 00:14:03.160
+It is not enough for training.
+
+00:14:03.800 --> 00:14:07.240
+Teach a robot inside a simulator that gets physics slightly wrong,
+
+00:14:07.240 --> 00:14:10.260
+and it learns the wrong physics with confidence.
+
+00:14:10.960 --> 00:14:15.260
+Robotics has wrestled with this gap between simulation and reality for decades.
+
+00:14:15.420 --> 00:14:20.980
+None of the sources we checked shows a robot or car trained mainly in generated worlds
+
+00:14:20.980 --> 00:14:23.240
+outperforming one trained on real data.
+
+00:14:23.880 --> 00:14:27.740
+On that view, today's value is in testing and rare scenario coverage,
+
+00:14:28.140 --> 00:14:29.520
+not in replacing real data.
+
+00:14:30.160 --> 00:14:31.900
+The market reading looks at who is paying.
+
+00:14:32.600 --> 00:14:36.600
+Odyssey's backers include Amazon, AMD Ventures, and GV,
+
+00:14:37.020 --> 00:14:39.080
+and a WS is its preferred cloud.
+
+00:14:39.800 --> 00:14:41.920
+Chip and cloud companies are funding a customer
+
+00:14:41.920 --> 00:14:43.920
+that consumes a great deal of compute.
+
+00:14:44.880 --> 00:14:51.280
+That is a fair bet, but it means the valuation says as much about compute strategy as about demand.
+
+00:14:52.000 --> 00:14:53.960
+Odyssey has not disclosed revenue.
+
+00:14:55.840 --> 00:15:00.400
+Our read is that world models are real infrastructure for simulation and testing.
+
+00:15:01.020 --> 00:15:05.540
+As a source of training data, they are still early, and in some launches, they are just a label.
+
+00:15:06.180 --> 00:15:10.080
+Each reading would change with one piece of evidence, which we come to next.
+
+00:15:10.080 --> 00:15:14.500
+For builders, the general-purpose pixel model is a capital game,
+
+00:15:14.800 --> 00:15:17.720
+and Google and well-funded labs are already playing it.
+
+00:15:18.340 --> 00:15:20.040
+Serving cost matters as well.
+
+00:15:21.060 --> 00:15:26.080
+In 2025, Odyssey's earlier model streamed from clusters of H100GPS
+
+00:15:26.860 --> 00:15:28.780
+at $1 to $2 per user hour.
+
+00:15:29.340 --> 00:15:32.280
+A video game runs on a console the player already owns.
+
+00:15:32.920 --> 00:15:35.560
+A consumer product built on a hosted world model
+
+00:15:35.560 --> 00:15:39.540
+has to cover that GPU bill every hour, for every player.
+
+00:15:40.080 --> 00:15:43.960
+Seed and Series A companies seem better placed where the world is narrow,
+
+00:15:44.340 --> 00:15:45.680
+and the output can be checked.
+
+00:15:46.320 --> 00:15:48.920
+A CAD part can be measured against a geometry engine.
+
+00:15:50.280 --> 00:15:53.900
+Owning interaction data, such as robot logs or sensor feeds,
+
+00:15:54.340 --> 00:15:56.880
+gives a company something to fine-tune with that other's lack.
+
+00:15:57.560 --> 00:15:59.560
+Waymo's LiDAR step is the template here,
+
+00:16:00.080 --> 00:16:04.360
+tooling that measures whether simulation results hold up in reality looks undersupplied.
+
+00:16:04.880 --> 00:16:08.340
+The exposed companies are thin wrappers on a model someone else hosts.
+
+00:16:08.900 --> 00:16:11.760
+One question worth exploring in diligence might be this.
+
+00:16:12.240 --> 00:16:16.120
+How often have the company's simulated results been checked against the real world,
+
+00:16:16.320 --> 00:16:18.080
+and what happened when they disagreed?
+
+00:16:19.780 --> 00:16:22.060
+Three things would settle a lot of this.
+
+00:16:22.580 --> 00:16:27.240
+First, a published result from Waymo, DeepMind, or a robotics lab,
+
+00:16:27.240 --> 00:16:32.040
+where training mainly in a generated world beats training on real data with numbers.
+
+00:16:32.600 --> 00:16:35.000
+That would move us towards the AGI forward reading.
+
+00:16:35.580 --> 00:16:38.220
+Its continued absence would support the realist one.
+
+00:16:38.340 --> 00:16:43.020
+Second, outside testing of Sky One once the waitlist opens.
+
+00:16:43.020 --> 00:16:47.940
+We would wanna know whether the cost gap holds on someone else's parts and
+
+00:16:47.940 --> 00:16:52.040
+whether engineers get editable design files or just pictures.
+
+00:16:52.040 --> 00:16:56.920
+Third, a paper from Odyssey showing how the fly brain is wired into the model and
+
+00:16:56.920 --> 00:16:59.540
+whether the fly behaves like a fly.
+
+00:16:59.540 --> 00:17:01.220
+None of these has a date.
+
+00:17:01.220 --> 00:17:05.140
+Over the next year, falling serving costs per user hour will show which
+
+00:17:05.140 --> 00:17:07.300
+consumer uses can pay their way.
+
+00:17:08.340 --> 00:17:11.880
+That's the deep dive and today's AI briefing.
+
+00:17:12.620 --> 00:17:14.620
+Every source is linked in the show notes,
+
+00:17:14.620 --> 00:17:17.820
+and the AI briefing webpage has the written edition,
+
+00:17:18.300 --> 00:17:20.600
+this deep dive and every past episode.
+
+00:17:21.260 --> 00:17:23.000
+The daily briefing is back tomorrow.
