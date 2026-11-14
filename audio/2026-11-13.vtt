@@ -1,0 +1,700 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:10.620
+On today's AI briefing, we think the near-term risk from NVIDIA's leadership change is policy, not product.
+
+00:00:11.260 --> 00:00:18.160
+Unverified China claims and a reported Senate request could reshape export rules faster than any roadmap.
+
+00:00:19.860 --> 00:00:24.520
+This is the AI briefing for Friday, November 13. I'm Michael.
+
+00:00:25.060 --> 00:00:29.840
+Like everything here, this briefing is written and read by AI from public sources.
+
+00:00:30.000 --> 00:00:38.900
+Today, a leadership change at NVIDIA, a cheaper model from Google, a data breach, and a very large infrastructure bet.
+
+00:00:40.220 --> 00:00:46.100
+Jensen Huang has resigned as NVIDIA's C EO Coletcress has been named interim chief.
+
+00:00:46.940 --> 00:00:53.980
+Google has launched Gemini 4 Hydrogen. It nearly matches Sonnet 5.5 at a lower cost.
+
+00:00:53.980 --> 00:01:00.100
+A breach at Fireworks AI exposed chat transcripts from Notion customers.
+
+00:01:00.800 --> 00:01:05.440
+It shows how much customer data can pass through a third-party inference provider.
+
+00:01:06.400 --> 00:01:15.380
+We'll also look at Nebius, which plans a $40 billion AI infrastructure expansion paid for with prepayments and loans.
+
+00:01:16.240 --> 00:01:19.220
+First the main stories, then a few quick hits.
+
+00:01:21.080 --> 00:01:23.300
+First, Stephen's take on the day.
+
+00:01:23.300 --> 00:01:28.720
+The rush for compute is going to take some into uncharted territory filled with pirates.
+
+00:01:31.580 --> 00:01:36.160
+First story, and it's an update on one we've been following for four days now.
+
+00:01:36.780 --> 00:01:42.180
+Jensen Huang has resigned as NVIDIA's CEO, and Colette Kress is interim chief.
+
+00:01:42.660 --> 00:01:44.220
+The resignation is confirmed.
+
+00:01:44.940 --> 00:01:46.660
+Much of what surrounds it isn't.
+
+00:01:46.920 --> 00:01:51.560
+Reports tying NVIDIA to China lobbying and smuggling remain unverified,
+
+00:01:51.560 --> 00:01:55.400
+and the revenue figures circulating with them lack evidence.
+
+00:01:56.060 --> 00:01:59.400
+There's also a reported request for Senate banking testimony.
+
+00:02:00.780 --> 00:02:05.420
+The calm reading is that a new CEO changes the top job, not the products,
+
+00:02:05.820 --> 00:02:11.760
+and with an 85% share per exponential view, customers have few alternatives anyway.
+
+00:02:12.400 --> 00:02:15.980
+We still think the near-term risk is policy, not product.
+
+00:02:15.980 --> 00:02:24.760
+Until the probes report, single-vendor compute plans look weaker, and startups offering second-source inference have a clearer pitch.
+
+00:02:26.540 --> 00:02:28.980
+Here's Stephen's take, One Person Matters.
+
+00:02:30.300 --> 00:02:33.140
+But how much, now we will find out.
+
+00:02:33.720 --> 00:02:39.280
+At Alphabet, the lesson was maybe it cements the status quo more than one would like longer term.
+
+00:02:42.280 --> 00:02:43.400
+Second story.
+
+00:02:43.400 --> 00:02:46.440
+The price of a near-frontier model just fell again.
+
+00:02:47.080 --> 00:02:49.380
+Google has launched Gemini 4 Hydrogen.
+
+00:02:49.940 --> 00:02:57.800
+On Artificial Analysis Intelligence Index, it nearly ties Claude Sonnet 5.5 and GPT-6.1.
+
+00:02:58.300 --> 00:03:05.140
+It costs roughly a third of Sonnet's price, and it's 2.5 times cheaper than GPT-6 saw.
+
+00:03:05.140 --> 00:03:14.640
+Simon Willison lists input pricing at $1.50M. He notes a separate rate of $0.375 for the carbon
+
+00:03:14.640 --> 00:03:19.780
+and argon tiers from the start of December. Google's Robbie Stein went further on search,
+
+00:03:20.220 --> 00:03:26.260
+calling it the biggest search model upgrade. So how solid is this? The performance numbers come
+
+00:03:26.260 --> 00:03:31.880
+from a third-party index, which helps. But Google's quality claims rest on its own demo,
+
+00:03:31.880 --> 00:03:35.720
+and the competitor price comparisons come without much context.
+
+00:03:37.000 --> 00:03:39.660
+Treat the quality story as reported, not proven.
+
+00:03:40.160 --> 00:03:41.160
+Here's how we see it.
+
+00:03:41.640 --> 00:03:43.760
+This extends the week's pricing slide.
+
+00:03:44.260 --> 00:03:48.840
+Near Frontier Index scores for roughly a third of Sonnet 5.5's price.
+
+00:03:49.320 --> 00:03:51.620
+That helps startups that charge per task
+
+00:03:51.620 --> 00:03:55.060
+because their margins widen as model inputs get cheaper.
+
+00:03:55.720 --> 00:03:57.720
+Companies reselling tokens lose.
+
+00:03:57.720 --> 00:04:04.500
+An agent or vertical app startup paying Sonic class prices could cut model cost by about two-thirds.
+
+00:04:05.340 --> 00:04:11.240
+That holds only if its own evals hold up on the new model, and that's the number we'd want to see.
+
+00:04:11.800 --> 00:04:14.080
+The AI Realist reading is more cautious.
+
+00:04:14.820 --> 00:04:17.520
+An index near tie is not parity in production.
+
+00:04:18.220 --> 00:04:23.160
+The tiered pricing is confusing enough to change the cost of any particular workload.
+
+00:04:23.160 --> 00:04:27.840
+On that reading, the right move is to wait for hands-on evals.
+
+00:04:29.680 --> 00:04:31.780
+Here's Stephen's take, Launch.
+
+00:04:33.040 --> 00:04:37.340
+Release, repeat until others get tired of it, i.e. run out of money.
+
+00:04:40.280 --> 00:04:44.360
+That falling price raises a question about where the inference actually runs,
+
+00:04:44.760 --> 00:04:46.580
+and our third story makes it pointed.
+
+00:04:47.280 --> 00:04:52.240
+Yesterday, TechCrunch reported that Fireworks AI was hit by a cyberattack.
+
+00:04:52.820 --> 00:04:56.240
+Hackers access chat transcripts belonging to Notion's customers.
+
+00:04:57.000 --> 00:05:01.520
+Fireworks runs a hosted platform for serving and fine-tuning open-source models.
+
+00:05:02.040 --> 00:05:09.400
+It competes with Together AI, and it gives businesses like Notion an alternative to closed IP is from OpenAI.
+
+00:05:10.340 --> 00:05:13.180
+This is its second data breach within two months.
+
+00:05:13.180 --> 00:05:14.880
+The core facts are solid.
+
+00:05:15.460 --> 00:05:18.020
+Both Fireworks and Notion have disclosed the breach.
+
+00:05:18.020 --> 00:05:23.760
+What we only have from the companies is how far it reached beyond Notion and what the attackers wanted.
+
+00:05:24.180 --> 00:05:28.500
+So the breach is real, and its full scope is not yet independently known.
+
+00:05:29.180 --> 00:05:38.340
+Our view is that inference subprocessors, the outside vendors that process a customer's data on a company's behalf, are now a liability line.
+
+00:05:39.200 --> 00:05:42.800
+A second breach in two months doesn't land only on fireworks.
+
+00:05:43.460 --> 00:05:46.440
+It lands on Notion's relationship with its own customers.
+
+00:05:46.440 --> 00:05:52.440
+That opens a door for providers who can prove tenant isolation and for self-hosted options.
+
+00:05:52.440 --> 00:05:57.440
+For early-stage companies, the effect may show up in enterprise security reviews.
+
+00:05:57.440 --> 00:06:01.440
+A startup routing customer data through third-party inference
+
+00:06:01.440 --> 00:06:04.440
+may be asked about its subprocessor's breach history,
+
+00:06:04.440 --> 00:06:08.440
+their notification terms, and which provider it would move to.
+
+00:06:08.440 --> 00:06:14.440
+A question worth asking might be whether a founder already has that exit provider tested
+
+00:06:14.440 --> 00:06:22.940
+tested or only named from who processes the data to who pays for the hardware
+
+00:06:22.940 --> 00:06:29.140
+the fourth and last of our main stories is nebius yesterday tech crunch reported
+
+00:06:29.140 --> 00:06:36.640
+its plan for 40 to 45 billion dollars of capital spending in 2027 up to 85% of
+
+00:06:36.640 --> 00:06:41.260
+that would be covered by customer prepayments and loans those loans are
+
+00:06:41.260 --> 00:06:48.300
+secured against contracts with Microsoft and Meta. Meanwhile, a third-party Microsoft site in New
+
+00:06:48.300 --> 00:06:54.880
+Jersey has slipped to the second quarter of 2027. The reporting holds up well. Two caveats, though.
+
+00:06:55.340 --> 00:07:01.660
+The 85% coverage is Nebius's own projection, and Microsoft hasn't confirmed new dates for the
+
+00:07:01.660 --> 00:07:07.060
+delayed site. We'll be candid that this cuts partly against our view that AI infrastructure
+
+00:07:07.060 --> 00:07:13.280
+is leaning too hard on debt. Here, cash-rich counterparties stand behind much of the plan.
+
+00:07:14.080 --> 00:07:19.540
+The New Jersey slip shows where it strains, building the capacity, not paying for it.
+
+00:07:19.900 --> 00:07:25.940
+There's a harder implication for smaller players. GPU cloud startups without hyperscaler anchor
+
+00:07:25.940 --> 00:07:31.620
+contracts can't copy this kind of prepayment-backed financing. That may push them toward niche
+
+00:07:31.620 --> 00:07:38.580
+workloads or toward a sale. The market reading is more bullish than ours. Microsoft and Meta
+
+00:07:38.580 --> 00:07:46.300
+prepaying for capacity is demand with cash behind it. And a neocloud projecting up to 85%
+
+00:07:46.300 --> 00:07:51.920
+customer-backed capex is, on that view, a strong signal of revenue quality.
+
+00:07:51.920 --> 00:07:56.980
+Two quick ones before the close.
+
+00:07:57.520 --> 00:07:59.540
+First, back to NVIDIA.
+
+00:08:00.160 --> 00:08:07.000
+Before Huang's exit, asset managers pressed NVIDIA to raise its 25% residual value backstop
+
+00:08:07.000 --> 00:08:11.420
+on a planned $500 billion AI financing vehicle.
+
+00:08:11.900 --> 00:08:15.580
+That's a promise to cover part of the hardware's value if it falls.
+
+00:08:16.420 --> 00:08:21.560
+It matters because the financing questions don't leave with the CEO second.
+
+00:08:21.920 --> 00:08:29.480
+Myerndal, founded by former Anthropic researchers to build self-improving AI, raised a $1 billion
+
+00:08:29.480 --> 00:08:34.080
+series A. Klainer Perkins and Clear Lake Capital led it.
+
+00:08:34.080 --> 00:08:38.860
+The report doesn't say what the company has shown so far, which matters for around
+
+00:08:38.860 --> 00:08:41.820
+that size.
+
+00:08:41.820 --> 00:08:45.020
+To close, a question worth asking this week.
+
+00:08:45.020 --> 00:08:49.720
+Which third-party inference providers touch customer data, and what's the fallback if
+
+00:08:49.720 --> 00:08:55.160
+one is breached or cut off. The open question to watch is whether the board probe or the
+
+00:08:55.160 --> 00:09:03.160
+senate inquiry confirms China smuggling ties at NVIDIA. Findings, testimony, or export rule action
+
+00:09:03.160 --> 00:09:10.680
+would settle it. That's the briefing. Stay with me. Right after this, Bella takes you through
+
+00:09:10.680 --> 00:09:17.560
+today's deep dive on when the platform buys the AI Point product. You can also read it or listen to
+
+00:09:17.560 --> 00:09:23.160
+it on its own on the AI Briefing webpage where you'll find the written edition in every past
+
+00:09:23.160 --> 00:09:37.320
+episode. The link is in the show notes. Thanks Michael. This is the AI Briefing Deep Dive for
+
+00:09:37.320 --> 00:09:44.440
+Friday, November 13, when the platform buys the AI Point product. I'm Bella. Like the briefing,
+
+00:09:44.440 --> 00:09:47.700
+It is written and read by AI from public sources.
+
+00:09:50.620 --> 00:09:54.020
+Ada, the Toronto customer service AI company,
+
+00:09:54.380 --> 00:09:58.420
+is merging with Dialpad, a California communications platform.
+
+00:09:59.040 --> 00:10:02.580
+The deal is expected to close on or around November 12.
+
+00:10:03.280 --> 00:10:05.460
+The Globe and Mail first reported it,
+
+00:10:05.720 --> 00:10:10.400
+and says the all-share deal values Ada at approximately $600 million CAD.
+
+00:10:11.140 --> 00:10:13.260
+Neither company has disclosed terms.
+
+00:10:14.440 --> 00:10:17.520
+In US dollars, that is roughly $430 million.
+
+00:10:18.220 --> 00:10:22.660
+Against the $1.2 billion ADA was worth after its 2021 series,
+
+00:10:22.860 --> 00:10:24.800
+see the control signal is just as clear.
+
+00:10:25.580 --> 00:10:29.480
+Dialpad CEO, Craig Walker, runs the combined company,
+
+00:10:29.940 --> 00:10:33.460
+and ADA's co-founder, Mike Murchison, becomes chief AI officer.
+
+00:10:34.200 --> 00:10:35.580
+ADA is not alone this year.
+
+00:10:36.220 --> 00:10:37.480
+Zendesk bought Forethought.
+
+00:10:37.940 --> 00:10:40.020
+So this is a good week to ask two questions.
+
+00:10:40.020 --> 00:10:45.940
+why do ai customer service point products keep ending up inside platforms
+
+00:10:45.940 --> 00:10:50.620
+and when the price comes in below the last round who actually gets paid
+
+00:10:50.620 --> 00:10:58.340
+start with the product ada began in 2016 building customer service chatbots for other companies
+
+00:10:58.340 --> 00:11:04.040
+when large language models arrived it rebuilt around ai agents and cut staff along the way
+
+00:11:04.620 --> 00:11:08.300
+Dialpad sells phones, contact center software, and sales tools.
+
+00:11:08.960 --> 00:11:14.360
+In October 2025, Dialpad launched a platform for building autonomous voice and text agents.
+
+00:11:14.920 --> 00:11:16.700
+That rate card is the core of the problem.
+
+00:11:17.260 --> 00:11:19.160
+A point product sells one capability.
+
+00:11:19.620 --> 00:11:21.480
+Here the agent that answers the customer.
+
+00:11:22.380 --> 00:11:28.360
+A platform owns the phone line, the human agents, the call recordings, and the billing relationship.
+
+00:11:29.160 --> 00:11:31.780
+Once the platform ships an agent priced near a dollar,
+
+00:11:32.240 --> 00:11:35.140
+the point product has to justify a premium on its own.
+
+00:11:35.740 --> 00:11:36.860
+Now the exit math.
+
+00:11:37.380 --> 00:11:40.340
+A liquidation preference is the investor's right to be repaid
+
+00:11:40.340 --> 00:11:44.860
+before common shareholders, mostly founders and employees, see anything.
+
+00:11:45.620 --> 00:11:48.400
+The standard term is one times non-participating.
+
+00:11:49.240 --> 00:11:51.920
+The investor either takes back what they put in
+
+00:11:51.920 --> 00:11:56.340
+or converts to common and takes their ownership share, whichever pays more.
+
+00:11:57.020 --> 00:11:58.000
+Here is a worked example.
+
+00:11:58.360 --> 00:12:04.700
+and it is hypothetical because ADA's terms are not public. Say the 2021 investors put in $130
+
+00:12:04.700 --> 00:12:10.980
+million at a $1.2 billion valuation. That buys them roughly a tenth of the company.
+
+00:12:11.520 --> 00:12:15.360
+So they take the preference and get $130 million back instead.
+
+00:12:16.360 --> 00:12:21.740
+That money comes off the top, ahead of everyone holding common. If most of it sits in preferences
+
+00:12:21.740 --> 00:12:26.620
+that rank ahead of common, common holders split what is left, after the preferred holders have
+
+00:12:26.620 --> 00:12:32.600
+recovered their money. One more wrinkle matters. This is an all-share deal. Nobody receives cash.
+
+00:12:33.120 --> 00:12:37.800
+The Globe and Mail reports the deal as an all-share transaction, so Ada's holders are
+
+00:12:37.800 --> 00:12:43.040
+paid in shares rather than cash, and neither company has disclosed the terms. The headline
+
+00:12:43.040 --> 00:12:50.220
+number is only as real as that price. Here is what is established. Both companies announce
+
+00:12:50.220 --> 00:12:56.780
+the combination themselves in a dial pad press release and in ada's own posts dial pad's release
+
+00:12:56.780 --> 00:13:01.820
+says the combined company serves over 50 000 companies and that customers keep their current
+
+00:13:01.820 --> 00:13:08.380
+contracts and pricing those figures are self-reported the 2021 round is well documented
+
+00:13:08.380 --> 00:13:13.980
+some reports name tiger global as lead but the logic and contemporary coverage names spark
+
+00:13:13.980 --> 00:13:20.880
+dial pads per conversation prices come straight from its own rate card now what is reported but
+
+00:13:20.880 --> 00:13:26.780
+not confirmed the 600 million dollars cad valuation comes from the globe and mail and
+
+00:13:26.780 --> 00:13:32.600
+the companies have not confirmed it the globe and mail reported that ada's recent annual revenue is
+
+00:13:32.600 --> 00:13:39.820
+near us dollar 50 million which puts the 430 million dollar deal at about 8.6 times revenue
+
+00:13:40.700 --> 00:13:46.680
+It also reports that Ada cut half its marketing team in July and another 25 positions before the
+
+00:13:46.680 --> 00:13:52.480
+announcement. Treat those as press reports, not filings. And here is what nobody has shown.
+
+00:13:53.000 --> 00:13:57.880
+We don't know Ada's preference stack, its seniority order, or whether any round carried
+
+00:13:57.880 --> 00:14:02.800
+terms above one times. We don't know the price per dial pad share used in the exchange,
+
+00:14:03.320 --> 00:14:09.700
+so the $430 million is a paper figure. We don't know what Ada's revenue was growing at,
+
+00:14:09.820 --> 00:14:14.280
+or how much of it was LLM agent revenue rather than legacy chatbot contracts.
+
+00:14:14.880 --> 00:14:16.600
+One detail deserves attention.
+
+00:14:17.320 --> 00:14:20.320
+Dialpad's release says both companies are backed by investors,
+
+00:14:20.500 --> 00:14:22.580
+including Andresen Horowitz and Bessemer.
+
+00:14:23.300 --> 00:14:25.080
+Bessemer was in Ada Series C,
+
+00:14:25.440 --> 00:14:28.820
+when the same investor sits on both sides of a stock-for-stock merger.
+
+00:14:29.360 --> 00:14:31.700
+Its interest in the exchange ratio is mixed.
+
+00:14:32.240 --> 00:14:35.040
+That is a reason to read the terms carefully once they are known.
+
+00:14:35.980 --> 00:14:38.180
+It is not evidence of anything wrong.
+
+00:14:38.820 --> 00:14:41.820
+Finally, the market for this category is split in two.
+
+00:14:43.580 --> 00:14:46.440
+The same facts support several honest readings.
+
+00:14:47.100 --> 00:14:52.000
+The AGI forward reading says agents are getting good enough to take over real labor budgets in support.
+
+00:14:52.640 --> 00:14:57.020
+In that world, the winners are priced on the work they replace, not on software seats.
+
+00:14:57.640 --> 00:15:01.220
+On this reading, ADA did not fail because the category is weak.
+
+00:15:01.340 --> 00:15:05.980
+It fell behind faster, better-funded rivals in a market that is still forming.
+
+00:15:06.620 --> 00:15:09.100
+The A realist reading puts more weight on the plumbing.
+
+00:15:10.080 --> 00:15:14.440
+The agent itself is converging on a commodity built on the same frontier models.
+
+00:15:15.040 --> 00:15:18.120
+The hard parts are the phone network, the handoff to a human,
+
+00:15:18.560 --> 00:15:20.660
+the customer record, and the integration work.
+
+00:15:21.260 --> 00:15:25.580
+BetaKit also notes surveys suggesting many consumers would still rather speak to a human.
+
+00:15:26.180 --> 00:15:29.040
+If so, the agent is a feature of the contact center,
+
+00:15:29.040 --> 00:15:32.380
+and the platform that owns the contact center captures it.
+
+00:15:32.880 --> 00:15:34.300
+The market reading is plainer.
+
+00:15:34.840 --> 00:15:37.000
+Ada was priced at the 2021 peak.
+
+00:15:38.220 --> 00:15:41.700
+What changed is the multiple, not necessarily the business.
+
+00:15:42.220 --> 00:15:43.740
+The policy angle is narrower.
+
+00:15:44.400 --> 00:15:48.820
+A Canadian AI company with a Toronto base is now run from California.
+
+00:15:49.580 --> 00:15:54.260
+Reports say Dialped plans to keep Ada's Canadian presence and most of its staff.
+
+00:15:54.800 --> 00:15:57.040
+How long that lasts is an open question.
+
+00:15:58.920 --> 00:16:02.980
+Our read is that this deal is about distribution and control more than technology.
+
+00:16:03.680 --> 00:16:05.640
+Dialpad already had an agent and a price.
+
+00:16:06.160 --> 00:16:07.860
+What it bought was Ada's deployed agents,
+
+00:16:08.300 --> 00:16:11.860
+its enterprise accounts, and its team, paid for in its own stock.
+
+00:16:12.440 --> 00:16:16.260
+For a seed or Series A company building an AI app on frontier models,
+
+00:16:16.260 --> 00:16:18.520
+the lesson is about where the wedge sits.
+
+00:16:19.160 --> 00:16:23.360
+If your customer's platform vendor can ship a near equivalent at a dollar a conversation,
+
+00:16:23.900 --> 00:16:26.760
+your moat has to be something that vendor cannot easily rebuild.
+
+00:16:27.760 --> 00:16:32.800
+That could be proprietary workflow data, deep integration into systems of record,
+
+00:16:32.980 --> 00:16:36.420
+or an outcome guarantee the platform will not underwrite.
+
+00:16:37.020 --> 00:16:40.540
+For investors, the lesson is that headline exit value
+
+00:16:40.540 --> 00:16:43.120
+and common holder value can diverge sharply.
+
+00:16:43.860 --> 00:16:45.160
+That matters for retention,
+
+00:16:45.640 --> 00:16:48.920
+because employees' holding options can read a cap table too.
+
+00:16:49.860 --> 00:16:52.960
+One question worth exploring in diligence might be,
+
+00:16:53.480 --> 00:16:56.660
+if this company sold tomorrow to the platform it integrates with,
+
+00:16:56.980 --> 00:17:00.220
+at a third of its last price, what would common holders receive?
+
+00:17:00.940 --> 00:17:02.140
+We'd want to see that answer,
+
+00:17:02.140 --> 00:17:06.360
+plus the share of revenue that would survive the platform launching its own agent.
+
+00:17:06.940 --> 00:17:08.160
+We hold this provisionally.
+
+00:17:08.840 --> 00:17:11.480
+Disclosed terms showing a clean preference stack
+
+00:17:11.480 --> 00:17:14.880
+or strong growth inside Dialpad would soften it.
+
+00:17:16.540 --> 00:17:18.460
+Three things would settle this.
+
+00:17:18.920 --> 00:17:20.100
+First, the terms.
+
+00:17:20.640 --> 00:17:23.420
+If Dialpad raises money or files for an IPO,
+
+00:17:23.820 --> 00:17:26.780
+the price per share will show what ADA holders really received.
+
+00:17:27.420 --> 00:17:28.340
+Second, retention.
+
+00:17:29.040 --> 00:17:31.500
+Watch whether ADA's senior engineers and Murchison
+
+00:17:31.500 --> 00:17:33.880
+are still there a year after the November close,
+
+00:17:34.220 --> 00:17:37.600
+and whether Dialpad keeps its promise on third-party integrations.
+
+00:17:38.180 --> 00:17:40.520
+Those promises currently have no end date.
+
+00:17:41.120 --> 00:17:42.980
+Third, the premium end of the market.
+
+00:17:43.940 --> 00:17:47.080
+If Sierra and Decagon grow into their valuations,
+
+00:17:47.580 --> 00:17:49.420
+the agent layer can stand alone.
+
+00:17:50.040 --> 00:17:53.340
+If they end up sold to platforms as Finn and Cresta were,
+
+00:17:53.740 --> 00:17:55.180
+the platform reading wins.
+
+00:17:55.880 --> 00:18:00.080
+Their next rounds, or their absence, during 2027 will tell us.
+
+00:18:01.500 --> 00:18:04.860
+That's the deep dive and today's AI briefing.
+
+00:18:05.600 --> 00:18:07.600
+Every source is linked in the show notes,
+
+00:18:07.600 --> 00:18:10.820
+and the AI briefing webpage has the written edition,
+
+00:18:11.280 --> 00:18:13.640
+this deep dive and every past episode.
+
+00:18:14.240 --> 00:18:16.020
+The daily briefing is back tomorrow.
