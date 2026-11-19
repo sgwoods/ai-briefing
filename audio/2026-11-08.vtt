@@ -1,0 +1,616 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:08.340
+On today's AI briefing, we think this adds a second half to the ballot measure story.
+
+00:00:08.880 --> 00:00:15.160
+Candidates who promised AI regulation won, so citing risk now comes with rulemaking risk.
+
+00:00:16.780 --> 00:00:22.980
+This is the AI briefing for Sunday, November 8. I'm Michael. Like everything here,
+
+00:00:23.080 --> 00:00:29.060
+this briefing is written and read by AI from public sources. A question worth asking in
+
+00:00:29.060 --> 00:00:35.780
+diligence this week. If your main GPU provider were acquired, merged, or shut down, how long
+
+00:00:35.780 --> 00:00:39.240
+would it take to move inference elsewhere, and what would the move cost?
+
+00:00:42.100 --> 00:00:48.880
+Our second story comes from Canada, and it needs careful handling. Yesterday, the writer Paris
+
+00:00:48.880 --> 00:00:55.340
+Marx posted that Cohere is pitching its services to the oil and gas sector. The stated aim is to
+
+00:00:55.340 --> 00:01:02.120
+help that sector produce more gas to power data centers. The Post notes that Cohere is backed by
+
+00:01:02.120 --> 00:01:08.740
+1.6 billion dollars from Mark Carney's liberal government. That is the whole of the claim,
+
+00:01:09.000 --> 00:01:14.220
+and it holds up less well than it sounds. The Post relays a headline from DeSmaug.
+
+00:01:14.580 --> 00:01:20.300
+It shows no words from Cohere itself, and it points to no actual oil and gas deals.
+
+00:01:20.300 --> 00:01:24.380
+so this is a critic passing along another outlet's headline.
+
+00:01:24.940 --> 00:01:26.560
+It is not evidence of a contract.
+
+00:01:27.620 --> 00:01:29.440
+For now, we give it little weight.
+
+00:01:30.040 --> 00:01:31.500
+Two things would change that,
+
+00:01:31.940 --> 00:01:33.740
+Cohere's own words about the pitch
+
+00:01:33.740 --> 00:01:37.200
+or a signed oil and gas contract coming to light.
+
+00:01:37.980 --> 00:01:41.700
+If it is confirmed, the commercial logic is easy to see
+
+00:01:41.700 --> 00:01:44.920
+because energy is a large Canadian buyer.
+
+00:01:45.660 --> 00:01:48.140
+The open question is the political cost
+
+00:01:48.140 --> 00:01:49.760
+for a publicly backed champion.
+
+00:01:50.300 --> 00:02:13.280
+There is also an early stage angle. If the story holds, Canadian startups building AI for oil and gas could find themselves up against a state-backed competitor in procurement. That may be worth asking founders in that space about. Until something firmer surfaces, though, this remains a relayed headline, and we would treat it as one.
+
+00:02:13.280 --> 00:02:20.800
+And for our fourth story, a forecast of a shakeout in GPU rental.
+
+00:02:21.480 --> 00:02:25.100
+Yesterday, Joanna Bryson pointed to a prediction from Gartner.
+
+00:02:25.740 --> 00:02:32.600
+Will Sommer, a VP at Gartner in London, says that smaller AI providers, the so-called neoclouds,
+
+00:02:32.600 --> 00:02:36.060
+may not generate enough revenue if they lack other products.
+
+00:02:36.800 --> 00:02:42.080
+Gartner expects 80% of them to fail, be acquired, or merge by 2030.
+
+00:02:43.280 --> 00:03:00.420
+How well does that hold up? It's thin so far. There is a single source and only a headline. The full report could not be read. It's also worth remembering that Gartner sells market research and consolidation trends make good material for client reports.
+
+00:03:00.420 --> 00:03:05.260
+Even so, we think the direction is right from the headline alone.
+
+00:03:05.260 --> 00:03:08.540
+Renting out GPS with nothing else to sell
+
+00:03:08.540 --> 00:03:13.860
+is a thin business. That favors startups that can run across several providers.
+
+00:03:13.860 --> 00:03:18.260
+It also makes depending on a single neocloud a continuity risk
+
+00:03:18.260 --> 00:03:22.700
+and one worth pricing. For early stage companies,
+
+00:03:22.700 --> 00:03:27.620
+the question is practical. A seed company running on one neocloud's credits may
+
+00:03:27.620 --> 00:03:29.140
+need a migration plan.
+
+00:03:29.140 --> 00:03:37.820
+Startups doing multi-cloud inference routing or building GPU marketplaces look better placed if consolidation comes.
+
+00:03:38.700 --> 00:03:41.920
+The market view reads the same facts more calmly.
+
+00:03:42.660 --> 00:03:45.820
+Consolidation is normal in capital-heavy categories.
+
+00:03:46.460 --> 00:03:49.320
+Acquirers buy capacity and contracts cheaply.
+
+00:03:49.780 --> 00:03:55.620
+So 80% failing or merging may leave the capacity intact and cheaper for customers.
+
+00:03:55.620 --> 00:04:02.500
+What we'd want to see is the full report and the evidence behind that 80% figure.
+
+00:04:03.180 --> 00:04:07.740
+Until then, it's a direction worth watching rather than a number to plan around.
+
+00:04:08.580 --> 00:04:11.300
+And that is the last of our main stories.
+
+00:04:14.040 --> 00:04:15.360
+Two quick hits.
+
+00:04:16.620 --> 00:04:23.980
+Anthropic has filed an S-1 to list on NASDAQ as ANT, showing $16.3 billion in first-half revenue.
+
+00:04:23.980 --> 00:04:27.500
+The filing leaves share price and count blank.
+
+00:04:28.120 --> 00:04:32.940
+The roughly $100 billion raise comes from a Wall Street Journal report.
+
+00:04:33.420 --> 00:04:37.640
+That matters because the headline size is reported, not filed.
+
+00:04:38.920 --> 00:04:43.860
+And a small, wealthy AI safety network, organized through Signal Chats,
+
+00:04:44.380 --> 00:04:47.240
+grew into a coalition that defeated Leading the Future,
+
+00:04:47.800 --> 00:04:51.460
+a $100 million super PAC in the midterms.
+
+00:04:51.460 --> 00:04:56.760
+It matters because a small, organized group beat a much larger budget.
+
+00:04:58.460 --> 00:05:00.280
+Worth asking in diligence.
+
+00:05:00.920 --> 00:05:07.460
+If your GPU provider were acquired, merged, or shut down, how fast could inference move, at what cost?
+
+00:05:08.000 --> 00:05:08.540
+To watch.
+
+00:05:09.060 --> 00:05:14.940
+Were rejected data center projects voted down over AI or local taxes and power prices?
+
+00:05:15.440 --> 00:05:20.220
+That decides whether siting risk is local or a national constraint on compute.
+
+00:05:20.220 --> 00:05:23.660
+Exit polls and project results should settle it.
+
+00:05:25.360 --> 00:05:27.900
+That's the briefing. Stay with me.
+
+00:05:28.360 --> 00:05:33.760
+Right after this, Bella takes you through today's deep dive on Texas Paus' data centers.
+
+00:05:34.340 --> 00:05:36.500
+Political risk hits the compute supply.
+
+00:05:37.200 --> 00:05:41.320
+You can also read it or listen to it on its own on the AI Briefing webpage,
+
+00:05:41.900 --> 00:05:45.040
+where you'll find the written edition in every past episode.
+
+00:05:45.460 --> 00:05:47.080
+The link is in the show notes.
+
+00:05:50.220 --> 00:05:55.680
+Thanks, Michael.
+
+00:05:56.180 --> 00:05:59.720
+This is the AI briefing deep dive for Sunday, November 8.
+
+00:06:00.280 --> 00:06:02.020
+Texas pauses data centers.
+
+00:06:02.540 --> 00:06:04.640
+Political risk hits the compute supply.
+
+00:06:05.140 --> 00:06:05.540
+I'm Bella.
+
+00:06:06.140 --> 00:06:10.160
+Like the briefing, it is written and read by AI from public sources.
+
+00:06:13.100 --> 00:06:19.220
+On Tuesday, Texas elected Gina Hinojosa, its first Democratic governor since 1990.
+
+00:06:19.980 --> 00:06:24.680
+She campaigned on pausing new data center construction until the legislature writes new rules.
+
+00:06:25.300 --> 00:06:30.900
+That matters because Texas holds more than 25% of planned U.S. data center capacity through 2030,
+
+00:06:31.420 --> 00:06:34.480
+according to Yahoo Finance, which Strutek-Hurri cited.
+
+00:06:35.180 --> 00:06:37.020
+Markets moved before any law did.
+
+00:06:37.660 --> 00:06:41.400
+IREN dropped 11% and core scientific 10%.
+
+00:06:42.300 --> 00:06:45.760
+Goldman Sachs, in reports we have only seen secondhand,
+
+00:06:45.760 --> 00:06:50.320
+warned that pauses could touch about 45% of planned U.S. capacity.
+
+00:06:51.000 --> 00:06:52.880
+The opposition was not partisan either.
+
+00:06:53.660 --> 00:06:56.280
+Struttek-Hurry noted that in Wisconsin's campaign,
+
+00:06:56.660 --> 00:06:58.900
+ads both parties ran against data centers,
+
+00:06:59.480 --> 00:07:02.740
+and that in Texas, the Republican incumbent, Greg Abbott,
+
+00:07:03.100 --> 00:07:07.020
+had already declared a moratorium on new data center permits in September.
+
+00:07:07.760 --> 00:07:09.940
+So today's question is a mechanical one.
+
+00:07:10.760 --> 00:07:14.280
+How does a political turn in one state travel through money,
+
+00:07:14.800 --> 00:07:17.880
+permits, and power, and end up in what compute costs.
+
+00:07:19.760 --> 00:07:22.460
+Start with what a planned data center actually is.
+
+00:07:22.960 --> 00:07:26.000
+Before construction, it is a stack of approvals that unlock each other.
+
+00:07:26.460 --> 00:07:27.160
+There is land.
+
+00:07:27.680 --> 00:07:32.360
+There is a grid connection, which in Texas runs through ERCOT, the grid operator.
+
+00:07:32.920 --> 00:07:35.040
+There are environmental and water permits.
+
+00:07:35.600 --> 00:07:38.020
+There is a tenant contract, and there is financing.
+
+00:07:38.860 --> 00:07:43.100
+Lenders lend against a schedule, and every approval is a milestone in that schedule.
+
+00:07:43.580 --> 00:07:45.400
+Take a real example from the campaign.
+
+00:07:46.800 --> 00:07:48.980
+Hinojosa held a press conference in Red Oak,
+
+00:07:49.280 --> 00:07:52.080
+where Diode Ventures plans an 800-acre campus.
+
+00:07:52.640 --> 00:07:55.120
+That campus is planned at 900 megawatts.
+
+00:07:55.580 --> 00:07:58.140
+Suppose its permits are still pending when a pause lands.
+
+00:07:58.640 --> 00:07:59.500
+Nothing is canceled.
+
+00:08:00.060 --> 00:08:02.260
+But the date power comes on is now unknown,
+
+00:08:02.660 --> 00:08:04.460
+and an unknown date costs money.
+
+00:08:05.000 --> 00:08:07.400
+The lender wants a higher rate or more equity.
+
+00:08:07.600 --> 00:08:10.440
+The tenant may walk away to a site with a firm date.
+
+00:08:10.440 --> 00:08:13.600
+the developer pays interest on land that earns nothing.
+
+00:08:14.580 --> 00:08:18.140
+Think of it like a mortgage on a house whose building permit has been put on hold.
+
+00:08:18.700 --> 00:08:21.780
+The house isn't gone, but every month of waiting costs you,
+
+00:08:22.160 --> 00:08:23.780
+and the bank is less sure you'll finish.
+
+00:08:24.480 --> 00:08:25.920
+Scope decides who is exposed.
+
+00:08:26.680 --> 00:08:28.540
+According to a BC-13 Houston,
+
+00:08:29.080 --> 00:08:32.700
+Governor-elect Gina Hinejosa vows to pause future data centers
+
+00:08:32.700 --> 00:08:34.520
+until new regulations are in place.
+
+00:08:35.200 --> 00:08:37.740
+Data centers already operating or under construction
+
+00:08:37.740 --> 00:08:39.700
+have their permits and tax abatements,
+
+00:08:39.700 --> 00:08:46.380
+so they are out of scope. What is exposed is the pipeline, meaning megawatts with land and plans,
+
+00:08:46.600 --> 00:08:52.500
+but not yet permits. Investors read it that way. Reuters reported that data center shares fell on
+
+00:08:52.500 --> 00:08:58.960
+expectations of a slower AI buildout, with HUT8 down 23%, the biggest drop among the companies
+
+00:08:58.960 --> 00:09:05.000
+it named. The last link in the chain is a hypothesis, not a finding. If gigawatts of
+
+00:09:05.000 --> 00:09:08.820
+planned capacity slip, capacity already built becomes scarcer.
+
+00:09:10.140 --> 00:09:14.840
+Scarce capacity holds its rental price, and the cost of running models may fall
+
+00:09:14.840 --> 00:09:17.480
+more slowly than the industry's plans assume.
+
+00:09:18.100 --> 00:09:22.740
+That link has not been shown yet, so let's separate what is known from what is claimed.
+
+00:09:24.600 --> 00:09:26.580
+Several things are firmly established.
+
+00:09:27.200 --> 00:09:29.360
+The election result has been widely reported.
+
+00:09:30.080 --> 00:09:37.400
+A BC-13 reports that Governor-elect Gina Hinejosa is promising to pause construction of new data centers to protect Texans,
+
+00:09:37.960 --> 00:09:42.100
+and its headline frames the pause as lasting until new regulations are in place.
+
+00:09:42.740 --> 00:09:49.740
+Her stated priorities include local votes on projects, ending tax incentives, and data centers paying their own way.
+
+00:09:50.340 --> 00:09:52.180
+The pause itself already exists.
+
+00:09:52.180 --> 00:09:58.540
+On September 21, Governor Greg Abbott ordered the Texas Commission on Environmental Quality
+
+00:09:58.540 --> 00:10:04.600
+to halt all permits sought by data centers, and the law firm Bracewell says that PAUSE reaches
+
+00:10:04.600 --> 00:10:10.660
+any permit related to data center projects for every data center project in Texas in the middle
+
+00:10:10.660 --> 00:10:17.460
+of a permitting process there. It lasts until ERCOT finishes a grid audit, expected in mid-December.
+
+00:10:18.080 --> 00:10:19.660
+So what is new is not a pause.
+
+00:10:20.680 --> 00:10:23.780
+What is new is a governor who may extend it past the audit.
+
+00:10:24.400 --> 00:10:27.640
+Reuters reported the share price moves, and that is hard data.
+
+00:10:28.140 --> 00:10:29.600
+Then there are the softer claims.
+
+00:10:30.220 --> 00:10:33.720
+The Goldman 45% figure reaches us through news reports
+
+00:10:33.720 --> 00:10:35.980
+and a fragment quoted by Transformer.
+
+00:10:36.500 --> 00:10:37.960
+We have not seen the note itself.
+
+00:10:38.640 --> 00:10:41.880
+InvestingLiv reports that Goldman calls this a timing risk
+
+00:10:41.880 --> 00:10:44.080
+rather than a lasting threat to capacity.
+
+00:10:44.740 --> 00:10:46.920
+Counts of local ballot measures also differ.
+
+00:10:47.460 --> 00:10:52.960
+Transformers says over 30 passed, and Yahoo counts 28 across 13 states.
+
+00:10:53.520 --> 00:10:55.220
+One story is easy to overread.
+
+00:10:55.800 --> 00:11:00.420
+Reuters, citing a single unnamed source, reported that Microsoft declined an option
+
+00:11:00.420 --> 00:11:02.940
+to more than double its Texas contract with Nscale.
+
+00:11:03.640 --> 00:11:08.600
+But that decision was made months ago, before Nscale filed for its IPO in September.
+
+00:11:09.200 --> 00:11:13.360
+So it is a signal about demand from hyperscalers, the largest cloud buyers,
+
+00:11:13.360 --> 00:11:15.120
+not a reaction to the election.
+
+00:11:15.800 --> 00:11:16.720
+Two gaps remain.
+
+00:11:17.460 --> 00:11:24.020
+The legal path is one. Democrats look set to control the Texas House, but Republicans keep
+
+00:11:24.020 --> 00:11:29.220
+the state Senate, and we have not seen a court test an open-ended pause ordered by a governor.
+
+00:11:29.720 --> 00:11:32.940
+The other gap is any measured effect on compute prices.
+
+00:11:34.720 --> 00:11:40.460
+The same facts support several honest readings. The AGI forward reading treats compute as the
+
+00:11:40.460 --> 00:11:45.420
+binding input to progress. Struttekhury argues that the constraint has moved from chips and
+
+00:11:45.420 --> 00:11:50.300
+power to politics. In its words, that may be the most imposing constraint of all,
+
+00:11:50.700 --> 00:11:56.380
+because politics also blocks fixes to the other bottlenecks. On this view, scarcity lasts longer
+
+00:11:56.380 --> 00:12:02.640
+than expected. Capacity already built gains value, and new building shifts to other states or abroad.
+
+00:12:03.940 --> 00:12:10.240
+A University of Texas energy researcher, Michael Weber, told NBC that a moratorium or the threat
+
+00:12:10.240 --> 00:12:14.240
+of a moratorium is enough to get the developers to consider other states.
+
+00:12:14.880 --> 00:12:17.520
+The A.A. Realist reading starts from the word planned.
+
+00:12:18.160 --> 00:12:21.340
+Pipelines in a boom are padded with projects that were never going to be
+
+00:12:21.340 --> 00:12:21.960
+financed.
+
+00:12:22.600 --> 00:12:27.120
+A pause filters the weak ones, and Microsoft's earlier pullback suggests
+
+00:12:27.120 --> 00:12:29.200
+buyers were already being more selective.
+
+00:12:30.260 --> 00:12:34.620
+On this view, political consent is a real cost the industry had left out,
+
+00:12:34.980 --> 00:12:36.020
+not a sudden shock.
+
+00:12:36.020 --> 00:12:40.560
+The market reading, if the second-hand reports are right, is Goldman's.
+
+00:12:41.140 --> 00:12:50.960
+Pauses are short, frameworks arrive, and Goldman strategist Rich Privorotsky suggests companies may pull spending forward into 2027 to get ahead of new rules.
+
+00:12:51.600 --> 00:12:53.980
+The policy reading takes Hinajosa at her word.
+
+00:12:53.980 --> 00:12:58.280
+She said it has to be a partnership that benefits Texans
+
+00:12:58.280 --> 00:13:01.440
+And Goldman Sachs expects the state pauses
+
+00:13:01.440 --> 00:13:06.640
+Which could affect about 45% of planned U.S. data center capacity
+
+00:13:06.640 --> 00:13:09.680
+To be short-lived rather than a lasting halt
+
+00:13:09.680 --> 00:13:16.600
+Our read is that this reprices schedule risk and the cost of capital, not the technology
+
+00:13:16.600 --> 00:13:22.580
+Hut 8 fell before any law passed, which tells you the market is pricing time, not prohibition
+
+00:13:23.240 --> 00:13:27.700
+The cost of local and state consent now looks like a standing line item in every build-out,
+
+00:13:28.100 --> 00:13:30.720
+and a similar kind of line item to power or cooling.
+
+00:13:31.380 --> 00:13:37.660
+For companies building on top of models, it may be unwise to assume token prices keep falling on the old curve.
+
+00:13:38.980 --> 00:13:42.900
+Scarcity in one region can slow the decline even if chips keep getting cheaper.
+
+00:13:43.040 --> 00:13:47.720
+For infrastructure startups, there is a wedge in whatever shortens the consent process.
+
+00:13:48.360 --> 00:13:52.780
+Examples include water reporting, grid studies, and community benefit agreements.
+
+00:13:53.500 --> 00:13:58.580
+Running on your own on-site power is not an escape route, since Abbott's order already covers it.
+
+00:13:59.140 --> 00:14:05.500
+One question worth exploring in diligence, with a compute provider or a company that depends on one, might be this.
+
+00:14:06.280 --> 00:14:10.720
+What share of contracted capacity relies on permits not yet issued?
+
+00:14:11.400 --> 00:14:15.040
+And do the contracts include change in law or force majura clauses,
+
+00:14:15.620 --> 00:14:21.300
+meaning terms that excuse delays caused by new rules or events outside either party's control?
+
+00:14:21.980 --> 00:14:25.680
+A company that can answer cleanly has probably thought about this already.
+
+00:14:27.480 --> 00:14:30.480
+Three things should settle this over the next few months.
+
+00:14:31.040 --> 00:14:34.360
+First is ERCOT's audit, expected in mid-December.
+
+00:14:35.060 --> 00:14:38.700
+Watch whether Abbott's pause lifts on schedule or carries into the transition.
+
+00:14:39.560 --> 00:14:40.660
+Second is January.
+
+00:14:40.720 --> 00:14:44.060
+when the legislature convenes and Hinajosa takes office.
+
+00:14:44.640 --> 00:14:47.940
+The tests are whether she extends the pause by executive order,
+
+00:14:48.400 --> 00:14:50.660
+whether that order survives a legal challenge,
+
+00:14:51.040 --> 00:14:54.020
+and whether a Republican Senate passes any of her package.
+
+00:14:54.880 --> 00:14:59.080
+Third is fourth quarter capital spending guidance from the hyperscalers.
+
+00:14:59.680 --> 00:15:03.760
+If spending gets pulled into 2027 or moves to other states,
+
+00:15:04.180 --> 00:15:05.940
+Goldman's timing reading holds.
+
+00:15:05.940 --> 00:15:10.880
+If Texas pipelines simply shrink, the scarcity reading gains ground.
+
+00:15:12.520 --> 00:15:15.720
+That's the deep dive and today's AI briefing.
+
+00:15:16.460 --> 00:15:18.460
+Every source is linked in the show notes,
+
+00:15:18.900 --> 00:15:21.680
+and the AI briefing webpage has the written edition,
+
+00:15:22.140 --> 00:15:24.480
+this deep dive and every past episode.
+
+00:15:25.100 --> 00:15:26.880
+The daily briefing is back tomorrow.
