@@ -1,0 +1,643 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:08.180
+On today's I.I. briefing, we think live evaluation is the part that matters.
+
+00:00:08.880 --> 00:00:15.860
+Synthetic tests are table stakes, and a skill's effect on a real workflow is where agent claims usually break.
+
+00:00:17.500 --> 00:00:21.300
+This is the I.I. briefing for Sunday, November 15.
+
+00:00:21.900 --> 00:00:27.500
+I'm Michael. Like everything here, this briefing is written and read by I.I. from public sources.
+
+00:00:28.200 --> 00:00:32.540
+Today is about II agents and how anyone can tell whether they actually work.
+
+00:00:33.160 --> 00:00:39.980
+NVIDIA has Open Source Skill Evaluator, a free tool for testing whether a skill really improves an agent's workflow.
+
+00:00:40.100 --> 00:00:48.280
+The most interesting piece is its live evaluation, because a skill's effect on real work is where agent claims tend to fall apart.
+
+00:00:49.240 --> 00:00:55.080
+Then, a review in Nature reviews methods primers on agentic II in lab workflows.
+
+00:00:55.080 --> 00:01:03.940
+Its real value reads like a spec, keep an agent's inputs, decisions and evidence so its lab results can be checked.
+
+00:01:04.640 --> 00:01:11.140
+The main story is first, then a few quick hits on data center money and a very large round for DeepSeek.
+
+00:01:14.000 --> 00:01:15.200
+First story.
+
+00:01:15.760 --> 00:01:19.540
+NVIDIA has released an open source tool called Skill Evaluator.
+
+00:01:19.540 --> 00:01:26.500
+Its job is to measure whether a skill you give an II agent actually improves the work that agent does.
+
+00:01:27.180 --> 00:01:32.840
+The release reaches us through a post by Chandrakumar Arpillai, not from NVIDIA directly.
+
+00:01:34.180 --> 00:01:41.200
+So what's in it? Four pieces, quality gates, semantic overlap checks, synthetic test generation,
+
+00:01:41.680 --> 00:01:46.640
+and live agent evaluation which measures a skill's impact on a real workflow.
+
+00:01:47.480 --> 00:01:49.340
+How well does this hold up?
+
+00:01:49.540 --> 00:01:52.040
+The release itself is confirmed.
+
+00:01:52.040 --> 00:01:54.340
+Whether it works is another matter.
+
+00:01:54.340 --> 00:01:57.640
+The account of its effectiveness is NVIDIA's own,
+
+00:01:57.640 --> 00:02:02.340
+and nobody outside has validated its real-world usefulness.
+
+00:02:02.340 --> 00:02:04.540
+Here's where we land.
+
+00:02:04.540 --> 00:02:08.040
+We think the live evaluation is the part that matters.
+
+00:02:08.040 --> 00:02:10.940
+Synthetic tests are table stakes now.
+
+00:02:10.940 --> 00:02:16.040
+A skills effect on a real workflow is where agent claims usually break.
+
+00:02:16.040 --> 00:02:19.860
+Before leaning on it, we'd want to see one outside replication.
+
+00:02:21.300 --> 00:02:22.720
+The case for is straightforward.
+
+00:02:23.540 --> 00:02:27.580
+Teams get a free shared way to measure whether a skill improves a workflow,
+
+00:02:28.140 --> 00:02:33.280
+with gates, overlap checks, synthetic tests, and live runs in one place.
+
+00:02:34.080 --> 00:02:36.420
+The case against is just as plain.
+
+00:02:36.960 --> 00:02:39.140
+There's no outside validation yet.
+
+00:02:39.460 --> 00:02:45.280
+Gates and synthetic tests built by NVIDIA may end up measuring what is easy to measure,
+
+00:02:45.280 --> 00:02:47.620
+and this arrives second-hand.
+
+00:02:48.420 --> 00:02:50.880
+To us, it comes down to one question.
+
+00:02:51.520 --> 00:02:55.720
+Do skill evaluators' scores predict task success in production workflows
+
+00:02:55.720 --> 00:02:58.240
+checked by someone other than NVIDIA?
+
+00:02:58.820 --> 00:03:02.200
+Until that's answered, our lean is useful but unproven.
+
+00:03:02.900 --> 00:03:04.800
+Shared tooling raises the floor,
+
+00:03:05.200 --> 00:03:09.440
+but synthetic tests rarely match the ways things fail in production.
+
+00:03:10.160 --> 00:03:13.380
+For early-stage companies, this shifts the ground.
+
+00:03:13.380 --> 00:03:19.140
+Agent-Eval startups selling basic skill testing now face a free NVIDIA tool.
+
+00:03:19.880 --> 00:03:26.180
+The wedge likely moves elsewhere, production telemetry, domain-specific test sets, and outcome data.
+
+00:03:26.840 --> 00:03:31.740
+A fair question for one of those startups might be what they measure that a free harness doesn't.
+
+00:03:32.920 --> 00:03:38.700
+That question, whether an agent's result can actually be checked, carries straight into a laboratory.
+
+00:03:38.700 --> 00:03:46.260
+The second story, and the last of the main ones, comes from Science.
+
+00:03:46.960 --> 00:03:52.720
+Nature Reviews Methods Primers has published a review of agentic II in lab workflows.
+
+00:03:53.480 --> 00:03:58.360
+Like the first story, it reaches us through a post by Chandrakumar R. Pillai.
+
+00:03:59.000 --> 00:04:04.560
+A caution up front, the excerpt available gives no new data and no metrics.
+
+00:04:04.560 --> 00:04:16.520
+The review confirms that agentic lab systems need to be reproducible, but it offers no evidence of implementation, no adoption rates, and nothing on technical feasibility.
+
+00:04:17.060 --> 00:04:21.680
+So this is an argument about what should happen, not a report on what is happening.
+
+00:04:22.500 --> 00:04:26.440
+Our view is that the useful part is almost a specification.
+
+00:04:27.200 --> 00:04:28.360
+Preserve the inputs.
+
+00:04:28.900 --> 00:04:29.960
+Preserve the decisions.
+
+00:04:30.620 --> 00:04:31.720
+Preserve the evidence.
+
+00:04:31.720 --> 00:04:37.140
+Do that, and an agent's lab result becomes something another person can check.
+
+00:04:38.060 --> 00:04:44.860
+That points to a market for lab provenance tooling, meaning software that records where every result came from.
+
+00:04:45.320 --> 00:04:49.020
+To be clear, the review shows no adoption of that yet.
+
+00:04:49.520 --> 00:04:51.200
+It's an opening, not a trend.
+
+00:04:52.040 --> 00:04:54.880
+It also echoes the NVIDIA story.
+
+00:04:55.360 --> 00:04:59.920
+In both cases, the hard question isn't whether an agent can do the work.
+
+00:04:59.920 --> 00:05:03.000
+It's whether anyone can verify that it did.
+
+00:05:04.280 --> 00:05:12.600
+For early-stage investors, the lab agent startup's worth a look may be the ones that log inputs, decisions, and evidence by default.
+
+00:05:13.360 --> 00:05:16.640
+Labs facing reproducibility review could favor them.
+
+00:05:17.140 --> 00:05:19.200
+A useful check might be a simple one.
+
+00:05:19.620 --> 00:05:21.280
+Can any run be replayed?
+
+00:05:24.000 --> 00:05:26.520
+Now three quick ones all about money.
+
+00:05:26.520 --> 00:05:37.440
+First, MIT Technology Review reports that II hyperscalers will likely spend more than $1 trillion on data centers next year.
+
+00:05:37.980 --> 00:05:42.060
+That is the scale of spending the rest of the II market now sits on.
+
+00:05:42.900 --> 00:05:52.900
+Second, Blumerg reports that Applied Digital, which leases data center capacity to tenants like Oracle and Meta, has asked them for billions in guarantees.
+
+00:05:52.900 --> 00:05:59.840
+The goal is to secure power before finalizing leases, and it has done this since at least last year.
+
+00:06:00.480 --> 00:06:02.660
+Power is now part of the deal terms.
+
+00:06:03.940 --> 00:06:13.520
+Third, DeepSeq has secured a $92 billion valuation in a funding round involving Tencent, CATL, and other backers.
+
+00:06:14.080 --> 00:06:20.260
+It's a marker of how much capital is flowing to a Chinese lab known for resetting cost expectations.
+
+00:06:20.260 --> 00:06:26.040
+To close, a question worth asking in diligence this week.
+
+00:06:26.600 --> 00:06:32.260
+How much of an agent's claimed gain comes from live workflow tests rather than synthetic ones?
+
+00:06:32.820 --> 00:06:33.720
+And one to watch.
+
+00:06:34.300 --> 00:06:40.760
+Do skill evaluators' live scores track real production success or mostly its own synthetic tests?
+
+00:06:41.360 --> 00:06:46.640
+An independent team publishing scores against measured production outcomes would settle it.
+
+00:06:48.220 --> 00:06:49.480
+That's the briefing.
+
+00:06:50.160 --> 00:06:50.860
+Stay with me.
+
+00:06:51.320 --> 00:06:55.560
+Right after this, Bella takes you through today's deep dive on One Point Apart,
+
+00:06:56.020 --> 00:06:58.700
+what a near tie on an II Index hides.
+
+00:06:59.200 --> 00:07:03.560
+You can also read it or listen to it on its own on the II Briefing webpage,
+
+00:07:04.120 --> 00:07:07.280
+where you'll find the written edition in every past episode.
+
+00:07:07.700 --> 00:07:09.420
+The link is in the show notes.
+
+00:07:17.000 --> 00:07:17.980
+Thanks, Michael.
+
+00:07:17.980 --> 00:07:23.680
+This is the I.I. briefing deep dive for Sunday, November 15, one point apart.
+
+00:07:24.200 --> 00:07:26.460
+What a near tie on an I.I. index hides.
+
+00:07:26.940 --> 00:07:27.320
+I'm Bella.
+
+00:07:27.880 --> 00:07:32.040
+Like the briefing, it is written and read by I.I. from public sources.
+
+00:07:35.000 --> 00:07:37.960
+Google released Gemini 4 Hydrogen this week.
+
+00:07:38.440 --> 00:07:41.060
+It is the cheapest member of the Gemini 4 family.
+
+00:07:41.740 --> 00:07:45.880
+Within hours, Artificial Analysis, an independent benchmarking firm,
+
+00:07:45.880 --> 00:07:52.680
+placed it just below Claude Sonnet 5.5 and GPT 6.1 Sol on its intelligence index.
+
+00:07:53.300 --> 00:07:56.420
+At its highest reasoning setting, hydrogen scored 54.
+
+00:07:57.100 --> 00:07:58.760
+Both rivals scored 55.
+
+00:07:59.620 --> 00:08:03.120
+Artificial analysis put hydrogen's cost at about a third of sonnets.
+
+00:08:04.420 --> 00:08:07.820
+Artificial analysis also put it at roughly 2.5 times
+
+00:08:07.820 --> 00:08:12.260
+the cost per task of GPT 6.1 Sol at max reasoning,
+
+00:08:12.780 --> 00:08:16.700
+even as it came in at about a third of Claude Sonnet 5.5's cost.
+
+00:08:17.400 --> 00:08:19.760
+Hydrogen is also Google's new free-tier model,
+
+00:08:20.180 --> 00:08:22.680
+and it will power II features in Google search.
+
+00:08:23.320 --> 00:08:27.460
+Procurement teams and founders will be tempted to reprice vendors on that single number.
+
+00:08:28.020 --> 00:08:29.860
+A one-point gap sounds like nothing.
+
+00:08:30.840 --> 00:08:34.300
+Whether it really is nothing depends on what the index averages,
+
+00:08:34.880 --> 00:08:37.680
+and on which of those tasks look like your own workload.
+
+00:08:38.240 --> 00:08:39.900
+So let's open the index up.
+
+00:08:39.900 --> 00:08:43.760
+The Intelligence Index is a composite.
+
+00:08:44.520 --> 00:08:48.980
+Artificial analysis runs nine separate tests and combines them as a weighted average.
+
+00:08:49.580 --> 00:08:52.420
+There are four categories, each worth a quarter of the score.
+
+00:08:52.920 --> 00:08:56.020
+Knowledge work, coding, science, and general knowledge.
+
+00:08:56.700 --> 00:08:58.720
+Inside those categories, the weights vary.
+
+00:08:59.420 --> 00:09:04.320
+A test of multi-week business projects, called AYA Briefcase, carries 15%.
+
+00:09:04.320 --> 00:09:09.940
+A test of real code changes in open-source repositories carries another 15%.
+
+00:09:09.940 --> 00:09:15.180
+Terminal bench, where the model works at a command line to finish multi-step tasks,
+
+00:09:15.580 --> 00:09:16.660
+carries 10%.
+
+00:09:16.660 --> 00:09:21.020
+A knowledge test that also penalizes made-up answers carries 15%.
+
+00:09:21.020 --> 00:09:22.960
+Here is the analogy worth keeping.
+
+00:09:23.520 --> 00:09:24.380
+Think of a decathlon.
+
+00:09:25.020 --> 00:09:27.260
+Ten events, points added up, one total.
+
+00:09:27.820 --> 00:09:31.440
+Two athletes can finish a point apart while one of them is a weak pole vaulter.
+
+00:09:31.440 --> 00:09:34.740
+If you are hiring a pole vaulter, the total misleads you.
+
+00:09:35.260 --> 00:09:37.300
+Now the arithmetic using a real gap.
+
+00:09:38.040 --> 00:09:43.320
+An independent test by artificial analysis found hydrogen lags on terminal work,
+
+00:09:43.700 --> 00:09:48.620
+and Google's own results put it at 57.0% on terminal bench 4.1,
+
+00:09:49.020 --> 00:09:53.060
+against 63.9% for Claude Sonnet 5.5.
+
+00:09:53.500 --> 00:09:55.780
+That test is worth a tenth of the index.
+
+00:09:56.320 --> 00:10:00.300
+So a 10-point gap, there is worth about one index point by itself.
+
+00:10:00.880 --> 00:10:03.340
+That is roughly the entire headline difference.
+
+00:10:04.260 --> 00:10:08.320
+Which tells you hydrogen must be level or ahead elsewhere to finish that close.
+
+00:10:08.860 --> 00:10:12.660
+A near tie in total can be a real gap in one event plus wins in others.
+
+00:10:13.220 --> 00:10:14.480
+Why does that matter for agents?
+
+00:10:14.980 --> 00:10:17.080
+Because long tasks compound errors.
+
+00:10:17.680 --> 00:10:19.980
+Take an illustrative case, not a measured one.
+
+00:10:20.420 --> 00:10:25.580
+A model that slips on one step in 50 will usually hit at least one slip over 100 steps.
+
+00:10:26.220 --> 00:10:29.840
+Small differences per step become large differences in finished jobs.
+
+00:10:30.300 --> 00:10:34.640
+One more trap, price per token is not price per task.
+
+00:10:35.180 --> 00:10:40.480
+At its top setting, hydrogen produced 304 million output tokens running the index.
+
+00:10:41.060 --> 00:10:44.060
+The median model produced 77.3 million.
+
+00:10:44.620 --> 00:10:47.560
+A cheap token used four times over is not cheap.
+
+00:10:48.060 --> 00:10:50.640
+That is why the per task cost is the number to watch.
+
+00:10:52.320 --> 00:10:54.740
+Start with what an independent party measured.
+
+00:10:55.440 --> 00:10:59.620
+Artificial analysis ran hydrogen through its own harness at four reasoning levels.
+
+00:10:59.620 --> 00:11:06.260
+It scored 54 at the highest, 51 at the default, then 41 and 27 at lower settings.
+
+00:11:07.020 --> 00:11:13.740
+Artificial analysis estimates $3.16 per task at the top level and $1.87 at default.
+
+00:11:14.360 --> 00:11:16.720
+That is consistent with the one-third claim.
+
+00:11:18.040 --> 00:11:24.980
+On speed, Gemini 4 Hydrogen at its X-high setting took about 14.7 minutes per intelligence index task,
+
+00:11:24.980 --> 00:11:29.040
+which is slower than the 13.2-minute median for comparable models.
+
+00:11:29.620 --> 00:11:33.820
+Artificial analysis measured an 8% hallucination rate on its knowledge test.
+
+00:11:34.560 --> 00:11:39.580
+Simon Willison, an independent developer, published the token prices from hands-on use.
+
+00:11:40.240 --> 00:11:45.940
+Hydrogen is $1.50 per million input tokens and $7.50 per million output.
+
+00:11:47.300 --> 00:11:52.940
+He notes it is 15 times the price of Claude Haiku 5.5 and GPT-6 Luna.
+
+00:11:53.580 --> 00:11:57.040
+His informal drawing test found the quality drop from its bigger siblings.
+
+00:11:57.040 --> 00:11:59.400
+In his words, quite stark.
+
+00:12:00.100 --> 00:12:01.360
+Now what is self-reported?
+
+00:12:01.920 --> 00:12:06.920
+Google's model card claims Hydrogen beats Sonnet 5.5 on a bug-finding test,
+
+00:12:07.340 --> 00:12:10.520
+13.5% against 3.1%.
+
+00:12:10.520 --> 00:12:17.040
+It claims a lead on SaaS workflow automation, 76.1% against 71.8%.
+
+00:12:17.620 --> 00:12:22.720
+To its credit, the same card concedes Sonnet leads on Terminal Bench 4.1,
+
+00:12:23.160 --> 00:12:26.540
+63.9% against 57.0%.
+
+00:12:26.540 --> 00:12:31.480
+That comes through launch coverage, on a test nobody outside box can inspect.
+
+00:12:32.120 --> 00:12:35.760
+Google's Robbie Stein called it the biggest model upgrade to search yet.
+
+00:12:36.300 --> 00:12:38.840
+That is an executive describing his own product.
+
+00:12:39.580 --> 00:12:42.980
+What is not shown yet is the thing buyers care most about.
+
+00:12:43.520 --> 00:12:48.120
+We found no independent head-to-head test of hydrogen against Sonnet on long,
+
+00:12:48.320 --> 00:12:49.880
+real production agent runs.
+
+00:12:50.560 --> 00:12:55.860
+One widely shared post said hydrogen blows away Sonnet 5.5.
+
+00:12:55.860 --> 00:12:58.220
+The index it cites says the opposite.
+
+00:12:59.940 --> 00:13:02.300
+The same facts support different readings.
+
+00:13:02.940 --> 00:13:05.040
+The AGI forward reading sees speed.
+
+00:13:05.620 --> 00:13:09.500
+A cheap tier now sits within a point of the frontier on an index built from hard work,
+
+00:13:09.880 --> 00:13:11.860
+including multi-week business projects.
+
+00:13:12.520 --> 00:13:16.120
+Capability is moving down the price ladder in weeks, not years.
+
+00:13:16.720 --> 00:13:20.060
+On that view, the remaining gaps will close with the next release,
+
+00:13:20.420 --> 00:13:23.140
+and betting against cheap models is betting against the trend.
+
+00:13:23.780 --> 00:13:26.360
+The IA Realist reading looks at where the gap sits.
+
+00:13:27.340 --> 00:13:30.080
+It is concentrated on long command line work,
+
+00:13:30.080 --> 00:13:32.820
+the kind of chain task agents actually do.
+
+00:13:33.480 --> 00:13:35.400
+Averages smooth exactly that away.
+
+00:13:36.160 --> 00:13:38.260
+Labs also tune for well-known benchmarks,
+
+00:13:38.740 --> 00:13:43.100
+and Hydrogen's heavy token use suggests some of its score is bought with extra thinking.
+
+00:13:43.760 --> 00:13:46.140
+The market reading looks at price per finished task.
+
+00:13:46.140 --> 00:13:53.380
+By artificial analysis-owned numbers, GPT 6.1 Sol scores higher and costs less per task.
+
+00:13:54.360 --> 00:13:57.400
+So hydrogen is not the cheapest near-frontier option.
+
+00:13:57.780 --> 00:13:59.080
+It is cheaper than Sonnet.
+
+00:13:59.660 --> 00:14:01.580
+Google's pricing also looks provisional.
+
+00:14:02.120 --> 00:14:05.860
+Its bigger carbon and argon models double in price on December 1.
+
+00:14:06.500 --> 00:14:11.260
+Hydrogen goes from a 25% discount on them to a 75% discount.
+
+00:14:11.260 --> 00:14:16.300
+Google can also spread costs across search which a standalone lab cannot
+
+00:14:16.300 --> 00:14:21.640
+pricing set for strategy can change when the strategy does
+
+00:14:21.640 --> 00:14:26.340
+I read a composite index is a good screening tool and a poor selection tool
+
+00:14:26.340 --> 00:14:30.880
+it tells you which models deserve a trial it does not tell you which one runs
+
+00:14:30.880 --> 00:14:35.620
+your workload best for startups priced per task cheaper near frontier models
+
+00:14:35.620 --> 00:14:40.720
+widen margins but only if cost per completed task really falls token
+
+00:14:40.720 --> 00:14:45.660
+verbosity and retries can eat a per token discount. The edge goes to companies with their
+
+00:14:45.660 --> 00:14:52.320
+own evaluation harness built on real customer traces. They can test a new model in days and
+
+00:14:52.320 --> 00:14:57.880
+switch with evidence. The exposure sits with companies whose margin story is a vendor swap
+
+00:14:57.880 --> 00:15:03.440
+justified by a leaderboard. Those companies may find quality slipping on the longest jobs,
+
+00:15:03.440 --> 00:15:09.540
+which are often their highest value customers. A company with a we switched and margins rose
+
+00:15:09.540 --> 00:15:15.460
+story offers a natural diligence thread. One question worth exploring might be,
+
+00:15:15.900 --> 00:15:19.980
+what did you measure on your own traffic before and after, at what task length,
+
+00:15:20.320 --> 00:15:24.560
+and how did escalations, retries, and cost per finished task move?
+
+00:15:25.120 --> 00:15:29.360
+A good answer has numbers from production. A week one cites the index.
+
+00:15:31.020 --> 00:15:37.300
+Three things would settle this. First, artificial analysis protest breakdown for hydrogen against
+
+00:15:37.300 --> 00:15:42.800
+sonnet, especially on the multi-week business projects and command line tasks. That tells us
+
+00:15:42.800 --> 00:15:49.240
+where the near tie comes from. Second, independent long-horizon agent tests on real workloads run by
+
+00:15:49.240 --> 00:15:56.260
+someone with no model to sell. Those usually lag a launch by weeks. Third, December 1, when Google's
+
+00:15:56.260 --> 00:16:02.180
+bigger models double in price. That will show whether Hydrogen's position is strategy or
+
+00:16:02.180 --> 00:16:08.540
+permanent pricing. Search quality on live queries will also give a public test at enormous scale.
+
+00:16:09.180 --> 00:16:14.080
+If hydrogen holds up on long agent runs, our view that the gap matters gets weaker.
+
+00:16:15.940 --> 00:16:21.740
+That's the deep dive and today's I.I. Briefing. Every source is linked in the show notes,
+
+00:16:21.740 --> 00:16:24.900
+and the I.I. Briefing webpage has the written edition,
+
+00:16:25.360 --> 00:16:30.120
+this deep dive and every past episode. The daily briefing is back tomorrow.
+
+00:16:32.180 --> 00:17:02.160
+Thank you.

@@ -1,0 +1,952 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:09.960
+On today's AI briefing, we think the spread between the Financial Times' $1.75 trillion
+
+00:00:09.960 --> 00:00:17.120
+top and Bluemerg's reported $1.1 trillion shows public investors pricing the financing,
+
+00:00:17.680 --> 00:00:26.080
+not the technology. This is the AI briefing for Saturday, November 7. I'm Michael. Like
+
+00:00:26.080 --> 00:00:32.960
+everything here this briefing is written and read by ai from public sources today the two biggest ai
+
+00:00:32.960 --> 00:00:38.640
+labs are both testing what public and late stage money will pay anthropic is reportedly planning
+
+00:00:38.640 --> 00:00:46.960
+an ipo before thanksgiving investors prices for it run from 1.1 trillion dollars up to 1.75 trillion
+
+00:00:46.960 --> 00:00:54.640
+dollars and that spread may set the yardstick for ai rounds below it open ai is reportedly raising
+
+00:00:54.640 --> 00:01:01.520
+11 billion dollars at a 1.25 trillion dollar valuation well short of the 30 billion dollars
+
+00:01:01.520 --> 00:01:08.800
+it was after an outside evaluator meter estimates anthropics pace of improvement roughly doubled
+
+00:01:08.800 --> 00:01:15.680
+mostly because ai is speeding up its own research and midterm voters restricted data centers in 40
+
+00:01:15.680 --> 00:01:20.620
+of 41 ballot measures. Main stories first, then a few quick hits.
+
+00:01:23.440 --> 00:01:30.160
+First story, and it's an update on Anthropik's IPO, the Financial Times reports a raise of $80
+
+00:01:30.160 --> 00:01:39.900
+to $100 billion. It puts the valuation at $1.25 to $1.75 trillion. Blumerg, cited by Ed Zitron,
+
+00:01:39.900 --> 00:01:47.320
+says IPO investors value the company at $1.1 trillion. Another newsletter puts the run rate
+
+00:01:47.320 --> 00:01:54.700
+at $80 billion, short of a $100 billion year-end target. That comes with the Nasdaq down 10%.
+
+00:01:55.380 --> 00:02:02.420
+The support is thin. The Financial Times figures are headline only, the run rate is unconfirmed,
+
+00:02:02.600 --> 00:02:08.120
+and the Blumerg number is second-hand. Our view is that the spread shows public investors pricing
+
+00:02:08.120 --> 00:02:14.760
+the financing, not the technology. At roughly 14 times a reported $80 billion run rate,
+
+00:02:15.220 --> 00:02:21.920
+$1.1 trillion is demanding but not absurd. We lean toward a durable business landing near the
+
+00:02:21.920 --> 00:02:27.120
+low end. A public mark like that could pull series of application multiples down.
+
+00:02:29.920 --> 00:02:35.860
+The second story is also an update, and it rhymes with the first. According to TechMeme,
+
+00:02:35.860 --> 00:02:43.980
+OpenAI has reportedly raised $11 billion at a $1.25 trillion valuation. The total could reach
+
+00:02:43.980 --> 00:02:52.000
+$20 billion. TechCrunch notes that falls short of a $30 billion target. Ed Zitron reports SoftBank
+
+00:02:52.000 --> 00:02:57.700
+discussing hundreds of millions in this round. None of it has closed, and SoftBank's interest
+
+00:02:57.700 --> 00:03:04.540
+is reported, not committed. We read today as a second sign that late-stage capital is getting
+
+00:03:04.540 --> 00:03:11.660
+choosier. $11 billion against a $30 billion target is a shortfall of nearly two-thirds.
+
+00:03:12.320 --> 00:03:17.280
+Our view is that the technology holds up, and the funding pipeline for frontier training
+
+00:03:17.280 --> 00:03:23.140
+thins first. Early-stage labs planning to train their own frontier models would face
+
+00:03:23.140 --> 00:03:28.020
+a thinner late-stage pipeline. Application companies are less exposed.
+
+00:03:28.020 --> 00:03:35.560
+Third, a story about how fast the frontier is moving and who gets to check.
+
+00:03:36.220 --> 00:03:42.320
+Meter, an outside evaluator, estimates that Anthropics' pace of capability improvement roughly doubled.
+
+00:03:42.320 --> 00:03:50.160
+The batch reports the comparison, last month's pace, against the stretch from spring of the year before last to October of last year.
+
+00:03:50.660 --> 00:03:54.160
+The estimate covers what Meter calls well-specified tasks.
+
+00:03:54.160 --> 00:03:59.360
+The main reason given is AI speeding up Anthropic's own internal development.
+
+00:04:00.020 --> 00:04:02.300
+The rundown AI adds the range.
+
+00:04:03.580 --> 00:04:07.180
+Meter's estimated speed-up runs from 1.3 to 3 times.
+
+00:04:07.800 --> 00:04:11.000
+AI gets credit for around 80% of the faster progress.
+
+00:04:11.500 --> 00:04:12.100
+There's a catch.
+
+00:04:12.680 --> 00:04:16.580
+Anthropic redacted a majority of the evidence meter found most informative.
+
+00:04:17.120 --> 00:04:18.500
+So how well does it hold up?
+
+00:04:18.800 --> 00:04:21.160
+On our evidence check, it comes out overstated.
+
+00:04:21.160 --> 00:04:26.580
+The estimate is reported accurately, but it rests on data no one outside can verify.
+
+00:04:27.280 --> 00:04:31.500
+The claims about acceleration and AI-driven gains run ahead of what's shown.
+
+00:04:32.020 --> 00:04:33.000
+Our read is plain.
+
+00:04:34.420 --> 00:04:40.260
+An outside evaluator estimates a rise of 1.3 to 3 times on well-specified tasks.
+
+00:04:40.800 --> 00:04:44.000
+That's a wideband, built on data readers cannot see.
+
+00:04:44.600 --> 00:04:49.180
+We'd wait it as a lead, not a finding, until the redacted evidence is published.
+
+00:04:49.180 --> 00:05:03.660
+If AI in R&D really drives most of the gains, startups that automate research loops for model builders would gain a buyer, and a founder pitching self-acceleration might reasonably be held to the same evidence standard.
+
+00:05:03.660 --> 00:05:08.740
+The AGI forward reading of the same facts deserves a fair hearing.
+
+00:05:09.460 --> 00:05:12.640
+Meter is an outside evaluator, not the lab.
+
+00:05:13.280 --> 00:05:23.860
+On that reading, AI driving around 80% of the speed-up is the early signature of compounding R and D waiting for full disclosure may mean noticing late.
+
+00:05:26.940 --> 00:05:31.660
+Fourth and the last of the main stories, an update on data centers and the midterms.
+
+00:05:31.660 --> 00:05:39.280
+According to the information, via EdZitron, winning governor candidates in 12 states called for data center pauses.
+
+00:05:39.800 --> 00:05:43.500
+Of 36 winners, 34 backed ratepayer protections.
+
+00:05:44.320 --> 00:05:50.200
+TechCrunch counts 41 data center-related ballot measures, all but one imposing restrictions.
+
+00:05:50.920 --> 00:05:53.100
+The backlash itself is well-sourced.
+
+00:05:53.880 --> 00:06:00.680
+What it does to policy is not yet verified, and talk of a bubble bursting overstates the regulatory risk today.
+
+00:06:00.680 --> 00:06:23.940
+We read this as a power story. Whoever already holds permitted sites and grid access gains, and late builders pay more. That opens room for startups that cut energy per inference or site capacity outside restrictive states. The market reading goes further. Existing sites may gain pricing power, and the buildout relocates and slows rather than stops.
+
+00:06:23.940 --> 00:06:28.920
+Two quick hits before we close.
+
+00:06:29.500 --> 00:06:34.620
+First, ramp data reported by TechCrunch suggests AI spending growth is stalling.
+
+00:06:35.020 --> 00:06:39.400
+EdZitron puts Anthropic's run rate at $80 billion at the end of October.
+
+00:06:40.020 --> 00:06:46.120
+Q4 growth trending 15-25% quarter on quarter cuts against claims of plateauing.
+
+00:06:46.120 --> 00:06:49.540
+Our evidence check rates the stalling read overstated.
+
+00:06:50.180 --> 00:06:55.500
+Zitron argues Anthropic must IPO this year, which ties back to our first story.
+
+00:06:56.740 --> 00:07:01.740
+Second, Microsoft is ending its deal to rent AI cloud compute from Oracle.
+
+00:07:02.400 --> 00:07:07.100
+Its stated reason is that the rented computing no longer met its specifications.
+
+00:07:08.080 --> 00:07:11.560
+Rented capacity, it turns out, can be walked away from.
+
+00:07:13.100 --> 00:07:16.240
+A question worth asking in diligence this week.
+
+00:07:16.240 --> 00:07:23.000
+If a company's main model provider changes prices or capacity after going public, what's the fallback?
+
+00:07:23.500 --> 00:07:24.420
+And one to watch.
+
+00:07:25.060 --> 00:07:31.380
+Does Anthropix's IPO price nearer $1.1 trillion or $1.75 trillion?
+
+00:07:32.120 --> 00:07:34.840
+And what run rate does the prospectus confirm?
+
+00:07:35.400 --> 00:07:39.300
+The pricing announcement and the final prospectus figures will settle it.
+
+00:07:40.920 --> 00:07:42.160
+That's the briefing.
+
+00:07:42.780 --> 00:07:43.500
+Stay with me.
+
+00:07:43.500 --> 00:07:48.820
+Right after this, Bella takes you through today's deep dive on proving AI ROI.
+
+00:07:49.660 --> 00:07:51.940
+Does outside counsel spend actually fall?
+
+00:07:52.400 --> 00:07:56.600
+You can also read it or listen to it on its own on the AI Briefing webpage,
+
+00:07:57.080 --> 00:08:00.180
+where you'll find the written edition in every past episode.
+
+00:08:00.700 --> 00:08:02.400
+The link is in the show notes.
+
+00:08:09.940 --> 00:08:10.980
+Thanks, Michael.
+
+00:08:10.980 --> 00:08:17.160
+This is the AI briefing weekly deep dive for Saturday, November 7, proving AI ROI
+
+00:08:17.160 --> 00:08:19.920
+Does outside counsel spend actually fall?
+
+00:08:20.420 --> 00:08:24.520
+I'm Bella, and with me is Michael, whose job this week is to push back
+
+00:08:24.520 --> 00:08:29.160
+Like the briefing, it is written and read by AI from public sources
+
+00:08:29.160 --> 00:08:37.820
+Harvey, the legal AI company, published a post profiling how the legal teams at Bitfury
+
+00:08:38.380 --> 00:08:42.780
+ICL Group and SUSE are using its platform to expand capacity.
+
+00:08:43.560 --> 00:08:48.500
+One of them, Bitfury, puts a number on what every vertical AI company wants to claim,
+
+00:08:49.060 --> 00:08:51.120
+less reliance on outside counsel.
+
+00:08:53.900 --> 00:08:55.520
+And they're big numbers.
+
+00:08:56.100 --> 00:09:00.020
+Bitfury, a former technology provider turned investment firm,
+
+00:09:00.020 --> 00:09:05.460
+says it reduced its reliance on outside counsel by more than 50%.
+
+00:09:05.460 --> 00:09:10.460
+ICL Group, a specialty minerals company, says 20%.
+
+00:09:10.460 --> 00:09:16.000
+That range is why we're giving it a full episode.
+
+00:09:16.760 --> 00:09:21.120
+Outside counsel spend is a real line on a company's profit and loss statement.
+
+00:09:21.780 --> 00:09:26.120
+If AI moves that line, a legal tool stops being a nice-to-have
+
+00:09:26.120 --> 00:09:29.940
+and becomes a budget a general counsel can defend to the CFO.
+
+00:09:29.940 --> 00:09:36.040
+Here's my problem before we even start, Bella.
+
+00:09:36.580 --> 00:09:40.720
+These are three accounts Harvey chose to feature on Harvey's own blog.
+
+00:09:41.080 --> 00:09:43.840
+The word they use is reliance, not spend.
+
+00:09:44.400 --> 00:09:46.100
+Nobody has shown an invoice.
+
+00:09:49.100 --> 00:09:51.860
+Fair, and that's the question for the whole episode.
+
+00:09:52.520 --> 00:09:56.440
+What evidence would actually show AI replacing billable outside work?
+
+00:09:57.020 --> 00:10:02.060
+Invoices before and after, a change in the mix of matters, or survey estimates.
+
+00:10:02.760 --> 00:10:04.920
+Survey estimates are mostly what we have.
+
+00:10:07.640 --> 00:10:10.000
+And it goes well beyond legal.
+
+00:10:10.560 --> 00:10:13.940
+Any vertical AI company selling against a cost line,
+
+00:10:13.940 --> 00:10:19.420
+whether that's contractors, agencies, or consultants, has the same proof problem.
+
+00:10:19.980 --> 00:10:21.860
+The cost line is easy to see.
+
+00:10:22.400 --> 00:10:24.540
+What would have happened without the tool is not.
+
+00:10:26.440 --> 00:10:28.760
+The timing helps.
+
+00:10:29.340 --> 00:10:31.660
+This year's independent spend reports are out,
+
+00:10:31.940 --> 00:10:35.720
+so we can set Harvey's stories against data that doesn't come from a vendor.
+
+00:10:36.440 --> 00:10:39.720
+First, let's be clear about what the claim actually is.
+
+00:10:41.420 --> 00:10:45.100
+Start with how it's supposed to work, because the logic is sound.
+
+00:10:45.720 --> 00:10:50.460
+A small in-house team often has the expertise for routine drafting and diligence,
+
+00:10:50.460 --> 00:10:51.700
+but not the hours.
+
+00:10:52.340 --> 00:10:55.480
+So that work goes to a law firm, billed by the hour.
+
+00:10:56.440 --> 00:11:01.420
+So the AI is standing in for junior associate hours at the firm.
+
+00:11:03.280 --> 00:11:04.400
+That's the claim.
+
+00:11:05.000 --> 00:11:13.180
+According to Harvey's post, Bitfury's team now uses the tool to bring transaction documents roughly 80% of the way to a final draft.
+
+00:11:13.820 --> 00:11:17.860
+The outside firm then reviews the deal instead of building the work from scratch.
+
+00:11:19.520 --> 00:11:22.820
+They do the same with data rooms during due diligence.
+
+00:11:22.820 --> 00:11:32.900
+The lawyers also use it for a first understanding of foreign regulations, which used to mean hiring local counsel every time a deal entered a new country.
+
+00:11:34.560 --> 00:11:42.680
+I believe the workflow. As an engineer, I'd expect exactly that split. The machine drafts, a human reviews.
+
+00:11:43.340 --> 00:11:51.460
+What I don't understand is what a 50% cut in reliance means as a measurement. Is it dollars, hours, or matters sent out?
+
+00:11:52.820 --> 00:11:59.540
+The post doesn't say, it's an outcome with no unit attached. ICL's 20% is the same.
+
+00:12:01.280 --> 00:12:06.200
+Then let's make it concrete, because I think the unit is where this falls apart.
+
+00:12:08.040 --> 00:12:11.300
+Here's a worked example. Did AI cut its spend in half?
+
+00:12:13.260 --> 00:12:15.020
+Depends what happened to the work.
+
+00:12:16.960 --> 00:12:22.700
+Exactly. Suppose last year included a big acquisition and a lawsuit, and this year had neither.
+
+00:12:23.480 --> 00:12:26.180
+Spend would have fallen anyway, tool or no tool.
+
+00:12:27.980 --> 00:12:29.160
+Now flip it.
+
+00:12:29.560 --> 00:12:32.280
+That's a real saving the invoice total hides completely.
+
+00:12:34.080 --> 00:12:38.780
+So a raw comparison of invoices can mislead in either direction.
+
+00:12:40.740 --> 00:12:43.980
+Yes, an honest measurement adjusts for the mix of matters.
+
+00:12:44.680 --> 00:12:50.300
+You compare like with like, deals against deals and disputes against disputes, before and after.
+
+00:12:51.080 --> 00:12:53.420
+Energy efficiency firms have the same problem.
+
+00:12:54.020 --> 00:12:59.900
+A building's bill drops in a mild winter, so they adjust for weather before claiming the retrofit worked.
+
+00:13:01.580 --> 00:13:02.760
+Good analogy.
+
+00:13:03.320 --> 00:13:07.700
+Here the weather is deal flow, litigation, and regulatory surprises.
+
+00:13:08.220 --> 00:13:12.740
+But that means all the judgment sits in the estimate of what would have happened otherwise.
+
+00:13:13.420 --> 00:13:14.560
+Who makes that estimate?
+
+00:13:16.340 --> 00:13:18.860
+In these stories, the customer does.
+
+00:13:18.860 --> 00:13:28.460
+SUSE, the open-source software company, says it saved up to £80,000 in external fees on one acquisition's due diligence.
+
+00:13:30.140 --> 00:13:34.680
+Look at ICL's range. The top is nearly double the bottom.
+
+00:13:35.200 --> 00:13:40.120
+That tells you it's a guess at what a firm would have charged, not a number off an invoice.
+
+00:13:42.020 --> 00:13:43.940
+I'd put it a bit more kindly, Michael.
+
+00:13:44.520 --> 00:13:49.280
+It's an estimate of what a firm would have bid, which legal ops teams do all the time.
+
+00:13:49.800 --> 00:13:52.820
+It's a real method. It just isn't a measured saving.
+
+00:13:54.980 --> 00:13:59.800
+Agreed, and I'll concede that the single-matter version is the strongest evidence here.
+
+00:14:00.000 --> 00:14:03.940
+One defined deal with a known scope, done in-house.
+
+00:14:04.380 --> 00:14:08.480
+That's much closer to a controlled comparison than a reliance percentage.
+
+00:14:10.280 --> 00:14:11.940
+There's a second subtlety.
+
+00:14:12.500 --> 00:14:14.600
+Capacity and spend are different things.
+
+00:14:15.200 --> 00:14:19.640
+SUSE reports nearly 1,500 hours saved over four months.
+
+00:14:20.340 --> 00:14:24.960
+ICL says the tool gave its core team the equivalent of an extra full-time lawyer.
+
+00:14:26.700 --> 00:14:29.360
+And neither of those is outside spend.
+
+00:14:30.000 --> 00:14:36.680
+Hours saved inside the team only turn into dollars if you'd otherwise have hired someone or sent the work out.
+
+00:14:37.420 --> 00:14:40.980
+Bitfury says it would need at least three more lawyers without Harvey.
+
+00:14:41.420 --> 00:14:45.380
+That's a hire it imagines avoiding, not a cost it removed.
+
+00:14:47.060 --> 00:14:51.480
+So plainly, the mechanism is credible, the units are missing,
+
+00:14:51.920 --> 00:14:55.120
+and the savings are estimates against an imagined baseline.
+
+00:14:55.740 --> 00:14:57.600
+That's where the evidence has to start.
+
+00:14:59.360 --> 00:15:02.140
+Let's separate what's established from what's claimed.
+
+00:15:02.820 --> 00:15:03.440
+Established.
+
+00:15:03.880 --> 00:15:08.040
+Three named customers, Bitfury, ICL Group, and SUSE,
+
+00:15:08.040 --> 00:15:11.220
+use Harvey on real matters and say so publicly.
+
+00:15:12.060 --> 00:15:15.460
+Companies rarely put their names to a vendor story they don't believe.
+
+00:15:17.620 --> 00:15:19.460
+Establish that they say it, yes.
+
+00:15:19.960 --> 00:15:24.280
+It's still self-reported, published by the vendor and chosen by the vendor.
+
+00:15:24.820 --> 00:15:29.640
+We don't know how many customers were asked and said no or saw no change at all.
+
+00:15:31.620 --> 00:15:36.220
+Harvey's longer report, The New Economics of In-House Legal, adds a little.
+
+00:15:36.220 --> 00:15:42.020
+It draws on a survey of 25 in-house legal teams and 22 in-depth interviews.
+
+00:15:42.760 --> 00:15:48.100
+Harvey commissioned it, and a research firm called RSGI ran it in June 2026.
+
+00:15:48.640 --> 00:15:51.600
+The report doesn't say whether the people in it were Harvey customers.
+
+00:15:53.360 --> 00:15:57.180
+So it's a customer survey with a research firm's name on it.
+
+00:15:57.180 --> 00:16:06.660
+The headline findings are that 92% report faster turnaround and 65% saw measurable benefits within a month.
+
+00:16:07.300 --> 00:16:09.220
+Neither of those is a spend number.
+
+00:16:10.960 --> 00:16:13.180
+Fair, now the independent data.
+
+00:16:13.820 --> 00:16:18.080
+The best source is LexisNexis, Counseling's annual trends report.
+
+00:16:18.760 --> 00:16:24.560
+In its words, it's built on actual invoices paid to law firms for work completed in 2025.
+
+00:16:24.560 --> 00:16:34.680
+five that's the data set I'd want what does it show not a collapse outside council fees kept
+
+00:16:34.680 --> 00:16:42.260
+rising across practice areas and regions big law about 100 firms holds a 51.2 percent share
+
+00:16:42.260 --> 00:16:50.360
+of wallet alternative fee arrangements average just 8.3 percent of matters so in the invoice
+
+00:16:50.360 --> 00:16:55.220
+data the billable hour is fine and the biggest firms hold the largest share
+
+00:16:55.220 --> 00:17:01.220
+that's hard to square with drops of 20 to 50 percent unless those drops sit in
+
+00:17:01.220 --> 00:17:07.600
+small teams doing routine work which is exactly what the stories describe
+
+00:17:07.600 --> 00:17:13.580
+routine drafting first-pass diligence local counsel for research much of that
+
+00:17:13.580 --> 00:17:18.740
+may sit with mid-sized firms if routine work leaves first big laws share could
+
+00:17:18.740 --> 00:17:22.740
+rise even while total spend falls.
+
+00:17:22.740 --> 00:17:26.740
+Possible, but you've just built that theory to rescue the claim.
+
+00:17:26.740 --> 00:17:33.740
+Also, CouncilLink covers invoices from 2025, and much of this adoption is more recent.
+
+00:17:33.740 --> 00:17:39.740
+The invoice data may simply be too early to show anything either way.
+
+00:17:39.740 --> 00:17:45.740
+Agreed. Timing cuts both ways. Now the surveys of general counsel.
+
+00:17:45.740 --> 00:17:48.020
+Only 20% plan to cut it.
+
+00:17:49.700 --> 00:17:53.680
+That's a survey of intentions taken in late 2025.
+
+00:17:54.320 --> 00:17:57.460
+But no vendor ran it, and it points the other way.
+
+00:17:59.760 --> 00:18:04.160
+CLOC's 2026 State of the Industry report shows where things are moving.
+
+00:18:04.720 --> 00:18:10.180
+Rising legal demand is outpacing budget and staffing growth, forcing an operational shift.
+
+00:18:10.880 --> 00:18:15.080
+Only 37% now expect outside counsel spend to rise.
+
+00:18:15.080 --> 00:18:18.080
+A year earlier, it was 58%.
+
+00:18:18.080 --> 00:18:25.700
+I'll give you that one. It's a real shift in intent. But it could be budget pressure, not AI.
+
+00:18:26.520 --> 00:18:35.520
+CLOC also found that expected increases in inside spending fell from 65% to 47%. Everyone is tightening.
+
+00:18:37.320 --> 00:18:43.880
+Fair point. If inside budgets are tightening too, it isn't clearly a story about moving work in-house.
+
+00:18:43.880 --> 00:18:46.120
+It may just be less money everywhere.
+
+00:18:48.420 --> 00:18:52.320
+Then there's a survey published by the Association of Corporate Counsel.
+
+00:18:53.020 --> 00:19:02.280
+Of 657 in-house professionals, 59% reported no noticeable savings yet from their law firm's use of AI.
+
+00:19:04.160 --> 00:19:06.300
+That measures something different, though.
+
+00:19:06.760 --> 00:19:09.760
+It's about firms passing on their own AI efficiencies.
+
+00:19:10.300 --> 00:19:13.320
+Harvey's claim is that clients do the work themselves.
+
+00:19:13.880 --> 00:19:18.500
+True, and it actually helps Harvey's pitch.
+
+00:19:18.500 --> 00:19:24.220
+If firms won't pass savings on, clients have a reason to bring work in-house, but it still
+
+00:19:24.220 --> 00:19:30.200
+means none of the independent data shows the money moving yet.
+
+00:19:30.200 --> 00:19:32.500
+So here's where the evidence leaves us.
+
+00:19:32.500 --> 00:19:33.660
+Established.
+
+00:19:33.660 --> 00:19:39.040
+The workflow is real and customers believe it saves money on specific matters.
+
+00:19:39.040 --> 00:19:40.720
+Claimed but not shown.
+
+00:19:40.720 --> 00:19:43.480
+a measured fall in outside counsel invoices,
+
+00:19:43.860 --> 00:19:46.060
+adjusted for matter mix at any customer.
+
+00:19:47.760 --> 00:19:50.600
+How do the different readings take these same facts?
+
+00:19:51.160 --> 00:19:53.020
+Start with the AGI forward reading.
+
+00:19:53.640 --> 00:19:58.680
+On that view, Bitfury's 80% draft is an early snapshot of a steep curve.
+
+00:19:59.340 --> 00:20:02.260
+Models get better at drafting and diligence every year,
+
+00:20:02.260 --> 00:20:05.020
+so less and less work needs to go outside.
+
+00:20:06.720 --> 00:20:09.740
+The strongest version of that is about the baseline.
+
+00:20:09.740 --> 00:20:16.800
+If a three-lawyer team can support global deals, the right comparison isn't last year's invoices.
+
+00:20:17.380 --> 00:20:22.260
+It's the larger team and the outside counsel the company never had to pay for.
+
+00:20:24.440 --> 00:20:31.520
+And on that reading, invoice totals will understate the effect, because growing companies spend more on legal no matter what.
+
+00:20:32.100 --> 00:20:34.880
+The saving shows up as costs that never arrive.
+
+00:20:36.540 --> 00:20:39.440
+The AI Realist reading is closer to mine.
+
+00:20:39.740 --> 00:20:45.440
+The independent invoice data shows fees rising and big law holding over half the wallet.
+
+00:20:46.180 --> 00:20:51.300
+The vendor data is three hand-picked accounts and a survey of 25 customers.
+
+00:20:52.060 --> 00:20:56.240
+Until those two meet, it's a marketing story with plausible mechanics.
+
+00:20:57.840 --> 00:21:01.320
+A realist would also ask what the tool really replaces.
+
+00:21:02.200 --> 00:21:04.120
+Outside counsel isn't just ours.
+
+00:21:04.120 --> 00:21:09.680
+It's judgment, accountability, and a firm whose insurance stands behind the advice.
+
+00:21:09.740 --> 00:21:27.680
+Which is what Bitfury describes. Outside firms now review instead of drafting. That's real, but review is often expensive partner time. The cheap associate hours go first, so the dollar saving may be smaller than the hours suggest.
+
+00:21:27.680 --> 00:21:33.060
+Then there's the market reading, which asks who keeps the savings.
+
+00:21:33.800 --> 00:21:35.880
+Law firms are adopting AI, too.
+
+00:21:36.440 --> 00:21:43.440
+If they keep billing by the hour while their costs fall, the efficiency shows up in firm margins, not client invoices.
+
+00:21:45.120 --> 00:21:50.780
+And alternative fees at 8.3% of matters suggest billing hasn't moved much.
+
+00:21:51.260 --> 00:21:52.880
+So clients have two routes.
+
+00:21:53.380 --> 00:21:57.260
+Bring the work in-house with a tool or push firms onto fixed fees.
+
+00:21:57.680 --> 00:22:00.860
+Both squeeze the billable hour from different sides.
+
+00:22:02.540 --> 00:22:05.280
+There's also a quieter liability angle.
+
+00:22:05.860 --> 00:22:08.840
+When an in-house team relies on a model's first draft,
+
+00:22:09.200 --> 00:22:12.500
+the company carries the risk of a mistake a firm used to carry.
+
+00:22:13.180 --> 00:22:16.140
+That cost appears in none of these savings estimates.
+
+00:22:17.780 --> 00:22:19.340
+I agree with that.
+
+00:22:19.340 --> 00:22:23.320
+The readings disagree less about the facts than about the baseline.
+
+00:22:23.960 --> 00:22:27.100
+The forward reading compares against an imagined world,
+
+00:22:27.100 --> 00:22:29.860
+the realist against last year's invoices.
+
+00:22:30.460 --> 00:22:32.100
+They're measuring different things.
+
+00:22:33.660 --> 00:22:35.060
+So are Reed.
+
+00:22:35.600 --> 00:22:38.040
+We discount the 20-50% figures
+
+00:22:38.040 --> 00:22:41.340
+until a customer shows outside council invoices
+
+00:22:41.340 --> 00:22:44.460
+before and after, adjusted for matter mix.
+
+00:22:45.200 --> 00:22:47.900
+Three hand-picked accounts estimating their reliance
+
+00:22:47.900 --> 00:22:50.080
+is closer to a survey than a measurement.
+
+00:22:51.680 --> 00:22:54.540
+But we still think outside council spend
+
+00:22:54.540 --> 00:22:56.500
+is the right line to sell against.
+
+00:22:57.100 --> 00:23:03.020
+It's real money, it sits on the profit and loss statement, and the CFO already tracks it.
+
+00:23:04.640 --> 00:23:08.300
+For builders, there's a product hiding inside the proof problem.
+
+00:23:08.900 --> 00:23:17.460
+A company that can measure the shift, matching matters to invoices and estimating what work would have cost outside, may win the procurement conversation.
+
+00:23:18.260 --> 00:23:20.760
+Whoever audits the spend may end up owning the budget.
+
+00:23:20.760 --> 00:23:27.720
+which gives an edge to the e-billing and spend management platforms that already hold the
+
+00:23:27.720 --> 00:23:34.200
+invoices a seed stage company would need integrations or a partnership to get at that data
+
+00:23:36.360 --> 00:23:42.440
+for investors one question worth exploring in diligence might be this can any customer show
+
+00:23:42.440 --> 00:23:49.080
+outside council invoices for the same matter types for 12 months before and 12 months after adoption
+
+00:23:50.760 --> 00:23:52.660
+and a follow-up we'd want answered.
+
+00:23:53.280 --> 00:23:56.100
+Do renewals actually rest on that measured number
+
+00:23:56.100 --> 00:23:59.160
+or on hours saved and user satisfaction?
+
+00:23:59.900 --> 00:24:04.000
+If it's satisfaction, the tool is priced as productivity software,
+
+00:24:04.560 --> 00:24:06.060
+whatever the pitch deck says.
+
+00:24:07.720 --> 00:24:10.580
+That test applies far beyond legal.
+
+00:24:11.240 --> 00:24:14.380
+Any vertical AI company claiming to replace contractors,
+
+00:24:15.040 --> 00:24:18.480
+agencies or consultants is selling against a visible cost
+
+00:24:18.480 --> 00:24:20.520
+and an invisible counterfactual.
+
+00:24:20.760 --> 00:24:35.220
+Here's where we still disagree, Bella. I think capacity gains without a falling invoice mean buyers are paying for an easier workload, not lower costs. That's a smaller and more crowded market.
+
+00:24:35.220 --> 00:24:38.600
+I read it more generously.
+
+00:24:39.440 --> 00:24:46.760
+CLOCs drop from 58% to 37%, expecting higher outside spend looks like early evidence that
+
+00:24:46.760 --> 00:24:47.860
+intent is changing.
+
+00:24:48.520 --> 00:24:54.620
+And single matter estimates like SUSCs and ICLs are the kind legal ops teams actually
+
+00:24:54.620 --> 00:24:55.920
+use to approve budgets.
+
+00:24:57.700 --> 00:25:03.540
+Intent isn't spend, but I'll grant that single matter evidence beats the headline percentages.
+
+00:25:05.220 --> 00:25:07.440
+Then we agree on the hierarchy.
+
+00:25:08.220 --> 00:25:11.940
+Invoices adjusted for matter mix beat single matter estimates.
+
+00:25:12.620 --> 00:25:17.680
+Those beat reliance percentages, and reliance percentages beat satisfaction surveys.
+
+00:25:19.260 --> 00:25:20.820
+What would settle it?
+
+00:25:21.280 --> 00:25:27.020
+First, a customer or better an independent auditor publishing outside counsel invoices
+
+00:25:27.020 --> 00:25:30.520
+before and after adoption, broken out by matter type.
+
+00:25:30.780 --> 00:25:34.520
+One clean case would be worth more than a stack of testimonials.
+
+00:25:35.220 --> 00:25:39.680
+Second, the next counseling trends report.
+
+00:25:39.680 --> 00:25:44.540
+If it keeps this year's timing, it should land next spring and cover invoices paid in
+
+00:25:44.540 --> 00:25:46.340
+2026.
+
+00:25:46.340 --> 00:25:53.900
+Watch whether routine matter hours fall and whether Big Law's 51.2% share keeps climbing.
+
+00:25:53.900 --> 00:26:00.600
+Third, the next round of general counsel surveys from CLOC and Thomson Reuters.
+
+00:26:00.600 --> 00:26:05.480
+If fewer expect higher outside spend while inside budgets hold, that looks like work
+
+00:26:05.480 --> 00:26:07.120
+moving in-house.
+
+00:26:07.120 --> 00:26:11.880
+If both fall together, it's just belt tightening.
+
+00:26:11.880 --> 00:26:14.240
+And one more from me, pricing.
+
+00:26:14.240 --> 00:26:19.320
+If legal AI vendors start charging a share of the outside spend they save, they'd have
+
+00:26:19.320 --> 00:26:20.740
+to measure it.
+
+00:26:20.740 --> 00:26:25.200
+That would show they believe their own numbers.
+
+00:26:25.200 --> 00:26:27.000
+What would change our view?
+
+00:26:27.000 --> 00:26:32.220
+Under-adjusted invoices showing even a 20% drop would make us take the headlines seriously.
+
+00:26:33.020 --> 00:26:37.520
+Routine matter hours at firms rising despite adoption would make us doubt it.
+
+00:26:39.160 --> 00:26:43.300
+Until then, it's a plausible mechanism with estimated savings.
+
+00:26:43.940 --> 00:26:46.540
+Worth tracking, not yet worth underwriting.
+
+00:26:48.360 --> 00:26:49.760
+Here's Stephen's take.
+
+00:26:50.480 --> 00:26:54.620
+Superpowering experts is what AI does consultants are the opposite path.
+
+00:26:54.620 --> 00:26:59.400
+That's the deep dive and today's AI briefing
+
+00:26:59.400 --> 00:27:02.140
+Every source is linked in the show notes
+
+00:27:02.140 --> 00:27:05.340
+And the AI briefing webpage has the written edition
+
+00:27:05.340 --> 00:27:08.180
+This deep dive and every past episode
+
+00:27:08.180 --> 00:27:10.600
+The daily briefing is back tomorrow

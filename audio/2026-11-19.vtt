@@ -1,0 +1,718 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:09.620
+On today's AI briefing, our view, the platform is real and the financing is the open question.
+
+00:00:11.300 --> 00:00:17.460
+This is the AI briefing for Thursday, November 19. I'm Michael. Like everything here,
+
+00:00:17.560 --> 00:00:23.480
+this briefing is written and read by AI from public sources. Today, a giant IPO,
+
+00:00:23.480 --> 00:00:29.100
+a chip maker under scrutiny, a cheaper frontier model and fresh money for robot data,
+
+00:00:29.100 --> 00:00:39.400
+Anthropic priced its IPO at $83 a share, above its range, raising $81.3 billion.
+
+00:00:39.400 --> 00:00:47.480
+That values it at about $1.5 trillion, against nearly $900 billion in compute commitments.
+
+00:00:47.480 --> 00:00:52.620
+NVIDIA delayed its quarterly filing, as the SEC looks at whether its disclosures misled
+
+00:00:52.620 --> 00:00:53.960
+investors.
+
+00:00:53.960 --> 00:00:58.160
+It also narrowed when it stands behind customers' data center loans.
+
+00:00:58.160 --> 00:01:07.560
+Google launched Gemini 4 Neon at $3 for input and $15 for output per million tokens, aimed squarely at the cost of coding work.
+
+00:01:08.780 --> 00:01:14.980
+And Hummin Labs raised a $47 million Series A to collect real-world data for robots.
+
+00:01:15.540 --> 00:01:18.500
+The main story's first, then a few quick hits.
+
+00:01:21.420 --> 00:01:25.700
+First story, and it's an update on one we've followed for about two weeks.
+
+00:01:25.700 --> 00:01:31.100
+Anthropic has priced its IPO at $83 a share, above its range.
+
+00:01:31.100 --> 00:01:37.220
+It is selling 980 million shares for $81.3 billion in gross proceeds.
+
+00:01:37.880 --> 00:01:42.020
+TechCrunch puts the fully diluted valuation at about $1.5 trillion.
+
+00:01:43.080 --> 00:01:51.300
+Reuters adds a $26 billion private placement at the IPO price for a total deal of $107.3 billion.
+
+00:01:51.300 --> 00:02:00.700
+The filing shows Q3 2026 revenue of $17 billion, up 12 times on the year. On the evidence,
+
+00:02:00.940 --> 00:02:05.320
+the pricing and arithmetic check out. The growth figures are the company's own,
+
+00:02:05.520 --> 00:02:10.900
+with no outside data on costs or margins. Where we land, the platform is real,
+
+00:02:10.900 --> 00:02:19.280
+and the financing is the open question. $895.4 billion committed to compute against $17 billion
+
+00:02:19.280 --> 00:02:26.800
+dollars of quarterly revenue is a bet on future demand. Audited, rising gross margins would move
+
+00:02:26.800 --> 00:02:33.240
+us. For startups built mostly on Claude, a second model provider looks like basic continuity
+
+00:02:33.240 --> 00:02:39.940
+planning. The AI Realist reading goes further, until costs to serve and retention are disclosed
+
+00:02:39.940 --> 00:02:43.840
+that valuation rests on one year's growth carried forward.
+
+00:02:43.840 --> 00:02:49.700
+From one giant of the AI economy to another.
+
+00:02:50.300 --> 00:02:53.380
+The second story is also an update on NVIDIA.
+
+00:02:53.960 --> 00:03:00.760
+TechCrunch reports that interim CEO Colette Kress clarified NVIDIA's backstops on NeoCloud data center loans.
+
+00:03:01.420 --> 00:03:04.960
+NVIDIA isn't on the hook unless the customer has independent financing,
+
+00:03:04.960 --> 00:03:08.580
+and the facility is built with NVIDIA gear installed.
+
+00:03:09.300 --> 00:03:11.260
+NVIDIA also delayed its 10Q.
+
+00:03:11.260 --> 00:03:17.820
+it told an analyst the delay turned on whether to disclose more about its internal investigation into Hwang.
+
+00:03:19.080 --> 00:03:26.520
+The same day, the Wall Street Journal reported an SEC investigation into whether NVIDIA's disclosures misled investors.
+
+00:03:27.240 --> 00:03:28.780
+Kress's conditions are confirmed.
+
+00:03:29.440 --> 00:03:37.540
+The delay is confirmed but thin on detail, and a reported cut from $250 to $105 billion is unverified.
+
+00:03:37.540 --> 00:03:59.280
+A read. Risk moves back onto builders and their lenders, where we expect debt stress to show first. Construction timelines become a credit question. Lenders' funding without wider spreads would ease that worry. The market reading is calmer. This is ordinary lender discipline that may make the backstop safer.
+
+00:03:59.280 --> 00:04:08.880
+third a model launch where the price is the story google has launched gemini 4 neon at three dollars
+
+00:04:08.880 --> 00:04:16.480
+for input and 15 for output per million tokens in the gemini app tech meme reports it sits between
+
+00:04:16.480 --> 00:04:24.000
+hydrogen and carbon latent space has the benchmark picture neon placed second on the val's index at
+
+00:04:24.000 --> 00:04:33.600
+70.9 percent it was also second on agent arena with a score of 1336 it matched carbon on the
+
+00:04:33.600 --> 00:04:39.600
+intelligence index but trailed on code migration and text arena tech meme frames it as competing
+
+00:04:39.600 --> 00:04:48.480
+with opus 5.5 on coding at lower cost it still trails claude fable 5.2 and gpt 6.2 astro on the
+
+00:04:48.480 --> 00:04:54.160
+Intelligence Index. So how well does it hold up? The pricing and benchmark positions are sourced.
+
+00:04:54.700 --> 00:05:00.520
+There are two caveats. Neon's cost edge over carbon depends on carbon's promotional pricing
+
+00:05:00.520 --> 00:05:07.000
+ending at the end of this month. And the launch claims about end-to-end task completion arrive
+
+00:05:07.000 --> 00:05:12.360
+without evidence behind them. Our read is that this is a pricing event more than a capability one.
+
+00:05:12.360 --> 00:05:18.460
+It helps startups whose gross margin is mostly model cost. Coding agent startups paying open
+
+00:05:18.460 --> 00:05:23.500
+class prices could cut their model bill by routing work to neon. That shifts the
+
+00:05:23.500 --> 00:05:29.080
+margin question. Once the model bill falls, the test becomes pricing power. Can
+
+00:05:29.080 --> 00:05:34.820
+those companies hold their own prices as costs drop? What we'd watch is Google's
+
+00:05:34.820 --> 00:05:39.880
+pricing after Carbon's promotion ends. That will show how durable this discount
+
+00:05:39.880 --> 00:05:42.540
+really is.
+
+00:05:42.540 --> 00:05:46.540
+Cheaper models are one input to AI.
+
+00:05:46.540 --> 00:05:51.540
+Real-world data is another, and that's where our fourth and last main story sits.
+
+00:05:51.540 --> 00:05:57.540
+TechCrunch and The Robot both report that Hummin Labs has raised a $47 million series
+
+00:05:57.540 --> 00:06:00.540
+A. Hummin was founded in India.
+
+00:06:00.540 --> 00:06:04.540
+It captures and enriches real-world data across more than 20 countries
+
+00:06:04.540 --> 00:06:07.540
+to help robots work outside the lab.
+
+00:06:07.540 --> 00:06:12.740
+It supplies frontier AI labs, robotics firms, and world model developers.
+
+00:06:13.620 --> 00:06:18.500
+Its competitors include startups such as Mecca AI and XDOF.
+
+00:06:18.500 --> 00:06:26.160
+The round splits into $26 million of equity led by Excel and $21 million of venture debt.
+
+00:06:26.860 --> 00:06:28.640
+Lighthouse Canton led the debt.
+
+00:06:29.260 --> 00:06:33.200
+The traction claims come from the founders, via the robot report.
+
+00:06:33.780 --> 00:06:37.460
+They report $10 million of revenue from April to October.
+
+00:06:37.540 --> 00:06:43.340
+They say $20 million is signed and another $20 million is pending.
+
+00:06:43.860 --> 00:06:50.660
+About 90% of it in the U.S., they also claim a $50 million annualized run rate within six months of operations.
+
+00:06:51.200 --> 00:06:52.700
+The evidence here is mixed.
+
+00:06:53.240 --> 00:06:54.860
+The funding details are confirmed.
+
+00:06:55.520 --> 00:07:01.380
+The traction figures are self-reported, with no customer names and no definition of annualized.
+
+00:07:01.920 --> 00:07:06.300
+Our view, real-world robotics data, is a genuine bottleneck.
+
+00:07:06.300 --> 00:07:13.020
+But the $10 million booked is the number we trust, not the $50 million annualized.
+
+00:07:13.620 --> 00:07:16.020
+Named repeat customers would change our mind.
+
+00:07:16.580 --> 00:07:21.740
+About 45% of this round is venture debt, meaning loans repaid from revenue.
+
+00:07:22.280 --> 00:07:26.120
+So whether those pending contracts convert matters more than the headline round,
+
+00:07:26.740 --> 00:07:29.160
+the AGI forward reading is more bullish.
+
+00:07:29.160 --> 00:07:32.900
+If robot capability scales with real-world data,
+
+00:07:32.900 --> 00:07:37.620
+the signed and pending contracts are early evidence of a fast-forming market.
+
+00:07:38.960 --> 00:07:43.340
+On that reading, suppliers who own collection pipelines first gain the edge.
+
+00:07:46.140 --> 00:07:50.320
+Now two quick ones, both about AI agents and banks.
+
+00:07:51.000 --> 00:07:56.060
+CD, one of the largest U.S. banks, has updated its online user agreement.
+
+00:07:56.800 --> 00:08:00.460
+Customers using third-party AI tools for personal finance
+
+00:08:00.460 --> 00:08:05.740
+are now responsible for any transactions or security breaches those tools cause.
+
+00:08:06.460 --> 00:08:10.500
+Liability for agent mistakes is landing on the user, not the bank.
+
+00:08:11.740 --> 00:08:17.980
+And Reuters, citing David Thomas, reports that Arizona's attorney general opened a criminal
+
+00:08:17.980 --> 00:08:24.520
+investigation into OpenAI and other AI companies. The subject is what was described as
+
+00:08:24.520 --> 00:08:28.480
+apparent infiltration of banks by rogue AI agents.
+
+00:08:29.220 --> 00:08:34.360
+Agent risk at banks is now a criminal law question, not only a contractual one.
+
+00:08:35.980 --> 00:08:42.080
+Worth asking, if CD's new terms put losses from outside AI tools on the customer,
+
+00:08:42.080 --> 00:08:48.340
+who absorbs a mistaken agent transaction, and does insurance cover harm from model output?
+
+00:08:48.980 --> 00:08:53.000
+To watch, can Anthropics revenue growth service its commitments?
+
+00:08:53.000 --> 00:09:01.260
+S1 margin disclosures, commitment timing by year, and its first quarterly report as a public company will settle it.
+
+00:09:03.000 --> 00:09:05.500
+That's the briefing. Stay with me.
+
+00:09:05.980 --> 00:09:13.620
+Right after this, Bella takes you through today's deep dive on export controls follow the renter, capping China's cloud compute.
+
+00:09:14.200 --> 00:09:22.180
+You can also read it or listen to it on its own on the AI briefing webpage, where you'll find the written edition in every past episode.
+
+00:09:22.180 --> 00:09:24.340
+The link is in the show notes.
+
+00:09:52.180 --> 00:09:59.120
+Bureau of Industry and Security released a 132-page interim final rule. Its title is plain,
+
+00:09:59.600 --> 00:10:04.140
+addressing remote access to advanced semiconductors. It is due in the Federal
+
+00:10:04.140 --> 00:10:10.120
+Register on November 19 and takes effect on publication. Comments are taken for 60 days
+
+00:10:10.120 --> 00:10:15.500
+afterwards, so the rule applies before the comment period ends. The core move is new.
+
+00:10:16.800 --> 00:10:21.600
+Until now, U.S. export controls followed the chip, where it shipped and who bought it.
+
+00:10:22.180 --> 00:10:23.620
+This rule follows the renter.
+
+00:10:24.200 --> 00:10:27.760
+A data center outside the United States that rents more than a set amount of
+
+00:10:27.760 --> 00:10:31.640
+compute to a Chinese headquartered company now needs a U.S. license.
+
+00:10:32.320 --> 00:10:35.240
+Five countries also need licenses for advanced chips.
+
+00:10:35.780 --> 00:10:39.160
+Singapore, Malaysia, Thailand, Indonesia, and Brazil.
+
+00:10:39.760 --> 00:10:41.040
+The timing is not subtle.
+
+00:10:42.400 --> 00:10:47.680
+Days earlier, a former OpenAI engineer published analysis suggesting that
+
+00:10:47.680 --> 00:10:52.120
+leading Chinese open-weight models were started on NVIDIA Blackwell systems.
+
+00:10:52.840 --> 00:10:55.120
+Those are chips China is not allowed to buy.
+
+00:10:55.800 --> 00:10:57.900
+Beijing has already promised countermeasures.
+
+00:10:59.840 --> 00:11:01.580
+Start with the gap the rule closes.
+
+00:11:02.280 --> 00:11:05.200
+Selling a Blackwell server to a company in Shenzhen is banned.
+
+00:11:05.780 --> 00:11:08.740
+Renting that same server by the hour from a data center in Johor,
+
+00:11:09.160 --> 00:11:10.920
+Malaysia was largely unregulated.
+
+00:11:11.560 --> 00:11:12.900
+The chip never entered China.
+
+00:11:13.420 --> 00:11:14.420
+The training run did.
+
+00:11:14.860 --> 00:11:15.960
+Think of it like car hire.
+
+00:11:16.400 --> 00:11:18.480
+The old rules controlled who could buy a car.
+
+00:11:18.940 --> 00:11:20.180
+Anyone could still rent one.
+
+00:11:20.180 --> 00:11:23.780
+The new rule makes the rental agency check who is driving.
+
+00:11:24.320 --> 00:11:28.480
+It also caps how many cars one restricted customer can hire without permission.
+
+00:11:29.280 --> 00:11:33.420
+The unit of measure is Total Processing Performance, or TPP.
+
+00:11:34.240 --> 00:11:39.980
+Commerce uses it to compare chips across generations, roughly raw throughput weighted by numeric precision.
+
+00:11:40.720 --> 00:11:47.960
+The cap is more than 12 million aggregate TPP for any one covered customer, at a single data center, or across linked ones.
+
+00:11:48.660 --> 00:11:54.140
+Chris McGuire, a former National Security Council official now at the Council on Foreign Relations,
+
+00:11:54.720 --> 00:11:58.680
+puts that at roughly 200 Blackwells, or about 800 H100s.
+
+00:11:59.520 --> 00:12:00.980
+Now a worked example.
+
+00:12:01.620 --> 00:12:07.880
+DeepSeq reported that its V3 model took 2.788 million H800 GPU hours to train.
+
+00:12:08.540 --> 00:12:11.080
+The H800 is a hopper chip made for China.
+
+00:12:11.720 --> 00:12:15.000
+Its compute is close to an H100s, with slower interconnect.
+
+00:12:15.000 --> 00:12:19.920
+spread over 800 chips that comes to about 3,500 hours.
+
+00:12:20.520 --> 00:12:24.000
+That is roughly five months of continuous running at perfect efficiency,
+
+00:12:24.420 --> 00:12:26.040
+which no real cluster reaches.
+
+00:12:27.000 --> 00:12:29.280
+And that was a model from late 2024.
+
+00:12:30.000 --> 00:12:34.200
+In Maguire's words, frontier work takes thousands, tens of thousands,
+
+00:12:34.600 --> 00:12:36.220
+maybe hundreds of thousands of chips.
+
+00:12:36.900 --> 00:12:41.380
+So the cap leaves room for fine tuning, evaluation, and serving a modest product.
+
+00:12:41.840 --> 00:12:44.520
+It rules out a frontier training run at a single provider.
+
+00:12:45.000 --> 00:12:46.460
+There is an engineering wrinkle.
+
+00:12:47.120 --> 00:12:50.920
+The cap applies per data center or per group of linked data centers.
+
+00:12:51.580 --> 00:12:55.540
+Linked means facilities sharing resources and workloads as a unified whole.
+
+00:12:56.880 --> 00:12:59.040
+Training needs fast links between chips,
+
+00:12:59.040 --> 00:13:02.680
+so splitting a run across unrelated sites hurts badly.
+
+00:13:03.420 --> 00:13:08.440
+Inference splits easily, so the cap bites hardest on training and least on serving.
+
+00:13:10.140 --> 00:13:12.820
+What is established comes from the rule itself,
+
+00:13:12.820 --> 00:13:18.840
+as reported by TechCrunch and described on the China Talk podcast by former NSC official Chris
+
+00:13:18.840 --> 00:13:24.560
+McGuire. Covered customers are companies headquartered in Macau or Adi, five country,
+
+00:13:25.020 --> 00:13:31.340
+the U.S. arms embargo list that includes China, Russia, and Iran. The test also catches companies
+
+00:13:31.340 --> 00:13:36.620
+whose ultimate parent is headquartered there. The know-your-customer duty is the sharpest part.
+
+00:13:37.920 --> 00:13:42.160
+Exporters must get enough information about a foreign data center's own customer checks.
+
+00:13:42.160 --> 00:13:45.860
+If the data center refuses or cannot provide that information,
+
+00:13:46.400 --> 00:13:50.540
+a law firm client alert on the rule says the exporter is presumed to have knowledge.
+
+00:13:51.260 --> 00:13:55.660
+Exports to the five countries are exempt where the recipient is headquartered in the United States,
+
+00:13:56.200 --> 00:13:57.420
+subject to new reporting.
+
+00:13:58.180 --> 00:14:02.980
+On foundries, Maguire says any Chinese company making a chip at 14 nanometers
+
+00:14:02.980 --> 00:14:05.520
+or more advanced now needs a license.
+
+00:14:06.420 --> 00:14:08.960
+That applies whatever the chip is claimed to be for.
+
+00:14:09.420 --> 00:14:11.080
+Now what is claimed but not shown?
+
+00:14:11.080 --> 00:14:15.820
+The 200 and 800 figures are McGuire's conversion, not the rule's wording.
+
+00:14:16.440 --> 00:14:18.060
+Retroactivity is contested.
+
+00:14:18.600 --> 00:14:23.700
+McGuire argues the rule treats past arrangements as violations, which could expose Megaspeed,
+
+00:14:24.040 --> 00:14:27.140
+the intermediary at the center of recent smuggling reporting.
+
+00:14:27.800 --> 00:14:32.900
+The law firms describe it more narrowly, a clarification that an existing end-use rule
+
+00:14:32.900 --> 00:14:35.380
+already covered indirect and remote access.
+
+00:14:35.380 --> 00:14:41.420
+ChinaTalk's estimate that remote access supplies about two-fifths of China's AI compute
+
+00:14:41.420 --> 00:14:44.560
+comes from a best-guess breakdown, published in April,
+
+00:14:45.020 --> 00:14:49.680
+of the ratios between domestic, smuggled, legal-foreign and remote access compute.
+
+00:14:50.340 --> 00:14:52.140
+It is an estimate, not a measurement.
+
+00:14:52.880 --> 00:14:56.760
+The analysis of Chinese models is one analyst, Will DePue,
+
+00:14:57.180 --> 00:14:59.560
+reading hardware fingerprints in published weights.
+
+00:15:00.140 --> 00:15:01.580
+It is not peer-reviewed.
+
+00:15:01.580 --> 00:15:07.140
+TechCrunch notes it does not show the models were trained entirely on NVIDIA chips,
+
+00:15:07.520 --> 00:15:13.180
+or that any law was broken. The chips could have sat offshore, which is exactly the gap this rule
+
+00:15:13.180 --> 00:15:17.960
+targets. China's Ministry of Commerce opposes the rule and threatens countermeasures.
+
+00:15:18.700 --> 00:15:23.700
+Ars Technica notes Beijing has consistently accused the U.S. of fabricating espionage
+
+00:15:23.700 --> 00:15:29.200
+claims to justify restrictions. That is a stated position, not evidence either way.
+
+00:15:29.200 --> 00:15:35.480
+The policy reading from the export control hawks is that this is overdue.
+
+00:15:36.040 --> 00:15:39.240
+McGuire calls it a good rule that actually moves the ball forward.
+
+00:15:39.900 --> 00:15:41.500
+He also names its biggest gap.
+
+00:15:41.840 --> 00:15:44.140
+The rule doesn't apply inside the United States.
+
+00:15:44.760 --> 00:15:49.180
+His worry is that Chinese demand simply moves from Johor to Northern Virginia.
+
+00:15:49.800 --> 00:15:53.120
+He also expects smuggling to move to countries not on the list.
+
+00:15:53.120 --> 00:15:56.200
+The AA Realist reading puts the weight on enforcement.
+
+00:15:57.100 --> 00:16:00.820
+The rule depends on private operators checking ownership chains
+
+00:16:00.820 --> 00:16:03.480
+in places where Chinese tenants are their best customers.
+
+00:16:04.200 --> 00:16:07.300
+McGuire himself says compliance will be really hard to verify.
+
+00:16:08.100 --> 00:16:11.280
+On this reading, Chinese labs keep their efficiency gains,
+
+00:16:11.720 --> 00:16:14.460
+and the cap mainly speeds up their move to Huawei hardware.
+
+00:16:15.140 --> 00:16:19.240
+The AGI forward reading treats compute as the binding input for frontier models.
+
+00:16:19.860 --> 00:16:24.480
+On that view, even a leaky cap on training scale rental protects a lead that compounds.
+
+00:16:24.480 --> 00:16:29.700
+Those readings differ on how much compute matters, not on the facts of the rule.
+
+00:16:30.220 --> 00:16:31.800
+The market reading is the most immediate.
+
+00:16:32.560 --> 00:16:35.820
+The New York Times reports the rule has rattled Southeast Asia,
+
+00:16:36.280 --> 00:16:39.000
+threatening a data center boom fueled by Chinese companies.
+
+00:16:39.740 --> 00:16:43.200
+Capacity built for that demand could sit idle or need relicensing,
+
+00:16:43.680 --> 00:16:46.020
+while U.S. headquartered operators gain an exemption.
+
+00:16:46.920 --> 00:16:51.240
+Beijing's reading, as Julian Jewarts of Columbia frames its likely playbook,
+
+00:16:51.240 --> 00:16:55.000
+is to threaten retaliation and seek concessions at leader level.
+
+00:16:56.780 --> 00:16:58.780
+We read this as a power story.
+
+00:16:59.380 --> 00:17:02.440
+Control of compute now follows the renter, not just the chip.
+
+00:17:02.980 --> 00:17:06.500
+That moves leverage toward licensed capacity in U.S.-aligned hands,
+
+00:17:06.880 --> 00:17:08.660
+especially U.S.-headquartered clouds,
+
+00:17:09.040 --> 00:17:11.180
+which keep their exemption in the five countries.
+
+00:17:11.900 --> 00:17:15.280
+For neoclouds in Singapore, Malaysia, Thailand, and Indonesia,
+
+00:17:15.800 --> 00:17:17.540
+compliance starts to look like banking,
+
+00:17:18.060 --> 00:17:20.100
+tracing customers to their ultimate parent
+
+00:17:20.100 --> 00:17:22.840
+and spotting resellers serving restricted firms.
+
+00:17:23.360 --> 00:17:24.460
+That is a real cost.
+
+00:17:25.260 --> 00:17:28.640
+For operators who do it well, it may also become a moat.
+
+00:17:29.080 --> 00:17:32.100
+For investors weighing Chinese cost-per-capability claims,
+
+00:17:32.520 --> 00:17:36.340
+the efficiency is real, but some of it ran on access that may now close.
+
+00:17:36.840 --> 00:17:38.760
+The weights already released stay available.
+
+00:17:39.320 --> 00:17:41.180
+The next generation is what is at risk.
+
+00:17:41.660 --> 00:17:45.760
+One question worth exploring in diligence of a GPU cloud or reseller.
+
+00:17:46.220 --> 00:17:49.000
+Can they show their customer book traced to ultimate parents?
+
+00:17:49.000 --> 00:17:52.880
+and what share of revenue sits inside the 90-day licensing window.
+
+00:17:53.700 --> 00:17:57.860
+For an application company built on cheap Chinese open-weight models,
+
+00:17:58.300 --> 00:18:02.980
+we'd want to know whether its roadmap assumes the next releases arrive on the same schedule
+
+00:18:02.980 --> 00:18:04.500
+and at the same price.
+
+00:18:05.120 --> 00:18:10.380
+Our view would change if enforcement stays absent or if the U.S. gap closes quickly.
+
+00:18:12.220 --> 00:18:14.620
+Three things should settle how much this bites.
+
+00:18:15.160 --> 00:18:16.700
+First, the licensing window.
+
+00:18:17.280 --> 00:18:20.740
+90 days from publication lands in mid-February 2027.
+
+00:18:21.280 --> 00:18:26.120
+Whether licenses get granted, denied, or quietly ignored will show if the cap is real.
+
+00:18:26.800 --> 00:18:27.880
+Second, enforcement.
+
+00:18:28.520 --> 00:18:32.400
+A case against an intermediary like Megaspeed, built on the backward-looking reading,
+
+00:18:32.720 --> 00:18:34.820
+would tell operators the rule has teeth.
+
+00:18:35.260 --> 00:18:36.700
+No case would tell them the opposite.
+
+00:18:37.420 --> 00:18:39.340
+Third, the gaps and the politics.
+
+00:18:40.360 --> 00:18:45.060
+Watch whether commerce extends the cap to data centers inside the United States,
+
+00:18:45.060 --> 00:18:48.020
+and whether leader-level talks soften the rule.
+
+00:18:48.780 --> 00:18:51.840
+In between, the next Chinese open-weight releases
+
+00:18:51.840 --> 00:18:55.480
+will carry fresh hardware fingerprints for analysts to read.
+
+00:18:57.200 --> 00:19:00.300
+That's the deep dive and today's AI briefing.
+
+00:19:01.040 --> 00:19:03.040
+Every source is linked in the show notes,
+
+00:19:03.480 --> 00:19:06.240
+and the AI briefing webpage has the written edition,
+
+00:19:06.720 --> 00:19:09.000
+this deep dive and every past episode.
+
+00:19:09.660 --> 00:19:11.460
+The daily briefing is back tomorrow.
+
+00:19:15.060 --> 00:19:45.040
+Thank you.
