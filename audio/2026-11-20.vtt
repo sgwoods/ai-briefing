@@ -1,0 +1,598 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:09.440
+On today's AI briefing, after CD and OpenAI moved agent liability onto users,
+
+00:00:09.960 --> 00:00:15.080
+Muse shows what that liability looks like. One user's data in another session.
+
+00:00:16.720 --> 00:00:23.100
+This is the AI briefing for Friday, November 20. I'm Michael. Like everything here,
+
+00:00:23.100 --> 00:00:28.700
+this briefing is written and read by AI from public sources. Here's what we're covering today.
+
+00:00:28.700 --> 00:00:37.520
+An AI agent meta was testing internally reportedly showed employees other people's private data down to a bank balance that wasn't theirs.
+
+00:00:38.200 --> 00:00:46.340
+Anthropic is now a public company. Its shares priced at $83 and closed their first day at $97.17.
+
+00:00:47.820 --> 00:00:53.520
+Jensen Huang has left NVIDIA just as California's Attorney General subpoenas the company.
+
+00:00:53.520 --> 00:01:00.720
+And the European Commission says an AI-driven cyberattack disrupted its staff services for more than 10 days.
+
+00:01:01.140 --> 00:01:04.600
+We'll take the main stories first, then a few quick hits.
+
+00:01:07.420 --> 00:01:12.120
+The first story is about what happens when an agent can see everything on a device.
+
+00:01:12.720 --> 00:01:17.380
+Meta employees testing its Muse agents say it showed them things that weren't theirs.
+
+00:01:17.860 --> 00:01:22.400
+There were product orders they never placed and child care requests they never made.
+
+00:01:22.400 --> 00:01:25.900
+There were also bank balances belonging to someone else.
+
+00:01:26.580 --> 00:01:32.380
+Reuters Reports 1 was a Capital One balance of $2,722.58.
+
+00:01:32.940 --> 00:01:36.000
+The neuron describes how Muse got that much reach.
+
+00:01:36.720 --> 00:01:41.340
+On Android, it could pull signal messages through notification access.
+
+00:01:41.880 --> 00:01:45.460
+On macOS, it used accessibility features and screenshots.
+
+00:01:46.280 --> 00:01:50.800
+Meta says many of the mix-ups were hallucinations and calls the incidents isolated.
+
+00:01:50.800 --> 00:01:56.980
+So how solid is this? Reuters confirms the employee reports of private data exposure.
+
+00:01:57.640 --> 00:02:02.040
+The bank balance details are unverified and the model may have invented them.
+
+00:02:02.460 --> 00:02:06.980
+But no one outside meta has verified its hallucination explanation either.
+
+00:02:07.800 --> 00:02:11.940
+And this was internal testing, not a product in customers' hands.
+
+00:02:12.440 --> 00:02:18.080
+One question decides it. Did those records belong to real other users or did Muse make them up?
+
+00:02:18.080 --> 00:02:20.800
+We lean toward treating this as real risk.
+
+00:02:21.340 --> 00:02:27.220
+An agent with notification and screenshot access carries liability whether or not these outputs were genuine.
+
+00:02:27.960 --> 00:02:31.960
+CD and OpenAI have already moved agent liability onto users.
+
+00:02:32.620 --> 00:02:34.980
+Muse shows what that liability looks like.
+
+00:02:35.360 --> 00:02:37.960
+One person's data in another person's session.
+
+00:02:38.760 --> 00:02:45.320
+We think that opens room for startups selling permission and audit layers that outsiders can test.
+
+00:02:45.320 --> 00:02:52.760
+For seed companies building agents with device-wide access, buyer security reviews may now cite Muse.
+
+00:02:53.380 --> 00:02:57.500
+That could make tenant isolation testing a standard diligence item.
+
+00:03:00.180 --> 00:03:09.340
+Our second story is an update on Anthropix record IPO shares priced at $83 and closed the first day 17% higher,
+
+00:03:09.680 --> 00:03:13.140
+with 7 chip and cloud suppliers committing $26 billion.
+
+00:03:13.140 --> 00:03:20.100
+The market view reads that as public markets and the supply chain funding Frontier Compute directly.
+
+00:03:20.880 --> 00:03:29.200
+On a closer check, the IPO figures match the filings, but a $1 trillion valuation isn't supported by market cap.
+
+00:03:29.900 --> 00:03:34.520
+We think the $26 billion supplier placement is the number to watch.
+
+00:03:35.160 --> 00:03:40.240
+Vendors buying equity in their customer is the circular loop, now on public markets.
+
+00:03:40.240 --> 00:03:44.660
+Quarterly filings will show whether customer revenue pays for compute.
+
+00:03:45.320 --> 00:03:47.460
+Startups reselling Claude may feel it.
+
+00:03:48.060 --> 00:03:52.740
+$91.6 billion in net proceeds can subsidize pricing,
+
+00:03:53.280 --> 00:03:57.440
+alongside reported discounts above 30% for bigger commitments.
+
+00:04:00.060 --> 00:04:04.580
+Third story, an update on NVIDIA after Jensen Huang's exit.
+
+00:04:05.120 --> 00:04:06.180
+Two new reports.
+
+00:04:06.180 --> 00:04:15.240
+TechCrunch says California AG Rob Bonta has subpoenaed NVIDIA over alleged misleading investor statements about Huang's China ties.
+
+00:04:15.800 --> 00:04:22.000
+And the information reports that IMD and Google are gaining market share with cheaper AI chips.
+
+00:04:22.560 --> 00:04:26.420
+A critical look. The subpoena's allegations lack verification.
+
+00:04:27.280 --> 00:04:34.300
+The robot report's figure of $25 billion in physical AI revenue has no independent confirmation.
+
+00:04:34.300 --> 00:04:41.820
+We read the subpoena as an allegation and the $25 billion figure as unsupported until filings back them.
+
+00:04:42.400 --> 00:04:44.580
+The more useful signal is the share report.
+
+00:04:45.160 --> 00:04:49.800
+If IMD and Google pricing holds, inference gets cheaper for startups.
+
+00:04:50.460 --> 00:04:55.000
+Inference startups that run on more than one accelerator would gain cost leverage.
+
+00:04:55.640 --> 00:04:58.040
+Single vendor stacks would carry more risk.
+
+00:04:58.040 --> 00:05:04.620
+The fourth and last of the main stories brings us back to security.
+
+00:05:05.320 --> 00:05:12.080
+Joanna Bryson reports that the European Commission has confirmed it was targeted by an AI-generated cyber campaign.
+
+00:05:12.700 --> 00:05:16.240
+The attack disrupted employee services for over 10 days.
+
+00:05:16.240 --> 00:05:23.280
+According to the Neuron, investigators linked it to ARTEX, an automated security testing tool.
+
+00:05:23.280 --> 00:05:28.200
+The FBI had warned that ARTEX could accelerate cyber attacks.
+
+00:05:28.720 --> 00:05:30.120
+How well does this hold up?
+
+00:05:30.840 --> 00:05:35.420
+The length of the disruption is confirmed, and so is the link to the attacker.
+
+00:05:36.100 --> 00:05:42.200
+What isn't independently verified is ARTEX's role, a security tool turned to malicious use.
+
+00:05:42.660 --> 00:05:44.900
+So the part AI played is still open.
+
+00:05:45.500 --> 00:05:48.820
+Our view is that this is the kind of leading indicator we expected.
+
+00:05:48.820 --> 00:05:55.340
+A major institution was disrupted for over 10 days, and AI's role is still unverified.
+
+00:05:56.020 --> 00:06:01.380
+Like the Muse story, this is about who answers when an automated system causes harm.
+
+00:06:02.440 --> 00:06:08.200
+Vendors that ship automated attack tools may face exactly that question when their tools are misused.
+
+00:06:08.660 --> 00:06:14.220
+For early-stage companies selling automated red teaming, demand and scrutiny may arrive together.
+
+00:06:14.940 --> 00:06:17.680
+Buyers may want controls on who can run those tools.
+
+00:06:17.680 --> 00:06:22.080
+The policy reading goes further. Attribution hasn't settled yet.
+
+00:06:22.660 --> 00:06:33.700
+Even so, an EU institution disrupted for 10 days in an attack linked to an FBI flag tool gives regulators grounds to restrict automated offensive tools.
+
+00:06:36.360 --> 00:06:38.540
+Two quick ones before we close.
+
+00:06:39.200 --> 00:06:46.160
+First, the information reports that Anthropic is offering discounts of more than 30% to win larger spending commitments.
+
+00:06:46.160 --> 00:06:51.620
+Some customers must show invoices proving what share of their AI budgets goes to Anthropic.
+
+00:06:51.620 --> 00:06:57.560
+That's independent reporting, and it adds pricing pressure for anyone reselling Claude.
+
+00:06:57.560 --> 00:07:02.120
+Second, Signal now restricts screenshots by default on mobile.
+
+00:07:02.120 --> 00:07:09.220
+It names AI agents like Gemini and Siri as hostile to privacy, according to The Verge.
+
+00:07:09.220 --> 00:07:14.580
+That matters because screen access is one-way agents like Muse read other apps.
+
+00:07:16.160 --> 00:07:18.980
+A question worth asking in diligence this week.
+
+00:07:18.980 --> 00:07:27.620
+When an agent can read other apps on a device, what keeps one user's records out of another's session and has an outsider tried to break it?
+
+00:07:28.180 --> 00:07:32.360
+The open question is whether Muse showed real data or invented it.
+
+00:07:32.800 --> 00:07:39.680
+A meta-disclosure to regulators or an independent forensic review of the test logs would settle it.
+
+00:07:41.400 --> 00:07:43.960
+That's the briefing. Stay with me.
+
+00:07:43.960 --> 00:07:51.940
+Right after this, Bella takes you through today's deep dive on what a 900% net revenue retention actually measures.
+
+00:07:52.600 --> 00:08:00.680
+You can also read it or listen to it on its own on the AI Briefing webpage, where you'll find the written edition in every past episode.
+
+00:08:01.160 --> 00:08:02.840
+The link is in the show notes.
+
+00:08:10.380 --> 00:08:11.460
+Thanks, Michael.
+
+00:08:11.460 --> 00:08:15.900
+This is the AI briefing deep dive for Friday, November 20
+
+00:08:15.900 --> 00:08:19.880
+What a 900% net revenue retention actually measures
+
+00:08:19.880 --> 00:08:20.880
+I'm Bella
+
+00:08:20.880 --> 00:08:25.880
+Like the briefing, it is written and read by AI from public sources
+
+00:08:25.880 --> 00:08:32.380
+Anthropic has filed to list on NASDAQ under the ticker INT
+
+00:08:32.380 --> 00:08:38.420
+Its S1 reports $16.3 billion in revenue for the first half of 2026
+
+00:08:38.420 --> 00:08:42.700
+A year earlier, the same period brought in $1.2 billion.
+
+00:08:43.580 --> 00:08:47.280
+Coverage is on its fourth day, and one figure keeps coming up.
+
+00:08:47.800 --> 00:08:54.560
+The filing says enterprise net revenue retention reached about 900% as of September 30, 2026.
+
+00:08:55.320 --> 00:09:02.440
+For comparison, the stack puts Snowflake at 126% and Palantir at 157%.
+
+00:09:02.440 --> 00:09:05.680
+So 900% is not a slightly better result.
+
+00:09:06.280 --> 00:09:07.580
+It is a different kind of result.
+
+00:09:07.580 --> 00:09:12.220
+It also arrives as founders quote retention in almost every AI round,
+
+00:09:12.660 --> 00:09:14.260
+often on usage-priced revenue.
+
+00:09:14.920 --> 00:09:16.340
+To read a number like this well,
+
+00:09:16.620 --> 00:09:19.380
+you need to know exactly what it counts and what it leaves out.
+
+00:09:19.860 --> 00:09:21.120
+That's today's episode.
+
+00:09:23.100 --> 00:09:25.680
+Net revenue retention asks one question.
+
+00:09:26.220 --> 00:09:28.840
+Take the customers who were paying you at some earlier point.
+
+00:09:29.280 --> 00:09:31.380
+How much are those same customers paying you now?
+
+00:09:31.780 --> 00:09:33.060
+New customers are excluded.
+
+00:09:33.700 --> 00:09:35.560
+Churned customers stay in the group at zero.
+
+00:09:36.220 --> 00:09:41.300
+In the S1's definition, the earlier point is the July to September quarter of 2025.
+
+00:09:42.100 --> 00:09:44.820
+The later point is the same quarter in 2026.
+
+00:09:45.500 --> 00:09:48.260
+You divide the group's current revenue by its base revenue.
+
+00:09:48.840 --> 00:09:49.860
+Two details matter.
+
+00:09:50.900 --> 00:09:56.500
+Second, Claude Pro and Max subscribers are excluded because fixed-price plans don't expand.
+
+00:09:57.120 --> 00:10:00.160
+So this is mostly consumption revenue, billed by usage.
+
+00:10:00.680 --> 00:10:01.660
+Now a worked example.
+
+00:10:02.320 --> 00:10:05.660
+Picture a startup with 100 developer accounts in its base quarter.
+
+00:10:06.220 --> 00:10:08.720
+One account out of 100 produced the whole headline.
+
+00:10:09.220 --> 00:10:09.880
+Push it further.
+
+00:10:10.520 --> 00:10:13.260
+Suppose 30 of the small accounts had quit entirely.
+
+00:10:13.900 --> 00:10:16.700
+The metric is weighted by dollars, not by customers.
+
+00:10:17.720 --> 00:10:21.000
+It can't tell you how many customers grew, how many left,
+
+00:10:21.300 --> 00:10:23.360
+or whether growth was broad or concentrated.
+
+00:10:24.040 --> 00:10:26.180
+It also rewards a small starting base.
+
+00:10:26.820 --> 00:10:29.560
+Anthropik's base quarter was when the company was far smaller,
+
+00:10:29.560 --> 00:10:31.840
+with many accounts on pilots and trials.
+
+00:10:32.560 --> 00:10:35.940
+Moving from pilot to production produces enormous ratios once.
+
+00:10:36.400 --> 00:10:37.860
+That move can't easily repeat
+
+00:10:37.860 --> 00:10:40.300
+because next year's base is the production level.
+
+00:10:40.900 --> 00:10:42.880
+Usage pricing adds one more twist.
+
+00:10:43.340 --> 00:10:44.780
+There is no contract floor.
+
+00:10:46.140 --> 00:10:49.280
+Spend rises with tokens, and it can fall just as fast.
+
+00:10:51.000 --> 00:10:55.040
+Here is what the filing establishes, as Anthropic reports it.
+
+00:10:55.040 --> 00:11:00.080
+The S1 also gives customer tiers as of September 30, 2026.
+
+00:11:00.740 --> 00:11:06.280
+More than 11,900 customers had at least $100,000 of trailing 12-month revenue.
+
+00:11:07.020 --> 00:11:10.500
+The stack reports that figure was 950 a year earlier.
+
+00:11:11.200 --> 00:11:17.320
+More than 1,900 customers passed $1 million, and about 250 passed $10 million.
+
+00:11:18.620 --> 00:11:20.760
+That matters for the skeptical reading.
+
+00:11:21.360 --> 00:11:24.100
+Expansion this large isn't coming from one or two accounts.
+
+00:11:24.740 --> 00:11:26.360
+Concentration has also eased.
+
+00:11:26.780 --> 00:11:30.420
+No single customer exceeded 10% of revenue in the first nine months.
+
+00:11:31.040 --> 00:11:36.520
+TechCrunch adds that more than half of $100,000 plus customers now use both the platform and
+
+00:11:36.520 --> 00:11:38.400
+first-party apps like Claude Code.
+
+00:11:38.980 --> 00:11:41.640
+That share was about 30% at the end of 2025.
+
+00:11:42.440 --> 00:11:43.180
+Now the limits.
+
+00:11:43.700 --> 00:11:45.940
+These are self-reported operating metrics.
+
+00:11:46.800 --> 00:11:50.800
+The filing says they have not been independently verified by third parties.
+
+00:11:51.520 --> 00:11:54.460
+The S-1 does not give the number of customers in the base quarter.
+
+00:11:55.060 --> 00:11:57.160
+It does not disclose gross revenue retention,
+
+00:11:57.720 --> 00:12:00.700
+which shows how much revenue you keep before counting expansion.
+
+00:12:01.400 --> 00:12:04.560
+It does not disclose customer churn or median expansion.
+
+00:12:05.400 --> 00:12:08.300
+Anthropic attributes the number to, in the filing's words,
+
+00:12:08.860 --> 00:12:13.120
+significant usage expansion as customers realize the value of deploying
+
+00:12:13.120 --> 00:12:14.860
+CLAWD across their organizations.
+
+00:12:15.980 --> 00:12:18.620
+That's a claim about cause, and it isn't tested.
+
+00:12:19.240 --> 00:12:20.820
+Pricing complicates things, too.
+
+00:12:21.380 --> 00:12:27.700
+The batch reports Anthropics claim that Opus 5.5 cut cost per task by about 40% versus Opus 5.
+
+00:12:28.260 --> 00:12:31.300
+If that's right, usage grew even faster than spend.
+
+00:12:31.840 --> 00:12:36.580
+It also means spend depends on how many tasks customers run, which says little about lock-in.
+
+00:12:37.260 --> 00:12:38.880
+Finally, growth is slowing.
+
+00:12:39.520 --> 00:12:44.120
+Tizvi Moshowitz notes revenue grew 45% over three months in the third quarter.
+
+00:12:45.040 --> 00:12:47.760
+That is very fast, but slower than before.
+
+00:12:49.500 --> 00:12:51.980
+The same facts support different readings.
+
+00:12:52.680 --> 00:12:56.640
+The AGI forward reading says the spend is real labor moving onto software.
+
+00:12:57.360 --> 00:12:58.540
+The tiers back that up.
+
+00:12:58.940 --> 00:13:03.660
+250 customers paying more than $10 million a year is not a pilot pattern.
+
+00:13:04.460 --> 00:13:09.040
+TechCrunch reports that the top 5% of enterprise users who deployed Claude Code
+
+00:13:09.040 --> 00:13:13.420
+spend about 20 times more per month than average enterprise users without it.
+
+00:13:14.160 --> 00:13:18.320
+If agents keep taking on whole workflows, expansion continues,
+
+00:13:18.620 --> 00:13:25.340
+just at lower ratios the a realist reading says 900 mostly measures a ramp that happens once
+
+00:13:25.340 --> 00:13:31.340
+from tiny base quarter usage to production lek consulting warns that under usage pricing
+
+00:13:31.340 --> 00:13:35.180
+retention is often inflated in the early months of a new customer ramp
+
+00:13:35.740 --> 00:13:41.580
+consumption with no contract floor can shrink in a budget cycle it can also move to cheaper models
+
+00:13:41.580 --> 00:13:48.900
+the batch reports kimmy k 3.1 pro at 2 dollars per million input tokens with near frontier
+
+00:13:48.900 --> 00:13:55.060
+agentic scores the market reading falls between the two investors will price the trend not the
+
+00:13:55.060 --> 00:14:01.160
+level the number has to come down as the base grows one more angle on distribution hacker
+
+00:14:01.160 --> 00:14:08.100
+notes that nearly half of revenue flows through iws google cloud and azure all three also sell
+
+00:14:08.100 --> 00:14:15.420
+competing models. Our read is that the 900% reflects real demand, but it's the wrong tool
+
+00:14:15.420 --> 00:14:20.340
+for judging how durable that demand is. The filing shows broad adoption across thousands
+
+00:14:20.340 --> 00:14:25.480
+of six-figure customers. It doesn't show how much of that spend is committed, how much is volatile,
+
+00:14:25.900 --> 00:14:31.140
+or how much revenue is kept before expansion. We'd change that view if Anthropic disclosed
+
+00:14:31.140 --> 00:14:36.920
+gross retention and committed spend, and both held up. For builders and investors at Seed in
+
+00:14:36.920 --> 00:14:43.400
+series A, the lesson travels. Startups reselling or building on usage-priced inference will show
+
+00:14:43.400 --> 00:14:50.080
+the same pattern. Small pilots, big production ramps, very large retention numbers. Some of it
+
+00:14:50.080 --> 00:14:55.680
+is lasting. Some is one customer's agent that hasn't hit its first budget review. We'd want to
+
+00:14:55.680 --> 00:15:01.500
+see the cohort table rather than one blended figure. We'd also want gross retention, customer
+
+00:15:01.500 --> 00:15:07.580
+account retention, and the share of expansion from the top three accounts. One question worth
+
+00:15:07.580 --> 00:15:13.180
+exploring might be, if your three fastest growing accounts went back to their spend from six months
+
+00:15:13.180 --> 00:15:19.400
+ago, what would retention be? A related one. How much of current usage is under a committed contract,
+
+00:15:19.900 --> 00:15:27.180
+and how much could be switched off next month? Three things would settle this. First, the trend
+
+00:15:27.180 --> 00:15:32.700
+in Anthropix quarterly reports as a public company, the level will fall. How fast it falls
+
+00:15:32.700 --> 00:15:37.720
+and where it levels off will tell us whether expansion is broad or front-loaded. Second,
+
+00:15:38.100 --> 00:15:43.700
+whether Anthropix starts disclosing gross revenue retention, customer churn, or committed spend.
+
+00:15:44.460 --> 00:15:49.100
+Lasting usage businesses tend to disclose them eventually because the numbers help them.
+
+00:15:50.300 --> 00:15:55.540
+Third, what happens to spend per customer when cheaper open-weight models reach near-frontier
+
+00:15:55.540 --> 00:16:01.640
+agentic scores. If Moonshot releases the Kimi K 3.1 Pro weights as expected,
+
+00:16:02.180 --> 00:16:05.960
+we may see within a few quarters whether customers optimize spend away.
+
+00:16:07.800 --> 00:16:13.620
+That's the deep dive and today's AI briefing. Every source is linked in the show notes,
+
+00:16:13.620 --> 00:16:16.820
+and the AI briefing webpage has the written edition,
+
+00:16:17.300 --> 00:16:22.020
+this deep dive and every past episode. The daily briefing is back tomorrow.
+
+00:16:25.540 --> 00:16:55.520
+Thank you.

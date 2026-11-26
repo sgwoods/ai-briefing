@@ -1,0 +1,805 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:09.060
+On today's AI briefing, we think the midterms reprice data center financing more than the
+
+00:00:09.060 --> 00:00:18.300
+technology. HUT8's 23% drop came before any law passed. This is the AI briefing for Thursday,
+
+00:00:18.720 --> 00:00:24.560
+November 5. I'm Michael. Like everything here, this briefing is written and read by AI from
+
+00:00:24.560 --> 00:00:31.200
+public sources. Today, AI's physical footprint runs into politics, and a few companies put numbers
+
+00:00:31.200 --> 00:00:37.640
+on what AI is worth. The midterms went heavily to Democrats. Texas's governor-elect has pledged
+
+00:00:37.640 --> 00:00:45.100
+a data center moratorium touching 25% of the capacity plan in the U.S. by 2030. Data center
+
+00:00:45.100 --> 00:00:52.760
+stocks fell before any law passed. In Toronto, customer service AI company Ada is merging with
+
+00:00:52.760 --> 00:01:00.200
+dial pad at a reported 600 million dollars well below its 2021 round harvey says its legal
+
+00:01:00.200 --> 00:01:07.000
+customers cut outside council use by 20 to 50 percent and anthropic says claude directed the
+
+00:01:07.000 --> 00:01:13.720
+work behind the first 3d structure of a prokaryotic vault particle we'll take the main stories first
+
+00:01:13.720 --> 00:01:22.040
+then some quick hits first steven's take on the day we are seeing increasing demand issues with
+
+00:01:22.040 --> 00:01:27.440
+startups especially Ili if they break out executing on product market fit
+
+00:01:27.440 --> 00:01:33.920
+might be untenable unless a plan to avoid supply bottlenecks exist
+
+00:01:33.920 --> 00:01:39.560
+and Stevens take on the top of the day seeing a to take a massive haircut exit
+
+00:01:39.560 --> 00:01:47.240
+is sobering first story is the midterms and what they mean for the data centers
+
+00:01:47.240 --> 00:01:53.880
+AI runs on. Transformer reports that Democrats may secure 56 Senate seats. In the House,
+
+00:01:54.260 --> 00:02:00.760
+they could reach as many as 261. The sharpest point is in Texas. As Struttekuri notes,
+
+00:02:01.180 --> 00:02:07.300
+Texas is electing its first Democratic governor since 1990. That governor has pledged a data
+
+00:02:07.300 --> 00:02:13.700
+center moratorium. It would affect 25% of the capacity planned in the U.S. by 2030.
+
+00:02:13.700 --> 00:02:20.320
+Opposition to data centers also crossed party lines, and markets moved fast.
+
+00:02:20.960 --> 00:02:23.860
+HUT 8 dropped 23% after the election.
+
+00:02:24.580 --> 00:02:28.760
+Some tech firms are now reportedly exploring data centers in space.
+
+00:02:29.400 --> 00:02:34.660
+Others expect the backlash to end in better deals for local communities rather than a halt.
+
+00:02:35.460 --> 00:02:37.320
+How well does this hold up?
+
+00:02:37.660 --> 00:02:38.320
+It's mixed.
+
+00:02:38.320 --> 00:02:41.120
+The opposition is real and confirmed.
+
+00:02:41.120 --> 00:02:47.840
+A Goldman Sachs warning that 45% of planned capacity could be affected is unverified.
+
+00:02:48.520 --> 00:02:52.580
+Talk of a frontier bill by early 2027 is still speculation.
+
+00:02:53.160 --> 00:02:58.800
+And there's no evidence yet on how much politics will change the timing or scale of build-out.
+
+00:02:59.400 --> 00:03:04.460
+Our read is that the midterms reprice data center financing more than the technology.
+
+00:03:05.140 --> 00:03:07.100
+HUT 8 fell before any law passed.
+
+00:03:07.100 --> 00:03:12.880
+After the pollution suits, local politics looks like a standing cost line in every build-out.
+
+00:03:13.380 --> 00:03:15.340
+Still, a pledge isn't a law.
+
+00:03:15.940 --> 00:03:21.360
+The deciding question is whether Texas legislates a moratorium covering projects already planned
+
+00:03:21.360 --> 00:03:24.000
+or settles for community benefit terms.
+
+00:03:24.540 --> 00:03:27.900
+We lean toward delay and higher cost, not a halt.
+
+00:03:28.740 --> 00:03:35.620
+For early-stage companies, the exposure sits with inference-heavy seed startups on one cloud in one region.
+
+00:03:35.620 --> 00:03:40.800
+If Texas capacity slips or reprices, they carry the most risk.
+
+00:03:42.920 --> 00:03:44.040
+Here's Stephen's take.
+
+00:03:44.520 --> 00:03:48.100
+I thought Elon killed the Lorax after his speech, but here we are.
+
+00:03:48.500 --> 00:03:50.680
+I hear the echo, I am the Lorax.
+
+00:03:51.060 --> 00:03:54.060
+I speak for the trees, for the trees have no tongues.
+
+00:03:57.060 --> 00:03:59.200
+From power and land to a deal.
+
+00:03:59.740 --> 00:04:01.540
+The second story comes from Toronto,
+
+00:04:01.540 --> 00:04:05.540
+where BetaKit reported yesterday that ADA is merging with Dialpad.
+
+00:04:06.260 --> 00:04:10.000
+ADA builds AI agents that resolve customer service inquiries.
+
+00:04:10.540 --> 00:04:13.980
+They plug into help desk platforms such as Zendesk and Salesforce.
+
+00:04:14.840 --> 00:04:20.000
+Dialpad, based in California, sells AI-powered business communications software.
+
+00:04:20.700 --> 00:04:21.900
+ADA confirmed the merger.
+
+00:04:22.580 --> 00:04:26.820
+Dialpad's CEO, Craig Walker, will lead the combined company.
+
+00:04:26.820 --> 00:04:33.640
+The deal is described as all share, and it reportedly values ADA at $600 million.
+
+00:04:34.320 --> 00:04:37.200
+The terms themselves were not disclosed.
+
+00:04:37.880 --> 00:04:42.040
+The merger itself is solid because ADA confirmed it.
+
+00:04:42.040 --> 00:04:44.480
+The valuation is a different matter.
+
+00:04:45.120 --> 00:04:51.700
+The $600 million CAD figure is second-hand, and the language about new leadership is marketing.
+
+00:04:52.660 --> 00:04:54.100
+Here's how we see it.
+
+00:04:54.100 --> 00:04:57.620
+This looks like the platform absorbing the AI point product.
+
+00:04:58.160 --> 00:05:01.880
+The tell is that Dialpad's CEO runs the combined company.
+
+00:05:02.520 --> 00:05:06.620
+ADA's 2021 round was at $1.2 billion USD.
+
+00:05:07.220 --> 00:05:12.940
+If the reported $600 million CAD holds, about two-thirds of that value is gone.
+
+00:05:13.580 --> 00:05:15.400
+Common holders may fare worse.
+
+00:05:16.000 --> 00:05:21.240
+That comes down to liquidation preferences, the terms that pay investors back first.
+
+00:05:21.240 --> 00:05:29.860
+For early-stage investors, this becomes a comparison point for 2021 vintage AI customer support vendors.
+
+00:05:30.660 --> 00:05:37.940
+With those companies, a question worth asking might be who actually gets paid at today's prices and in what order.
+
+00:05:40.920 --> 00:05:46.600
+Staying with what AI is actually worth to a buyer, the third story is about legal AI.
+
+00:05:47.200 --> 00:05:49.500
+Harvey published customer results yesterday.
+
+00:05:49.500 --> 00:05:55.200
+Bitfury, it says, reduced its reliance on outside counsel by over 50%.
+
+00:05:55.200 --> 00:05:58.520
+That saved 10-plus hours per lawyer each week.
+
+00:05:59.060 --> 00:06:04.500
+ICL Group cut reliance by 20% and says efficiency rose 30-40%.
+
+00:06:05.320 --> 00:06:09.280
+SUSE used adoption metrics to improve its workflows.
+
+00:06:10.700 --> 00:06:12.200
+Keep in mind who is talking.
+
+00:06:12.840 --> 00:06:18.100
+Harvey is a legal AI company describing its own product, and it wants adoption.
+
+00:06:18.100 --> 00:06:25.700
+On the evidence, the claim is overstated. These are Harvey's own case studies. They rest on
+
+00:06:25.700 --> 00:06:30.740
+customer estimates of metrics that aren't defined. There are three chosen customers,
+
+00:06:31.180 --> 00:06:37.940
+no baseline and no spend data. We would discount these numbers until a customer shows outside
+
+00:06:37.940 --> 00:06:43.920
+counsel invoices from before and after. Three hand-picked accounts estimating their own reliance
+
+00:06:43.920 --> 00:06:45.920
+is closer to a survey than a measurement.
+
+00:06:46.700 --> 00:06:51.660
+Still, Harvey is pointing at the right line on the P and L outside counsel spend
+
+00:06:51.660 --> 00:06:56.840
+is what in-house teams actually pay for, and whoever audits it may win procurement.
+
+00:06:57.560 --> 00:07:03.560
+For startups selling legal AI to in-house teams, that could become the yardstick they're judged on.
+
+00:07:04.260 --> 00:07:10.460
+The ones with invoice data, rather than customer estimates, could close pilots faster.
+
+00:07:10.460 --> 00:07:15.280
+A fair question for any of them is simply whether they can show the invoices.
+
+00:07:17.280 --> 00:07:18.800
+Here's Stephen's take.
+
+00:07:19.320 --> 00:07:26.120
+A lesson here for contract-heavy organizations that pay too much for obviously regrettable advice from consultants.
+
+00:07:26.820 --> 00:07:27.640
+Call Spellbook.
+
+00:07:28.140 --> 00:07:32.820
+Internal experts should be supercharged and invest the saved expense in growth.
+
+00:07:35.580 --> 00:07:40.040
+The fourth and last of the main stories moves from the law office to the lab.
+
+00:07:40.040 --> 00:07:48.560
+In a research note yesterday, Anthropic said its biology research team used Claude to determine the first 3D structure of a vault particle.
+
+00:07:49.200 --> 00:07:51.660
+These particles are found in prokaryotic cells.
+
+00:07:52.300 --> 00:07:57.660
+Anthropic says a vault purification that conventionally takes three days took about 90 minutes.
+
+00:07:58.280 --> 00:08:01.920
+A first structural model was ready 34 hours later.
+
+00:08:02.560 --> 00:08:05.480
+Anthropic estimates that would normally have taken weeks.
+
+00:08:06.240 --> 00:08:09.860
+A post by Chandrakumar R. Pillai citing the note,
+
+00:08:10.040 --> 00:08:13.600
+asks how each contribution can be checked and reproduced.
+
+00:08:14.280 --> 00:08:17.200
+The core finding holds, with caveats.
+
+00:08:17.840 --> 00:08:21.520
+The speed claims rely on Anthropik's internal baselines,
+
+00:08:21.920 --> 00:08:26.440
+and the structure has no peer review or independent verification yet.
+
+00:08:27.660 --> 00:08:30.820
+We think this is the stronger kind of AI for science claim
+
+00:08:30.820 --> 00:08:33.960
+because a 3D structure is something others can check.
+
+00:08:34.340 --> 00:08:37.080
+We expect it to hold up once the data are released.
+
+00:08:37.640 --> 00:08:39.220
+The speed-ups are another matter.
+
+00:08:39.220 --> 00:08:46.000
+Three days down to 90 minutes and weeks down to 34 hours both rest on internal baselines.
+
+00:08:46.620 --> 00:08:47.440
+We discount them.
+
+00:08:47.980 --> 00:08:54.240
+If this kind of AI-directed structure work repeats, the bottleneck for structural biology startup shifts.
+
+00:08:55.220 --> 00:09:00.360
+It moves away from modeling time, toward wet lab throughput and sample preparation.
+
+00:09:01.220 --> 00:09:05.040
+The AGI-forward reading of the same facts goes further.
+
+00:09:05.040 --> 00:09:11.520
+On that view, a model directing a first-of-its-kind structure is the experiment flywheel starting.
+
+00:09:12.220 --> 00:09:16.240
+So is compressing weeks of model generation into 34 hours.
+
+00:09:16.940 --> 00:09:22.300
+Waiting for peer review, that reading argues, undercounts how fast the method spreads.
+
+00:09:24.000 --> 00:09:27.780
+Here's Stephen's take, Science Staggers Forward Probably.
+
+00:09:30.620 --> 00:09:34.680
+Now two quick ones, both about AI agents and security.
+
+00:09:35.040 --> 00:09:37.620
+First, a story now on its fourth day.
+
+00:09:38.240 --> 00:09:43.840
+Ammo Day has called for slowing LLM development, backed by Altman, Hassabis, and Musk.
+
+00:09:44.360 --> 00:09:49.320
+He and OpenAI's Pachucky site July's hugging face hack by OpenAI agents.
+
+00:09:49.860 --> 00:09:53.580
+One column blames faulty training, not an overpowered model.
+
+00:09:53.580 --> 00:09:56.980
+That diagnosis shapes what a slowdown would fix.
+
+00:09:58.280 --> 00:10:03.440
+Second, Latent Space reports an OpenAI pipeline on an unreleased model found
+
+00:10:03.440 --> 00:10:07.300
+and patched 948 Linux kernel vulnerabilities.
+
+00:10:08.240 --> 00:10:11.220
+The API cost was $1.2 million.
+
+00:10:12.180 --> 00:10:17.040
+No maintainer confirmation is reported, and that's what would make it a result.
+
+00:10:18.620 --> 00:10:22.240
+If you're in diligence this week, a question worth asking.
+
+00:10:22.240 --> 00:10:26.200
+If plan Texas capacity slips a year or costs more,
+
+00:10:26.640 --> 00:10:29.960
+what is the company's fallback provider, model, or region?
+
+00:10:30.480 --> 00:10:32.700
+And what does switching do to gross margin?
+
+00:10:32.700 --> 00:10:39.540
+The one to watch is whether Texas turns the moratorium pledge into law covering projects already permitted.
+
+00:10:40.360 --> 00:10:44.640
+Legislative filings and any carve-out for permitted sites will settle it.
+
+00:10:46.300 --> 00:10:48.880
+That's the briefing. Stay with me.
+
+00:10:49.340 --> 00:10:54.560
+Right after this, Bella takes you through today's deep dive on equity, bonds, cash flow.
+
+00:10:54.980 --> 00:10:57.060
+Is AI Capital Hitting a Ceiling?
+
+00:10:57.060 --> 00:11:05.440
+You can also read it or listen to it on its own on the AI Briefing webpage, where you'll find the written edition in every past episode.
+
+00:11:05.880 --> 00:11:07.640
+The link is in the show notes.
+
+00:11:15.220 --> 00:11:16.240
+Thanks, Michael.
+
+00:11:16.780 --> 00:11:20.340
+This is the AI Briefing Deep Dive for Thursday, November 5.
+
+00:11:20.780 --> 00:11:22.580
+Equity, bonds, cash flow.
+
+00:11:23.000 --> 00:11:24.880
+Is AI capital hitting a ceiling?
+
+00:11:25.400 --> 00:11:25.840
+I'm Bella.
+
+00:11:25.840 --> 00:11:30.440
+Like the briefing, it is written and read by AI from public sources
+
+00:11:30.440 --> 00:11:38.840
+The Wall Street Journal reported that OpenAI had about $11 billion in commitments for a round
+
+00:11:38.840 --> 00:11:41.240
+That began with a $30 billion target
+
+00:11:41.240 --> 00:11:45.460
+The Financial Times reported that OpenAI now seeks about $20 billion
+
+00:11:45.460 --> 00:11:53.320
+The valuation also moved to $1.25 trillion from the $1.4 trillion it first aimed for
+
+00:11:53.320 --> 00:11:59.800
+next the journal reported that core weave nebius and nscale have effectively been shut out of the
+
+00:11:59.800 --> 00:12:07.340
+bond market in recent weeks then came cash flow alphabet amazon and meta all reported negative
+
+00:12:07.340 --> 00:12:13.860
+free cash flow s&p global market intelligence counted 326 billion dollars of debt raised in
+
+00:12:13.860 --> 00:12:21.340
+2026 by microsoft alphabet amazon meta and oracle combined triple last year's total any one of these
+
+00:12:21.340 --> 00:12:26.300
+could be its own story. Today's question is whether they are one story, a single tightening
+
+00:12:26.300 --> 00:12:31.620
+that runs from private rounds through risky debt to the strongest balance sheets in business.
+
+00:12:32.500 --> 00:12:34.660
+And if so, which link breaks first?
+
+00:12:36.480 --> 00:12:41.700
+Start with the plumbing. There are three pipes of money. The first is equity. Investors buy
+
+00:12:41.700 --> 00:12:47.340
+shares in frontier labs like OpenAI and Anthropic. The labs spend that money, along with their
+
+00:12:47.340 --> 00:12:53.700
+revenue on compute. The second pipe is debt. Neoclouds, the specialist GPU landlords such as
+
+00:12:53.700 --> 00:12:59.720
+CoreWeave, buy large numbers of NVIDIA GPS, and CoreWeave's model has relied on borrowing heavily
+
+00:12:59.720 --> 00:13:04.960
+against long contracts, according to Memoburn. They then rent that capacity to the labs.
+
+00:13:05.840 --> 00:13:12.340
+Their loans are secured against the labs' rental contracts. The third pipe is cash flow. Until last
+
+00:13:12.340 --> 00:13:17.620
+quarter, hyperscalers like Alphabet, Amazon, and Meta had covered their data center spending out
+
+00:13:17.620 --> 00:13:23.180
+of the free cash flow their businesses generated. That pipe is now short too, so they have added
+
+00:13:23.180 --> 00:13:29.040
+bonds and new shares. The pipes are connected. The lab's contract is the Neocloud's collateral.
+
+00:13:29.680 --> 00:13:35.280
+The Neocloud's order book is the chipmaker's revenue. And the hyperscalers are suppliers,
+
+00:13:35.820 --> 00:13:40.920
+investors, and competitors all at once. Here is a worked example from TechCrunch's reporting.
+
+00:13:41.640 --> 00:13:43.980
+N-Scale is building a campus in West Virginia.
+
+00:13:44.740 --> 00:13:49.020
+Anthropic signed a $44.6 billion contract for the first building,
+
+00:13:49.440 --> 00:13:51.800
+according to N-Scale's IPO filing,
+
+00:13:52.300 --> 00:13:57.740
+and TechCrunch reports the two companies are in talks for another compute deal of about $45 billion.
+
+00:13:59.020 --> 00:14:04.400
+The first building at N-Scale's West Virginia campus is planned at 460 megawatts
+
+00:14:04.400 --> 00:14:08.360
+and is expected to use NVIDIA's next-generation Vera Rubin chips.
+
+00:14:09.060 --> 00:14:12.480
+NVIDIA is now negotiating what's called a residual value guarantee.
+
+00:14:13.320 --> 00:14:16.780
+In plain terms, if Nscale defaults on construction payments,
+
+00:14:17.240 --> 00:14:20.160
+NVIDIA steps in, runs the facility for a while,
+
+00:14:20.160 --> 00:14:22.400
+and helps find a new owner and tenant.
+
+00:14:23.000 --> 00:14:24.140
+Think of a housing development.
+
+00:14:24.800 --> 00:14:26.640
+The buyer has a mortgage pre-approval.
+
+00:14:27.500 --> 00:14:31.180
+On the strength of that buyer, the builder takes out a construction loan.
+
+00:14:31.720 --> 00:14:33.520
+Then the buyer's financing wobbles,
+
+00:14:33.820 --> 00:14:35.960
+and the builder's bank asks for more protection.
+
+00:14:36.680 --> 00:14:39.500
+So the lumber yard offers to guarantee the builder's loan
+
+00:14:39.500 --> 00:14:41.460
+because it wants to keep selling lumber.
+
+00:14:42.060 --> 00:14:43.360
+That is vendor financing.
+
+00:14:44.020 --> 00:14:46.060
+It isn't fraud, and it can be sensible.
+
+00:14:46.700 --> 00:14:48.720
+But the risk now sits with the supplier,
+
+00:14:49.100 --> 00:14:52.760
+and it tells you the bank wanted a stronger name on the paper than the builder's.
+
+00:14:54.460 --> 00:14:56.560
+Some of this is firmly established.
+
+00:14:57.140 --> 00:15:00.700
+Company filings and the ratings agency are the strongest sources here.
+
+00:15:01.440 --> 00:15:05.680
+CNBC reported that S&P Global Ratings revised Meta's outlook
+
+00:15:05.680 --> 00:15:10.340
+from stable to negative, citing high capex and negative free cash flow.
+
+00:15:11.060 --> 00:15:16.060
+Meta's third quarter free cash flow turned negative at minus $2.12 billion.
+
+00:15:17.360 --> 00:15:23.680
+In S and P's words, it is unclear when these revenue streams will generate material contributions
+
+00:15:23.680 --> 00:15:26.960
+that exceed their rising costs over the next few years.
+
+00:15:27.740 --> 00:15:30.360
+Meta told CNBC it respectfully disagrees.
+
+00:15:31.040 --> 00:15:35.140
+Fortune reported Alphabet at negative $9.1 billion for the quarter.
+
+00:15:35.140 --> 00:15:37.540
+its second negative quarter in a row.
+
+00:15:38.300 --> 00:15:44.000
+TechCrunch reported Amazon at negative $42.4 billion over the past 12 months.
+
+00:15:45.300 --> 00:15:50.820
+Microsoft is the counter case, at positive $18.6 billion for its latest quarter.
+
+00:15:51.560 --> 00:15:53.680
+Bond prices back up the neocloud squeeze.
+
+00:15:54.380 --> 00:15:57.340
+TechMeme, summarizing a Wall Street Journal report,
+
+00:15:57.800 --> 00:16:04.740
+said CoreWeave bonds issued earlier this year at a 9.75% rate now trade at a 15% yield.
+
+00:16:05.140 --> 00:16:10.100
+The bond market is effectively saying Corweave's risk now looks like distressed debt.
+
+00:16:11.380 --> 00:16:15.040
+PIMCO's chief investment officer, Dan Iveson, put it this way,
+
+00:16:15.460 --> 00:16:17.200
+the weak links are going to suffer first.
+
+00:16:17.780 --> 00:16:19.580
+Now for what is claimed but not shown.
+
+00:16:20.040 --> 00:16:24.000
+The OpenAI figures come from anonymous sources, and the round is still open.
+
+00:16:24.540 --> 00:16:28.500
+The Wall Street Journal reports OpenAI expects to raise more in the coming weeks,
+
+00:16:28.500 --> 00:16:31.380
+so $11 billion is not a final number.
+
+00:16:31.920 --> 00:16:33.980
+The NVIDIA guarantee is only in talks.
+
+00:16:33.980 --> 00:16:37.200
+The information reported it first and Blumerg followed.
+
+00:16:37.640 --> 00:16:39.720
+The anthropic figures need the same care.
+
+00:16:40.560 --> 00:16:45.640
+We have not yet seen how that loss splits between cash spent on compute and non-cash items,
+
+00:16:45.880 --> 00:16:47.780
+and that split matters a great deal.
+
+00:16:48.380 --> 00:16:53.220
+The expected junk rating is a forecast from Blackstone, reported by the Financial Times.
+
+00:16:53.840 --> 00:16:55.340
+No agency has issued it.
+
+00:16:55.820 --> 00:17:00.020
+One more thing, being shut out of public bonds does not mean being shut out of credit.
+
+00:17:00.780 --> 00:17:06.140
+Private, contract-backed lending can still happen, on tougher terms we mostly can't see.
+
+00:17:08.000 --> 00:17:10.620
+Same facts support several honest readings.
+
+00:17:11.220 --> 00:17:14.700
+The AGI forward reading says demand is real and growing fast.
+
+00:17:15.320 --> 00:17:21.780
+Google Cloud revenue more than doubled to $30.7 billion at a 36.2% operating margin.
+
+00:17:22.540 --> 00:17:26.020
+Anthropics reported revenue grew more than 14 times year over year.
+
+00:17:26.600 --> 00:17:29.560
+On this view, tighter terms are healthy price discovery.
+
+00:17:30.020 --> 00:17:35.680
+Capital is rotating toward winners rather than leaving, and a lower open AI valuation reflects
+
+00:17:35.680 --> 00:17:41.700
+competition, not a ceiling. The A.A. Realist reading says spending is far ahead of revenue.
+
+00:17:42.380 --> 00:17:47.480
+Amazon burned through a full year's cash. When a chip vendor guarantees its customers' construction
+
+00:17:47.480 --> 00:17:53.080
+loan, that is a classic late-cycle sign. Lenders are saying so in the only language that counts,
+
+00:17:53.420 --> 00:17:59.020
+which is price. The market reading falls between the two. Fortune reported that Alphabet has also
+
+00:17:59.020 --> 00:18:06.620
+raised $84.8 billion in equity. Meta announced it is trying to raise $95 billion by issuing new
+
+00:18:06.620 --> 00:18:13.460
+non-voting shares. Selling shares to fund CapEx means existing owners get diluted. That is a
+
+00:18:13.460 --> 00:18:19.360
+repricing of risk, not a stop. And Bisno reported that yields on hyperscaler bonds have started
+
+00:18:19.360 --> 00:18:25.180
+drifting away from the investment-grade indexes they usually track. There is a policy angle as
+
+00:18:25.180 --> 00:18:31.040
+well. Transformer reported that democratic campaign messaging in almost half of key battleground
+
+00:18:31.040 --> 00:18:38.660
+races mentions AI and data centers. Tax breaks and electricity bills could become a constraint
+
+00:18:38.660 --> 00:18:45.940
+that no capital market controls. Our read is that this is one tightening, carried by contracts,
+
+00:18:46.060 --> 00:18:52.660
+but felt unevenly. The links are real. Lab equity backs the contracts, the contracts back Neocloud
+
+00:18:52.660 --> 00:18:58.100
+debt, and the vendor backs the debt. Even so, the three layers have very different shock absorbers.
+
+00:18:58.740 --> 00:19:04.760
+Microsoft's $18.6 billion of positive free cash flow shows that, for a hyperscaler,
+
+00:19:04.920 --> 00:19:11.040
+spending this hard is a choice. They can slow down. The neoclouds have the least cash of their
+
+00:19:11.040 --> 00:19:16.180
+own and the most borrowing, so the middle looks like the first link to strain. We would change
+
+00:19:16.180 --> 00:19:22.280
+our minds if CoreWeave or Nebius priced a public bond at a sensible yield, or if lab revenue began
+
+00:19:22.280 --> 00:19:28.580
+covering compute without new rounds. For a seed or Series A company, compute supply now carries
+
+00:19:28.580 --> 00:19:33.580
+counterparty risk, meaning the risk that the company on the other side of your contract fails.
+
+00:19:34.460 --> 00:19:39.580
+If your inference runs on a neocloud whose financing breaks, capacity could disappear
+
+00:19:39.580 --> 00:19:45.060
+or prices could jump. The opposite could also happen. A glut could make GPS cheap.
+
+00:19:45.660 --> 00:19:51.060
+One question worth exploring in diligence might be this. If the main compute provider lost its
+
+00:19:51.060 --> 00:19:54.540
+financing next quarter, how many weeks would migration take?
+
+00:19:55.000 --> 00:19:58.160
+And what would gross margin look like at hyperscaler list prices?
+
+00:20:00.120 --> 00:20:01.960
+Three things would settle this.
+
+00:20:02.440 --> 00:20:07.800
+First, OpenAI's final close, whether family offices and wealthy individuals fill the gap
+
+00:20:07.800 --> 00:20:10.440
+toward $20 billion, and at what valuation.
+
+00:20:11.120 --> 00:20:12.220
+We should know within weeks.
+
+00:20:12.820 --> 00:20:17.660
+Second, whether CoreWeave, Nebius, or Nscale can price a public bond again, and at what
+
+00:20:17.660 --> 00:20:18.040
+yield.
+
+00:20:18.700 --> 00:20:22.800
+Watch for whether the NVIDIA guarantee for N-Scale is signed and on what terms.
+
+00:20:23.500 --> 00:20:26.140
+Third, the next earnings season early next year.
+
+00:20:27.400 --> 00:20:32.720
+Will Alphabet, Amazon, and Meta stay cash flow negative or trim their CapEx plans?
+
+00:20:33.420 --> 00:20:37.340
+Anthropics listing, expected next month, adds a fourth test.
+
+00:20:37.960 --> 00:20:43.240
+Its pricing and any formal credit rating will show what public markets will pay for a frontier lab.
+
+00:20:45.100 --> 00:20:46.540
+Here's Stephen's take.
+
+00:20:46.540 --> 00:20:56.160
+The market is punishing the big, longer-term, underexplained bets in everything from massive infrastructure build-out to enormous pre-purchased compute.
+
+00:20:56.860 --> 00:20:59.220
+The trend lines for demand on training.
+
+00:20:59.800 --> 00:21:05.720
+Inference somewhat are countered by new scaling laws driving down the cost of model improvements in pre-training.
+
+00:21:06.300 --> 00:21:10.480
+Very, very high-quality models at increasingly cheap prices for inference.
+
+00:21:11.120 --> 00:21:14.920
+optimization strategies, and good old CPU-bound solutions
+
+00:21:14.920 --> 00:21:17.480
+doing the production scaling versus inference,
+
+00:21:17.700 --> 00:21:19.600
+as it should be in many cases.
+
+00:21:20.920 --> 00:21:24.600
+New hardware innovations, learning strategies with agents
+
+00:21:24.600 --> 00:21:27.140
+and harnesses and structures of problem solving,
+
+00:21:27.620 --> 00:21:31.260
+are likely to make even smarter solutions even cheaper as well.
+
+00:21:32.960 --> 00:21:36.100
+That's the deep dive and today's AI briefing.
+
+00:21:36.840 --> 00:21:38.840
+Every source is linked in the show notes,
+
+00:21:38.840 --> 00:21:42.040
+and the AI Briefing webpage has the written edition,
+
+00:21:42.520 --> 00:21:44.880
+this deep dive and every past episode.
+
+00:21:45.480 --> 00:21:47.260
+The Daily Briefing is back tomorrow.
