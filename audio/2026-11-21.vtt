@@ -1,0 +1,907 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:11.440
+On today's AI briefing, we think a lean proof that compiles under an outside check is the most checkable form this claim could take.
+
+00:00:13.100 --> 00:00:16.860
+This is the AI briefing for Saturday, November 21.
+
+00:00:17.440 --> 00:00:18.000
+I'm Michael.
+
+00:00:18.540 --> 00:00:23.400
+Like everything here, this briefing is written and read by AI from public sources.
+
+00:00:24.140 --> 00:00:27.280
+Two proofs of the Riemann hypothesis surfaced in the same week.
+
+00:00:27.280 --> 00:00:35.380
+One was written with help from Anthropics clawed in the proof language lien, and an MIT mathematician has confirmed that it compiles.
+
+00:00:35.960 --> 00:00:42.280
+The other is a 940-page draft written entirely by a human, Alessandro Masalo.
+
+00:00:43.620 --> 00:00:52.300
+OpenAI says its coding agents now finish multi-hour tasks with no human help 46% of the time, up from 23% in March.
+
+00:00:52.980 --> 00:00:56.860
+Raymez Nam argues that the longer horizons still trail the forecasts.
+
+00:00:57.460 --> 00:01:03.040
+We also have an Ottawa Defense startup's $50 million uncrewed combat aircraft project
+
+00:01:03.040 --> 00:01:07.660
+and a thinking machine's model that reruns its own layers to reason harder.
+
+00:01:08.300 --> 00:01:11.500
+The main stories come first, then a few quick hits.
+
+00:01:14.460 --> 00:01:17.900
+First, mathematics and one of its oldest open problems.
+
+00:01:17.900 --> 00:01:24.240
+This weak tech crunch and latent space both covered two separate claims to have proved the Riemann hypothesis.
+
+00:01:25.060 --> 00:01:27.600
+The first comes from Levin Alperge at Anthropic.
+
+00:01:28.160 --> 00:01:34.980
+He says he produced a proof with help from Claude, written in Lean, the formal proof language, so that a machine can check it.
+
+00:01:35.540 --> 00:01:41.240
+The proof is enormous. 1.3 gigabytes, or about 250k pages.
+
+00:01:42.380 --> 00:01:47.000
+Andrew Sutherland at MIT has independently confirmed that it compiles.
+
+00:01:47.000 --> 00:01:54.000
+The second claim is entirely human. Stanford's Ravi Vackel announced a proof by Alessandro Masullo
+
+00:01:54.000 --> 00:02:00.820
+of the generalized Riemann hypothesis, a 940-page draft. Brian Conrad has reviewed it,
+
+00:02:01.060 --> 00:02:07.680
+but it is not yet verified as a proof of RH. So how solid is this? Compilation has been confirmed
+
+00:02:07.680 --> 00:02:15.240
+from outside Anthropic. Beyond that, neither proof has been verified. Lean accepting the code does
+
+00:02:15.240 --> 00:02:20.740
+not show that the theorem it states really is the Riemann hypothesis. And the Claude claim comes
+
+00:02:20.740 --> 00:02:25.920
+from Anthropic's own staff. Our view is that this is still the most checkable form such a claim
+
+00:02:25.920 --> 00:02:32.480
+could take. No referee has to read 250k pages. The work shrinks to auditing the formal statement
+
+00:02:32.480 --> 00:02:38.960
+and its axioms. We'd expect that to take weeks, not years. On balance, we lean toward the claim
+
+00:02:38.960 --> 00:02:45.840
+while that audit is pending. For early-stage investors, this is a reference case. Startups
+
+00:02:45.840 --> 00:02:52.240
+selling auditable AI reasoning, proof-checking or statement auditing, now have a very large
+
+00:02:52.240 --> 00:03:00.660
+example of why buyers might need them. The second story stays with AI doing hard work,
+
+00:03:00.920 --> 00:03:06.760
+this time in software. Earlier this week OpenAI published an internal analysis of its coding
+
+00:03:06.760 --> 00:03:13.240
+agents which chandra kumar r pili shared it tracks the zero intervention success rate meaning the
+
+00:03:13.240 --> 00:03:20.440
+agent finishes with no human stepping in the tasks are sized at two to four human hours in march that
+
+00:03:20.440 --> 00:03:28.680
+rate was 23 percent by october it was 46 percent open ai itself attributes part of the rise to
+
+00:03:28.680 --> 00:03:35.080
+changes in which tasks people chose to delegate raymez nam reads open ai's figures differently
+
+00:03:35.080 --> 00:03:42.780
+He points to the company's internal horizon at 80% success and says it is growing more slowly than forecasts based on meters work.
+
+00:03:43.420 --> 00:03:47.200
+Real-world task horizons, he argues, lag the predictions.
+
+00:03:47.860 --> 00:03:50.660
+On the evidence, these numbers are self-reported.
+
+00:03:50.660 --> 00:03:56.120
+The increase is OpenAI's own figure, and the shift in delegation may inflate it.
+
+00:03:57.380 --> 00:04:01.600
+Nam's case also relies on unverified lab data over a short window.
+
+00:04:01.600 --> 00:04:08.660
+Our take is that this is a lab's number about its own product, partly explained by users handing it different tasks.
+
+00:04:09.160 --> 00:04:13.560
+We want to see success on a fixed task set before pricing an agent business on it.
+
+00:04:14.040 --> 00:04:20.040
+For startups that charge per task, OpenAI's 23% to 46% doesn't transfer.
+
+00:04:20.740 --> 00:04:26.240
+What moves their margins is their own zero-intervention rate on tasks their customers chose.
+
+00:04:27.000 --> 00:04:29.620
+The AGI forward reading is different.
+
+00:04:29.620 --> 00:04:34.720
+A doubling in seven months on multi-hour tasks fits compounding capability.
+
+00:04:35.440 --> 00:04:40.760
+On that reading, change delegation may itself mean users trust agents with more,
+
+00:04:41.080 --> 00:04:42.880
+and that is the adoption signal.
+
+00:04:45.580 --> 00:04:49.160
+From software agents to autonomy of a different kind.
+
+00:04:49.700 --> 00:04:52.160
+The third story is a Canadian defense deal.
+
+00:04:52.800 --> 00:04:57.100
+Yesterday, BetaKit reported that Dominion Dynamics, an Ottawa-based startup,
+
+00:04:57.100 --> 00:05:01.760
+has secured a $50 million investment for an uncrewed combat aircraft.
+
+00:05:02.400 --> 00:05:08.040
+It is called Dominion Scout, and it is designed to fly alongside crewed Canadian fighter jets.
+
+00:05:08.720 --> 00:05:11.120
+The closest comparison is Andrell's Fury,
+
+00:05:11.620 --> 00:05:17.160
+but Scout is aimed at the Royal Canadian Air Force and built on a Canadian supply chain.
+
+00:05:17.900 --> 00:05:20.320
+The partner list is the notable part.
+
+00:05:20.900 --> 00:05:27.080
+Pratt & Whitney Canada, part of RTX, has signed on along with Telesat, Thales Canada, and Top Aces.
+
+00:05:27.100 --> 00:05:32.220
+The report itself holds up. It accurately describes a commitment the company announced.
+
+00:05:32.800 --> 00:05:38.300
+Two things are still aspirations, though, an Air Force purchase and a first flight in 2029.
+
+00:05:38.820 --> 00:05:44.120
+There is no contract yet. Where we land is that this may help Canadian startups in autonomy,
+
+00:05:44.580 --> 00:05:47.560
+sensing, and satellite links as much as it helps Dominion.
+
+00:05:48.420 --> 00:05:52.840
+A domestic partner list this strong creates a path to a defense buyer.
+
+00:05:53.080 --> 00:05:56.540
+Without an Air Force contract, though, it is still a bet.
+
+00:05:57.100 --> 00:06:05.200
+For seed stage companies in autonomy, sensing and secure communications, the opportunity is a domestic integrator to sell into.
+
+00:06:05.900 --> 00:06:10.180
+The catch is that their revenue would depend on a contract that has not been signed.
+
+00:06:10.720 --> 00:06:16.880
+A fair question for any of them pitching on this program might be how much of the plan rests on that contract.
+
+00:06:19.740 --> 00:06:23.640
+The fourth and last of the main stories goes back to model design.
+
+00:06:23.640 --> 00:06:29.180
+Today thinking machines released an open-weight research model, a mixture of experts.
+
+00:06:29.840 --> 00:06:35.680
+The twist is that the middle 12 of 24 layers can loop at inference, running 1 to 5 times.
+
+00:06:36.300 --> 00:06:38.260
+Each extra pass adds compute.
+
+00:06:38.960 --> 00:06:46.060
+Active parameters rise from 3.4 billion with one pass to 7.4 billion at five passes.
+
+00:06:46.900 --> 00:06:52.180
+The headline claim is that the score on SWE Bench Verified, the coding benchmark,
+
+00:06:52.180 --> 00:07:01.380
+rises from 56.3% to 79.6%. How well does that hold? The picture is mixed. The release documents
+
+00:07:01.380 --> 00:07:07.900
+the looping design. The SWE Bench Jump, however, is not in the model card we fetched. For now,
+
+00:07:08.140 --> 00:07:14.080
+the headline result is a claim we could not check. What we can confirm is a 24-layer model
+
+00:07:14.080 --> 00:07:20.800
+trained to rerun its middle layers up to 5 times. We think adaptive depth like this is promising
+
+00:07:20.800 --> 00:07:27.280
+for self-hosted inference, but it is unproven here. The practical angle is cost. A startup
+
+00:07:27.280 --> 00:07:32.180
+self-hosting an open model could tune its spend on each query by choosing the loop count.
+
+00:07:32.620 --> 00:07:40.780
+That only works if quality holds, and the extra depth is not free. Going from 3.4 billion to 7.4
+
+00:07:40.780 --> 00:07:47.780
+billion active parameters roughly doubles compute per token. Before building a cost model on this,
+
+00:07:47.780 --> 00:07:52.000
+We'd want to see an independent benchmark run at each loop count.
+
+00:07:54.680 --> 00:07:56.080
+Two quick hits.
+
+00:07:56.660 --> 00:08:00.700
+First, Anthropic priced its IPO according to Last Week in AI.
+
+00:08:01.300 --> 00:08:09.860
+It sold 980 million shares at $83, raising $81.3 billion and up to $93.5 billion.
+
+00:08:10.520 --> 00:08:17.000
+The stock closed at $97.17, a $1.27 trillion valuation.
+
+00:08:17.000 --> 00:08:20.980
+It matters because the close came in well above the offer price.
+
+00:08:21.660 --> 00:08:27.260
+Second, MIT Tech Review looks at legal accountability when AI agents go rogue.
+
+00:08:28.200 --> 00:08:33.760
+In its account, recent hacks have shown the law is lagging on holding companies accountable.
+
+00:08:34.500 --> 00:08:39.080
+It matters because who answers for a rogue agent is still unsettled.
+
+00:08:40.580 --> 00:08:44.580
+To close, a question worth asking in diligence this week.
+
+00:08:44.580 --> 00:08:51.540
+What is your agent's zero-intervention success rate on tasks customers chose, not tasks you picked?
+
+00:08:52.080 --> 00:09:01.420
+And one to watch is whether an independent audit confirms that Alperge's lean statement really is the Riemann hypothesis, with no extra axioms.
+
+00:09:02.060 --> 00:09:06.360
+A published audit by lean experts outside Anthropic would settle it.
+
+00:09:07.980 --> 00:09:10.660
+That's the briefing. Stay with me.
+
+00:09:10.660 --> 00:09:17.200
+Right after this, Bella takes you through today's deep dive on his AI mode eating Google search money.
+
+00:09:17.860 --> 00:09:25.640
+You can also read it or listen to it on its own on the AI Briefing webpage, where you'll find the written edition in every past episode.
+
+00:09:26.200 --> 00:09:27.800
+The link is in the show notes.
+
+00:09:35.340 --> 00:09:36.380
+Thanks, Michael.
+
+00:09:36.380 --> 00:09:41.020
+This is the AI briefing weekly deep dive for Saturday, November 21.
+
+00:09:41.620 --> 00:09:43.920
+Is AI mode eating Google's search money?
+
+00:09:44.460 --> 00:09:48.620
+I'm Bella, and with me is Michael, whose job this week is to push back.
+
+00:09:49.160 --> 00:09:53.420
+Like the briefing, it is written and read by AI from public sources.
+
+00:09:56.160 --> 00:10:00.000
+On October 28, Alphabet reported its third quarter.
+
+00:10:00.780 --> 00:10:07.140
+Google search revenue grew 12% to $63.25 billion by the register's count.
+
+00:10:07.780 --> 00:10:11.780
+A year earlier, search was growing at 14.5%.
+
+00:10:15.100 --> 00:10:22.940
+CNBC printed $63.35 billion for the same line, so even the headline number wobbles a little.
+
+00:10:23.600 --> 00:10:27.900
+And slower growth on a business that size isn't news on its own, Bella.
+
+00:10:27.900 --> 00:10:30.040
+What makes this quarter different?
+
+00:10:32.680 --> 00:10:34.660
+The reason Google gave.
+
+00:10:35.200 --> 00:10:44.280
+Chief Business Officer Philip Skeindler said the strong growth in AI mode queries had an impact because of the lower monetization we were seeing in AI mode.
+
+00:10:45.120 --> 00:10:48.080
+Google is saying its own AI search earns less.
+
+00:10:50.780 --> 00:10:53.280
+That is unusual. I'll grant it.
+
+00:10:53.280 --> 00:11:11.360
+In May 2025, Google's pitch-eye said search ads with AI overviews earn the same as ads without them. A point barry Schwartz reported Philip Skindler had also made on the April 2025 earnings call, so the story changed somewhere between those two products.
+
+00:11:11.360 --> 00:11:23.320
+On the same day, Google took ads in AI mode global for the first time and added multi-turn ads in the U.S. the cash picture was stark too.
+
+00:11:24.220 --> 00:11:31.860
+CapEx was $51.36 billion for the quarter, and free cash flow was negative $9.07 billion.
+
+00:11:31.860 --> 00:11:42.300
+Analysts had expected free cash flow of negative $2.70 billion per CNBC,
+
+00:11:42.300 --> 00:11:46.760
+but the Google parent came in at negative $9.07 billion.
+
+00:11:47.520 --> 00:11:52.400
+The full-year CapEx guide stayed at $195 to $205 billion.
+
+00:11:53.340 --> 00:11:58.980
+Annual CapEx is also expected to exceed $300 billion in 2027,
+
+00:11:58.980 --> 00:12:03.420
+and CNBC reported the stock fell about 10%.
+
+00:12:03.420 --> 00:12:08.560
+So here's the question for this episode.
+
+00:12:09.240 --> 00:12:13.340
+Can an AI answer be sold the way a page of 10 blue links is sold?
+
+00:12:13.920 --> 00:12:17.960
+If the biggest ad machine on the Internet earns less per query once it switches,
+
+00:12:18.540 --> 00:12:19.380
+two things follow.
+
+00:12:22.240 --> 00:12:26.900
+It decides whether incumbents can pay for this build-out out of their core business.
+
+00:12:26.900 --> 00:12:32.120
+and it decides how much ad money is left over for the startups building answer engines
+
+00:12:35.460 --> 00:12:40.660
+I'll hold you to the fact that this is one quarter one data point with a confession
+
+00:12:40.660 --> 00:12:47.660
+attached is interesting it isn't yet a trend start with how classic search makes money
+
+00:12:47.660 --> 00:12:53.720
+you type a query and Google shows a page advertisers pay to appear on that page and
+
+00:12:53.720 --> 00:12:55.740
+Google earns revenue when someone clicks.
+
+00:12:57.480 --> 00:13:00.780
+So revenue is roughly four dials multiplied together.
+
+00:13:01.380 --> 00:13:04.160
+The number of queries, the ads shown per query,
+
+00:13:04.560 --> 00:13:07.260
+the share of people who click, and the price of each click.
+
+00:13:08.900 --> 00:13:11.920
+And which of those dials does AI mode move?
+
+00:13:13.940 --> 00:13:15.140
+Potentially all four.
+
+00:13:15.140 --> 00:13:18.240
+Take a query like best running shoes for flat feet.
+
+00:13:18.900 --> 00:13:21.360
+The classic page shows a row of shopping ads,
+
+00:13:21.720 --> 00:13:23.340
+some text ads, then links.
+
+00:13:23.720 --> 00:13:26.280
+Every one of those is a slot somebody bid on.
+
+00:13:28.040 --> 00:13:32.000
+In AI mode, you ask a longer question and get a written answer.
+
+00:13:32.720 --> 00:13:36.060
+Google says AI mode queries average three times longer.
+
+00:13:36.640 --> 00:13:41.660
+The answer might carry one sponsored listing or none, and if it's good, you may never click.
+
+00:13:43.560 --> 00:13:44.760
+That's the intuition.
+
+00:13:45.320 --> 00:13:52.860
+But a longer, more specific question is also a sharper signal of what someone wants, and advertisers pay for intent.
+
+00:13:52.860 --> 00:13:59.700
+couldn't fewer slots each be worth more that's exactly Google's argument
+
+00:13:59.700 --> 00:14:04.320
+Skyler said many of these queries are upper funnel queries allowing us to
+
+00:14:04.320 --> 00:14:09.420
+capture new high-value commercial intent upper funnel means early in the buying
+
+00:14:09.420 --> 00:14:15.840
+journey researching rather than buying which is a polite way of saying those
+
+00:14:15.840 --> 00:14:21.300
+queries sit further from a purchase in most ad markets early journey intent
+
+00:14:21.300 --> 00:14:27.620
+sells for less, not more. The promise of value later is carrying a lot of weight in that sentence.
+
+00:14:29.700 --> 00:14:35.380
+Here's an analogy. Classic Search is a mall directory with paid storefront signs all around
+
+00:14:35.380 --> 00:14:40.900
+it. AI mode is a concierge who listens to you for a minute, then walks you to one shop.
+
+00:14:42.900 --> 00:14:48.260
+The concierge is more useful, but there's only so much signage you can hang on a concierge.
+
+00:14:48.260 --> 00:14:54.040
+Then there's the cost side, which the directory never had.
+
+00:14:54.040 --> 00:14:57.560
+A results page is mostly retrieval and ranking.
+
+00:14:58.220 --> 00:15:02.660
+A generated answer means running a model on every query, every time.
+
+00:15:04.400 --> 00:15:06.980
+Google says it's pushing that cost down.
+
+00:15:07.520 --> 00:15:15.580
+In its Q2 remarks, Sundar Pichai said Google reduced the cost of AI mode responses to its lowest level since launch.
+
+00:15:16.280 --> 00:15:17.180
+He gave no number.
+
+00:15:18.260 --> 00:15:22.980
+Lois since launch gives us the direction, not the level.
+
+00:15:22.980 --> 00:15:27.940
+We don't know whether an AI mode answer costs a little more than a page of links or a lot
+
+00:15:27.940 --> 00:15:29.020
+more.
+
+00:15:29.020 --> 00:15:36.080
+The margin per query is squeezed at both ends, and we can't see either end.
+
+00:15:36.080 --> 00:15:41.100
+Skyndler also said the majority of AI mode queries are incremental.
+
+00:15:41.100 --> 00:15:44.700
+If that's true, AI mode isn't eating search.
+
+00:15:44.700 --> 00:15:48.980
+It's adding cheaper queries on top of it.
+
+00:15:48.980 --> 00:15:52.100
+And that distinction matters, Michael.
+
+00:15:52.100 --> 00:15:57.360
+Cannibalization means a valuable classic query turns into a cheaper AI query.
+
+00:15:57.360 --> 00:16:02.940
+Incremental means a new query that earns little but still earns something.
+
+00:16:02.940 --> 00:16:05.940
+Average revenue per query falls either way.
+
+00:16:05.940 --> 00:16:09.540
+Only one of them shrinks the pie.
+
+00:16:09.540 --> 00:16:12.380
+And Google hasn't shown the split.
+
+00:16:12.380 --> 00:16:18.500
+is self-reported with no public definition of how it's measured. One last thing a listener
+
+00:16:18.500 --> 00:16:21.860
+would ask, why not just put more ads into the answer?
+
+00:16:23.660 --> 00:16:29.060
+Because the answer is the product. A page of links can carry ads beside the results.
+
+00:16:29.700 --> 00:16:35.040
+An answer has to carry them inside the result, and if a sponsored pick seems to bend the answer,
+
+00:16:35.400 --> 00:16:41.140
+people stop trusting it. Let's separate what's established from what's claimed.
+
+00:16:41.780 --> 00:16:46.160
+Established from the earnings report, search grew 12% this quarter.
+
+00:16:46.840 --> 00:16:52.500
+CNBC and search engine journal note that was down from 17% in Q2.
+
+00:16:54.180 --> 00:16:56.620
+And Q1 was 19%.
+
+00:16:56.620 --> 00:16:59.580
+So that's three straight quarters of slowing growth.
+
+00:17:01.180 --> 00:17:04.060
+That trend is real. What else is solid?
+
+00:17:05.800 --> 00:17:08.520
+Quarter on quarter, search barely moved.
+
+00:17:08.520 --> 00:17:14.820
+CNBC and Search Engine Journal reported search at $63.35 billion
+
+00:17:14.820 --> 00:17:19.240
+against $63.27 billion in Q2.
+
+00:17:21.000 --> 00:17:23.560
+Flat revenue from one quarter to the next,
+
+00:17:23.860 --> 00:17:28.040
+while TechCrunch says query growth hit its fastest rate in five years.
+
+00:17:28.540 --> 00:17:31.240
+If both hold, revenue per query fell.
+
+00:17:31.800 --> 00:17:33.580
+That's arithmetic, not a claim.
+
+00:17:35.400 --> 00:17:36.580
+One caveat.
+
+00:17:36.580 --> 00:17:41.200
+Google didn't disclose the query growth rate only that it was a five-year high
+
+00:17:41.200 --> 00:17:48.340
+so we know which way revenue per query moved but not by how much now let me
+
+00:17:48.340 --> 00:17:53.300
+press on causation Yahoo reports management also blamed currency and
+
+00:17:53.300 --> 00:17:58.380
+tough comparisons with World Cup ad spending so how much of the slowdown is
+
+00:17:58.380 --> 00:18:05.020
+actually AI mode we don't know Google didn't split it out all three
+
+00:18:05.020 --> 00:18:11.860
+explanations are Google's own which cuts both ways companies don't usually
+
+00:18:11.860 --> 00:18:16.440
+volunteer that their flagship product earns less that makes me take the
+
+00:18:16.440 --> 00:18:23.780
+admission more seriously not less now a contested number startup fortune
+
+00:18:23.780 --> 00:18:29.580
+reported that paid click growth fell from 13% to 8% other coverage says
+
+00:18:29.580 --> 00:18:34.120
+alphabet published no paid click figures this quarter and we couldn't confirm it
+
+00:18:34.120 --> 00:18:35.840
+against Alphabet's own materials.
+
+00:18:37.520 --> 00:18:41.840
+Then we treat that figure as unconfirmed until it appears in a filing.
+
+00:18:42.600 --> 00:18:44.840
+Revenue per query is the same story.
+
+00:18:45.460 --> 00:18:49.040
+Yahoo and others found no AI mode figure disclosed,
+
+00:18:49.040 --> 00:18:52.020
+so any number floating around is an estimate.
+
+00:18:53.700 --> 00:18:55.040
+Then the claims.
+
+00:18:55.740 --> 00:18:59.200
+First, TechCrunch reports Skyndler saying click-through rates
+
+00:18:59.200 --> 00:19:01.840
+on sponsored product listings in AI mode
+
+00:19:01.840 --> 00:19:04.480
+are already comparable to organic listings.
+
+00:19:06.360 --> 00:19:10.140
+Comparable to organic listings, not to classic search ads.
+
+00:19:10.480 --> 00:19:11.820
+That's a different baseline.
+
+00:19:12.540 --> 00:19:16.760
+It's also one ad format picked by Google with no number attached.
+
+00:19:18.460 --> 00:19:19.900
+Second, the history.
+
+00:19:20.600 --> 00:19:25.980
+In 2025, Skyndler and PitchEye both said ads around AI overviews earned
+
+00:19:25.980 --> 00:19:29.060
+at about the same rate as a regular results page.
+
+00:19:29.060 --> 00:19:38.280
+So either AI mode is a different product economically, or the earlier claim described a short, flattering window.
+
+00:19:38.900 --> 00:19:46.340
+In Q2, Google said it had folded AI overviews and AI mode into one seamless search experience.
+
+00:19:47.080 --> 00:19:50.420
+That makes the old same-rate claim hard to apply now.
+
+00:19:52.180 --> 00:19:57.420
+Third, the forward claim. Global ads close the gap over time. That's untested.
+
+00:19:57.420 --> 00:20:03.060
+untested. The rollout was announced the same day as earnings, so there isn't a single quarter of
+
+00:20:03.060 --> 00:20:10.940
+data yet. The formats tell you something, though. Conversational discovery ads, sponsored
+
+00:20:10.940 --> 00:20:18.220
+recommendations inside answers, multi-turn ads. Google is inventing new ad space because the old
+
+00:20:18.220 --> 00:20:27.400
+ad space is shrinking. Last, the cash. CapEx and free cash flow are reported numbers, not estimates.
+
+00:20:27.420 --> 00:20:32.360
+net income fell to twenty six point one seven billion dollars from thirty four
+
+00:20:32.360 --> 00:20:37.620
+point nine eight billion dollars a year earlier per CNBC which didn't give the
+
+00:20:37.620 --> 00:20:44.800
+cause here I'll push the other way Bella free cash flow went negative because of
+
+00:20:44.800 --> 00:20:50.820
+capex not because search collapsed and cloud grew 103 percent to thirty point
+
+00:20:50.820 --> 00:20:56.640
+seven billion dollars so a lot of that capex has paying cloud customers not AI
+
+00:20:56.640 --> 00:21:04.740
+mode users that's fair and it matters the capex doesn't only serve search but
+
+00:21:04.740 --> 00:21:08.820
+search is still just under half of alphabet's revenue per the register and
+
+00:21:08.820 --> 00:21:15.180
+it's the cash engine the build-out has leaned on so how do serious people read
+
+00:21:15.180 --> 00:21:19.860
+the same facts start with the AGI forward reading answers are the better
+
+00:21:19.860 --> 00:21:24.900
+product users are choosing them and query growth proves it money follows
+
+00:21:24.900 --> 00:21:32.300
+attention and ads will follow intent the strongest version of that pitch I noted
+
+00:21:32.300 --> 00:21:36.680
+that Google's Gemini app has won a billion users faster than any other
+
+00:21:36.680 --> 00:21:42.060
+product in the company's history Google also runs the best ad auction on earth
+
+00:21:42.060 --> 00:21:47.760
+if anyone can price an answer it's Google and today's dip is the cost of
+
+00:21:47.760 --> 00:21:54.860
+moving first then the a realist reading an answer replaces the click and the
+
+00:21:54.860 --> 00:22:00.760
+click was the business. Fewer slots, cheaper early journey intent, a higher cost to serve.
+
+00:22:01.320 --> 00:22:05.180
+On that reading, the margin per query is thinner for good, not for a phase.
+
+00:22:07.340 --> 00:22:13.240
+Realists would point to how the language moved. Same rate for AI overviews in 2025,
+
+00:22:13.760 --> 00:22:20.580
+then lower monetization for AI mode now. Executives don't usually change wording like that
+
+00:22:20.580 --> 00:22:27.460
+unless the numbers make them then the market reading which is more about cash timing than
+
+00:22:27.460 --> 00:22:32.740
+technology the stock fell more than 10 percent in a quarter when cloud more than doubled
+
+00:22:33.300 --> 00:22:38.260
+investors seem to be pricing a capex bill that arrives before the ai revenue does
+
+00:22:40.420 --> 00:22:47.300
+there's a twist inside that reading cloud's 103 growth suggests the build out has customers
+
+00:22:47.300 --> 00:22:54.300
+paying rent on it. If that holds, search doesn't have to carry the whole bill.
+
+00:22:54.300 --> 00:23:00.220
+Partly, but some of those customers are AI labs that are hungry for cash themselves.
+
+00:23:00.220 --> 00:23:05.420
+This week Google was one of seven companies buying into Anthropics' $26 billion private
+
+00:23:05.420 --> 00:23:13.100
+placement alongside its IPO. That's a cloud provider putting equity into a lab that rents
+
+00:23:13.100 --> 00:23:21.280
+cloud compute. That's a fair hit on circular money, but an equity stake in a customer doesn't
+
+00:23:21.280 --> 00:23:27.580
+make the revenue fake. We'd need cloud's customer concentration before saying how much it matters.
+
+00:23:29.320 --> 00:23:35.480
+So where do these readings really part ways? On one variable, whether revenue per AI answer
+
+00:23:35.480 --> 00:23:41.680
+climbs back toward revenue per classic query. The AGI forward reading says yes, given time.
+
+00:23:41.680 --> 00:23:44.460
+The realist reading says it settles lower.
+
+00:23:46.680 --> 00:23:49.600
+And honestly, one quarter can't tell those two apart.
+
+00:23:50.200 --> 00:23:52.200
+Both predict exactly what we saw.
+
+00:23:52.720 --> 00:23:54.620
+That's why I keep resisting a verdict.
+
+00:23:56.420 --> 00:23:58.820
+Here's our read, held provisionally.
+
+00:23:59.360 --> 00:24:05.060
+We think this quarter weakens the idea that incumbents can comfortably fund the AI build-out out of search.
+
+00:24:05.620 --> 00:24:11.540
+Google's own AI product is cited as slowing its own growth, while CapEx runs ahead of cash.
+
+00:24:11.680 --> 00:24:14.840
+I'd put it more softly.
+
+00:24:15.560 --> 00:24:22.200
+Google still grew search 12% and earned $26.17 billion in net income this quarter.
+
+00:24:22.740 --> 00:24:26.280
+This is a margin story, not a solvency story.
+
+00:24:28.280 --> 00:24:30.080
+Agreed. Now the startups.
+
+00:24:30.640 --> 00:24:34.300
+If the best ad machine on the Internet earns less per AI answer,
+
+00:24:34.760 --> 00:24:37.300
+an ad-funded answer engine starts out worse.
+
+00:24:37.300 --> 00:24:43.020
+It has a thinner auction, fewer advertisers, and pays someone else's price for inference.
+
+00:24:45.220 --> 00:24:48.860
+Unless it picks queries where the answer sits right next to a transaction.
+
+00:24:49.620 --> 00:24:52.280
+Commerce, travel, a professional task.
+
+00:24:52.780 --> 00:24:56.740
+There you can charge per outcome or per seat instead of per ad shown.
+
+00:24:58.660 --> 00:25:00.200
+That's where we land, too.
+
+00:25:00.740 --> 00:25:04.600
+The room for ad-funded general search looks smaller than it did a year ago.
+
+00:25:04.600 --> 00:25:11.060
+The room for answers tied to a purchase, a subscription, or a workflow looks untouched by this quarter.
+
+00:25:12.740 --> 00:25:17.660
+There's a second group to think about. Companies that grow on Google traffic.
+
+00:25:18.360 --> 00:25:24.520
+If answers absorb the click, organic search becomes a less dependable way to acquire customers.
+
+00:25:26.340 --> 00:25:29.080
+One question worth exploring in diligence.
+
+00:25:29.760 --> 00:25:31.540
+What does the company earn per answer?
+
+00:25:31.540 --> 00:25:36.940
+What does each answer cost to serve, and how do both move as conversations get longer?
+
+00:25:37.720 --> 00:25:42.220
+Queries three times longer are good for engagement and can be bad for gross margin.
+
+00:25:43.880 --> 00:25:51.440
+And for a company that depends on search for growth, we'd want to see acquisition broken out by channel over several quarters.
+
+00:25:52.240 --> 00:25:56.260
+A blended customer acquisition cost hides exactly this shift.
+
+00:25:56.260 --> 00:26:01.600
+Where we still disagree. I think the gap is structural.
+
+00:26:02.240 --> 00:26:07.220
+An answer has less room for ads than a page of links, and I don't expect that to fully close.
+
+00:26:08.940 --> 00:26:11.020
+I think it's too early to call.
+
+00:26:11.580 --> 00:26:17.380
+This quarter carries currency and World Cup noise, and the global ads launched on earnings day.
+
+00:26:17.900 --> 00:26:22.060
+I'd want two more quarters of search revenue before calling anything structural.
+
+00:26:23.920 --> 00:26:25.900
+Three things would settle this.
+
+00:26:26.260 --> 00:26:28.560
+First, Alphabet's Q4 call.
+
+00:26:29.260 --> 00:26:37.380
+Annette Ashkenazi, the chief financial officer, said Google would provide further details on our Q4 call about 2027 CapEx.
+
+00:26:39.000 --> 00:26:46.100
+On that call, watch whether search picks up again once global AI mode ads have a full quarter behind them.
+
+00:26:46.620 --> 00:26:53.080
+If search revenue stays flat from one quarter to the next, the overtime claim gets much harder to defend.
+
+00:26:53.080 --> 00:27:07.520
+Second, disclosure. Does Google ever publish AI mode revenue per query or paid clicks and cost per click in its filings? Until it does, every revenue per answer number out there is a guess.
+
+00:27:07.520 --> 00:27:10.760
+Third, the cash.
+
+00:27:11.300 --> 00:27:24.380
+If 2027 CapEx goes past $300 billion, as CNBC reported is expected, and free cash flow stays negative, the funding question gets louder for everyone downstream.
+
+00:27:26.240 --> 00:27:27.840
+What would change our view?
+
+00:27:28.380 --> 00:27:32.880
+Two quarters where search growth holds up while AI mode's share of queries rises.
+
+00:27:33.600 --> 00:27:35.980
+That would show answers can be sold like links.
+
+00:27:37.520 --> 00:27:43.520
+And what would change mine is another flat quarter with clean comparisons and stable currency.
+
+00:27:44.160 --> 00:27:47.200
+At that point, I'd stop blaming the World Cup.
+
+00:27:48.860 --> 00:27:52.000
+That's the deep dive and today's AI briefing.
+
+00:27:52.720 --> 00:28:00.700
+Every source is linked in the show notes, and the AI briefing webpage has the written edition, this deep dive and every past episode.
+
+00:28:01.240 --> 00:28:03.140
+The daily briefing is back tomorrow.

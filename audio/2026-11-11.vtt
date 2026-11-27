@@ -1,0 +1,286 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:08.700
+On today's AI briefing, we think the revenue is real and the financing partly circular.
+
+00:00:09.380 --> 00:00:14.620
+NVIDIA plans $10 billion, money that likely flows back into its chips,
+
+00:00:14.620 --> 00:00:17.820
+and seven tech giants add $26 billion.
+
+00:00:20.120 --> 00:00:23.940
+This is the AI briefing for Wednesday, November 11.
+
+00:00:24.400 --> 00:00:25.000
+I'm Michael.
+
+00:00:25.000 --> 00:00:30.000
+Like everything here, this briefing is written and read by AI from public sources.
+
+00:00:30.720 --> 00:00:33.640
+Today is about money, chips, prices, and rules.
+
+00:00:34.360 --> 00:00:40.460
+Anthropic has filed to raise up to $88.5 billion through a public listing and a private placement,
+
+00:00:40.840 --> 00:00:42.660
+with NVIDIA among the backers.
+
+00:00:43.300 --> 00:00:48.320
+NVIDIA's own board is opening an independent investigation into Jensen H. Wong,
+
+00:00:48.620 --> 00:00:52.100
+and that may matter more for export controls than for governance.
+
+00:00:52.100 --> 00:01:00.000
+Google DeepMind has opened Gemini 4 Carbon to everyone at $2 and $10 per million tokens.
+
+00:01:00.640 --> 00:01:03.380
+That price is set to double on the 1st of December,
+
+00:01:03.780 --> 00:01:08.800
+and New York is enforcing an AI safety law on OpenAI and Anthropic,
+
+00:01:09.160 --> 00:01:11.340
+with incident reporting and fines.
+
+00:01:11.940 --> 00:01:14.920
+The main story is first, then a few quick hits.
+
+00:01:17.860 --> 00:01:21.080
+First story, an update on Anthropic's listing.
+
+00:01:21.080 --> 00:01:27.100
+The S1 is now out, and Crunchbase News reports it seeks up to $88.5 billion.
+
+00:01:28.020 --> 00:01:30.540
+That means 801 million new shares.
+
+00:01:31.120 --> 00:01:37.080
+They're priced at $70 to $78, alongside a $26 billion private placement.
+
+00:01:37.840 --> 00:01:44.500
+The filing shows 9-month revenue of $33.2 billion against $2.5 billion.
+
+00:01:44.500 --> 00:01:52.700
+TechMeme reports NVIDIA plans, a $10 billion investment after the IPO other reports,
+
+00:01:53.140 --> 00:01:58.440
+say the founder's plan equal exits of $250 million each at the midpoint.
+
+00:01:58.980 --> 00:02:05.680
+The filing terms check out. What nothing yet explains is a $104 billion net loss
+
+00:02:05.680 --> 00:02:09.580
+sitting beside an operating loss of $1.3 billion.
+
+00:02:09.580 --> 00:02:16.580
+dollars. Our read holds. The revenue looks real and the financing looks partly circular,
+
+00:02:17.020 --> 00:02:23.060
+since NVIDIA's money likely flows back into its chips. We lean bare on the financing, not the
+
+00:02:23.060 --> 00:02:32.720
+business. Staying with NVIDIA, the second story is also an update. Ars Technica reports the board
+
+00:02:32.720 --> 00:02:38.480
+will run an independent investigation into Chief Executive Jensen H. Wong, under pressure from
+
+00:02:38.480 --> 00:02:45.280
+Congress. Ed Zitron's commentary adds the detail. Huang has admitted an affair with Alice Huang,
+
+00:02:45.280 --> 00:02:51.720
+who runs Megaspeed. Commerce has probed Megaspeed for smuggling since late the year before last,
+
+00:02:52.140 --> 00:02:59.420
+according to reporting Zitron cites. Short-seller Culper cites a $4.8 billion figure for Speed
+
+00:02:59.420 --> 00:03:05.180
+Matrix, calling it the largest Southeast Asian customer. The congressional pressure and the
+
+00:03:05.180 --> 00:03:11.780
+board probe are established facts. The affair details trace to a memo. Megaspeed's role as a
+
+00:03:11.780 --> 00:03:17.040
+major customer, though, is inferred from the short seller's claims and culprit profits if
+
+00:03:17.040 --> 00:03:22.600
+NVIDIA's stock falls. We see an export control story before a governance one.
+
+00:03:23.320 --> 00:03:29.660
+If Megaspeed was a major channel, enforcement on Southeast Asian compute likely titans.
+
+00:03:29.660 --> 00:03:36.640
+For startups buying GPS through resellers there, a fair question is where their compute physically sits.
+
+00:03:39.400 --> 00:03:42.840
+Third story and a shift from financing to pricing.
+
+00:03:43.520 --> 00:03:46.920
+Google DeepMind has opened Gemini 4 Carbon to all users.
+
+00:03:47.420 --> 00:03:49.700
+Until now it was reserved for cyber defenders.
+
+00:03:50.380 --> 00:03:55.480
+The launch price is $2 per million input tokens and $10 per million output,
+
+00:03:55.920 --> 00:03:58.380
+according to Google DeepMind and Simon Willison.
+
+00:03:58.380 --> 00:04:02.800
+On the 1st of December, that rises to $4 and $20.
+
+00:04:03.660 --> 00:04:05.760
+The capability claims are bolder.
+
+00:04:06.280 --> 00:04:10.100
+Demi's Hassabis says it reverse engineered theme park binaries.
+
+00:04:11.380 --> 00:04:18.980
+Perplexity says it is 2.5 times cheaper than Fable 5.2 for agentic research, without stating how it priced that.
+
+00:04:19.600 --> 00:04:22.820
+Ethan Mollick, who had early access, called it very good.
+
+00:04:22.820 --> 00:04:28.280
+With different strengths from Claude and GPT, he used it to reproduce a video in 3JS.
+
+00:04:28.380 --> 00:04:32.840
+So how well does this hold up? The rollout and the pricing are confirmed.
+
+00:04:32.840 --> 00:04:36.260
+The capability claims rest on internal benchmarks,
+
+00:04:36.260 --> 00:04:41.000
+unverified DEMOS and cost comparisons with no stated basis.
+
+00:04:41.000 --> 00:04:45.880
+Nobody has independently validated performance or cost.
+
+00:04:45.880 --> 00:04:50.120
+Willison's own hands-on test found it handles SVGs,
+
+00:04:50.120 --> 00:04:54.940
+but he saw no new capability. Our read is that this is a pricing event.
+
+00:04:54.940 --> 00:05:01.020
+A launch price that doubles within weeks looks like an introductory discount, not a new floor.
+
+00:05:01.480 --> 00:05:06.080
+That matters for agent startups that built their unit economics on the launch rate.
+
+00:05:06.880 --> 00:05:14.900
+On the 1st of December, their costs jumped two times, and per-task margins modeled at $2 and $10 may not survive.
+
+00:05:15.560 --> 00:05:18.460
+We'd want to see what those margins look like at the higher price.
+
+00:05:19.040 --> 00:05:21.120
+The AGI forward reading is different.
+
+00:05:21.120 --> 00:05:25.840
+Google held carbon back for cyber defenders before releasing it widely
+
+00:05:25.840 --> 00:05:33.240
+Taken with the theme park claim that points to a capability jump in security work, not only a price cut
+
+00:05:33.240 --> 00:05:40.200
+The fourth and last of the main stories moves from markets to regulation
+
+00:05:40.200 --> 00:05:47.460
+Yesterday, TechCrunch reported that New York is enforcing its AI safety law on OpenAI and Anthropic
+
+00:05:47.460 --> 00:05:54.140
+The law requires them to register, to disclose their safety practices, and to report critical incidents.
+
+00:05:54.740 --> 00:05:57.320
+Companies that don't comply face potential fines.
+
+00:05:57.820 --> 00:06:00.280
+The reporting on how enforcement works is solid.
+
+00:06:00.880 --> 00:06:02.820
+Two details narrow its reach.
+
+00:06:03.400 --> 00:06:06.920
+The real obligations start on the 1st of January next year.
+
+00:06:07.600 --> 00:06:12.580
+And they apply only to developers with more than $500 million in revenue.
+
+00:06:12.580 --> 00:06:17.520
+In our view, this partly cuts against what we've called the security reckoning view,
+
+00:06:17.980 --> 00:06:21.460
+because New York set incident reporting before any major disaster.
+
+00:06:22.040 --> 00:06:24.440
+It does so only for the largest developers, though.
+
+00:06:24.980 --> 00:06:30.360
+We also think it opens a market for tooling that logs incidents and handles safety disclosures.
+
+00:06:31.100 --> 00:06:36.700
+SEED and Series A model builders sit far below that $500 million threshold.
+
+00:06:36.700 --> 00:06:42.760
+But selling to the covered labs could bring incident reporting clauses into their contracts.
+
+00:06:42.760 --> 00:06:47.800
+A question worth asking might be whether a startup's contracts with big labs already
+
+00:06:47.800 --> 00:06:54.400
+carry those terms, and who carries the liability. From a policy angle, the reading is more favorable.
+
+00:06:54.400 --> 00:07:01.060
+The threshold spares startups while binding the labs that matter, and a state law with fines and
+
+00:07:01.060 --> 00:07:10.420
+incident reporting may become the template other states copy two quick hits before the close open
+
+00:07:10.420 --> 00:07:16.420
+ai first leaked documents reported by berber gin of the wall street journal show its adjusted
+
+00:07:16.420 --> 00:07:26.260
+operating margin improving from 150 in q2 by q3 it stood at 109 losses are narrowing but still large
+
+00:07:26.260 --> 00:07:35.220
+then core weave its q3 revenue was 3.66 billion dollars beating a 3.55 billion dollar estimate
+
+00:07:35.220 --> 00:07:44.420
+that's up 168 percent year over year its net loss was 709 million dollars its revenue backlog reached
+
+00:07:44.420 --> 00:07:53.700
+132.5 billion dollars up from 104 billion dollars in june demand on paper keeps climbing while the
+
+00:07:53.700 --> 00:07:57.560
+company still loses money.
+
+00:07:57.560 --> 00:08:02.180
+To close, a question that might be worth asking in diligence this week.
+
+00:08:02.180 --> 00:08:07.040
+If your main model's price doubled next month, what would happen to gross margin?
+
+00:08:07.040 --> 00:08:14.080
+And one to watch, what explains the gap between Anthropik's $104 billion net loss and its
+
+00:08:14.080 --> 00:08:17.580
+$1.3 billion operating loss?
+
+00:08:17.580 --> 00:08:23.500
+An amended S-1 or roadshow disclosure itemizing the non-operating charges would settle it.
+
+00:08:23.500 --> 00:08:31.240
+That's the briefing. Stay with me. Right after this, Bella takes you through today's deep dive
+
+00:08:31.240 --> 00:08:38.100
+on his AI speeding up AI, what meter measured. You can also read it or listen to it on its own
+
+00:08:38.100 --> 00:08:43.340
+on the AI briefing webpage, where you'll find the written edition in every past episode.
+
+00:08:43.340 --> 00:08:45.460
+The link is in the show notes.
